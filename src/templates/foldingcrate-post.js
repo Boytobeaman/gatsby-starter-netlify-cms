@@ -88,18 +88,18 @@ const FoldingcratePost = ({ data }) => {
         content={post.html}
         contentComponent={HTMLContent}
         description={post.frontmatter.description}
-        category={post.category}
-        source={post.source}
-        model={post.model}
-        external_long={post.external_long}
-        external_width={post.external_width}
-        external_height={post.external_height}
-        internal_long={post.internal_long}
-        internal_width={post.internal_width}
-        internal_height={post.internal_height}
-        folded_height={post.folded_height}
-        volumn={post.volumn}
-        weight={post.weight}
+        category={post.frontmatter.category}
+        source={post.frontmatter.source}
+        model={post.frontmatter.model}
+        external_long={post.frontmatter.external_long}
+        external_width={post.frontmatter.external_width}
+        external_height={post.frontmatter.external_height}
+        internal_long={post.frontmatter.internal_long}
+        internal_width={post.frontmatter.internal_width}
+        internal_height={post.frontmatter.internal_height}
+        folded_height={post.frontmatter.folded_height}
+        volumn={post.frontmatter.volumn}
+        weight={post.frontmatter.weight}
         helmet={
           <Helmet
             titleTemplate="%s | Foldingcrate"
@@ -128,24 +128,23 @@ export const pageQuery = graphql`
     markdownRemark(id: { eq: $id }) {
       id
       html
-      category
-      source
-      model
-      external_long
-      external_width
-      external_height
-      internal_long
-      internal_width
-      internal_height
-      folded_height
-      volumn
-      weight
       frontmatter {
         date(formatString: "MMMM DD, YYYY")
         tags
         title
         description
-        
+        category
+        source
+        model
+        external_long
+        external_width
+        external_height
+        internal_long
+        internal_width
+        internal_height
+        folded_height
+        volumn
+        weight
       }
     }
   }
