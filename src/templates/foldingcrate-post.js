@@ -132,6 +132,18 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         title
         description
+        category
+        source
+        model
+        external_long
+        external_width
+        external_height
+        internal_long
+        internal_width
+        internal_height
+        folded_height
+        volumn
+        weight
         tags
       }
     }
