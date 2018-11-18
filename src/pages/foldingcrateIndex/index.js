@@ -54,7 +54,7 @@ FoldingcratePage.propTypes = {
   }),
 }
 
-export const pageQuery = graphql`
+export const FoldingcratePageQuery = graphql`
   query FoldingcrateIndexQuery {
     allMarkdownRemark(
       sort: { order: DESC, fields: [frontmatter___date] },
