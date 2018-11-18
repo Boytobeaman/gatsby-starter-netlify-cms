@@ -13,6 +13,18 @@ export const FoldingcratePostTemplate = ({
   tags,
   title,
   helmet,
+  category,
+  source,
+  model,
+  external_long,
+  external_width,
+  external_height,
+  internal_long,
+  internal_width,
+  internal_height,
+  folded_height,
+  volumn,
+  weight
 }) => {
   const PostContent = contentComponent || Content
 
