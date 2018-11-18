@@ -26,6 +26,19 @@ export const FoldingcratePostTemplate = ({
               {title}
             </h1>
             <p>{description}</p>
+            <p>category:{category}</p>
+            <p>source {source}</p>
+            <p>model {model}</p>
+            <p>external_long {external_long}</p>
+            <p>external_width {external_width}</p>
+            <p>external_height {external_height}</p>
+            <p>internal_long {internal_long}</p>
+            <p>internal_width {internal_width}</p>
+            <p>internal_height {internal_height}</p>
+            <p>folded_height {folded_height}</p>
+            <p>volumn {volumn}</p>
+            <p>weight {weight}</p>
+            <p>volumn {volumn}</p>
             <PostContent content={content} />
             {tags && tags.length ? (
               <div style={{ marginTop: `4rem` }}>
@@ -63,6 +76,18 @@ const FoldingcratePost = ({ data }) => {
         content={post.html}
         contentComponent={HTMLContent}
         description={post.frontmatter.description}
+        category={post.category}
+        source={post.source}
+        model={post.model}
+        external_long={post.external_long}
+        external_width={post.external_width}
+        external_height={post.external_height}
+        internal_long={post.internal_long}
+        internal_width={post.internal_width}
+        internal_height={post.internal_height}
+        folded_height={post.folded_height}
+        volumn={post.volumn}
+        weight={post.weight}
         helmet={
           <Helmet
             titleTemplate="%s | Foldingcrate"
