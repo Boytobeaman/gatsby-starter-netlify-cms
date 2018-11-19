@@ -42,15 +42,16 @@ collections:
       - {label: "Weight", name: "weight", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Tags", name: "tags", widget: "list", required: false}
-      - {label: "Gallery", name: "galleryImages", widget: "list",
+      - label: "Gallery" 
+        name: "galleryImages", 
+        widget: "list",
         fields:
-          - {label: "Image a", name: imagea, widget: image}
-          - {label: "Image b", name: imageb, widget: image}
-          - {label: "Image c", name: imagec, widget: image}
-          - {label: "Image d", name: imaged, widget: image}
-          - {label: "Image e", name: imagee, widget: image}
-          - {label: "Image f", name: imagef, widget: image}
-      }
+          - {label: "Image a", name: imagea, widget: image, required: false}
+          - {label: "Image b", name: imageb, widget: image, required: false}
+          - {label: "Image c", name: imagec, widget: image, required: false}
+          - {label: "Image d", name: imaged, widget: image, required: false}
+          - {label: "Image e", name: imagee, widget: image, required: false}
+          - {label: "Image f", name: imagef, widget: image, required: false}
       - {label: "Body", name: "body", widget: "markdown"}
   - name: "pages"
     label: "Pages"

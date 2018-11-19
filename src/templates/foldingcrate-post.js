@@ -28,6 +28,7 @@ export const FoldingcratePostTemplate = ({
   galleryImages
 }) => {
   const PostContent = contentComponent || Content
+  console.log(`galleryImages  ${galleryImages.fields}`)
   console.log(`galleryImages  ${galleryImages}`)
   return (
     <section className="section">
