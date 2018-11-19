@@ -21,7 +21,7 @@ collections:
   
   - name: "foldingCrate"
     label: "Folding Crate"
-    folder: "src/pages/foldingcrateProducts"
+    folder: "src/pages/folding-crate"
     create: true
     slug: "{{slug}}"
     fields:

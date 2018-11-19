@@ -19,18 +19,26 @@ const Navbar = () => (
         <li className="nav-item active">
           <a className="nav-link" href="/">Home <span className="sr-only">(current)</span></a>
         </li>
-        <Link className="navbar-item" to="/folding-crates">
-          Folding Crates
-        </Link>
-        <Link className="navbar-item" to="/contact">
-          Contact
-        </Link>
-        <Link className="navbar-item" to="/contact/examples">
-          Form Examples
-        </Link>
-        <Link className="navbar-item" to="/about">
-          About
-        </Link>
+        <li className="nav-item">
+          <Link className="nav-link" to="/folding-crates">
+            Folding Crates
+          </Link>
+        </li>
+        <li className="nav-item">
+          <Link className="nav-link" to="/contact">
+            Contact
+          </Link>
+        </li>
+        <li className="nav-item">
+          <Link className="nav-link" to="/contact/examples">
+            Form Examples
+          </Link>
+        </li>
+        <li className="nav-item">
+          <Link className="nav-link" to="/about">
+            About
+          </Link>
+        </li>
         <li className="nav-item dropdown">
           <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Dropdown
