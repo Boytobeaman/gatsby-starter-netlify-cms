@@ -25,12 +25,10 @@ export const FoldingcratePostTemplate = ({
   folded_height,
   volumn,
   weight,
-  imagea,
-  imageb
+  imagea
 }) => {
   const PostContent = contentComponent || Content
   console.log(`galleryImages  ${imagea}`)
-  console.log(`galleryImages  ${imageb}`)
   return (
     <section className="section">
       {helmet || ''}
@@ -128,6 +126,7 @@ FoldingcratePost.propTypes = {
   data: PropTypes.shape({
     markdownRemark: PropTypes.object,
   }),
+  imagea: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
 }
 
 export default FoldingcratePost
