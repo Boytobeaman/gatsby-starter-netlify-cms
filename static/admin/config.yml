@@ -41,9 +41,18 @@ collections:
       - {label: "Volumn", name: "volumn", widget: "string"}
       - {label: "Weight", name: "weight", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Tags", name: "tags", widget: "list", required: false}
+      - label: "Gallery" 
+        name: "galleryImages" 
+        widget: "list"
+        fields: 
+          - {label: "Image a", name: imagea, widget: image}
+          - {label: "Image b", name: imageb, widget: image}
+          - {label: "Image c", name: imagec, widget: image}
+          - {label: "Image d", name: imaged, widget: image}
+          - {label: "Image e", name: imagee, widget: image}
+          - {label: "Image f", name: imagef, widget: image}
       - {label: "Body", name: "body", widget: "markdown"}
-      - {label: "Tags", name: "tags", widget: "list"}
-
   - name: "pages"
     label: "Pages"
     files:
