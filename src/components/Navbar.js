@@ -44,20 +44,25 @@ export default class Navbar extends React.Component{
                 Home
               </Link>
             </NavItem>
+
             <NavItem>
               <Link className="nav-link" to="/folding-crates">
                 Folding Crates
               </Link>
             </NavItem>
+            
             <NavItem>
               <Link className="nav-link" to="/contact">
                 Contact
               </Link>
             </NavItem>
+
             <NavItem>
               <Link className="nav-link" to="/about">
                 About
               </Link>
+            </NavItem>
+
             <NavItem>
               <Link className="nav-link" to="/contact/examples">
                 Form Examples
