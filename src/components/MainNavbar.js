@@ -37,7 +37,7 @@ export default class MainNavbar extends React.Component{
           </Link>
         </NavbarBrand>
         <NavbarToggler onClick={this.toggleNavbar} />
-        <Collapse isOpen={this.state.isOpen} navbar>
+        <Collapse isOpen={!this.state.isOpen} navbar>
           <Nav className="mr-auto" navbar>
             <NavItem>
               <Link className="nav-link" to="/">
