@@ -5,6 +5,8 @@ import Helmet from 'react-helmet'
 import { graphql, Link } from 'gatsby'
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
+import ImageGallery from 'react-image-gallery';
+import "react-image-gallery/styles/css/image-gallery.css";
 
 export const FoldingcratePostTemplate = ({
   content,
@@ -28,45 +30,65 @@ export const FoldingcratePostTemplate = ({
   images
 }) => {
   const PostContent = contentComponent || Content
-  console.log(`galleryImages  ${images}`)
+  let resizeStyle = '?x-oss-process=image/resize,h_100'
+  if(images && images.length>0){
+    images = images.split(",")
+    images = images.map(item=>{
+      let obj = {}
+      obj.original = item
+      obj.thumbnail = item+resizeStyle
+      return obj
+    })
+  }else{
+
+  }
+
   return (
     <section className="section">
       {helmet || ''}
-      <div className="container content">
-        <div className="columns">
-          <div className="column is-10 is-offset-1">
-            <h1 className="title is-size-2 has-text-weight-bold is-bold-light">
-              {title}
-            </h1>
-            <p>{description}</p>
-            <p>category:{category}</p>
-            <p>source {source}</p>
-            <p>model {model}</p>
-            <p>external_long {external_long}</p>
-            <p>external_width {external_width}</p>
-            <p>external_height {external_height}</p>
-            <p>internal_long {internal_long}</p>
-            <p>internal_width {internal_width}</p>
-            <p>internal_height {internal_height}</p>
-            <p>folded_height {folded_height}</p>
-            <p>volumn {volumn}</p>
-            <p>weight {weight}</p>
-            <p>volumn {volumn}</p>
-            <PostContent content={content} />
-            {tags && tags.length ? (
-              <div style={{ marginTop: `4rem` }}>
-                <h4>Tags</h4>
-                <ul className="taglist">
-                  {tags.map(tag => (
-                    <li key={tag + `tag`}>
-                      <Link to={`/tags/${kebabCase(tag)}/`}>{tag}</Link>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ) : null}
-          </div>
+      <div className="container-fluid">
+      <div className="row">
+        <div className="col-sm-6">
+          <ImageGallery items={images} />
         </div>
+        <div className="col-sm-6">
+          <h1 className="title is-size-2 has-text-weight-bold is-bold-light">
+              {title}
+          </h1>
+          <p>{description}</p>
+          <p>category:{category}</p>
+          <p>source {source}</p>
+          <p>model {model}</p>
+          <p>external_long {external_long}</p>
+          <p>external_width {external_width}</p>
+          <p>external_height {external_height}</p>
+          <p>internal_long {internal_long}</p>
+          <p>internal_width {internal_width}</p>
+          <p>internal_height {internal_height}</p>
+          <p>folded_height {folded_height}</p>
+          <p>volumn {volumn}</p>
+          <p>weight {weight}</p>
+          <p>volumn {volumn}</p>
+        </div>
+      </div>
+
+      <div className="col-sm-12">
+        <PostContent content={content} />
+        {tags && tags.length ? (
+          <div style={{ marginTop: `4rem` }}>
+            <h4>Tags</h4>
+            <ul className="taglist">
+              {tags.map(tag => (
+                <li key={tag + `tag`}>
+                  <Link to={`/tags/${kebabCase(tag)}/`}>{tag}</Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+        ) : null}
+      </div>
+      
+        
       </div>
     </section>
   )

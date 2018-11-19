@@ -21,15 +21,15 @@ collections:
   
   - name: "foldingCrate"
     label: "Folding Crate"
-    folder: "src/pages/foldingcrate"
+    folder: "src/pages/foldingcrateProducts"
     create: true
-    slug: "{{year}}-{{month}}-{{slug}}"
+    slug: "{{slug}}"
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "foldingcrate-post"}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Description", name: "description", widget: "text"}
       - {label: "Category", name: "category", widget: "string"}
-      - {label: "Source", name: "source", widget: "string"}
+      - {label: "Source", name: "source", widget: "string",required: false}
       - {label: "Model", name: "model", widget: "string"}
       - {label: "External long", name: "external_long", widget: "string"}
       - {label: "External width", name: "external_width", widget: "string"}

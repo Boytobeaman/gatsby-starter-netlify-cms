@@ -20,6 +20,9 @@ const Navbar = () => (
         <Link className="navbar-item" to="/products">
           Products
         </Link>
+        <Link className="navbar-item" to="/folding-crates">
+          Folding Crates
+        </Link>
         <Link className="navbar-item" to="/contact">
           Contact
         </Link>
