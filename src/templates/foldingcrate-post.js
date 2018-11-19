@@ -25,11 +25,12 @@ export const FoldingcratePostTemplate = ({
   folded_height,
   volumn,
   weight,
-  galleryImages
+  imagea,
+  imageb
 }) => {
   const PostContent = contentComponent || Content
-  console.log(`galleryImages  ${galleryImages.fields}`)
-  console.log(`galleryImages  ${galleryImages}`)
+  console.log(`galleryImages  ${imagea}`)
+  console.log(`galleryImages  ${imageb}`)
   return (
     <section className="section">
       {helmet || ''}
@@ -102,7 +103,12 @@ const FoldingcratePost = ({ data }) => {
         folded_height={post.frontmatter.folded_height}
         volumn={post.frontmatter.volumn}
         weight={post.frontmatter.weight}
-        galleryImages={post.frontmatter.galleryImages}
+        imagea={post.frontmatter.galleryImages.imagea}
+        imageb={post.frontmatter.galleryImages.imageb}
+        imagec={post.frontmatter.galleryImages.imagec}
+        imaged={post.frontmatter.galleryImages.imaged}
+        imagee={post.frontmatter.galleryImages.imagee}
+        imagef={post.frontmatter.galleryImages.imagef}
         helmet={
           <Helmet
             titleTemplate="%s | Foldingcrate"
@@ -148,7 +154,14 @@ export const pageQuery = graphql`
         folded_height
         volumn
         weight
-        galleryImages
+        galleryImages{
+          imagea
+          imageb
+          imagec
+          imaged
+          imagee
+          imagef
+        }
       }
     }
   }
