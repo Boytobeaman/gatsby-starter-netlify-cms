@@ -31,8 +31,10 @@ export const FoldingcratePostTemplate = ({
 }) => {
   const PostContent = contentComponent || Content
   let resizeStyle = '?x-oss-process=image/resize,h_100'
+
+  console.log(`images ${images}`)
+  console.log(`images ${Array.isArray(images)}`)
   if(images && images.length>0){
-    images = images.split(",")
     images = images.map(item=>{
       let obj = {}
       obj.original = item
