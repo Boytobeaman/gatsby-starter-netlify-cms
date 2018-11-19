@@ -11,7 +11,7 @@ import {
   NavItem,
   UncontrolledDropdown
 } from 'reactstrap';
-export default class Navbar extends React.Component{
+export default class MainNavbar extends React.Component{
   constructor(props) {
     super(props);
 
@@ -50,7 +50,7 @@ export default class Navbar extends React.Component{
                 Folding Crates
               </Link>
             </NavItem>
-            
+
             <NavItem>
               <Link className="nav-link" to="/contact">
                 Contact
