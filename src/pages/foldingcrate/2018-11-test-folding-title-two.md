@@ -17,5 +17,7 @@ weight: '44213'
 date: 2018-11-18T17:00:26.690Z
 tags:
   - folding crate
+images:
+  - folding crate
 ---
 24312431
