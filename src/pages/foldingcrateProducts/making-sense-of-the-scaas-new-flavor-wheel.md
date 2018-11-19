@@ -21,6 +21,13 @@ tags:
   - flavor
   - tasting
 images:
-  - folding crate
+  - >-
+    https://joinproducts.oss-cn-shanghai.aliyuncs.com/aa68c092067d41238b6e8056c9edbcff.jpg
+  - >-
+    https://joinproducts.oss-cn-shanghai.aliyuncs.com/7d69838064174ec4beb912fbb9ee7bc1.jpg
+  - >-
+    https://joinproducts.oss-cn-shanghai.aliyuncs.com/d66021f6346c458fb21f8fd883d6bdbe.jpg
+  - >-
+    https://joinproducts.oss-cn-shanghai.aliyuncs.com/61b05868ad2a4b469fa5d10b8b0580b0.jpg
 ---
 The coffee taster attempts to measure aspects of the coffee's taste, specifically the body (the texture or mouthfeel, such as oiliness), sweetness, acidity (a sharp and tangy feeling, like when biting into an orange), flavour (the characters in the cup), and aftertaste. Since coffee beans embody telltale flavours from the region where they were grown, cuppers may attempt to identify the coffee's origin.
