@@ -31,9 +31,6 @@ export const FoldingcratePostTemplate = ({
 }) => {
   const PostContent = contentComponent || Content
   let resizeStyle = '?x-oss-process=image/resize,h_100'
-
-  console.log(`images ${images}`)
-  console.log(`images ${Array.isArray(images)}`)
   if(images && images.length>0){
     images = images.map(item=>{
       let obj = {}
@@ -51,7 +48,12 @@ export const FoldingcratePostTemplate = ({
       <div className="container-fluid">
       <div className="row">
         <div className="col-sm-6">
-          <ImageGallery items={images} />
+          <ImageGallery 
+            items={images} 
+            lazyLoad={true} 
+            showFullscreenButton={false}
+            showBullets={true}
+          />
         </div>
         <div className="col-sm-6">
           <h1 className="title is-size-2 has-text-weight-bold is-bold-light">
