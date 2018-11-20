@@ -78,7 +78,7 @@ export const FoldingcratePostTemplate = ({
           />
         </div>
         <div className="col-sm-6">
-          <div className="bg-white">
+          <div className="bg-white p-3">
             <h1 className="title text-capitalize single-product-title h4">
                 {title}
             </h1>
