@@ -77,7 +77,7 @@ export const FoldingcratePostTemplate = ({
             showBullets={true}
           />
         </div>
-        <div className="col-sm-6">
+        <div className="col-sm-5">
           <h1 className="title is-size-2 has-text-weight-bold is-bold-light">
               {title}
           </h1>
@@ -89,7 +89,7 @@ export const FoldingcratePostTemplate = ({
             <tbody>
                 <tr>
                   <td>
-                    <h4>Product Model</h4>
+                    <h5>Product Model</h5>
                   </td>
                   <td className="product-model">
                     <span className="mm pull-left value">{model}</span>
@@ -97,62 +97,62 @@ export const FoldingcratePostTemplate = ({
                 </tr>
                 <tr>
                   <td>
-                    <h4>External Dimensions</h4>
+                    <h5>External Dimensions</h5>
                     <span>(L * W * H)</span>
                   </td>
                   <td className="external-dimension">
                     <span className="mm pull-left value">{external_long}X{external_width}X{external_height}</span>
                     <span className="pull-right">mm</span>
-                    <hr />
+                    <hr className="w-100" />
                     <span className="inch pull-left value">{(external_long * mmtoinch).toFixed(2)}X{(external_width * mmtoinch).toFixed(2)}X{(external_height * mmtoinch).toFixed(2)}</span>
                     <span className="pull-right">in</span>
                   </td>
                 </tr>
                 <tr>
                   <td>
-                    <h4>Internal Dimensions</h4>
+                    <h5>Internal Dimensions</h5>
                     <span>(L * W * H)</span>
                   </td>
                   <td className="internal-dimension">
                     <span className="mm pull-left value">{internal_long}X{internal_width}X{internal_height}</span>
                     <span className="pull-right">mm</span>
-                    <hr />
+                    <hr className="w-100" />
                     <span className="inch pull-left value">{(internal_long * mmtoinch).toFixed(2)}X{(internal_width * mmtoinch).toFixed(2)}X{(internal_height * mmtoinch).toFixed(2)}</span>
                     <span className="pull-right">in</span>
                   </td>
                 </tr>
                 <tr>
                   <td>
-                    <h4>Folded Height</h4>
+                    <h5>Folded Height</h5>
                   </td>
                   <td className="internal-dimension">
                     <span className="mm pull-left value">{folded_height}</span>
                     <span className="pull-right">mm</span>
-                    <hr />
+                    <hr className="w-100" />
                     <span className="inch pull-left value">{(folded_height * mmtoinch).toFixed(2)}</span>
                     <span className="pull-right">in</span>
                   </td>
                 </tr>
                 <tr>
                   <td>
-                    <h4>Weight</h4>
+                    <h5>Weight</h5>
                   </td>
                   <td className="internal-dimension">
                     <span className="kg pull-left value">{weight}</span>
                     <span className="pull-right">kg</span>
-                    <hr />
+                    <hr className="w-100" />
                     <span className="lbs pull-left value">{(weight * kgtolbs).toFixed(2)}</span>
                     <span className="pull-right">lbs</span>
                   </td>
                 </tr>
                 <tr>
                   <td>
-                    <h4>Volumn</h4>
+                    <h5>Volumn</h5>
                   </td>
                   <td className="internal-dimension">
                     <span className="liters pull-left value">{volumn}</span>
                     <span className="pull-right">Liters</span>
-                    <hr />
+                    <hr className="w-100" />
                     <span className="gallon pull-left value">{volumn * ltogal }</span>
                     <span className="pull-right">Us gallon</span>
                   </td>
