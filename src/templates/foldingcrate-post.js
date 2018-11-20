@@ -53,6 +53,21 @@ export const FoldingcratePostTemplate = ({
     <section className="section">
       {helmet || ''}
       <div className="container-fluid">
+        <nav aria-label="breadcrumb">
+          <ol className="breadcrumb">
+            <li className="breadcrumb-item">
+              <Link to="/">
+                Home
+              </Link>
+            </li>
+            <li className="breadcrumb-item">
+              <Link to="/folding-crates">
+                Folding Crates
+              </Link>
+            </li>
+            <li className="breadcrumb-item active" aria-current="page">{title}</li>
+          </ol>
+        </nav>
       <div className="row">
         <div className="col-sm-6">
           <ImageGallery 
