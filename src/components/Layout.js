@@ -3,7 +3,7 @@ import Helmet from 'react-helmet'
 
 import MainNavbar from '../components/MainNavbar'
 import 'bootstrap/dist/css/bootstrap.min.css';
-// import './all.sass'
+import './all.sass'
 
 
 const TemplateWrapper = ({ children }) => (

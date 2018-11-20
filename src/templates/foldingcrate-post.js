@@ -7,6 +7,7 @@ import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
 import ImageGallery from 'react-image-gallery';
 import "react-image-gallery/styles/css/image-gallery.css";
+import { mmtoinch, kgtolbs, ltogal} from '../utils';
 
 export const FoldingcratePostTemplate = ({
   content,
@@ -15,8 +16,6 @@ export const FoldingcratePostTemplate = ({
   tags,
   title,
   helmet,
-  category,
-  source,
   model,
   external_long,
   external_width,
@@ -41,7 +40,15 @@ export const FoldingcratePostTemplate = ({
   }else{
 
   }
-
+  if (!weight) {
+    weight = NaN
+  }
+  if (!folded_height) {
+    folded_height = NaN
+  }
+  if (!volumn) {
+    volumn = NaN
+  }
   return (
     <section className="section">
       {helmet || ''}
@@ -59,20 +66,88 @@ export const FoldingcratePostTemplate = ({
           <h1 className="title is-size-2 has-text-weight-bold is-bold-light">
               {title}
           </h1>
+
+          <table className="table table-hover table-bordered single-product-attr">
+            <caption>
+              <h3 className="pull-left">Specifications</h3>
+              <button className="btn btn-danger pull-right product-inquiry">Request a Free Quote</button>
+            </caption>
+            <tbody>
+                <tr>
+                  <td>
+                    <h4>Product Model</h4>
+                  </td>
+                  <td className="product-model">
+                    <span className="mm pull-left value">{model}</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <h4>External Dimensions</h4>
+                    <hr />
+                    <span>L * W * H</span>
+                  </td>
+                  <td className="external-dimension">
+                    <span className="mm pull-left value">{external_long}X{external_width}X{external_height}</span>
+                    <span className="pull-right">mm</span>
+                    <hr />
+                    <span className="inch pull-left value">{external_long * mmtoinch}X{external_width * mmtoinch}X{external_height * mmtoinch}</span>
+                    <span className="pull-right">in</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <h4>Internal Dimensions</h4>
+                    <hr />
+                    <span>L * W * H</span>
+                  </td>
+                  <td className="internal-dimension">
+                    <span className="mm pull-left value">{internal_long}X{internal_width}X{internal_height}</span>
+                    <span className="pull-right">mm</span>
+                    <hr />
+                    <span className="inch pull-left value">{internal_long * mmtoinch}X{internal_width * mmtoinch}X{internal_height * mmtoinch}</span>
+                    <span className="pull-right">in</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <h4>Folded Height</h4>
+                  </td>
+                  <td className="internal-dimension">
+                    <span className="mm pull-left value">{folded_height}</span>
+                    <span className="pull-right">mm</span>
+                    <hr />
+                    <span className="inch pull-left value">{folded_height * mmtoinch}</span>
+                    <span className="pull-right">in</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <h4>Weight</h4>
+                  </td>
+                  <td className="internal-dimension">
+                    <span className="kg pull-left value">{weight}</span>
+                    <span className="pull-right">kg</span>
+                    <hr />
+                    <span className="lbs pull-left value">{weight * kgtolbs}</span>
+                    <span className="pull-right">lbs</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <h4>Volumn</h4>
+                  </td>
+                  <td className="internal-dimension">
+                    <span className="liters pull-left value">{volumn}</span>
+                    <span className="pull-right">Liters</span>
+                    <hr />
+                    <span className="gallon pull-left value">{volumn * ltogal }</span>
+                    <span className="pull-right">Us gallon</span>
+                  </td>
+                </tr>
+            </tbody>
+          </table>
           <p>{description}</p>
-          <p>category:{category}</p>
-          <p>source {source}</p>
-          <p>model {model}</p>
-          <p>external_long {external_long}</p>
-          <p>external_width {external_width}</p>
-          <p>external_height {external_height}</p>
-          <p>internal_long {internal_long}</p>
-          <p>internal_width {internal_width}</p>
-          <p>internal_height {internal_height}</p>
-          <p>folded_height {folded_height}</p>
-          <p>volumn {volumn}</p>
-          <p>weight {weight}</p>
-          <p>volumn {volumn}</p>
         </div>
       </div>
 
