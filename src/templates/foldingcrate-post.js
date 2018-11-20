@@ -101,10 +101,10 @@ export const FoldingcratePostTemplate = ({
                     <span>(L * W * H)</span>
                   </td>
                   <td className="external-dimension">
-                    <span className="mm pull-left value">{external_long}X{external_width}X{external_height}</span>
+                    <span className="mm pull-left value">{external_long} X {external_width} X {external_height}</span>
                     <span className="pull-right">mm</span>
                     <hr className="w-100 mt-4 mb-0" />
-                    <span className="inch pull-left value">{(external_long * mmtoinch).toFixed(2)}X{(external_width * mmtoinch).toFixed(2)}X{(external_height * mmtoinch).toFixed(2)}</span>
+                    <span className="inch pull-left value">{(external_long * mmtoinch).toFixed(2)} X {(external_width * mmtoinch).toFixed(2)} X {(external_height * mmtoinch).toFixed(2)}</span>
                     <span className="pull-right">in</span>
                   </td>
                 </tr>
@@ -114,10 +114,10 @@ export const FoldingcratePostTemplate = ({
                     <span>(L * W * H)</span>
                   </td>
                   <td className="internal-dimension">
-                    <span className="mm pull-left value">{internal_long}X{internal_width}X{internal_height}</span>
+                    <span className="mm pull-left value">{internal_long} X {internal_width} X {internal_height}</span>
                     <span className="pull-right">mm</span>
                     <hr className="w-100 mt-4 mb-0" />
-                    <span className="inch pull-left value">{(internal_long * mmtoinch).toFixed(2)}X{(internal_width * mmtoinch).toFixed(2)}X{(internal_height * mmtoinch).toFixed(2)}</span>
+                    <span className="inch pull-left value">{(internal_long * mmtoinch).toFixed(2)} X {(internal_width * mmtoinch).toFixed(2)} X {(internal_height * mmtoinch).toFixed(2)}</span>
                     <span className="pull-right">in</span>
                   </td>
                 </tr>
@@ -153,7 +153,7 @@ export const FoldingcratePostTemplate = ({
                     <span className="liters pull-left value">{volumn}</span>
                     <span className="pull-right">Liters</span>
                     <hr className="w-100 mt-4 mb-0" />
-                    <span className="gallon pull-left value">{volumn * ltogal }</span>
+                    <span className="gallon pull-left value">{(volumn * ltogal).toFixed(2) }</span>
                     <span className="pull-right">Us gallon</span>
                   </td>
                 </tr>

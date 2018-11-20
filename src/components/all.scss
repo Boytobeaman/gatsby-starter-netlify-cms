@@ -12,4 +12,14 @@
   .value {
     color: #d9534f;
   }
-} 
+}
+.table{
+  td{
+    vertical-align: middle;
+    padding: .25rem .55rem;
+  }
+  th{
+    vertical-align: middle;
+    padding: .25rem .55rem;
+  }
+}
