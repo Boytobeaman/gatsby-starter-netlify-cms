@@ -54,7 +54,7 @@ export const FoldingcratePostTemplate = ({
       {helmet || ''}
       <div className="container-fluid">
         <nav aria-label="breadcrumb">
-          <ol className="breadcrumb">
+          <ol className="breadcrumb bg-white my-2">
             <li className="breadcrumb-item">
               <Link to="/">
                 Home
@@ -99,28 +99,26 @@ export const FoldingcratePostTemplate = ({
                 <tr>
                   <td>
                     <h4>External Dimensions</h4>
-                    <hr />
-                    <span>L * W * H</span>
+                    <span>(L * W * H)</span>
                   </td>
                   <td className="external-dimension">
                     <span className="mm pull-left value">{external_long}X{external_width}X{external_height}</span>
                     <span className="pull-right">mm</span>
                     <hr />
-                    <span className="inch pull-left value">{external_long * mmtoinch}X{external_width * mmtoinch}X{external_height * mmtoinch}</span>
+                    <span className="inch pull-left value">{(external_long * mmtoinch).toFixed(2)}X{(external_width * mmtoinch).toFixed(2)}X{(external_height * mmtoinch).toFixed(2)}</span>
                     <span className="pull-right">in</span>
                   </td>
                 </tr>
                 <tr>
                   <td>
                     <h4>Internal Dimensions</h4>
-                    <hr />
-                    <span>L * W * H</span>
+                    <span>(L * W * H)</span>
                   </td>
                   <td className="internal-dimension">
                     <span className="mm pull-left value">{internal_long}X{internal_width}X{internal_height}</span>
                     <span className="pull-right">mm</span>
                     <hr />
-                    <span className="inch pull-left value">{internal_long * mmtoinch}X{internal_width * mmtoinch}X{internal_height * mmtoinch}</span>
+                    <span className="inch pull-left value">{(internal_long * mmtoinch).toFixed(2)}X{(internal_width * mmtoinch).toFixed(2)}X{(internal_height * mmtoinch).toFixed(2)}</span>
                     <span className="pull-right">in</span>
                   </td>
                 </tr>
@@ -132,7 +130,7 @@ export const FoldingcratePostTemplate = ({
                     <span className="mm pull-left value">{folded_height}</span>
                     <span className="pull-right">mm</span>
                     <hr />
-                    <span className="inch pull-left value">{folded_height * mmtoinch}</span>
+                    <span className="inch pull-left value">{(folded_height * mmtoinch).toFixed(2)}</span>
                     <span className="pull-right">in</span>
                   </td>
                 </tr>
@@ -144,7 +142,7 @@ export const FoldingcratePostTemplate = ({
                     <span className="kg pull-left value">{weight}</span>
                     <span className="pull-right">kg</span>
                     <hr />
-                    <span className="lbs pull-left value">{weight * kgtolbs}</span>
+                    <span className="lbs pull-left value">{(weight * kgtolbs).toFixed(2)}</span>
                     <span className="pull-right">lbs</span>
                   </td>
                 </tr>
