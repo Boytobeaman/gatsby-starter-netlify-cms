@@ -84,8 +84,7 @@ export const FoldingcratePostTemplate = ({
 
           <table className="table table-hover table-bordered single-product-attr">
             <caption>
-              <h3 className="pull-left">Specifications</h3>
-              <button className="btn btn-danger pull-right product-inquiry">Request a Free Quote</button>
+                <button className="btn btn-danger btn-block product-inquiry">Request a Free Quote</button>
             </caption>
             <tbody>
                 <tr>
