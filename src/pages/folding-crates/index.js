@@ -8,7 +8,7 @@ import {
   ltogal,
   aliResizeStyle_h_300
 } from '../../utils';
-
+import './index.scss'
 export default class FoldingcratePage extends React.Component {
   render() {
     const { data } = this.props
