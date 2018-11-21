@@ -1,6 +1,12 @@
 body{
   background-color: #e9ecef;
 }
+html,
+body,
+body>div,
+body>div>div{
+  height: 100%;
+}
 .image-gallery-slides{
   min-height: 400px;
   background-color: #fff;
