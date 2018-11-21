@@ -2,6 +2,12 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { Link, graphql } from 'gatsby'
 import Layout from '../../components/Layout'
+import {
+  mmtoinch,
+  kgtolbs,
+  ltogal,
+  aliResizeStyle_h_300
+} from '../utils';
 
 export default class FoldingcratePage extends React.Component {
   render() {
@@ -16,29 +22,100 @@ export default class FoldingcratePage extends React.Component {
               <h1 className="has-text-weight-bold is-size-2">Latest Stories</h1>
             </div>
             {posts
-              .map(({ node: post }) => (
-                <div
-                  className="content"
-                  style={{ border: '1px solid #eaecee', padding: '2em 4em' }}
-                  key={post.id}
-                >
-                  <p>
-                    <Link className="has-text-primary" to={post.fields.slug}>
-                      {post.frontmatter.title}
-                    </Link>
-                    <span> &bull; </span>
-                    <small>{post.frontmatter.date}</small>
-                  </p>
-                  <p>
-                    {post.excerpt}
-                    <br />
-                    <br />
-                    <Link className="button is-small" to={post.fields.slug}>
-                      Keep Reading →
-                    </Link>
-                  </p>
-                </div>
-              ))}
+              .map(({ node: post }) => {
+                const {
+                  model,
+                  external_long,
+                  external_width,
+                  external_height,
+                  internal_long,
+                  internal_width,
+                  internal_height,
+                  folded_height,
+                  volumn,
+                  weight,
+                  images
+                } = post.frontmatter;
+                let cat_image_url=''
+                if (images) {
+                  cat_image_url = post.frontmatter.images.split(",")[0] + aliResizeStyle_h_300
+                }
+                return (
+                  <div
+                    className="content"
+                    style={{ border: '1px solid #eaecee', padding: '2em 4em' }}
+                    key={post.id}
+                  >
+                    <div className="col-xs-12 col-sm-9">
+                      <Link className="cat-product-link" to={post.fields.slug}>
+                        <div className="product-wrap">
+                          <div className="product-img-wrap">
+                            <img width="300" height="225" src={cat_image_url}
+                              className="" alt={post.frontmatter.title} />
+                          </div>
+                          <div className="product-right">
+                            <div className="product-name">
+                              <div className="col-sm-12 py-1 clearfix">
+                                <h2 className="product-title text-capitalize d-inline-block mb-0 pl-1">{post.frontmatter.title}</h2>
+                                <span className="btn btn-danger pull-right float-right product-cat-inquiry">Inquiry</span>
+                                <span className="btn btn-info product-model mr-1">Model: {model}</span>
+                              </div>
+                            </div>
+                            <div className="product-attributes">
+                              <div className="row no-gutters">
+                                <div className="col-sm-3 col-xs-6 border-right external-dimension">
+                                  <div className="table-head bb-2-white">External Dimensions</div>
+                                  <div className="product-val-mm">
+                                    <span className="value">{external_long} X {external_width} X {external_height}</span>
+                                    <span className="pull-right float-right">mm</span>
+                                  </div>
+                                  <div className="product-val-inch">
+                                    <span className="value">{(external_long * mmtoinch).toFixed(2)} X {(external_width * mmtoinch).toFixed(2)} X {(external_height * mmtoinch).toFixed(2)}</span>
+                                    <span className="pull-right float-right">in</span>
+                                  </div>
+                                </div>
+                                <div className="col-sm-3 col-xs-6 border-right internal-dimension d-none d-sm-block">
+                                  <div className="table-head bb-2-white">Internal Dimensions</div>
+                                  <div className="product-val-mm">
+                                    <span className="value">{internal_long} X {internal_width} X {internal_height}</span>
+                                    <span className="pull-right float-right">mm</span>
+                                  </div>
+                                  <div className="product-val-inch">
+                                    <span className="value">{(internal_long * mmtoinch).toFixed(2)} X {(internal_width * mmtoinch).toFixed(2)} X {(internal_height * mmtoinch).toFixed(2)}</span>
+                                    <span className="pull-right float-right">in</span>
+                                  </div>
+                                </div>
+                                <div className="col-sm-3 col-xs-6 border-right weight d-none d-sm-block">
+                                  <div className="table-head bb-2-white">Weight</div>
+                                  <div className="product-val-mm">
+                                    <span className="value">{weight}</span>
+                                    <span className="pull-right float-right">kg</span>
+                                  </div>
+                                  <div className="product-val-inch">
+                                    <span className="value">{(weight * kgtolbs).toFixed(2)}</span>
+                                    <span className="pull-right float-right">lbs</span>
+                                  </div>
+                                </div>
+                                <div className="col-sm-3 col-xs-6 volumn">
+                                  <div className="table-head bb-2-white">Volume</div>
+                                  <div className="product-val-mm">
+                                    <span className="value">{volumn}</span>
+                                    <span className="pull-right float-right">Liters</span>
+                                  </div>
+                                  <div className="product-val-inch">
+                                    <span className="value">{(volumn * ltogal).toFixed(2)}</span>
+                                    <span className="pull-right float-right">Us gallon</span>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </Link>
+                    </div>
+                  </div>
+                )
+              })}
           </div>
         </section>
       </Layout>
@@ -71,6 +148,17 @@ export const FoldingcratePageQuery = graphql`
             title
             templateKey
             date(formatString: "MMMM DD, YYYY")
+            model
+            external_long
+            external_width
+            external_height
+            internal_long
+            internal_width
+            internal_height
+            folded_height
+            volumn
+            weight
+            images
           }
         }
       }

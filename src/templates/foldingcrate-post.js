@@ -7,7 +7,12 @@ import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
 import ImageGallery from 'react-image-gallery';
 import "react-image-gallery/styles/css/image-gallery.css";
-import { mmtoinch, kgtolbs, ltogal} from '../utils';
+import { 
+  mmtoinch, 
+  kgtolbs, 
+  ltogal,
+  aliResizeStyle_h_100
+} from '../utils';
 
 export const FoldingcratePostTemplate = ({
   content,
@@ -29,12 +34,11 @@ export const FoldingcratePostTemplate = ({
   images
 }) => {
   const PostContent = contentComponent || Content
-  let resizeStyle = '?x-oss-process=image/resize,h_100'
   if(images && images.length>0){
     images = images.map(item=>{
       let obj = {}
       obj.original = item
-      obj.thumbnail = item+resizeStyle
+      obj.thumbnail = item + aliResizeStyle_h_100
       return obj
     })
   }else{
