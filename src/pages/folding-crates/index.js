@@ -17,10 +17,18 @@ export default class FoldingcratePage extends React.Component {
     return (
       <Layout>
         <section className="section">
-          <div className="container">
-            <div className="content">
-              <h1 className="has-text-weight-bold is-size-2">Latest Stories</h1>
-            </div>
+          <div className="container-fluid">
+            <nav aria-label="breadcrumb">
+              <ol className="breadcrumb bg-white my-2">
+                <li className="breadcrumb-item">
+                  <Link to="/">
+                    Home
+                  </Link>
+                </li>
+                <li className="breadcrumb-item active" aria-current="page">Folding Crates</li>
+              </ol>
+            </nav>
+            
             {posts
               .map(({ node: post }) => {
                 const {
@@ -43,10 +51,9 @@ export default class FoldingcratePage extends React.Component {
                 return (
                   <div
                     className="content"
-                    style={{ border: '1px solid #eaecee', padding: '2em 4em' }}
                     key={post.id}
                   >
-                    <div className="col-xs-12 col-sm-9">
+                    <div className="col-xs-12">
                       <Link className="cat-product-link" to={post.fields.slug}>
                         <div className="product-wrap">
                           <div className="product-img-wrap">
@@ -56,7 +63,7 @@ export default class FoldingcratePage extends React.Component {
                           <div className="product-right">
                             <div className="product-name">
                               <div className="col-sm-12 py-1 clearfix">
-                                <h2 className="product-title text-capitalize d-inline-block mb-0 pl-1">{post.frontmatter.title}</h2>
+                                <h2 className="product-title text-capitalize text-truncate d-inline-block mb-0 pl-1">{post.frontmatter.title}</h2>
                                 <span className="btn btn-danger pull-right float-right product-cat-inquiry">Inquiry</span>
                                 <span className="btn btn-info product-model mr-1">Model: {model}</span>
                               </div>
@@ -116,6 +123,10 @@ export default class FoldingcratePage extends React.Component {
                   </div>
                 )
               })}
+
+            <div className="cat-desc">
+              <h4 className="">Folding crate description</h4>
+            </div>
           </div>
         </section>
       </Layout>
