@@ -7,7 +7,7 @@ import {
   kgtolbs,
   ltogal,
   aliResizeStyle_h_300
-} from '../utils';
+} from '../../utils';
 
 export default class FoldingcratePage extends React.Component {
   render() {
