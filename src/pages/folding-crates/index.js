@@ -50,7 +50,7 @@ export default class FoldingcratePage extends React.Component {
                 }
                 return (
                   <div
-                    className="content"
+                    className="clearfix mb-3"
                     key={post.id}
                   >
                     <div className="col-xs-12">
