@@ -31,7 +31,7 @@ export default class MainNavbar extends React.Component{
       <Navbar color="dark" dark expand="md">
         <NavbarBrand>
           <Link to="/" className="navbar-brand">
-                <figure className="image">
+                <figure className="image mb-0">
                   <img src={logo} alt="Kaldi" style={{ width: '88px' }} />
                 </figure>
           </Link>
@@ -46,25 +46,25 @@ export default class MainNavbar extends React.Component{
             </NavItem>
 
             <NavItem>
-              <Link className="nav-link" to="/folding-crates">
+              <Link className="nav-link" to="/folding-crates/">
                 Folding Crates
               </Link>
             </NavItem>
 
             <NavItem>
-              <Link className="nav-link" to="/contact">
+              <Link className="nav-link" to="/contact/">
                 Contact
               </Link>
             </NavItem>
 
             <NavItem>
-              <Link className="nav-link" to="/about">
+              <Link className="nav-link" to="/about/">
                 About
               </Link>
             </NavItem>
 
             <NavItem>
-              <Link className="nav-link" to="/contact/examples">
+              <Link className="nav-link" to="/contact/examples/">
                 Form Examples
               </Link>
             </NavItem>
