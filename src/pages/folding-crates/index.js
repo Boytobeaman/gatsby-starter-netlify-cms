@@ -37,8 +37,8 @@ export default class FoldingcratePage extends React.Component {
                   images
                 } = post.frontmatter;
                 let cat_image_url=''
-                if (images) {
-                  cat_image_url = post.frontmatter.images.split(",")[0] + aliResizeStyle_h_300
+                if (images && images.length > 0 ) {
+                  cat_image_url = post.frontmatter.images[0] + aliResizeStyle_h_300
                 }
                 return (
                   <div
