@@ -8,8 +8,8 @@ import './all.scss'
 
 
 const TemplateWrapper = ({ children }) => (
-  <div>
-    <Helmet title="Home | Gatsby + Netlify CMS" />
+  <div className="position-relative h-100" style={{paddingBottom: '40px'}}>
+    <Helmet title="Home | Moving Crates Supplier" />
     <MainNavbar />
     <div>{children}</div>
     <Footer />
