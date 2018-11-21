@@ -32,6 +32,7 @@ export default class FoldingcratePage extends React.Component {
             {posts
               .map(({ node: post }) => {
                 const {
+                  title,
                   model,
                   external_long,
                   external_width,
@@ -63,7 +64,7 @@ export default class FoldingcratePage extends React.Component {
                           <div className="product-right">
                             <div className="product-name">
                               <div className="col-sm-12 py-1 clearfix">
-                                <h2 className="product-title text-capitalize text-truncate d-inline-block mb-0 pl-1">{post.frontmatter.title}</h2>
+                                <h2 title={title} className="product-title text-capitalize text-truncate d-inline-block mb-0 pl-1">{title}</h2>
                                 <span className="btn btn-danger pull-right float-right product-cat-inquiry">Inquiry</span>
                                 <span className="btn btn-info product-model mr-1">Model: {model}</span>
                               </div>
