@@ -11,7 +11,7 @@ import {
   mmtoinch, 
   kgtolbs, 
   ltogal,
-  aliResizeStyle_h_100
+  aliResizeStyle_h_60
 } from '../utils';
 
 export const FoldingcratePostTemplate = ({
@@ -38,7 +38,7 @@ export const FoldingcratePostTemplate = ({
     images = images.map(item=>{
       let obj = {}
       obj.original = item
-      obj.thumbnail = item + aliResizeStyle_h_100
+      obj.thumbnail = item + aliResizeStyle_h_60
       return obj
     })
   }else{
