@@ -50,7 +50,7 @@ export default class Index extends React.Component {
               </ol>
             </nav>
             <div className="content p-3 bg-white">
-              <h1 className="h4">Contact us</h1>
+              <h1 className="h4">Contact us <span className="text-danger">(MOQ:300)</span></h1>
               <div className="row">
                 <div className="col-md-6">
                   <form
