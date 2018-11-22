@@ -102,22 +102,20 @@ export default class Index extends React.Component {
                   <h5>Location:</h5>
                   <div className="alert alert-secondary" role="alert">
                     <p className="mb-0">Room 1405, No.28 Moyu Road</p>
-                    <p>Anting county,Jiading District, Shanghai, China</p>
+                    <p className="mb-0">Anting county,Jiading District, Shanghai, China</p>
                   </div>
                   
                   <h5>Call: </h5>
                   <div className="alert alert-secondary" role="alert">
                     <p className="mb-0">(86)021-59117621</p>
-                    <p>(+)18217103917</p>
+                    <p className="mb-0">(+)18217103917</p>
                   </div>
                   
                   
                   <h5>Email: </h5>
-                  <div className="alert alert-secondary" role="alert">
-                    <p>
-                      <a className="btn btn-danger" href="mailto:seller006@joinplastic.com?subject=Inquiry about your plastic crate">seller006@joinplastic.com</a>
-                    </p>
-                  </div>
+                  <p>
+                    <a className="btn btn-danger" href="mailto:seller006@joinplastic.com?subject=Inquiry about your plastic crate">seller006@joinplastic.com</a>
+                  </p>
                 </div>
               </div>
             </div>
