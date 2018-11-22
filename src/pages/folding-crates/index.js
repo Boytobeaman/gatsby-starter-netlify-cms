@@ -6,7 +6,7 @@ import {
   mmtoinch,
   kgtolbs,
   ltogal,
-  aliResizeStyle_h_300
+  aliResizeStyle_h_200
 } from '../../utils';
 import './index.scss'
 export default class FoldingcratePage extends React.Component {
@@ -47,7 +47,7 @@ export default class FoldingcratePage extends React.Component {
                 } = post.frontmatter;
                 let cat_image_url=''
                 if (images && images.length > 0 ) {
-                  cat_image_url = post.frontmatter.images[0] + aliResizeStyle_h_300
+                  cat_image_url = post.frontmatter.images[0] + aliResizeStyle_h_200
                 }
                 return (
                   <div
