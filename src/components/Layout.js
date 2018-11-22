@@ -8,7 +8,7 @@ import './all.scss'
 
 
 const TemplateWrapper = ({ children }) => (
-  <div className="position-relative" style={{paddingBottom: '40px'}}>
+  <div className="position-relative" style={{paddingBottom: '55px'}}>
     <Helmet title="Home | Moving Crates Supplier" />
     <MainNavbar />
     <div>{children}</div>

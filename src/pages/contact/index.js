@@ -93,7 +93,7 @@ export default class Index extends React.Component {
                         <textarea className="textarea form-control" placeholder="Please tell us product details and your requirements" name={"message"} onChange={this.handleChange} id={"email"} required={true} />
                       </div>
                     </div>
-                    <div className="field form-group mb-1">
+                    <div className="field form-group">
                       <button className="button btn btn-danger is-link" type="submit">Send</button>
                     </div>
                   </form>
