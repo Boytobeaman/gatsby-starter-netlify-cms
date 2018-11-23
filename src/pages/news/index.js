@@ -46,7 +46,7 @@ export default class NewsIndexPage extends React.Component {
   }
 }
 
-IndexPage.propTypes = {
+NewsIndexPage.propTypes = {
   data: PropTypes.shape({
     allMarkdownRemark: PropTypes.shape({
       edges: PropTypes.array,
