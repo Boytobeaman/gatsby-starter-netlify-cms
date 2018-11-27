@@ -10,7 +10,7 @@ export default class IndexPage extends React.Component {
       <Layout>
         <section className="section">
           <div className="container">
-            <Slider />
+            
           </div>
         </section>
         <section>
