@@ -9,14 +9,14 @@ export default class IndexPage extends React.Component {
     return (
       <Layout>
         <div className="container-fluid">
-          <section className="section">
-              <div className="pt-2">
+          <section className="section my-3">
+              <div className="">
                 <Slider />
               </div>
             
           </section>
-          <section>
-            <div className="row mx-0 mt-5 border bg-light">
+          <section className="my-3">
+            <div className="row mx-0 border bg-light">
               <div className="col-sm-7 d-flex align-items-center justify-content-center">
                 <div className="text-sm-center">
                   <h2>Plastic Crates Manufacturer & Supplier</h2>
@@ -52,7 +52,7 @@ export default class IndexPage extends React.Component {
               </div>
             </div>
           </section>
-          <section className="my-5 border py-3 bg-light">
+          <section className="my-3 border pt-3 bg-light">
               <h4 className="text-center mb-4">We Provide Crates and Boxes For</h4>
               <div className="row text-center">
                   <div className="col-sm-12 col-md-4">
