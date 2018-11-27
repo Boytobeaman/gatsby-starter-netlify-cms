@@ -56,17 +56,17 @@ export default class IndexPage extends React.Component {
                 <div className="col-sm-12 col-md-4">
                   <h5 className="text-danger">Moving company</h5>
                   <img className="img-fluid px-4" src="https://lu-ali-us-west.oss-us-west-1.aliyuncs.com/static/moving-company.jpg" alt="" />
-                  <P className="p-4">Moving isn’t always great for the environment. Luckily, we provide <strong>plastic moving boxes</strong> for moving companies to make moving more planet-friendly.</P>
+                  <p className="p-4">Moving isn’t always great for the environment. Luckily, we provide <strong>plastic moving boxes</strong> for moving companies to make moving more planet-friendly.</p>
                 </div>
                 <div className="ol-sm-12 col-md-4">
                   <h5 className="text-danger">Retailers</h5>
                   <img className="img-fluid px-4" src="https://lu-ali-us-west.oss-us-west-1.aliyuncs.com/static/retails.jpg" alt="" />
-                  <P className="p-4">Retailers can enjoy the high quality and competitive price of our plastic products,and we had build a good relationship with retails across the world</P>
+                  <p className="p-4">Retailers can enjoy the high quality and competitive price of our plastic products,and we had build a good relationship with retails across the world</p>
                 </div>
                 <div className="ol-sm-12 col-md-4">
                   <h5 className="text-danger">Anyone</h5>
                   <img className="img-fluid px-4" src="https://lu-ali-us-west.oss-us-west-1.aliyuncs.com/static/anyboy.jpg" alt="" />
-                  <P className="p-4">We had supplied <strong>plastic crates</strong> for farms, schools, corporations and organizations.And we provide good Pre-and post-sales support for our customers</P>
+                  <p className="p-4">We had supplied <strong>plastic crates</strong> for farms, schools, corporations and organizations.And we provide good Pre-and post-sales support for our customers</p>
                 </div>
               </div>
         </section>
