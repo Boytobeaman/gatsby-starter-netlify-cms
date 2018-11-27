@@ -36,6 +36,14 @@ body>div>div>div{
   }
 }
 
+
+#homePageCatList{
+  .nav-item{
+    img{
+      width: 50px;
+    }
+  }
+}
 @media only screen and (max-width: 768px) {
   /* For mobile phones: */
   .image-gallery-slides{

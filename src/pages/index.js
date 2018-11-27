@@ -10,7 +10,7 @@ export default class IndexPage extends React.Component {
       <Layout>
         <section className="section">
           <div className="container">
-            
+            <Slider />
           </div>
         </section>
         <section>
@@ -20,21 +20,21 @@ export default class IndexPage extends React.Component {
                 <h2>Plastic Crates Manufacturer & Supplier</h2>
                 <div className="text-left">
                   <h6>JOINPLASTIC provide all kinds of plastic products,including:</h6>
-                  <ul className="nav flex-column">
+                  <ul className="nav flex-column" id="homePageCatList">
                     <li className="nav-item">
-                      <a className="nav-link text-danger font-weight-bold pb-0" href="#"><img className="" style="width:50px"
+                      <a className="nav-link text-danger font-weight-bold pb-0" href="#"><img className=""
                           alt="" /> Plastic Moving Crates</a>
                     </li>
                     <li className="nav-item"><a className="nav-link text-danger font-weight-bold pb-0" href="#">
-                        <img className="" style="width:50px" src="https://lu-ali-us-west.oss-us-west-1.aliyuncs.com/static/euro-stacking-crates.jpg"
+                        <img className="" src="https://lu-ali-us-west.oss-us-west-1.aliyuncs.com/static/euro-stacking-crates.jpg"
                           alt="" /> Euro Stacking Crates</a>
                     </li>
                     <li className="nav-item"><a className="nav-link text-danger font-weight-bold pb-0" href="#">
-                        <img className="" style="width:50px" src="https://lu-ali-us-west.oss-us-west-1.aliyuncs.com/static/folding-crates.jpg"
+                        <img className="" src="https://lu-ali-us-west.oss-us-west-1.aliyuncs.com/static/folding-crates.jpg"
                           alt="" /> Folding Crates</a>
                     </li>
                     <li className="nav-item"><a className="nav-link text-danger font-weight-bold pb-0" href="#">
-                        <img className="" style="width:50px" src="https://lu-ali-us-west.oss-us-west-1.aliyuncs.com/static/plastic-pallet-boxes.jpg"
+                        <img className="" src="https://lu-ali-us-west.oss-us-west-1.aliyuncs.com/static/plastic-pallet-boxes.jpg"
                           alt="" /> Plastic Pallet Boxes</a>
                     </li>
         
