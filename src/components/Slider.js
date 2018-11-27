@@ -11,17 +11,20 @@ const items = [
   {
     src: 'https://lu-ali-us-west.oss-us-west-1.aliyuncs.com/static/main-slider-attached-lid-container.jpg',
     altText: 'Attached Lid Container',
-    caption: 'Attached Lid Container'
+    srcset: 'https://lu-ali-us-west.oss-us-west-1.aliyuncs.com/static/main-slider-attached-lid-container.jpg?x-oss-process=image/resize,w_360 360w,https://lu-ali-us-west.oss-us-west-1.aliyuncs.com/static/main-slider-attached-lid-container.jpg?x-oss-process=image/resize,w_650 650w,https://lu-ali-us-west.oss-us-west-1.aliyuncs.com/static/main-slider-attached-lid-container.jpg?x-oss-process=image/resize,w_850 850w,https://lu-ali-us-west.oss-us-west-1.aliyuncs.com/static/main-slider-attached-lid-container.jpg?x-oss-process=image/resize,w_1200 1200w',
+    caption: ''
   },
   {
     src: 'https://lu-ali-us-west.oss-us-west-1.aliyuncs.com/static/main-slider-nesting-crates.jpg',
     altText: 'Nesting Crates',
-    caption: 'Nesting Crates'
+    srcset: 'https://lu-ali-us-west.oss-us-west-1.aliyuncs.com/static/main-slider-nesting-crates.jpg?x-oss-process=image/resize,w_360 360w,https://lu-ali-us-west.oss-us-west-1.aliyuncs.com/static/main-slider-nesting-crates.jpg?x-oss-process=image/resize,w_650 650w,https://lu-ali-us-west.oss-us-west-1.aliyuncs.com/static/main-slider-nesting-crates.jpg?x-oss-process=image/resize,w_850 850w,https://lu-ali-us-west.oss-us-west-1.aliyuncs.com/static/main-slider-nesting-crates.jpg?x-oss-process=image/resize,w_1200 1200w',
+    caption: ''
   },
   {
     src: 'https://lu-ali-us-west.oss-us-west-1.aliyuncs.com/static/main-slider-folding-crates.jpg',
     altText: 'Folding Crates',
-    caption: 'Folding Crates'
+    srcset: 'https://lu-ali-us-west.oss-us-west-1.aliyuncs.com/static/main-slider-folding-crates.jpg?x-oss-process=image/resize,w_360 360w,https://lu-ali-us-west.oss-us-west-1.aliyuncs.com/static/main-slider-folding-crates.jpg?x-oss-process=image/resize,w_650 650w,https://lu-ali-us-west.oss-us-west-1.aliyuncs.com/static/main-slider-folding-crates.jpg?x-oss-process=image/resize,w_850 850w,https://lu-ali-us-west.oss-us-west-1.aliyuncs.com/static/main-slider-folding-crates.jpg?x-oss-process=image/resize,w_1200 1200w',
+    caption: ''
   }
 ];
 
@@ -71,7 +74,7 @@ class Slider extends Component {
           onExited={this.onExited}
           key={item.src}
         >
-          <img src={item.src} alt={item.altText} />
+          <img className="w-100" src={item.src} alt={item.altText} srcset={item.srcset} />
           <CarouselCaption captionText={item.caption} captionHeader={item.caption} />
         </CarouselItem>
       );
