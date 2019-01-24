@@ -61,8 +61,8 @@ export const MovingcratePostTemplate = ({
               </Link>
             </li>
             <li className="breadcrumb-item">
-              <Link to="/folding-crates">
-                Folding Crates
+              <Link to="/moving-crates">
+                Moving Crates
               </Link>
             </li>
             <li className="breadcrumb-item active" aria-current="page">{title}</li>
@@ -231,7 +231,7 @@ FoldingcratePost.propTypes = {
 export default FoldingcratePost
 
 export const pageQuery = graphql`
-  query FoldingcratePostByID($id: String!) {
+  query MovingcratePostByID($id: String!) {
     markdownRemark(id: { eq: $id }) {
       id
       html
