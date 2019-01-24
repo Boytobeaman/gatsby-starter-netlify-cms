@@ -9,7 +9,7 @@ import {
   aliResizeStyle_h_200
 } from '../../utils';
 import '../../cat-page-style.scss'
-export default class FoldingcratePage extends React.Component {
+export default class MovingcratePage extends React.Component {
   render() {
     const { data } = this.props
     const { edges: posts } = data.allMarkdownRemark
@@ -25,7 +25,7 @@ export default class FoldingcratePage extends React.Component {
                     Home
                   </Link>
                 </li>
-                <li className="breadcrumb-item active" aria-current="page">Folding Crates</li>
+                <li className="breadcrumb-item active" aria-current="page">Moving Crates</li>
               </ol>
             </nav>
             
@@ -40,7 +40,6 @@ export default class FoldingcratePage extends React.Component {
                   internal_long,
                   internal_width,
                   internal_height,
-                  folded_height,
                   volumn,
                   weight,
                   images
@@ -135,7 +134,7 @@ export default class FoldingcratePage extends React.Component {
   }
 }
 
-FoldingcratePage.propTypes = {
+MovingcratePage.propTypes = {
   data: PropTypes.shape({
     allMarkdownRemark: PropTypes.shape({
       edges: PropTypes.array,
@@ -143,11 +142,11 @@ FoldingcratePage.propTypes = {
   }),
 }
 
-export const FoldingcratePageQuery = graphql`
-  query FoldingcrateIndexQuery {
+export const MovingcratePageQuery = graphql`
+  query MovingcrateIndexQuery {
     allMarkdownRemark(
       sort: { order: DESC, fields: [frontmatter___date] },
-      filter: { frontmatter: { templateKey: { eq: "foldingcrate-post" } }}
+      filter: { frontmatter: { templateKey: { eq: "movingcrate-post" } }}
     ) {
       edges {
         node {
@@ -167,7 +166,6 @@ export const FoldingcratePageQuery = graphql`
             internal_long
             internal_width
             internal_height
-            folded_height
             volumn
             weight
             images
