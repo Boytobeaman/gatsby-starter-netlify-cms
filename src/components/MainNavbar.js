@@ -28,7 +28,7 @@ export default class MainNavbar extends React.Component{
   }
   render() {
     return (
-      <Navbar color="dark" dark expand="md">
+      <Navbar color="dark" dark expand="md" id="mainNavbar">
         <NavbarBrand>
           <Link to="/" className="navbar-brand">
                 <figure className="image mb-0">
