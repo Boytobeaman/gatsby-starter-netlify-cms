@@ -24,6 +24,5 @@ images:
     http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/084670964b87434f8ad3b48684cf22cd.jpg
   - >-
     http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/40a6f2d7fdc941efb6cfdc59b1b84250.jpg
-  - ''
 ---
 body content
