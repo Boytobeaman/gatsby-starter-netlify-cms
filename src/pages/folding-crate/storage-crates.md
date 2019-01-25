@@ -9,7 +9,7 @@ external_height: '330'
 internal_long: '440'
 internal_width: '310'
 internal_height: '310'
-folded_height: '0'
+folded_height: N/A
 volumn: '42'
 weight: '3.35'
 date: 2019-01-25T14:36:05.581Z
