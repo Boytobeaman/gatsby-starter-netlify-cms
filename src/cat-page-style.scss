@@ -5,7 +5,10 @@
 .product-wrap{
   .product-img-wrap{
       float: left;
-      border: 1px solid #f6f6f6;
+      width: 300px;
+      height: 200px;
+      background-color: #fff;
+      text-align: center;
   }
   .product-right{
       .product-name {
@@ -24,7 +27,7 @@
       .product-attributes{
           .table-head {
               background: #dcddde;
-              padding: 10px 8px 8px;
+              padding: 8px;
               font-weight: bold;
           }
           .bb-2-white {

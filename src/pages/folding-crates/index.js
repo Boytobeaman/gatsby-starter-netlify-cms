@@ -58,7 +58,7 @@ export default class FoldingcratePage extends React.Component {
                       <Link className="cat-product-link" to={post.fields.slug}>
                         <div className="product-wrap">
                           <div className="product-img-wrap">
-                            <img width="300" height="200" src={cat_image_url}
+                            <img src={cat_image_url}
                               className="" alt={post.frontmatter.title} />
                           </div>
                           <div className="product-right">
