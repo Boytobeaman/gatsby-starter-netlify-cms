@@ -29,6 +29,5 @@ images:
     http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/084670964b87434f8ad3b48684cf22cd.jpg
   - >-
     http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/40a6f2d7fdc941efb6cfdc59b1b84250.jpg
-  - ''
 ---
 The coffee taster attempts to measure aspects of the coffee's taste, specifically the body (the texture or mouthfeel, such as oiliness), sweetness, acidity (a sharp and tangy feeling, like when biting into an orange), flavour (the characters in the cup), and aftertaste. Since coffee beans embody telltale flavours from the region where they were grown, cuppers may attempt to identify the coffee's origin.
