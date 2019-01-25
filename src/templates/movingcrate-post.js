@@ -61,7 +61,7 @@ export const MovingcratePostTemplate = ({
               </Link>
             </li>
             <li className="breadcrumb-item">
-              <Link to="/moving-crates">
+              <Link to="/moving-crates/">
                 Moving Crates
               </Link>
             </li>

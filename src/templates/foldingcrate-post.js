@@ -65,7 +65,7 @@ export const FoldingcratePostTemplate = ({
               </Link>
             </li>
             <li className="breadcrumb-item">
-              <Link to="/folding-crates">
+              <Link to="/folding-crates/">
                 Folding Crates
               </Link>
             </li>
