@@ -210,8 +210,6 @@ const FoldingcratePost = ({ data }) => {
         content={post.html}
         contentComponent={HTMLContent}
         description={post.frontmatter.description}
-        category={post.frontmatter.category}
-        source={post.frontmatter.source}
         model={post.frontmatter.model}
         external_long={post.frontmatter.external_long}
         external_width={post.frontmatter.external_width}
@@ -257,8 +255,6 @@ export const pageQuery = graphql`
         tags
         title
         description
-        category
-        source
         model
         external_long
         external_width
