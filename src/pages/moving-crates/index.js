@@ -70,7 +70,7 @@ export default class MovingcratePage extends React.Component {
                             </div>
                             <div className="product-attributes">
                               <div className="row no-gutters">
-                                <div className="col-sm-3 col-xs-6 border-right external-dimension">
+                                <div className="col-sm-3 col-xs-6 border-right border-white external-dimension">
                                   <div className="table-head bb-2-white">External Dimensions</div>
                                   <div className="product-val-mm">
                                     <span className="value">{external_long} X {external_width} X {external_height}</span>
@@ -81,7 +81,7 @@ export default class MovingcratePage extends React.Component {
                                     <span className="pull-right float-right">in</span>
                                   </div>
                                 </div>
-                                <div className="col-sm-3 col-xs-6 border-right internal-dimension d-none d-sm-block">
+                                <div className="col-sm-3 col-xs-6 border-right border-white internal-dimension d-none d-sm-block">
                                   <div className="table-head bb-2-white">Internal Dimensions</div>
                                   <div className="product-val-mm">
                                     <span className="value">{internal_long} X {internal_width} X {internal_height}</span>
@@ -92,7 +92,7 @@ export default class MovingcratePage extends React.Component {
                                     <span className="pull-right float-right">in</span>
                                   </div>
                                 </div>
-                                <div className="col-sm-3 col-xs-6 border-right weight d-none d-sm-block">
+                                <div className="col-sm-3 col-xs-6 border-right border-white weight d-none d-sm-block">
                                   <div className="table-head bb-2-white">Weight</div>
                                   <div className="product-val-mm">
                                     <span className="value">{weight}</span>
