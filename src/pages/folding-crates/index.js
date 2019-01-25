@@ -66,7 +66,7 @@ export default class FoldingcratePage extends React.Component {
                               <div className="col-sm-12 py-1 clearfix">
                                 <h2 title={title} className="product-title text-capitalize text-truncate d-inline-block mb-0 pl-1">{title}</h2>
                                 <span className="btn btn-danger pull-right float-right product-cat-inquiry">Inquiry</span>
-                                <span className="btn btn-info product-model mr-1">Model: {model}</span>
+                                <span className="badge badge-info product-model mr-1">Model: {model}</span>
                               </div>
                             </div>
                             <div className="product-attributes">
