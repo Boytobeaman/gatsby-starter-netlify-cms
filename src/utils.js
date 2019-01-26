@@ -8,3 +8,5 @@ export const aliResizeStyle_h_300 = '?x-oss-process=image/resize,h_300';
 export const aliResizeStyle_h_400 = '?x-oss-process=image/resize,h_400';
 export const aliResizeStyle_h_600 = '?x-oss-process=image/resize,h_600';
 export const aliResizeStyle_h_800 = '?x-oss-process=image/resize,h_800';
+export const aliResizeStyle_h_900 = '?x-oss-process=image/resize,h_900';
+export const aliResizeStyle_h_1024 = '?x-oss-process=image/resize,h_1024';

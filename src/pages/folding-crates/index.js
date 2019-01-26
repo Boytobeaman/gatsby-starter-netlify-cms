@@ -10,6 +10,8 @@ import {
   aliResizeStyle_h_300,
   aliResizeStyle_h_400,
   aliResizeStyle_h_600,
+  aliResizeStyle_h_800,
+  aliResizeStyle_h_900,
 } from '../../utils';
 import '../../cat-page-style.scss'
 export default class FoldingcratePage extends React.Component {
@@ -53,7 +55,7 @@ export default class FoldingcratePage extends React.Component {
                 if (images && images.length > 0 ) {
                   let the_image = post.frontmatter.images[0].replace("http:","https:")
                   cat_image_url = the_image + aliResizeStyle_h_200
-                  srcset=`${the_image}${aliResizeStyle_h_300} 300w, ${the_image}${aliResizeStyle_h_400} 400w, ${the_image}${aliResizeStyle_h_600} 600w, ${the_image} 700w`
+                  srcset=`${the_image}${aliResizeStyle_h_300} 300w, ${the_image}${aliResizeStyle_h_400} 400w, ${the_image}${aliResizeStyle_h_600} 600w,${the_image}${aliResizeStyle_h_800} 800w,${the_image}${aliResizeStyle_h_900} 900w,${the_image} 1024w`
                 }
                 return (
                   <div
