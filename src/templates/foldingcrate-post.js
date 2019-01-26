@@ -38,7 +38,10 @@ export const FoldingcratePostTemplate = ({
     images = images.map(item=>{
       let obj = {}
       obj.original = item
-      obj.thumbnail = item + aliResizeStyle_h_60
+      obj.srcSet = `${item}${aliResizeStyle_h_300} 300w, ${item}${aliResizeStyle_h_400} 400w, ${item}${aliResizeStyle_h_600} 600w,${item}${aliResizeStyle_h_800} 800w,${item}${aliResizeStyle_h_900} 900w,${item} 1024w`
+      obj.thumbnail = item + aliResizeStyle_h_80
+      obj.originalAlt = title
+      obj.originalTitle = title
       return obj
     })
   }else{
