@@ -97,9 +97,9 @@ export default class FoldingcratePage extends React.Component {
                                   </div>
                                 </div>
                               </div>
-                              <div className="col-sm-5">
+                              <div className="col-sm-5 d-none d-sm-block">
                                 <div className="row no-gutters">
-                                  <div className="col-sm-6 border-right border-white weight d-none d-sm-block">
+                                  <div className="col-sm-6 border-right border-white weight">
                                     <div className="table-head bb-2-white">Weight</div>
                                     <div className="product-val-mm">
                                       <span className="value">{weight}</span>
