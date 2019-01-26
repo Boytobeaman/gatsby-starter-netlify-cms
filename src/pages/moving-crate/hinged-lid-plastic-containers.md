@@ -25,7 +25,5 @@ images:
     http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/b895c3ca9f4442eb9b55694a1968ccca.jpg
   - >-
     http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/3b0ed21aab2241f68ebbe370fe39714d.jpg
-  - >-
-    http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/2de418385b364542b8f5d24064fc8e36.jpg
 ---
 hinged lid plastic containers
