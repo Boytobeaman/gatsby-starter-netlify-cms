@@ -97,7 +97,7 @@ export default class FoldingcratePage extends React.Component {
                                   </div>
                                 </div>
                               </div>
-                              <div className="col-sm-6">
+                              <div className="col-sm-5">
                                 <div className="row no-gutters">
                                   <div className="col-sm-6 border-right border-white weight d-none d-sm-block">
                                     <div className="table-head bb-2-white">Weight</div>
