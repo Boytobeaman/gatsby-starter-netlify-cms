@@ -12,6 +12,7 @@ import {
   aliResizeStyle_h_600,
   aliResizeStyle_h_800,
   aliResizeStyle_h_900,
+  aliResizeStyle_h_1200,
 } from '../../utils';
 import '../../cat-page-style.scss'
 export default class MovingcratePage extends React.Component {
