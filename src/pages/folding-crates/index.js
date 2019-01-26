@@ -46,8 +46,11 @@ export default class FoldingcratePage extends React.Component {
                   images
                 } = post.frontmatter;
                 let cat_image_url=''
+                let srcset=''
                 if (images && images.length > 0 ) {
-                  cat_image_url = post.frontmatter.images[0] + aliResizeStyle_h_200
+                  let the_image = post.frontmatter.images[0]
+                  cat_image_url = the_image + aliResizeStyle_h_200
+                  srcset=`${the_image}${aliResizeStyle_h_300} 300w, ${the_image}${aliResizeStyle_h_400} 400w, ${the_image}${aliResizeStyle_h_600} 600w, ${the_image} 700w`
                 }
                 return (
                   <div
@@ -58,7 +61,7 @@ export default class FoldingcratePage extends React.Component {
                       <Link className="cat-product-link" to={post.fields.slug}>
                         <div className="product-wrap">
                           <div className="product-img-wrap">
-                            <img src={cat_image_url}
+                            <img src={cat_image_url} srcset={srcset}
                               className="" alt={post.frontmatter.title} />
                           </div>
                           <div className="product-right">
