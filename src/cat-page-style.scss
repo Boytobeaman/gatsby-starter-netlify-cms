@@ -106,4 +106,12 @@
         font-size: 14px;
         height: 42px;
     }
+    .product-wrap .product-right .product-attributes .product-val-mm,
+    .product-wrap .product-right .product-attributes .product-val-inch {
+        line-height: 36px;
+        height: 36px;
+    }
+    .border-right.border-white {
+        border-right: none!important;
+    }
 }
