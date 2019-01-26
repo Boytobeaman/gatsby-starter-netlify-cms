@@ -11,7 +11,12 @@ import {
   mmtoinch, 
   kgtolbs, 
   ltogal,
-  aliResizeStyle_h_60
+  aliResizeStyle_h_80,
+  aliResizeStyle_h_300,
+  aliResizeStyle_h_400,
+  aliResizeStyle_h_600,
+  aliResizeStyle_h_800,
+  aliResizeStyle_h_900,
 } from '../utils';
 
 export const FoldingcratePostTemplate = ({
