@@ -6,7 +6,10 @@ import {
   mmtoinch,
   kgtolbs,
   ltogal,
-  aliResizeStyle_h_200
+  aliResizeStyle_h_200,
+  aliResizeStyle_h_300,
+  aliResizeStyle_h_400,
+  aliResizeStyle_h_600,
 } from '../../utils';
 import '../../cat-page-style.scss'
 export default class FoldingcratePage extends React.Component {
