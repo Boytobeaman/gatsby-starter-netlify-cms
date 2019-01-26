@@ -41,8 +41,10 @@ export const MovingcratePostTemplate = ({
   if(images && images.length>0){
     images = images.map(item=>{
       let obj = {}
+      item = item.replace("http:","https:")
       obj.original = item
       obj.srcSet = `${item}${aliResizeStyle_h_300} 300w, ${item}${aliResizeStyle_h_400} 400w, ${item}${aliResizeStyle_h_600} 600w,${item}${aliResizeStyle_h_800} 800w,${item}${aliResizeStyle_h_900} 900w,${item} 1024w`
+      obj.sizes = '100vh'
       obj.thumbnail = item + aliResizeStyle_h_80
       obj.originalAlt = title
       obj.originalTitle = title
