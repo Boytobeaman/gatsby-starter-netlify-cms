@@ -65,55 +65,67 @@ export default class MovingcratePage extends React.Component {
                               <div className="col-sm-12 py-1 clearfix">
                                 <h2 title={title} className="product-title text-capitalize text-truncate d-inline-block mb-0 pl-1">{title}</h2>
                                 <span className="btn btn-danger pull-right float-right product-cat-inquiry">Inquiry</span>
-                                <span className="badge badge-info product-model mr-1">Model: {model}</span>
+                                <span className="badge badge-info product-model mr-3">Model: {model}</span>
                               </div>
                             </div>
                             <div className="product-attributes">
                               <div className="row no-gutters">
-                                <div className="col-sm-3 col-xs-6 border-right border-white external-dimension">
-                                  <div className="table-head bb-2-white">External Dimensions</div>
-                                  <div className="product-val-mm">
-                                    <span className="value">{external_long} X {external_width} X {external_height}</span>
-                                    <span className="pull-right float-right">mm</span>
+                              <div className="col-sm-7">
+                                <div className="row no-gutters">
+                                  <div className="col-sm-6 border-right border-white external-dimension">
+                                    <div className="table-head bb-2-white">External Dimensions</div>
+                                    <div className="product-val-mm">
+                                      <span className="value">{external_long} X {external_width} X {external_height}</span>
+                                      <span className="pull-right float-right">mm</span>
+                                    </div>
+                                    <div className="product-val-inch">
+                                      <span className="value">{(external_long * mmtoinch).toFixed(2)} X {(external_width * mmtoinch).toFixed(2)} X {(external_height * mmtoinch).toFixed(2)}</span>
+                                      <span className="pull-right float-right">in</span>
+                                    </div>
                                   </div>
-                                  <div className="product-val-inch">
-                                    <span className="value">{(external_long * mmtoinch).toFixed(2)} X {(external_width * mmtoinch).toFixed(2)} X {(external_height * mmtoinch).toFixed(2)}</span>
-                                    <span className="pull-right float-right">in</span>
-                                  </div>
-                                </div>
-                                <div className="col-sm-3 col-xs-6 border-right border-white internal-dimension d-none d-sm-block">
-                                  <div className="table-head bb-2-white">Internal Dimensions</div>
-                                  <div className="product-val-mm">
-                                    <span className="value">{internal_long} X {internal_width} X {internal_height}</span>
-                                    <span className="pull-right float-right">mm</span>
-                                  </div>
-                                  <div className="product-val-inch">
-                                    <span className="value">{(internal_long * mmtoinch).toFixed(2)} X {(internal_width * mmtoinch).toFixed(2)} X {(internal_height * mmtoinch).toFixed(2)}</span>
-                                    <span className="pull-right float-right">in</span>
-                                  </div>
-                                </div>
-                                <div className="col-sm-3 col-xs-6 border-right border-white weight d-none d-sm-block">
-                                  <div className="table-head bb-2-white">Weight</div>
-                                  <div className="product-val-mm">
-                                    <span className="value">{weight}</span>
-                                    <span className="pull-right float-right">kg</span>
-                                  </div>
-                                  <div className="product-val-inch">
-                                    <span className="value">{(weight * kgtolbs).toFixed(2)}</span>
-                                    <span className="pull-right float-right">lbs</span>
+                                  <div className="col-sm-6 border-right border-white internal-dimension d-none d-sm-block">
+                                    <div className="table-head bb-2-white">Internal Dimensions</div>
+                                    <div className="product-val-mm">
+                                      <span className="value">{internal_long} X {internal_width} X {internal_height}</span>
+                                      <span className="pull-right float-right">mm</span>
+                                    </div>
+                                    <div className="product-val-inch">
+                                      <span className="value">{(internal_long * mmtoinch).toFixed(2)} X {(internal_width * mmtoinch).toFixed(2)} X {(internal_height * mmtoinch).toFixed(2)}</span>
+                                      <span className="pull-right float-right">in</span>
+                                    </div>
                                   </div>
                                 </div>
-                                <div className="col-sm-3 col-xs-6 volumn">
-                                  <div className="table-head bb-2-white">Volume</div>
-                                  <div className="product-val-mm">
-                                    <span className="value">{volumn}</span>
-                                    <span className="pull-right float-right">Liters</span>
+                              </div>
+                              <div className="col-sm-6">
+                                <div className="row no-gutters">
+                                  <div className="col-sm-6 border-right border-white weight d-none d-sm-block">
+                                    <div className="table-head bb-2-white">Weight</div>
+                                    <div className="product-val-mm">
+                                      <span className="value">{weight}</span>
+                                      <span className="pull-right float-right">kg</span>
+                                    </div>
+                                    <div className="product-val-inch">
+                                      <span className="value">{(weight * kgtolbs).toFixed(2)}</span>
+                                      <span className="pull-right float-right">lbs</span>
+                                    </div>
                                   </div>
-                                  <div className="product-val-inch">
-                                    <span className="value">{(volumn * ltogal).toFixed(2)}</span>
-                                    <span className="pull-right float-right">Us gallon</span>
+                                  <div className="col-sm-6 volumn">
+                                    <div className="table-head bb-2-white">Volume</div>
+                                    <div className="product-val-mm">
+                                      <span className="value">{volumn}</span>
+                                      <span className="pull-right float-right">Liters</span>
+                                    </div>
+                                    <div className="product-val-inch">
+                                      <span className="value">{(volumn * ltogal).toFixed(2)}</span>
+                                      <span className="pull-right float-right">Us gallon</span>
+                                    </div>
                                   </div>
                                 </div>
+                              </div>
+
+                                
+                                
+                                
                               </div>
                             </div>
                           </div>
