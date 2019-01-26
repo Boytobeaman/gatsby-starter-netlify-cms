@@ -76,11 +76,14 @@
               width: 100%;
               border-bottom: 1px solid #fff;
           }
-          .product-val-mm, 
-          .product-val-inch {
-              line-height: 30px;
-              height: 30px;
+          .product-attributes{
+            .product-val-mm, 
+            .product-val-inch {
+                line-height: 30px;
+                height: 30px;
+            }
           }
+          
           .table-head{
               padding: 5px;
               &.bb-2-white{
@@ -89,6 +92,9 @@
           }
           .product-model{
               float: left;
+          }
+          .border-right.border-white {
+            border-right: none!important;
           }
       }
   }
@@ -105,13 +111,5 @@
     .product-wrap .product-right .product-attributes .table-head {
         font-size: 14px;
         height: 42px;
-    }
-    .product-wrap .product-right .product-attributes .product-val-mm,
-    .product-wrap .product-right .product-attributes .product-val-inch {
-        line-height: 36px;
-        height: 36px;
-    }
-    .border-right.border-white {
-        border-right: none!important;
     }
 }
