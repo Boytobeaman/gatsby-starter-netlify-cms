@@ -21,7 +21,7 @@ collections:
   
   - name: "foldingCrate"
     label: "Folding Crate"
-    folder: "src/pages/folding-crate"
+    folder: "src/pages/folding-crates"
     create: true
     slug: "{{slug}}"
     fields:
@@ -44,7 +44,7 @@ collections:
       - {label: "Body", name: "body", widget: "markdown"}
   - name: "movingCrate"
     label: "Moving Crate"
-    folder: "src/pages/moving-crate"
+    folder: "src/pages/moving-crates"
     create: true
     slug: "{{slug}}"
     fields:
