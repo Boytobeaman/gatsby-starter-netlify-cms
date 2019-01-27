@@ -1,28 +1,33 @@
 ---
 templateKey: foldingcrate-post
 title: folding plastic containers
-description: folding plastic containers desc
-model: S602
-external_long: '365'
-external_width: '275'
-external_height: '160'
-internal_long: '325'
-internal_width: '240'
-internal_height: '145'
-folded_height: N/A
-volumn: '11.4'
-weight: '1'
-date: 2019-01-25T15:02:45.671Z
+description: |
+  folding plastic containers
+model: 6040330KW
+external_long: '600'
+external_width: '400'
+external_height: '330'
+internal_long: '560'
+internal_width: '360'
+internal_height: '315'
+folded_height: 'NULL'
+volumn: '63.5'
+weight: '2.18'
+date: 2019-01-27T03:46:23.425Z
 images:
   - >-
-    http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/01057b36caa14b62a0890b90925eba71.jpg
+    http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/a4597984739a4610b258ac90ef4b56dc.jpg
   - >-
-    http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/1d92fc489141474698e019a571772ffc.jpg
+    http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/26bad28944324488bfd99183f6633707.jpg
   - >-
-    http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/b8d8ac5e6a004de4a2a0907488eb414b.jpg
+    http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/75bcc968ddd44352a19567856e808aba.jpg
   - >-
-    http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/084670964b87434f8ad3b48684cf22cd.jpg
+    http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/a2981ed8563b4b9091b96eec61f28f82.jpg
   - >-
-    http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/40a6f2d7fdc941efb6cfdc59b1b84250.jpg
+    http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/1757cbd752ba4d8ba34500a6753e182a.jpg
+  - >-
+    http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/57264fab8b7f4acb86beebb0580a73eb.jpg
+  - >-
+    http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/8c9be77da56c4d228da0525239337b31.jpg
 ---
-body content
+desc
