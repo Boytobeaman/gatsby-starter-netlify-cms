@@ -22,6 +22,10 @@ export default class FoldingcratePage extends React.Component {
     return (
       <Layout>
         <section className="section">
+          <Helmet>
+            <title>{`Plastic Collapsible Crates Manufacturer & Supplier | collapsible box`}</title>
+            <meta name="description" content={`Wholesale Collapsible plastic crates/containers which are suitable for the storage and handling of goods. The folding crate can be folded and reused indefinitely`} />
+          </Helmet>
           <div className="container-fluid">
             <nav aria-label="breadcrumb">
               <ol className="breadcrumb bg-white my-2">

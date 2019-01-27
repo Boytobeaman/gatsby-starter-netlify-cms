@@ -23,6 +23,10 @@ export default class MovingcratePage extends React.Component {
     return (
       <Layout>
         <section className="section">
+        <Helmet>
+            <title>{`Plastic Moving Crates Manufacturer & Supplier | Moving box for sale`}</title>
+            <meta name="description" content={`Wholesale Plastic moving boxes,moving crates for sale, make your move as environmentally-friendly as possible`} />
+          </Helmet>
           <div className="container-fluid">
             <nav aria-label="breadcrumb">
               <ol className="breadcrumb bg-white my-2">

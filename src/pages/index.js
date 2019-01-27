@@ -1,4 +1,5 @@
 import React from 'react'
+import Helmet from 'react-helmet'
 import PropTypes from 'prop-types'
 import { Link, graphql } from 'gatsby'
 import Layout from '../components/Layout'
@@ -9,11 +10,14 @@ export default class IndexPage extends React.Component {
     return (
       <Layout>
         <div className="container-fluid">
+          <Helmet>
+            <title>{`Plastic Crates Manufacturer & Supplier | Moving box`}</title>
+            <meta name="description" content={`JOINPLASTIC is a Plastic Crate manufacturers and suppliers from China,we wholesale a wide range of products which include plastic moving boxes, collapsible plastic crates, fruits crate, stacking crates, attached lid containers, heavy duty crates, pallets, dollies`} />
+          </Helmet>
           <section className="section my-3">
               <div className="">
                 <Slider />
               </div>
-            
           </section>
           <section className="my-3">
             <div className="row mx-0 border bg-light">
