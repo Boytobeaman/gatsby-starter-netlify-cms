@@ -18,6 +18,16 @@ import {
 } from '../../utils';
 import '../../cat-page-style.scss'
 export default class MovingcratePage extends React.Component {
+  constructor(props){
+    super(props);
+    this.toContactUs = this.toContactUs.bind(this);
+  }
+  toContactUs(e){
+      e.preventDefault();
+      navigateTo(contact_url)
+      return false
+  
+  }
   render() {
     const { data } = this.props
     const { edges: posts } = data.allMarkdownRemark
@@ -79,7 +89,7 @@ export default class MovingcratePage extends React.Component {
                             <div className="product-name">
                               <div className="col-sm-12 py-1 clearfix">
                                 <h2 title={title} className="product-title text-capitalize text-truncate d-inline-block mb-0 pl-1">{title}</h2>
-                                <span className="btn btn-danger pull-right float-right product-cat-inquiry" onClick={()=>navigateTo(contact_url)}>Inquiry</span>
+                                <span className="btn btn-danger pull-right float-right product-cat-inquiry" onClick={this.toContactUs}>Inquiry</span>
                                 <span className="badge badge-info product-model mr-3">Model: {model}</span>
                               </div>
                             </div>
