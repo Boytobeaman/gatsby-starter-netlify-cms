@@ -1,8 +1,8 @@
 ---
 templateKey: foldingcrate-post
-title: white collapsible storage box
+title: folding storage basket
 description: |
-  white collapsible storage box
+  folding storage basket
 model: 6040255KW
 external_long: '600'
 external_width: '400'

@@ -1,7 +1,7 @@
 ---
 templateKey: foldingcrate-post
-title: mainstays folding crate
-description: mainstays folding crate
+title: folding box plastic
+description: folding box plastic
 model: '6545435'
 external_long: '650'
 external_width: '450'

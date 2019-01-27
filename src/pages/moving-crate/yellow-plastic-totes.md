@@ -1,8 +1,8 @@
 ---
 templateKey: movingcrate-post
-title: red plastic totes
+title: yellow plastic totes
 description: |
-  red plastic totes
+  yellow plastic totes
 model: '560'
 external_long: '600'
 external_width: '400'

@@ -1,8 +1,8 @@
 ---
 templateKey: movingcrate-post
-title: white storage boxes with lids
+title: green storage boxes with lids
 description: |
-  white storage boxes with lids
+  green storage boxes with lids
 model: '6428'
 external_long: '600'
 external_width: '400'
