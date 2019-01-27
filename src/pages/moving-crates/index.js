@@ -1,5 +1,6 @@
 import React from 'react'
 import Helmet from 'react-helmet'
+import { navigateTo } from "gatsby-link";
 import PropTypes from 'prop-types'
 import { Link, graphql } from 'gatsby'
 import Layout from '../../components/Layout'
@@ -13,7 +14,7 @@ import {
   aliResizeStyle_h_600,
   aliResizeStyle_h_800,
   aliResizeStyle_h_900,
-  aliResizeStyle_h_1200,
+  contact_url
 } from '../../utils';
 import '../../cat-page-style.scss'
 export default class MovingcratePage extends React.Component {
@@ -78,7 +79,7 @@ export default class MovingcratePage extends React.Component {
                             <div className="product-name">
                               <div className="col-sm-12 py-1 clearfix">
                                 <h2 title={title} className="product-title text-capitalize text-truncate d-inline-block mb-0 pl-1">{title}</h2>
-                                <span className="btn btn-danger pull-right float-right product-cat-inquiry">Inquiry</span>
+                                <span className="btn btn-danger pull-right float-right product-cat-inquiry" onClick={()=>navigateTo(contact_url)}>Inquiry</span>
                                 <span className="badge badge-info product-model mr-3">Model: {model}</span>
                               </div>
                             </div>

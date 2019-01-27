@@ -9,6 +9,7 @@ export default () => (
             <div className="content">
                 <h1>Thank you!</h1>
                 <p>We will check the email and come back to you as soon as possible!</p>
+                <button type="button" onClick={()=>window.history.back()} class="btn btn-danger mr-3">Back</button>
                 <button type="button" onClick={()=>navigateTo('/')} class="btn btn-danger">Back To Homepage</button>
             </div>
           </div>

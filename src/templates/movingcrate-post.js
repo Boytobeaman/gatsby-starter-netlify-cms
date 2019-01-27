@@ -1,5 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import { navigateTo } from "gatsby-link";
 import { kebabCase } from 'lodash'
 import Helmet from 'react-helmet'
 import { graphql, Link } from 'gatsby'
@@ -19,6 +20,7 @@ import {
   aliResizeStyle_w_900,
   aliResizeStyle_w_1024,
   aliResizeStyle_w_1200,
+  contact_url
 } from '../utils';
 
 export const MovingcratePostTemplate = ({
@@ -96,7 +98,7 @@ export const MovingcratePostTemplate = ({
             </h1>
             <table className="table table-hover table-bordered single-product-attr">
               <caption>
-                  <button className="btn btn-danger btn-block product-inquiry">Request a Free Quote</button>
+                  <button className="btn btn-danger btn-block product-inquiry" onClick={()=>navigateTo(contact_url)}>Request a Free Quote</button>
               </caption>
               <tbody>
                   <tr>
