@@ -1,8 +1,8 @@
 ---
 templateKey: foldingcrate-post
-title: collapsible rolling crate
+title: collapsible plastic totes
 description: |
-  collapsible rolling crate
+  collapsible plastic totes
 model: '6428 new '
 external_long: '600'
 external_width: '400'
