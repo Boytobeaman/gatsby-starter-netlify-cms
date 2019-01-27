@@ -12,13 +12,13 @@ import {
   kgtolbs, 
   ltogal,
   aliResizeStyle_h_120,
-  aliResizeStyle_h_300,
-  aliResizeStyle_h_400,
-  aliResizeStyle_h_600,
-  aliResizeStyle_h_800,
-  aliResizeStyle_h_900,
-  aliResizeStyle_h_1024,
-  aliResizeStyle_h_1200,
+  aliResizeStyle_w_300,
+  aliResizeStyle_w_400,
+  aliResizeStyle_w_600,
+  aliResizeStyle_w_800,
+  aliResizeStyle_w_900,
+  aliResizeStyle_w_1024,
+  aliResizeStyle_w_1200,
 } from '../utils';
 
 export const FoldingcratePostTemplate = ({
@@ -46,7 +46,7 @@ export const FoldingcratePostTemplate = ({
       let obj = {}
       item = item.replace("http:","https:")
       obj.original = item
-      obj.srcSet = `${item}${aliResizeStyle_h_300} 300w, ${item}${aliResizeStyle_h_400} 400w, ${item}${aliResizeStyle_h_600} 600w,${item}${aliResizeStyle_h_800} 800w,${item}${aliResizeStyle_h_900} 900w,${item}${aliResizeStyle_h_1024} 1024w,${item}${aliResizeStyle_h_1200} 1200w`
+      obj.srcSet = `${item}${aliResizeStyle_w_300} 300w, ${item}${aliResizeStyle_w_400} 400w, ${item}${aliResizeStyle_w_600} 600w,${item}${aliResizeStyle_w_800} 800w,${item}${aliResizeStyle_w_900} 900w,${item}${aliResizeStyle_w_1024} 1024w,${item}${aliResizeStyle_w_1200} 1200w`
       obj.sizes = '(max-width: 767px) 100vw, 600px'
       obj.thumbnail = item + aliResizeStyle_h_120
       obj.originalAlt = title
