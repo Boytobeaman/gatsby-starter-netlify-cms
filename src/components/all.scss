@@ -13,6 +13,7 @@ body>div>div>div{
 .image-gallery-slides{
   min-height: 400px;
   background-color: #fff;
+  padding: 0 80px;
 }
 .pull-right{
   float: right;
@@ -53,8 +54,9 @@ body>div>div>div{
   }
 }
 @media only screen and (max-width: 768px) {
-  /* For mobile phones: */
+  /* For mobile phones and tablets: */
   .image-gallery-slides{
     min-height: 200px;
+    padding: 0 50px;
   }
 }
