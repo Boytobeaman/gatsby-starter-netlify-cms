@@ -4,6 +4,7 @@ export const ltogal = 0.26417;
 export const aliResizeStyle_h_60 = '?x-oss-process=image/resize,h_60';
 export const aliResizeStyle_h_80 = '?x-oss-process=image/resize,h_80';
 export const aliResizeStyle_h_100 = '?x-oss-process=image/resize,h_100';
+export const aliResizeStyle_h_120 = '?x-oss-process=image/resize,h_120';
 export const aliResizeStyle_h_200 = '?x-oss-process=image/resize,h_200';
 export const aliResizeStyle_h_300 = '?x-oss-process=image/resize,h_300';
 export const aliResizeStyle_h_400 = '?x-oss-process=image/resize,h_400';
