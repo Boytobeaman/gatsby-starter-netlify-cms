@@ -6,9 +6,10 @@ import {
   CarouselIndicators,
   CarouselCaption
 } from 'reactstrap';
-let image_one =`https://lu-ali-us-west.oss-us-west-1.aliyuncs.com/static/main-slider-attached-lid-container.jpg`
-let image_two = `https://lu-ali-us-west.oss-us-west-1.aliyuncs.com/static/main-slider-nesting-crates.jpg`
-let image_three = `https://lu-ali-us-west.oss-us-west-1.aliyuncs.com/static/main-slider-folding-crates.jpg`
+import { cdn_url } from '../utils'
+let image_one =`${cdn_url}/static/main-slider-attached-lid-container.jpg`
+let image_two = `${cdn_url}/static/main-slider-nesting-crates.jpg`
+let image_three = `${cdn_url}/static/main-slider-folding-crates.jpg`
 const items = [
   {
     src: `${image_one}`,
