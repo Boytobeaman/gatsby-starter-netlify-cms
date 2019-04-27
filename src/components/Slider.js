@@ -6,30 +6,33 @@ import {
   CarouselIndicators,
   CarouselCaption
 } from 'reactstrap';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 import { cdn_url } from '../utils'
 let image_one =`${cdn_url}/static/main-slider-attached-lid-container.jpg`
 let image_two = `${cdn_url}/static/main-slider-nesting-crates.jpg`
 let image_three = `${cdn_url}/static/main-slider-folding-crates.jpg`
-const items = [
+let items = [
   {
     src: `${image_one}`,
     altText: 'Attached Lid Container',
-    srcset: `${image_one}?x-oss-process=image/resize,w_360 360w,${image_one}?x-oss-process=image/resize,w_650 650w,${image_one}?x-oss-process=image/resize,w_850 850w,${image_one}?x-oss-process=image/resize,w_1000 1000w,${image_one}?x-oss-process=image/resize,w_1200 1200w`,
     caption: ''
   },
   {
     src: `${image_two}`,
     altText: 'Nesting Crates',
-    srcset: `${image_two}?x-oss-process=image/resize,w_360 360w,${image_two}?x-oss-process=image/resize,w_650 650w,${image_two}?x-oss-process=image/resize,w_850 850w,${image_two}?x-oss-process=image/resize,w_1000 1000w,${image_two}?x-oss-process=image/resize,w_1200 1200w`,
     caption: ''
   },
   {
     src: `${image_three}`,
     altText: 'Folding Crates',
-    srcset: `${image_three}?x-oss-process=image/resize,w_360 360w,${image_three}?x-oss-process=image/resize,w_650 650w,${image_three}?x-oss-process=image/resize,w_850 850w,${image_three}?x-oss-process=image/resize,w_1000 1000w,${image_three}?x-oss-process=image/resize,w_1200 1200w`,
     caption: ''
   }
 ];
+items = items.forEach(item=>{
+  item.srcset = `${item.src}?x-oss-process=image/resize,w_360 360w,${item.src}?x-oss-process=image/resize,w_650 650w,${item.src}?x-oss-process=image/resize,w_850 850w,${item.src}?x-oss-process=image/resize,w_1000 1000w,${item.src}?x-oss-process=image/resize,w_1200 1200w`
+  item.placeholderImg = `${item.src}?x-oss-process=image/resize,w_50`
+})
 
 class Slider extends Component {
   constructor(props) {
@@ -77,7 +80,14 @@ class Slider extends Component {
           onExited={this.onExited}
           key={item.src}
         >
-          <img className="w-100" src={item.src} alt={item.altText} srcset={item.srcset} sizes="100vw" />
+          <LazyLoadImage 
+            className="w-100" 
+            src={item.src}
+            placeholderSrc={placeholderImg}
+            effect="blur"
+            alt={item.altText} 
+            srcset={item.srcset} 
+            sizes="100vw" />
           <CarouselCaption captionText={item.caption} captionHeader={item.caption} />
         </CarouselItem>
       );
