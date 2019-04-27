@@ -1,0 +1,13 @@
+
+.carousel{
+  .carousel-item{
+    min-height: 400px;
+    @media screen and (max-width: 768px) {
+      min-height: 120px;
+    }
+    .lazy-load-image-background.blur{
+      width: 100%;
+      height: 100%;
+    }
+  }
+}

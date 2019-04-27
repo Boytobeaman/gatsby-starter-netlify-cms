@@ -8,6 +8,7 @@ import {
 } from 'reactstrap';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
+import './slider.scss'
 import { cdn_url } from '../utils'
 let image_one =`${cdn_url}/static/main-slider-attached-lid-container.jpg`
 let image_two = `${cdn_url}/static/main-slider-nesting-crates.jpg`
