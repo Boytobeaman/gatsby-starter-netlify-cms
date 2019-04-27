@@ -83,7 +83,7 @@ export default class MovingcratePage extends React.Component {
                       <Link className="cat-product-link" to={post.fields.slug}>
                         <div className="product-wrap">
                           <div className="product-img-wrap">
-                            <LazyLoad height={200}>
+                            <LazyLoad height={200} offset={100}>
                               <img src={cat_image_url} srcset={srcset} sizes="(max-width: 300px) 100vw, 300px"
                               className="" alt={post.frontmatter.title} />
                             </LazyLoad>
