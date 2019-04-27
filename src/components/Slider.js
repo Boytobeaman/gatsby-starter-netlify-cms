@@ -29,7 +29,7 @@ let items = [
     caption: ''
   }
 ];
-items = items.forEach(item=>{
+items.forEach(item=>{
   item.srcset = `${item.src}?x-oss-process=image/resize,w_360 360w,${item.src}?x-oss-process=image/resize,w_650 650w,${item.src}?x-oss-process=image/resize,w_850 850w,${item.src}?x-oss-process=image/resize,w_1000 1000w,${item.src}?x-oss-process=image/resize,w_1200 1200w`
   item.placeholderImg = `${item.src}?x-oss-process=image/resize,w_50`
 })
