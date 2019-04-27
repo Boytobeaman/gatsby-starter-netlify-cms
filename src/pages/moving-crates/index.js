@@ -9,6 +9,7 @@ import {
   mmtoinch,
   kgtolbs,
   ltogal,
+  aliResizeStyle_h_20,
   aliResizeStyle_h_200,
   aliResizeStyle_h_300,
   aliResizeStyle_h_400,
@@ -69,9 +70,11 @@ export default class MovingcratePage extends React.Component {
                 } = post.frontmatter;
                 let cat_image_url=''
                 let srcset=''
+                let placeholderImg=''
                 if (images && images.length > 0 ) {
                   let the_image = post.frontmatter.images[0].replace("http:","https:")
                   cat_image_url = the_image + aliResizeStyle_h_200
+                  placeholderImg = the_image + aliResizeStyle_h_20
                   srcset=`${the_image}${aliResizeStyle_h_300} 300w, ${the_image}${aliResizeStyle_h_400} 400w, ${the_image}${aliResizeStyle_h_600} 600w,${the_image}${aliResizeStyle_h_800} 800w,${the_image}${aliResizeStyle_h_900} 900w,${the_image} 1024w`
                 }
                 return (
@@ -84,7 +87,7 @@ export default class MovingcratePage extends React.Component {
                         <div className="product-wrap">
                           <div className="product-img-wrap">
                             <LazyLoad height={200} offset={100}>
-                              <img src={cat_image_url} srcset={srcset} sizes="(max-width: 300px) 100vw, 300px"
+                              <img src={cat_image_url} placeholderSrc={placeholderImg} srcset={srcset} sizes="(max-width: 300px) 100vw, 300px"
                               className="" alt={post.frontmatter.title} />
                             </LazyLoad>
                           </div>

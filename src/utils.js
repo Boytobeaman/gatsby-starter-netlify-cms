@@ -3,6 +3,7 @@ export const kgtolbs = 2.20462262;
 export const ltogal = 0.26417;
 export const contact_url = '/contact/';
 export const cdn_url = 'https://static.movingbox.cn';
+export const aliResizeStyle_h_20 = '?x-oss-process=image/resize,h_20';
 export const aliResizeStyle_h_60 = '?x-oss-process=image/resize,h_60';
 export const aliResizeStyle_h_80 = '?x-oss-process=image/resize,h_80';
 export const aliResizeStyle_h_100 = '?x-oss-process=image/resize,h_100';
