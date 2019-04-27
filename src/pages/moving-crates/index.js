@@ -3,6 +3,7 @@ import Helmet from 'react-helmet'
 import { navigateTo } from "gatsby-link";
 import PropTypes from 'prop-types'
 import { Link, graphql } from 'gatsby'
+import LazyLoad from 'react-lazyload';
 import Layout from '../../components/Layout'
 import {
   mmtoinch,
@@ -82,8 +83,10 @@ export default class MovingcratePage extends React.Component {
                       <Link className="cat-product-link" to={post.fields.slug}>
                         <div className="product-wrap">
                           <div className="product-img-wrap">
-                            <img src={cat_image_url} srcset={srcset} sizes="(max-width: 300px) 100vw, 300px"
+                            <LazyLoad height={200}>
+                              <img src={cat_image_url} srcset={srcset} sizes="(max-width: 300px) 100vw, 300px"
                               className="" alt={post.frontmatter.title} />
+                            </LazyLoad>
                           </div>
                           <div className="product-right">
                             <div className="product-name">
