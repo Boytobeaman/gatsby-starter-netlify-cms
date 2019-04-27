@@ -83,7 +83,7 @@ class Slider extends Component {
           <LazyLoadImage 
             className="w-100" 
             src={item.src}
-            placeholderSrc={placeholderImg}
+            placeholderSrc={item.placeholderImg}
             effect="blur"
             alt={item.altText} 
             srcset={item.srcset} 
