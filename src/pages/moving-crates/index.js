@@ -13,10 +13,12 @@ import {
   aliResizeStyle_h_20,
   aliResizeStyle_h_200,
   aliResizeStyle_h_300,
-  aliResizeStyle_h_400,
-  aliResizeStyle_h_600,
-  aliResizeStyle_h_800,
-  aliResizeStyle_h_900,
+  aliResizeStyle_w_400,
+  aliResizeStyle_w_600,
+  aliResizeStyle_w_800,
+  aliResizeStyle_w_900,
+  aliResizeStyle_w_1024,
+  aliResizeStyle_w_1200,
   contact_url
 } from '../../utils';
 import '../../cat-page-style.scss'
@@ -76,7 +78,14 @@ export default class MovingcratePage extends React.Component {
                   let the_image = post.frontmatter.images[0].replace("http:","https:")
                   cat_image_url = the_image + aliResizeStyle_h_200
                   placeholderImg = the_image + aliResizeStyle_h_20
-                  srcset=`${the_image}${aliResizeStyle_h_300} 300w, ${the_image}${aliResizeStyle_h_400} 400w, ${the_image}${aliResizeStyle_h_600} 600w,${the_image}${aliResizeStyle_h_800} 800w,${the_image}${aliResizeStyle_h_900} 900w,${the_image} 1024w`
+                  srcset=`
+                    ${the_image}${aliResizeStyle_h_300} 300w, 
+                    ${the_image}${aliResizeStyle_w_400} 400w, 
+                    ${the_image}${aliResizeStyle_w_600} 600w,
+                    ${the_image}${aliResizeStyle_w_800} 800w,
+                    ${the_image}${aliResizeStyle_w_900} 900w,
+                    ${the_image}${aliResizeStyle_w_1024} 1024w,
+                    ${the_image}${aliResizeStyle_w_1200} 1200w`
                 }
                 return (
                   <div
