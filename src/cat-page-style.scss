@@ -14,8 +14,11 @@
       background-color: #fff;
       text-align: center;
       img{
-        max-width: 300px;
-        max-height: 200px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 100%;
+        transform: translate(-50%,-50%);
       }
       .lazy-load-image-background.blur{
         width: 100%;
