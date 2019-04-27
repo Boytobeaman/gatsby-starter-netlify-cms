@@ -59,15 +59,7 @@ const ProductDetailTemplate = ({
   }else{
 
   }
-  if (!weight) {
-    weight = NaN
-  }
-  if (!folded_height) {
-    folded_height = NaN
-  }
-  if (!volumn) {
-    volumn = NaN
-  }
+
   return (
     <section className="section">
       {helmet || ''}
@@ -140,49 +132,52 @@ const ProductDetailTemplate = ({
                       <span className="pull-right">in</span>
                     </td>
                   </tr>
-                  <tr>
-                    <td>
-                      <h6>Folded Height</h6>
-                    </td>
-                    <td className="internal-dimension">
-                      <span className="mm pull-left value">{folded_height}</span>
-                      <span className="pull-right">mm</span>
-                      <hr className="w-100 mt-4 mb-0" />
-                      <span className="inch pull-left value">{(folded_height * mmtoinch).toFixed(2)}</span>
-                      <span className="pull-right">in</span>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <h6>Weight</h6>
-                    </td>
-                    <td className="internal-dimension">
-                      <span className="kg pull-left value">{weight}</span>
-                      <span className="pull-right">kg</span>
-                      <hr className="w-100 mt-4 mb-0" />
-                      <span className="lbs pull-left value">{(weight * kgtolbs).toFixed(2)}</span>
-                      <span className="pull-right">lbs</span>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <h6>Volumn</h6>
-                    </td>
-                    <td className="internal-dimension">
-                      <span className="liters pull-left value">{volumn}</span>
-                      <span className="pull-right">Liters</span>
-                      <hr className="w-100 mt-4 mb-0" />
-                      <span className="gallon pull-left value">{(volumn * ltogal).toFixed(2) }</span>
-                      <span className="pull-right">Us gallon</span>
-                    </td>
-                  </tr>
+                  {folded_height && (
+                    <tr>
+                      <td>
+                        <h6>Folded Height</h6>
+                      </td>
+                      <td className="internal-dimension">
+                        <span className="mm pull-left value">{folded_height}</span>
+                        <span className="pull-right">mm</span>
+                        <hr className="w-100 mt-4 mb-0" />
+                        <span className="inch pull-left value">{(folded_height * mmtoinch).toFixed(2)}</span>
+                        <span className="pull-right">in</span>
+                      </td>
+                    </tr>
+                  )}
+                  {weight && (
+                    <tr>
+                      <td>
+                        <h6>Weight</h6>
+                      </td>
+                      <td className="internal-dimension">
+                        <span className="kg pull-left value">{weight}</span>
+                        <span className="pull-right">kg</span>
+                        <hr className="w-100 mt-4 mb-0" />
+                        <span className="lbs pull-left value">{(weight * kgtolbs).toFixed(2)}</span>
+                        <span className="pull-right">lbs</span>
+                      </td>
+                    </tr>
+                  )}
+                  {volumn && (
+                    <tr>
+                      <td>
+                        <h6>Volumn</h6>
+                      </td>
+                      <td className="internal-dimension">
+                        <span className="liters pull-left value">{volumn}</span>
+                        <span className="pull-right">Liters</span>
+                        <hr className="w-100 mt-4 mb-0" />
+                        <span className="gallon pull-left value">{(volumn * ltogal).toFixed(2) }</span>
+                        <span className="pull-right">Us gallon</span>
+                      </td>
+                    </tr>
+                  )}
               </tbody>
             </table>
             <p>{description}</p>
           </div>
-          
-
-          
         </div>
       </div>
 
