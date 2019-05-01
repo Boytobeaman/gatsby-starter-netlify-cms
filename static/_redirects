@@ -1,1 +1,11 @@
+
+#redirect paths like /mynews/2004/01/10/my-story to /blog/2004/01/10/my-story
+/mynews/*  /blog/:splat
+
+
 /home         /homepage              301
+
+
+#old joinplastic.com product category redirects
+/products/attached-lid-containers/attached-lid-containers.php /moving-crates/ 301
+/products/foldableBox/foldablePlasticCrates.php /folding-crates/ 301
