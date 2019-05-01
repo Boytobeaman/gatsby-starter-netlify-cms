@@ -56,6 +56,11 @@ export default class MainNavbar extends React.Component{
               </Link>
             </NavItem>
             <NavItem>
+              <Link className="nav-link" to="/euro-stacking-containers/">
+                Euro Containers
+              </Link>
+            </NavItem>
+            <NavItem>
               <Link className="nav-link" to="/contact/">
                 Contact
               </Link>
