@@ -23,3 +23,12 @@ export const aliResizeStyle_w_800 = '?x-oss-process=image/resize,w_800';
 export const aliResizeStyle_w_900 = '?x-oss-process=image/resize,w_900';
 export const aliResizeStyle_w_1024 = '?x-oss-process=image/resize,w_1024';
 export const aliResizeStyle_w_1200 = '?x-oss-process=image/resize,w_1200';
+export const getUrlQuery = function (variable) {
+  var query = window.location.search.substring(1);
+  var vars = query.split("&");
+  for (var i = 0; i < vars.length; i++) {
+      var pair = vars[i].split("=");
+      if (pair[0] == variable) { return pair[1]; }
+  }
+  return (false);
+}

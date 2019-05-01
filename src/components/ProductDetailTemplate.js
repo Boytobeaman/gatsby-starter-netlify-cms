@@ -95,7 +95,7 @@ const ProductDetailTemplate = ({
             </h1>
             <table className="table table-hover table-bordered single-product-attr">
               <caption>
-                  <button className="btn btn-danger btn-block product-inquiry" onClick={()=>navigateTo(contact_url)}>Request a Free Quote</button>
+                  <button className="btn btn-danger btn-block product-inquiry" onClick={()=>navigateTo(model?`${contact_url}?model=${model}}`:contact_url)}>Request a Free Quote</button>
               </caption>
               <tbody>
                   <tr>

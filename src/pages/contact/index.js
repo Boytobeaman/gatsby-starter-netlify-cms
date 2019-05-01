@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from 'gatsby'
 import { navigateTo } from "gatsby-link";
 import Layout from '../../components/Layout'
+import { getUrlQuery } from '../../utils'
 
 function encode(data) {
   return Object.keys(data)
@@ -13,6 +14,12 @@ export default class Index extends React.Component {
   constructor(props) {
     super(props);
     this.state = { isValidated: false };
+  }
+  componentDidMount() {
+    let model = getUrlQuery('model')
+    if(model){
+      this.setState({'model': model})
+    }
   }
 
   handleChange = e => {
