@@ -48,7 +48,7 @@ export default class IndexPage extends React.Component {
           </section>
           <section className="my-3 border pt-3 bg-light home-cat-pic">
             <div className="row">
-              <div className="col-sm-4">
+              <div className="col-sm-3">
                 <Link className="nav-link text-danger font-weight-bold pb-0" to="/folding-crates/">
                   <LazyLoadImage 
                     effect="blur" 
@@ -60,7 +60,7 @@ export default class IndexPage extends React.Component {
                   </p>
                 </Link>
               </div>
-              <div className="col-sm-4">
+              <div className="col-sm-3">
                 <Link className="nav-link text-danger font-weight-bold pb-0" to="/moving-crates/">
                   <LazyLoadImage 
                     effect="blur" 
@@ -72,7 +72,7 @@ export default class IndexPage extends React.Component {
                   </p>
                 </Link>
               </div>
-              <div className="col-sm-4">
+              <div className="col-sm-3">
                 <Link className="nav-link text-danger font-weight-bold pb-0" to="/euro-stacking-containers/">
                   <LazyLoadImage 
                     effect="blur" 
@@ -84,7 +84,7 @@ export default class IndexPage extends React.Component {
                   </p>
                 </Link>
               </div>
-              <div className="col-sm-4">
+              <div className="col-sm-3">
                 <Link className="nav-link text-danger font-weight-bold pb-0" to="/plastic-pallet-boxes/">
                   <LazyLoadImage 
                     effect="blur" 
