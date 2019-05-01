@@ -27,15 +27,14 @@ export default class IndexPage extends React.Component {
               <div className="col-sm-7 d-flex align-items-center justify-content-center">
                 <div className="text-sm-center">
                   <h2>Plastic Crates Manufacturer & Supplier</h2>
+                  <ul>
+                    <li>Wholesale Pricing</li>
+                    <li>All Colors + Custom Logo</li>
+                    <li>Quality assurance</li>
+                  </ul>
                   <div className="text-left">
-                    <h6>JOINPLASTIC provide all kinds of plastic products,including:</h6>
-                    <h6>Get the best deal for plastic moving boxes, collapsible plastic crates, stackable plastic crates, pallet boxes from Chinese manufacture directly </h6>
+                    <h6>Get the best deal for plastic moving boxes, collapsible plastic crates, stackable plastic crates, pallet boxes from Chinese manufacture directly.</h6>
                     <h6>We are a plastic boxes manufacturers specialised in plastics boxes crates for storage, logistics & transport.</h6>
-                    <ul>
-                      <li>Wholesale Pricing</li>
-                      <li>All Colors + Custom Logo</li>
-                      <li>Quality assurance</li>
-                    </ul>
                   </div>
                   <div>
                   </div>
