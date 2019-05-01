@@ -80,12 +80,13 @@ class Slider extends Component {
 
     const slides = items.map((item) => {
       return (
-        <Link className="nav-link" to={item.link_to}>
-          <CarouselItem
-            onExiting={this.onExiting}
-            onExited={this.onExited}
-            key={item.src}
-          >
+        
+        <CarouselItem
+          onExiting={this.onExiting}
+          onExited={this.onExited}
+          key={item.src}
+        >
+          <Link className="nav-link" to={item.link_to}>
             <LazyLoadImage 
               className="w-100" 
               src={item.src}
@@ -94,9 +95,9 @@ class Slider extends Component {
               alt={item.altText} 
               srcset={item.srcset} 
               sizes="100vw" />
-            <CarouselCaption captionText={item.caption} captionHeader={item.caption} />
-          </CarouselItem>
-        </Link>
+          </Link>
+          <CarouselCaption captionText={item.caption} captionHeader={item.caption} />
+        </CarouselItem>
         
       );
     });
