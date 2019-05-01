@@ -34,6 +34,7 @@
         background-size: contain!important;
         background-repeat: no-repeat;
         background-position: center;
+        overflow: hidden;
         @media only screen and (max-width: 767px) {
             min-height: 300px;
         }
