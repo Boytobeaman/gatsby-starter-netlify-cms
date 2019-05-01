@@ -46,7 +46,7 @@ class ProductDetailTemplateCat extends React.Component {
     let srcset=''
     let placeholderImg=''
     if (images && images.length > 0 ) {
-      let the_image = post.frontmatter.images[0].replace("http:","https:")
+      let the_image = images[0].replace("http:","https:")
       cat_image_url = the_image + aliResizeStyle_h_200
       placeholderImg = the_image + aliResizeStyle_h_20
       srcset=`
