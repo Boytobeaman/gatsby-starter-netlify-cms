@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'gatsby'
 import {
   Carousel,
   CarouselItem,
@@ -17,17 +18,20 @@ let items = [
   {
     src: `${image_one}`,
     altText: 'Attached Lid Container',
-    caption: ''
+    caption: '',
+    link_to: '/moving-crates/'
   },
   {
     src: `${image_two}`,
     altText: 'Nesting Crates',
-    caption: ''
+    caption: '',
+    link_to: ''
   },
   {
     src: `${image_three}`,
     altText: 'Folding Crates',
-    caption: ''
+    caption: '',
+    link_to: '/folding-crates/'
   }
 ];
 items.forEach(item=>{
@@ -76,21 +80,24 @@ class Slider extends Component {
 
     const slides = items.map((item) => {
       return (
-        <CarouselItem
-          onExiting={this.onExiting}
-          onExited={this.onExited}
-          key={item.src}
-        >
-          <LazyLoadImage 
-            className="w-100" 
-            src={item.src}
-            placeholderSrc={item.placeholderImg}
-            effect="blur"
-            alt={item.altText} 
-            srcset={item.srcset} 
-            sizes="100vw" />
-          <CarouselCaption captionText={item.caption} captionHeader={item.caption} />
-        </CarouselItem>
+        <Link className="nav-link" to={item.link_to}>
+          <CarouselItem
+            onExiting={this.onExiting}
+            onExited={this.onExited}
+            key={item.src}
+          >
+            <LazyLoadImage 
+              className="w-100" 
+              src={item.src}
+              placeholderSrc={item.placeholderImg}
+              effect="blur"
+              alt={item.altText} 
+              srcset={item.srcset} 
+              sizes="100vw" />
+            <CarouselCaption captionText={item.caption} captionHeader={item.caption} />
+          </CarouselItem>
+        </Link>
+        
       );
     });
 

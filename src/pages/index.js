@@ -22,7 +22,7 @@ export default class IndexPage extends React.Component {
                 <Slider />
               </div>
           </section>
-          <section className="my-3">
+          <section className="my-5">
             <div className="row mx-0 border bg-light">
               <div className="col-sm-7 d-flex align-items-center justify-content-center">
                 <div className="">
@@ -44,7 +44,7 @@ export default class IndexPage extends React.Component {
               </div>
             </div>
           </section>
-          <section className="my-3 border bg-light home-cat-pic">
+          <section className="my-5 border bg-light home-cat-pic">
             <div className="text-center mb-4 border-bottom h5 py-3">Products Categories</div>
             <div className="row">
               <div className="col-sm-3">
@@ -101,7 +101,7 @@ export default class IndexPage extends React.Component {
               </div>
             </div>
           </section>
-          <section className="my-3 border bg-light">
+          <section className="mt-5 border bg-light">
               <div className="text-center mb-4 border-bottom h5 py-3">We Provide Crates and Boxes For</div>
               <div className="row text-center">
                   <div className="col-sm-12 col-md-4">
