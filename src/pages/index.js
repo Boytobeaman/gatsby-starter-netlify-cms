@@ -47,54 +47,54 @@ export default class IndexPage extends React.Component {
               </div>
             </div>
           </section>
-          <section className="my-3 border pt-3 bg-light">
+          <section className="my-3 border pt-3 bg-light home-cat-pic">
             <div className="row">
               <div className="col-sm-4">
                 <Link className="nav-link text-danger font-weight-bold pb-0" to="/folding-crates/">
                   <LazyLoadImage 
                     effect="blur" 
-                    className="" 
+                    className="img-fluid" 
                     src={`${cdn_url}/static/folding-crates.jpg`}
                     alt="Plastic Folding Crates" />
-                  <span className="home-page-cat-text">
+                  <p className="home-page-cat-text text-center">
                     Plastic Folding Crates
-                  </span>
+                  </p>
                 </Link>
               </div>
               <div className="col-sm-4">
                 <Link className="nav-link text-danger font-weight-bold pb-0" to="/moving-crates/">
                   <LazyLoadImage 
                     effect="blur" 
-                    className="" 
+                    className="img-fluid" 
                     src={`${cdn_url}/static/plastic-moving-crates.jpg`}
                     alt="Plastic Moving Crates" />
-                  <span className="home-page-cat-text">
+                  <p className="home-page-cat-text text-center">
                     Plastic Moving Crates
-                  </span>
+                  </p>
                 </Link>
               </div>
               <div className="col-sm-4">
                 <Link className="nav-link text-danger font-weight-bold pb-0" to="/euro-stacking-containers/">
                   <LazyLoadImage 
                     effect="blur" 
-                    className="" 
+                    className="img-fluid" 
                     src={`${cdn_url}/static/euro-stacking-crates.jpg`}
                     alt="Euro Stacking Containers" />
-                  <span className="home-page-cat-text">
+                  <p className="home-page-cat-text text-center">
                     Euro Stacking Containers
-                  </span>
+                  </p>
                 </Link>
               </div>
               <div className="col-sm-4">
                 <Link className="nav-link text-danger font-weight-bold pb-0" to="/plastic-pallet-boxes/">
                   <LazyLoadImage 
                     effect="blur" 
-                    className="" 
+                    className="img-fluid" 
                     src={`${cdn_url}/static/plastic-pallet-boxes.jpg`}
                     alt="Plastic Pallet Boxes" />
-                  <span className="home-page-cat-text">
+                  <p className="home-page-cat-text text-center">
                     Plastic Pallet Boxes
-                  </span>
+                  </p>
                 </Link>
               </div>
             </div>

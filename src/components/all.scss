@@ -53,6 +53,11 @@ body>div>div>div{
     }
   }
 }
+.home-cat-pic{
+  .lazy-load-image-background{
+    width: 100%;
+  }
+} 
 @media only screen and (max-width: 768px) {
   /* For mobile phones and tablets: */
   .image-gallery-slides{
