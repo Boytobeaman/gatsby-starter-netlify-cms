@@ -16,7 +16,7 @@ import {
   kgtolbs,
   ltogal,
   contact_url
-} from '../../utils';
+} from '../utils';
 
 class ProductDetailTemplateCat extends React.Component {
   constructor(props){
