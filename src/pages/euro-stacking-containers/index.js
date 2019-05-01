@@ -6,7 +6,7 @@ import ProductDetailTemplateCat from '../../components/ProductDetailTemplateCat'
 import Layout from '../../components/Layout'
 import '../../cat-page-style.scss'
 
-export default class MovingcratePage extends React.Component {
+export default class EuroStackingContainerPage extends React.Component {
   constructor(props){
     super(props);
   }
@@ -62,7 +62,7 @@ export default class MovingcratePage extends React.Component {
   }
 }
 
-MovingcratePage.propTypes = {
+EuroStackingContainerPage.propTypes = {
   data: PropTypes.shape({
     allMarkdownRemark: PropTypes.shape({
       edges: PropTypes.array,
@@ -70,8 +70,8 @@ MovingcratePage.propTypes = {
   }),
 }
 
-export const MovingcratePageQuery = graphql`
-  query MovingcrateIndexQuery {
+export const EuroStackingContainerPageQuery = graphql`
+  query EuroStackingContainerIndexQuery {
     allMarkdownRemark(
       sort: { order: DESC, fields: [frontmatter___date] },
       filter: { frontmatter: { templateKey: { eq: "eurostackingcontainer-post" } }}
