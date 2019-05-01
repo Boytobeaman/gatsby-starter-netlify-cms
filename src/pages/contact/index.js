@@ -107,8 +107,8 @@ export default class Index extends React.Component {
                   
                   <h5>Call: </h5>
                   <div className="alert alert-secondary" role="alert">
-                    <p className="mb-0">(86)021-59117621</p>
-                    <p className="mb-0">(+)18217103917</p>
+                    <p className="mb-0">(+86)021-59117621</p>
+                    <p className="mb-0">(+86)18217103917</p>
                   </div>
                   
                   
