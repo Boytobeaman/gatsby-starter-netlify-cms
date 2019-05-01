@@ -64,6 +64,28 @@ collections:
       - {label: "Tags", name: "tags", widget: "list", required: false}
       - {label: "Images", name: images, widget: list, required: false}
       - {label: "Body", name: "body", widget: "markdown"}
+  - name: "euroStackingContainer"
+    label: "Euro Stacking Container"
+    folder: "src/pages/euro-stacking-containers"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "eurostackingcontainer-post"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Description", name: "description", widget: "text"}
+      - {label: "Model", name: "model", widget: "string"}
+      - {label: "External long", name: "external_long", widget: "string"}
+      - {label: "External width", name: "external_width", widget: "string"}
+      - {label: "External height", name: "external_height", widget: "string"}
+      - {label: "Internal long", name: "internal_long", widget: "string"}
+      - {label: "Internal width", name: "internal_width", widget: "string"}
+      - {label: "Internal height", name: "internal_height", widget: "string"}
+      - {label: "Volumn", name: "volumn", widget: "string"}
+      - {label: "Weight", name: "weight", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Tags", name: "tags", widget: "list", required: false}
+      - {label: "Images", name: images, widget: list, required: false}
+      - {label: "Body", name: "body", widget: "markdown"}
   - name: "pages"
     label: "Pages"
     files:
