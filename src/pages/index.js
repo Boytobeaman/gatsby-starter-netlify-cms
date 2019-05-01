@@ -22,7 +22,7 @@ export default class IndexPage extends React.Component {
                 <Slider />
               </div>
           </section>
-          <section className="my-5">
+          <section className="mt-3">
             <div className="row mx-0 border bg-light">
               <div className="col-sm-7 d-flex align-items-center justify-content-center">
                 <div className="">
