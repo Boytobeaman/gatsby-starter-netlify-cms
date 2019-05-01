@@ -29,24 +29,12 @@ export default class IndexPage extends React.Component {
                   <h2>Plastic Crates Manufacturer & Supplier</h2>
                   <div className="text-left">
                     <h6>JOINPLASTIC provide all kinds of plastic products,including:</h6>
-                    <ul className="nav flex-column" id="homePageCatList">
-                      <li className="nav-item">
-                        <a className="nav-link text-danger font-weight-bold pb-0" href="#"><LazyLoadImage effect="blur" className="" src={`${cdn_url}/static/plastic-moving-crates.jpg`}
-                            alt="" /> Plastic Moving Crates</a>
-                      </li>
-                      <li className="nav-item"><a className="nav-link text-danger font-weight-bold pb-0" href="#">
-                          <LazyLoadImage effect="blur" className="" src={`${cdn_url}/static/euro-stacking-crates.jpg`}
-                            alt="euro stacking crates" /> Euro Stacking Crates</a>
-                      </li>
-                      <li className="nav-item"><a className="nav-link text-danger font-weight-bold pb-0" href="#">
-                          <LazyLoadImage effect="blur" className="" src={`${cdn_url}/static/folding-crates.jpg`}
-                            alt="Folding Crates" /> Folding Crates</a>
-                      </li>
-                      <li className="nav-item"><a className="nav-link text-danger font-weight-bold pb-0" href="#">
-                          <LazyLoadImage effect="blur" className="" src={`${cdn_url}/static/plastic-pallet-boxes.jpg`}
-                            alt="Plastic Pallet Boxes" /> Plastic Pallet Boxes</a>
-                      </li>
-          
+                    <h6>Get the best deal for plastic moving boxes, collapsible plastic crates, stackable plastic crates, pallet boxes from Chinese manufacture directly </h6>
+                    <h6>We are a plastic boxes manufacturers specialised in plastics boxes crates for storage, logistics & transport.</h6>
+                    <ul>
+                      <li>Wholesale Pricing</li>
+                      <li>All Colors + Custom Logo</li>
+                      <li>Quality assurance</li>
                     </ul>
                   </div>
                   <div>
@@ -56,6 +44,58 @@ export default class IndexPage extends React.Component {
               <div className="col-sm-5 pr-0">
                 <LazyLoadImage effect="blur" src={`${cdn_url}/static/plastic-crate-manufacture-factory.jpg`} className="img-fluid"
                   alt="" />
+              </div>
+            </div>
+          </section>
+          <section className="my-3 border pt-3 bg-light">
+            <div className="row">
+              <div className="col-sm-4">
+                <Link className="nav-link text-danger font-weight-bold pb-0" to="/folding-crates/">
+                  <LazyLoadImage 
+                    effect="blur" 
+                    className="" 
+                    src={`${cdn_url}/static/folding-crates.jpg`}
+                    alt="Plastic Folding Crates" />
+                  <span className="home-page-cat-text">
+                    Plastic Folding Crates
+                  </span>
+                </Link>
+              </div>
+              <div className="col-sm-4">
+                <Link className="nav-link text-danger font-weight-bold pb-0" to="/moving-crates/">
+                  <LazyLoadImage 
+                    effect="blur" 
+                    className="" 
+                    src={`${cdn_url}/static/plastic-moving-crates.jpg`}
+                    alt="Plastic Moving Crates" />
+                  <span className="home-page-cat-text">
+                    Plastic Moving Crates
+                  </span>
+                </Link>
+              </div>
+              <div className="col-sm-4">
+                <Link className="nav-link text-danger font-weight-bold pb-0" to="/euro-stacking-containers/">
+                  <LazyLoadImage 
+                    effect="blur" 
+                    className="" 
+                    src={`${cdn_url}/static/euro-stacking-crates.jpg`}
+                    alt="Euro Stacking Containers" />
+                  <span className="home-page-cat-text">
+                    Euro Stacking Containers
+                  </span>
+                </Link>
+              </div>
+              <div className="col-sm-4">
+                <Link className="nav-link text-danger font-weight-bold pb-0" to="/plastic-pallet-boxes/">
+                  <LazyLoadImage 
+                    effect="blur" 
+                    className="" 
+                    src={`${cdn_url}/static/plastic-pallet-boxes.jpg`}
+                    alt="Plastic Pallet Boxes" />
+                  <span className="home-page-cat-text">
+                    Plastic Pallet Boxes
+                  </span>
+                </Link>
               </div>
             </div>
           </section>
