@@ -44,7 +44,8 @@ export default class IndexPage extends React.Component {
               </div>
             </div>
           </section>
-          <section className="my-3 border pt-3 bg-light home-cat-pic">
+          <section className="my-3 border bg-light home-cat-pic">
+            <div className="text-center mb-4 border-bottom h5 py-3">Products Categories</div>
             <div className="row">
               <div className="col-sm-3">
                 <Link className="nav-link text-danger font-weight-bold pb-0" to="/folding-crates/">
@@ -100,8 +101,8 @@ export default class IndexPage extends React.Component {
               </div>
             </div>
           </section>
-          <section className="my-3 border pt-3 bg-light">
-              <h4 className="text-center mb-4">We Provide Crates and Boxes For</h4>
+          <section className="my-3 border bg-light">
+              <div className="text-center mb-4 border-bottom h5 py-3">We Provide Crates and Boxes For</div>
               <div className="row text-center">
                   <div className="col-sm-12 col-md-4">
                     <h5 className="text-danger">Moving company</h5>
