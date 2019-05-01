@@ -36,8 +36,6 @@ export default class IndexPage extends React.Component {
                     <h6>Get the best deal for plastic moving boxes, collapsible plastic crates, stackable plastic crates, pallet boxes from Chinese manufacture directly.</h6>
                     <h6>We are a plastic boxes manufacturers specialised in plastics boxes crates for storage, logistics & transport.</h6>
                   </div>
-                  <div>
-                  </div>
                 </div>
               </div>
               <div className="col-sm-5 pr-0">
