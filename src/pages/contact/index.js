@@ -88,9 +88,15 @@ export default class Index extends React.Component {
                         </div>
                     </div>
                     <div className="field form-group mb-1">
+                      <label className="label" htmlFor={"p_quantity"}>Product quantity</label>
+                        <div className="control">
+                          <input className="input form-control" placeholder="The product you want to buy" type={"text"} name={"p_quantity"} onChange={this.handleChange} id={"p_quantity"} required={true} />
+                        </div>
+                    </div>
+                    <div className="field form-group mb-1">
                       <label className="label" htmlFor={"message"}>Message</label>
                       <div className="control">
-                        <textarea className="textarea form-control" placeholder="Please tell us product details and your requirements" name={"message"} onChange={this.handleChange} id={"email"} required={true} />
+                        <textarea className="textarea form-control" placeholder="Please tell us product details and your requirements" name={"message"} onChange={this.handleChange} id={"message"} required={true} />
                       </div>
                     </div>
                     <div className="field form-group">
