@@ -86,7 +86,7 @@ class Slider extends Component {
           onExited={this.onExited}
           key={item.src}
         >
-          <Link className="nav-link" to={item.link_to}>
+          <Link className="" to={item.link_to}>
             <LazyLoadImage 
               className="w-100" 
               src={item.src}
