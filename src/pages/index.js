@@ -6,7 +6,7 @@ import Layout from '../components/Layout'
 import Slider from '../components/Slider'
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
-import { cdn_url } from '../utils'
+import { cdn_url, aliResizeStyle_h_20 } from '../utils'
 export default class IndexPage extends React.Component {
   render() {
 
@@ -25,7 +25,7 @@ export default class IndexPage extends React.Component {
           <section className="my-3">
             <div className="row mx-0 border bg-light">
               <div className="col-sm-7 d-flex align-items-center justify-content-center">
-                <div className="text-sm-center">
+                <div className="">
                   <h2>Plastic Crates Manufacturer & Supplier</h2>
                   <ul>
                     <li>Wholesale Pricing</li>
@@ -54,6 +54,7 @@ export default class IndexPage extends React.Component {
                     effect="blur" 
                     className="img-fluid" 
                     src={`${cdn_url}/static/folding-crates.jpg`}
+                    placeholderSrc={`${cdn_url}/static/folding-crates.jpg${aliResizeStyle_h_20}`}
                     alt="Plastic Folding Crates" />
                   <p className="home-page-cat-text text-center">
                     Plastic Folding Crates
@@ -66,6 +67,7 @@ export default class IndexPage extends React.Component {
                     effect="blur" 
                     className="img-fluid" 
                     src={`${cdn_url}/static/plastic-moving-crates.jpg`}
+                    placeholderSrc={`${cdn_url}/static/plastic-moving-crates.jpg${aliResizeStyle_h_20}`}
                     alt="Plastic Moving Crates" />
                   <p className="home-page-cat-text text-center">
                     Plastic Moving Crates
@@ -78,6 +80,7 @@ export default class IndexPage extends React.Component {
                     effect="blur" 
                     className="img-fluid" 
                     src={`${cdn_url}/static/euro-stacking-crates.jpg`}
+                    placeholderSrc={`${cdn_url}/static/euro-stacking-crates.jpg${aliResizeStyle_h_20}`}
                     alt="Euro Stacking Containers" />
                   <p className="home-page-cat-text text-center">
                     Euro Stacking Containers
@@ -90,6 +93,7 @@ export default class IndexPage extends React.Component {
                     effect="blur" 
                     className="img-fluid" 
                     src={`${cdn_url}/static/plastic-pallet-boxes.jpg`}
+                    placeholderSrc={`${cdn_url}/static/plastic-pallet-boxes.jpg${aliResizeStyle_h_20}`}
                     alt="Plastic Pallet Boxes" />
                   <p className="home-page-cat-text text-center">
                     Plastic Pallet Boxes
