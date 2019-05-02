@@ -1,8 +1,10 @@
+@import "variables";
+
 html{
   height: 100%;
 }
 body{
-  background-color: #ced4da;
+  background-color: $body-bg;
 }
 body,
 body>div,

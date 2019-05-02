@@ -1,6 +1,9 @@
 
 body {
-  background-color: #ced4da;
+  background-color: $body-bg;
+  .factory-video{
+    background: transparent url(#{$cdn-url}/static/plastic-crate-manufacture-factory.jpg) 50% 50% / cover no-repeat;
+  }
 }
 .why-choose-us{
   text-align: center;
