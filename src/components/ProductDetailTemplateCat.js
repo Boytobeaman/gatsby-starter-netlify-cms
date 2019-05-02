@@ -79,7 +79,7 @@ class ProductDetailTemplateCat extends React.Component {
           <div className="product-name">
             <div className="col-sm-12 py-1 clearfix">
               <h2 title={title} className="product-title text-capitalize text-truncate d-inline-block mb-0 pl-1">{title}</h2>
-              <span className="btn btn-danger pull-right float-right product-cat-inquiry" onClick={()=>this.toContactUs(e,model)}>Inquiry</span>
+              <span className="btn btn-danger pull-right float-right product-cat-inquiry" onClick={(e)=>this.toContactUs(e,model)}>Inquiry</span>
               <span className="badge badge-info product-model mr-3">Model: {model}</span>
             </div>
           </div>
