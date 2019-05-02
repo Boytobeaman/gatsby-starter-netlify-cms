@@ -13,7 +13,10 @@ function encode(data) {
 export default class Index extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { isValidated: false };
+    this.state = {
+      isValidated: false,
+      model: ''
+    };
   }
   componentDidMount() {
     let model = getUrlQuery('model')
@@ -97,7 +100,7 @@ export default class Index extends React.Component {
                     <div className="field form-group mb-1">
                       <label className="label" htmlFor={"p_quantity"}>Product quantity</label>
                         <div className="control">
-                          <input className="input form-control" placeholder="The product you want to buy" type={"text"} name={"p_quantity"} onChange={this.handleChange} id={"p_quantity"} required={true} />
+                          <input className="input form-control" value={this.state.model} placeholder="MOQ:300" type={"text"} name={"p_quantity"} onChange={this.handleChange} id={"p_quantity"} required={true} />
                         </div>
                     </div>
                     <div className="field form-group mb-1">
