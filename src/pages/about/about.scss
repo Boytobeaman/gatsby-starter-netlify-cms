@@ -4,6 +4,10 @@ body {
   background-color: $body-bg;
   .factory-video{
     background: transparent url(#{$cdn-url}/static/plastic-crate-manufacture-factory.jpg) 50% 50% / cover no-repeat;
+    &[poster]{
+      -o-object-fit: cover;
+      object-fit: cover;
+    }
   }
 }
 .why-choose-us{
