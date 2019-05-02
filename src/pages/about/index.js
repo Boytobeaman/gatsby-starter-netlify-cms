@@ -51,9 +51,6 @@ export default class Index extends React.Component {
             </nav>
           </div>
         </section>
-        <section className='mb-3'>
-          <Slider items={items} />
-        </section>
         <div className="container-fluid">
           <section className='my-5 border bg-light'>
             <div className="row">
@@ -80,7 +77,9 @@ export default class Index extends React.Component {
             </div>
           </section>
         </div>
-
+        <section className='mb-3'>
+          <Slider items={items} />
+        </section>
         <div className="container-fluid">
           <section className='my-5 border bg-light'>
             <div className="text-center mb-4 border-bottom h5 py-3">Why choose us</div>
