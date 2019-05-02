@@ -6,10 +6,36 @@ import Layout from '../components/Layout'
 import Slider from '../components/Slider'
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
-import { cdn_url, aliResizeStyle_h_20 } from '../utils'
+import { cdn_url } from '../utils'
 export default class IndexPage extends React.Component {
   render() {
-
+    let image_one =`${cdn_url}/static/main-slider-attached-lid-container.jpg`
+    let image_two = `${cdn_url}/static/main-slider-nesting-crates.jpg`
+    let image_three = `${cdn_url}/static/main-slider-folding-crates.jpg`
+    let items = [
+      {
+        src: `${image_one}`,
+        altText: 'Attached Lid Container',
+        caption: '',
+        link_to: '/moving-crates/'
+      },
+      {
+        src: `${image_two}`,
+        altText: 'Nesting Crates',
+        caption: '',
+        link_to: ''
+      },
+      {
+        src: `${image_three}`,
+        altText: 'Folding Crates',
+        caption: '',
+        link_to: '/folding-crates/'
+      }
+    ];
+    items.forEach(item=>{
+      item.srcset = `${item.src}?x-oss-process=image/resize,w_360 360w,${item.src}?x-oss-process=image/resize,w_650 650w,${item.src}?x-oss-process=image/resize,w_850 850w,${item.src}?x-oss-process=image/resize,w_1000 1000w,${item.src}?x-oss-process=image/resize,w_1200 1200w`
+      item.placeholderImg = `${item.src}?x-oss-process=image/resize,w_50`
+    })
     return (
       <Layout>
         <div className="container-fluid">
@@ -19,7 +45,7 @@ export default class IndexPage extends React.Component {
           </Helmet>
           <section className="section my-3">
               <div className="">
-                <Slider />
+                <Slider items={items}/>
               </div>
           </section>
           <section className="mt-3">
