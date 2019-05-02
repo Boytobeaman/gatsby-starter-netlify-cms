@@ -58,7 +58,7 @@ export default class Index extends React.Component {
           <div className="container-fluid">
             <div className="row">
               <div className="col-md-6">
-                <video controls className='w-100'>
+                <video controls className='w-100' poster={`${cdn_url}/static/plastic-crate-manufacture-factory.jpg`}>
                   <source src={`${cdn_url}/static/video/plastic_crates_company_introduce.mp4`} type="video/mp4" />
                   Your browser does not support HTML5 video.
                 </video>
@@ -90,7 +90,7 @@ export default class Index extends React.Component {
                     Raw material
                   </div>
                   <div className="why-text">
-                    100% virgin PP/PE,
+                    100% virgin PP/PE,<br/>
                     Eco-firendly
                   </div>
                 </div>
@@ -101,7 +101,8 @@ export default class Index extends React.Component {
                     Quality assurance
                   </div>
                   <div className="why-text">
-                    Every box will be inspected before shipment
+                    Every box will be inspected<br/>
+                    before shipment
                   </div>
                 </div>
               </div>
