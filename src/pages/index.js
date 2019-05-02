@@ -50,7 +50,6 @@ export default class IndexPage extends React.Component {
               <div className="col-sm-3">
                 <Link className="nav-link text-danger font-weight-bold pb-0" to="/folding-crates/">
                   <LazyLoadImage 
-                    effect="blur" 
                     className="img-fluid w-100" 
                     src={`${cdn_url}/static/folding-crates.jpg`}
                     placeholderSrc={`${cdn_url}/static/loading.gif`}
@@ -63,7 +62,6 @@ export default class IndexPage extends React.Component {
               <div className="col-sm-3">
                 <Link className="nav-link text-danger font-weight-bold pb-0" to="/moving-crates/">
                   <LazyLoadImage 
-                    effect="blur" 
                     className="img-fluid w-100" 
                     src={`${cdn_url}/static/plastic-moving-crates.jpg`}
                     placeholderSrc={`${cdn_url}/static/loading.gif`}
@@ -76,7 +74,6 @@ export default class IndexPage extends React.Component {
               <div className="col-sm-3">
                 <Link className="nav-link text-danger font-weight-bold pb-0" to="/euro-stacking-containers/">
                   <LazyLoadImage 
-                    effect="blur" 
                     className="img-fluid w-100" 
                     src={`${cdn_url}/static/euro-stacking-crates.jpg`}
                     placeholderSrc={`${cdn_url}/static/loading.gif`}
@@ -89,7 +86,6 @@ export default class IndexPage extends React.Component {
               <div className="col-sm-3">
                 <Link className="nav-link text-danger font-weight-bold pb-0" to="/plastic-pallet-boxes/">
                   <LazyLoadImage 
-                    effect="blur" 
                     className="img-fluid w-100" 
                     src={`${cdn_url}/static/plastic-pallet-boxes.jpg`}
                     placeholderSrc={`${cdn_url}/static/loading.gif`}
