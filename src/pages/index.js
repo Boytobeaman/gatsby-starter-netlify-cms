@@ -53,7 +53,7 @@ export default class IndexPage extends React.Component {
                     effect="blur" 
                     className="img-fluid w-100" 
                     src={`${cdn_url}/static/folding-crates.jpg`}
-                    placeholderSrc={`${cdn_url}/static/folding-crates.jpg${aliResizeStyle_h_20}`}
+                    placeholderSrc={`${cdn_url}/static/loading.gif`}
                     alt="Plastic Folding Crates" />
                   <p className="home-page-cat-text text-center">
                     Plastic Folding Crates
@@ -66,7 +66,7 @@ export default class IndexPage extends React.Component {
                     effect="blur" 
                     className="img-fluid w-100" 
                     src={`${cdn_url}/static/plastic-moving-crates.jpg`}
-                    placeholderSrc={`${cdn_url}/static/plastic-moving-crates.jpg${aliResizeStyle_h_20}`}
+                    placeholderSrc={`${cdn_url}/static/loading.gif`}
                     alt="Plastic Moving Crates" />
                   <p className="home-page-cat-text text-center">
                     Plastic Moving Crates
@@ -79,7 +79,7 @@ export default class IndexPage extends React.Component {
                     effect="blur" 
                     className="img-fluid w-100" 
                     src={`${cdn_url}/static/euro-stacking-crates.jpg`}
-                    placeholderSrc={`${cdn_url}/static/euro-stacking-crates.jpg${aliResizeStyle_h_20}`}
+                    placeholderSrc={`${cdn_url}/static/loading.gif`}
                     alt="Euro Stacking Containers" />
                   <p className="home-page-cat-text text-center">
                     Euro Stacking Containers
@@ -92,7 +92,7 @@ export default class IndexPage extends React.Component {
                     effect="blur" 
                     className="img-fluid w-100" 
                     src={`${cdn_url}/static/plastic-pallet-boxes.jpg`}
-                    placeholderSrc={`${cdn_url}/static/plastic-pallet-boxes.jpg${aliResizeStyle_h_20}`}
+                    placeholderSrc={`${cdn_url}/static/loading.gif`}
                     alt="Plastic Pallet Boxes" />
                   <p className="home-page-cat-text text-center">
                     Plastic Pallet Boxes
