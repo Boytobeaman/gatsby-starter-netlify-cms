@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from 'gatsby'
 import Layout from '../../components/Layout'
 import Slider from '../../components/Slider'
-import { cdn_url } from '../utils'
+import { cdn_url } from '../../utils'
 
 export default class Index extends React.Component {
 
