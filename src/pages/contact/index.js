@@ -21,7 +21,7 @@ export default class Index extends React.Component {
   }
   componentDidMount() {
     let obj={}
-    let model = getUrlQuery('model')
+    let model = localStorage.getItem('model')
     if(model){
       obj.model = model;
     }

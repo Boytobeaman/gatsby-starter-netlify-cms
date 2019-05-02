@@ -25,11 +25,8 @@ import {
 function toContactUs(e,model){
   e.preventDefault();
   localStorage.setItem("from_url", window.location.href)
-  if(model){
-    navigateTo(`${contact_url}?model=${model}`)
-  }else{
-    navigateTo(contact_url)
-  }
+  localStorage.setItem("model", model)
+  navigateTo(contact_url)
   return false
 }
 const ProductDetailTemplate = ({
