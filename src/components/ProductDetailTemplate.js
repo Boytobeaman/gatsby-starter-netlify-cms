@@ -22,6 +22,16 @@ import {
   contact_url
 } from '../utils';
 
+function toContactUs(e,model){
+  e.preventDefault();
+  localStorage.setItem("from_url", window.location.href)
+  if(model){
+    navigateTo(`${contact_url}?model=${model}`)
+  }else{
+    navigateTo(contact_url)
+  }
+  return false
+}
 const ProductDetailTemplate = ({
   content,
   contentComponent,
@@ -95,7 +105,7 @@ const ProductDetailTemplate = ({
             </h1>
             <table className="table table-hover table-bordered single-product-attr">
               <caption>
-                  <button className="btn btn-danger btn-block product-inquiry" onClick={()=>navigateTo(model?`${contact_url}?model=${model}`:contact_url)}>Request a Free Quote</button>
+                  <button className="btn btn-danger btn-block product-inquiry" onClick={(e)=>toContactUs(e,model)}>Request a Free Quote</button>
               </caption>
               <tbody>
                   <tr>

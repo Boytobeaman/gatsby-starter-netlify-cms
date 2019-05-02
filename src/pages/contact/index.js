@@ -15,14 +15,20 @@ export default class Index extends React.Component {
     super(props);
     this.state = {
       isValidated: false,
-      model: ''
+      model: '',
+      from_url: ''
     };
   }
   componentDidMount() {
+    let obj={}
     let model = getUrlQuery('model')
     if(model){
-      this.setState({'model': model})
+      obj.model = model;
     }
+    if(localStorage.getItem("from_url")){
+      obj.from_url = from_url;
+    }
+    this.setState(obj)
   }
 
   handleChange = e => {
@@ -94,19 +100,25 @@ export default class Index extends React.Component {
                     <div className="field form-group mb-1">
                       <label className="label" htmlFor={"p_model"}>Product model</label>
                         <div className="control">
-                          <input className="input form-control" placeholder="The product you want to buy" type={"text"} name={"p_model"} onChange={this.handleChange} id={"p_model"} required={true} />
+                          <input className="input form-control" value={this.state.model} placeholder="The product you want to buy" type={"text"} name={"p_model"} onChange={this.handleChange} id={"p_model"} required={true} />
                         </div>
                     </div>
                     <div className="field form-group mb-1">
                       <label className="label" htmlFor={"p_quantity"}>Product quantity</label>
                         <div className="control">
-                          <input className="input form-control" value={this.state.model} placeholder="MOQ:300" type={"text"} name={"p_quantity"} onChange={this.handleChange} id={"p_quantity"} required={true} />
+                          <input className="input form-control" placeholder="MOQ:300" type={"text"} name={"p_quantity"} onChange={this.handleChange} id={"p_quantity"} required={true} />
                         </div>
                     </div>
                     <div className="field form-group mb-1">
                       <label className="label" htmlFor={"message"}>Message</label>
                       <div className="control">
                         <textarea className="textarea form-control" placeholder="Please tell us product details and your requirements" name={"message"} onChange={this.handleChange} id={"message"} required={true} />
+                      </div>
+                    </div>
+                    <div className="field form-group mb-1 d-none">
+                      <label className="label" htmlFor={"from_url"}>From url</label>
+                      <div className="control">
+                        <input className="input form-control" value={this.state.from_url}  type={"text"} name={"from_url"} onChange={this.handleChange} id={"from_url"} required={false} />
                       </div>
                     </div>
                     <div className="field form-group">
