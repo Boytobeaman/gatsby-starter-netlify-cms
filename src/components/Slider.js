@@ -33,13 +33,13 @@ class Slider extends Component {
 
   next() {
     if (this.animating) return;
-    const nextIndex = this.state.activeIndex === items.length - 1 ? 0 : this.state.activeIndex + 1;
+    const nextIndex = this.state.activeIndex === this.props.items.length - 1 ? 0 : this.state.activeIndex + 1;
     this.setState({ activeIndex: nextIndex });
   }
 
   previous() {
     if (this.animating) return;
-    const nextIndex = this.state.activeIndex === 0 ? items.length - 1 : this.state.activeIndex - 1;
+    const nextIndex = this.state.activeIndex === 0 ? this.props.items.length - 1 : this.state.activeIndex - 1;
     this.setState({ activeIndex: nextIndex });
   }
 
@@ -59,7 +59,18 @@ class Slider extends Component {
           onExited={this.onExited}
           key={item.src}
         >
-          <Link className="" to={item.link_to}>
+          {item.link_to?(
+            <Link className="" to={item.link_to}>
+              <LazyLoadImage 
+                className="w-100" 
+                src={item.src}
+                placeholderSrc={item.placeholderImg}
+                effect="blur"
+                alt={item.altText} 
+                srcset={item.srcset} 
+                sizes="100vw" />
+            </Link>
+          ):(
             <LazyLoadImage 
               className="w-100" 
               src={item.src}
@@ -68,7 +79,7 @@ class Slider extends Component {
               alt={item.altText} 
               srcset={item.srcset} 
               sizes="100vw" />
-          </Link>
+          )}
           <CarouselCaption captionText={item.caption} captionHeader={item.caption} />
         </CarouselItem>
         

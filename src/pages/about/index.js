@@ -48,14 +48,36 @@ export default class Index extends React.Component {
                 <li className="breadcrumb-item active" aria-current="page">About us</li>
               </ol>
             </nav>
-            <div className="p-3 bg-white">
-              <h1 className="h4">Who are we?</h1>
-              <p>JOINPLASTIC is a Chinese company, specialized in the development and production of material handling products for logistic applications.  The products we make are mainly industrial plastic boxes, going from stackable boxes over nestable-stackable boxes and foldable boxes.</p>
-            </div>
           </div>
         </section>
         <section>
           <Slider items={items} />
+        </section>
+        <section>
+          <div className="row">
+            <div className="col-md-6">
+              <video controls>
+                <source src={`${cdn_url}/static/video/plastic_crates_company_introduce.mp4`} type="video/mp4" />
+                Your browser does not support HTML5 video.
+              </video>
+            </div>
+            <div className="col-md-6">
+              <div>
+                <div className="p-3 bg-white">
+                <h1 className="h4">Who are we?</h1>
+                <p>JOINPLASTIC is a Chinese company, specialized in the development and production of material handling products for logistic applications.
+                  The products we make are mainly industrial plastic boxes, going from stackable boxes over nestable-stackable boxes and foldable boxes.
+                  Shanghai Jiajiu Plastic Products Co., Ltd. is a manufacturer of plastic turnover box with well-equipped testing facilities and strong technical force.
+                  Because of good quality, reasonable prices and stylish designs, our products are extensively used in logistics packaging and other industries.
+                  Our products are widely recognized and trusted by users and can meet continuously changing of economic and social needs.
+                  We welcome new and old customers from all walks of life to contact us for future business relationships and mutual success!
+                  </p>
+              </div>
+              </div>
+            </div>
+          </div>
+
+
         </section>
       </Layout>
     );
