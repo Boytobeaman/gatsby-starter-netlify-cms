@@ -54,8 +54,8 @@ export default class Index extends React.Component {
         <section className='mb-3'>
           <Slider items={items} />
         </section>
-        <section>
-          <div className="container-fluid">
+        <div className="container-fluid">
+          <section className='my-5 border bg-light'>
             <div className="row">
               <div className="col-md-6">
                 <video controls className='w-100' poster={`${cdn_url}/static/plastic-crate-manufacture-factory.jpg`}>
@@ -78,10 +78,11 @@ export default class Index extends React.Component {
                 </div>
               </div>
             </div>
-          </div>
-        </section>
-        <section>
-          <div className="container-fluid">
+          </section>
+        </div>
+
+        <div className="container-fluid">
+          <section className='my-5 border bg-light'>
             <div className="text-center mb-4 border-bottom h5 py-3">Why choose us</div>
             <div className="row">
               <div className="col-md-3 col-sm-6">
@@ -90,7 +91,7 @@ export default class Index extends React.Component {
                     Raw material
                   </div>
                   <div className="why-text">
-                    100% virgin PP/PE,<br/>
+                    100% virgin PP/PE,<br />
                     Eco-firendly
                   </div>
                 </div>
@@ -101,7 +102,7 @@ export default class Index extends React.Component {
                     Quality assurance
                   </div>
                   <div className="why-text">
-                    Every box will be inspected<br/>
+                    Every box will be inspected<br />
                     before shipment
                   </div>
                 </div>
@@ -112,7 +113,7 @@ export default class Index extends React.Component {
                     After service
                   </div>
                   <div className="why-text">
-                    One year free replacement<br/>
+                    One year free replacement<br />
                     (No-human damages)
                   </div>
                 </div>
@@ -123,14 +124,15 @@ export default class Index extends React.Component {
                     Trade assurance
                   </div>
                   <div className="why-text">
-                    Protect your orders<br/>
+                    Protect your orders<br />
                     from payment to delivery
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-        </section>
+          </section>
+        </div>
+
       </Layout>
     );
   }
