@@ -1,6 +1,7 @@
 .why-choose-us{
   text-align: center;
   margin-bottom: 20px;
+  padding: 15px;
   .why-header{
     font-weight: bold;
     font-size: 18px;
@@ -8,5 +9,17 @@
   }
   .why-text{
     font-size: 16px;
+  }
+  &.one{
+    background: linear-gradient(to left bottom, #9ec1e4, rgb(202, 211, 221));
+  }
+  &.two{
+    background: linear-gradient(to left bottom, #3d98c3b5, rgb(236, 230, 230));
+  }
+  &.three{
+    background: linear-gradient(to left bottom, #e3e9ecb5, rgb(189, 223, 227));
+  }
+  &.four{
+    background: linear-gradient(to left bottom, rgb(0, 98, 198), rgb(255, 255, 255));
   }
 }

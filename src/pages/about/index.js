@@ -85,7 +85,7 @@ export default class Index extends React.Component {
             <div className="text-center mb-4 border-bottom h5 py-3">Why choose us</div>
             <div className="row">
               <div className="col-md-3 col-sm-6">
-                <div className="why-choose-us">
+                <div className="why-choose-us one">
                   <div className="why-header">
                     Raw material
                   </div>
@@ -96,7 +96,7 @@ export default class Index extends React.Component {
                 </div>
               </div>
               <div className="col-md-3 col-sm-6">
-                <div className="why-choose-us">
+                <div className="why-choose-us two">
                   <div className="why-header">
                     Quality assurance
                   </div>
@@ -107,7 +107,7 @@ export default class Index extends React.Component {
                 </div>
               </div>
               <div className="col-md-3 col-sm-6">
-                <div className="why-choose-us">
+                <div className="why-choose-us three">
                   <div className="why-header">
                     After service
                   </div>
@@ -118,7 +118,7 @@ export default class Index extends React.Component {
                 </div>
               </div>
               <div className="col-md-3 col-sm-6">
-                <div className="why-choose-us">
+                <div className="why-choose-us four">
                   <div className="why-header">
                     Trade assurance
                   </div>
