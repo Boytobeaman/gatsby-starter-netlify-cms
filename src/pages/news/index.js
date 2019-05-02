@@ -18,8 +18,8 @@ export default class NewsIndexPage extends React.Component {
             {posts
               .map(({ node: post }) => (
                 <div
-                  className="content"
-                  style={{ border: '1px solid #eaecee', padding: '2em 4em' }}
+                  className="news-content"
+                  style={{ border: '1px solid #eaecee', padding: '2em 4em',backgroundColor:'#fff',marginBottom:'15px' }}
                   key={post.id}
                 >
                   <p>

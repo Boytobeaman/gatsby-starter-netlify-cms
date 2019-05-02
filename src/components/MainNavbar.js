@@ -76,12 +76,6 @@ export default class MainNavbar extends React.Component{
                 News
               </Link>
             </NavItem>
-
-            <NavItem>
-              <Link className="nav-link" to="/contact/examples/">
-                Form Examples
-              </Link>
-            </NavItem>
           </Nav>
         </Collapse>
       </Navbar>
