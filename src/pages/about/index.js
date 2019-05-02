@@ -52,10 +52,10 @@ export default class Index extends React.Component {
           </div>
         </section>
         <div className="container-fluid">
-          <section className='my-5 border bg-light'>
+          <section className='mb-5 border bg-light'>
             <div className="row">
               <div className="col-md-6">
-                <video controls className='w-100 factory-video'>
+                <video preload="none" controls className='w-100 factory-video'>
                   <source src={`${cdn_url}/static/video/plastic_crates_company_introduce.mp4`} type="video/mp4" />
                   Your browser does not support HTML5 video.
                 </video>
@@ -83,7 +83,7 @@ export default class Index extends React.Component {
         <div className="container-fluid">
           <section className='my-5 border bg-light'>
             <div className="text-center mb-4 border-bottom h5 py-3">Why choose us</div>
-            <div className="row">
+            <div className="row mx-0">
               <div className="col-md-3 col-sm-6">
                 <div className="why-choose-us one">
                   <div className="why-header">
