@@ -25,7 +25,8 @@ export default class Index extends React.Component {
     if(model){
       obj.model = model;
     }
-    if(localStorage.getItem("from_url")){
+    let from_url = localStorage.getItem("from_url")
+    if(from_url){
       obj.from_url = from_url;
     }
     this.setState(obj)
