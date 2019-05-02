@@ -55,7 +55,7 @@ export default class Index extends React.Component {
           <section className='mb-5 border bg-light'>
             <div className="row">
               <div className="col-md-6">
-                <video preload="none" controls className='w-100 factory-video'>
+                <video controls className='w-100 factory-video'>
                   <source src={`${cdn_url}/static/video/plastic_crates_company_introduce.mp4`} type="video/mp4" />
                   Your browser does not support HTML5 video.
                 </video>
