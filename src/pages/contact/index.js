@@ -15,15 +15,16 @@ export default class Index extends React.Component {
     super(props);
     this.state = {
       isValidated: false,
-      model: '',
-      from_url: ''
+      p_model: '',
+      from_url: '',
+      sending: false
     };
   }
   componentDidMount() {
     let obj={}
     let model = localStorage.getItem('model')
     if(model){
-      obj.model = model;
+      obj.p_model = model;
     }
     let from_url = localStorage.getItem("from_url")
     if(from_url){
@@ -39,6 +40,7 @@ export default class Index extends React.Component {
   handleSubmit = e => {
     e.preventDefault();
     const form = e.target;
+    this.setState({ sending: true });
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
@@ -47,8 +49,10 @@ export default class Index extends React.Component {
         ...this.state
       })
     })
-      .then(() => navigateTo(form.getAttribute("action")))
-      .catch(error => alert(error));
+    .then(() => {
+      navigateTo(form.getAttribute("action")
+    )})
+    .catch(error => alert(error));
   };
 
   render() {
@@ -101,7 +105,7 @@ export default class Index extends React.Component {
                     <div className="field form-group mb-1">
                       <label className="label" htmlFor={"p_model"}>Product model</label>
                         <div className="control">
-                          <input className="input form-control" value={this.state.model} placeholder="The product you want to buy" type={"text"} name={"p_model"} onChange={this.handleChange} id={"p_model"} required={true} />
+                          <input className="input form-control" value={this.state.p_model} placeholder="The product you want to buy" type={"text"} name={"p_model"} onChange={this.handleChange} id={"p_model"} required={true} />
                         </div>
                     </div>
                     <div className="field form-group mb-1">
@@ -123,7 +127,7 @@ export default class Index extends React.Component {
                       </div>
                     </div>
                     <div className="field form-group">
-                      <button className="button btn btn-danger is-link" type="submit">Send</button>
+                      <button className="button btn btn-danger is-link" type="submit">{this.state.sending?'Processing':'Send'}</button>
                     </div>
                   </form>
                 </div>
