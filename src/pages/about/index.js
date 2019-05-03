@@ -220,10 +220,10 @@ export default class Index extends React.Component {
         </div>
         <div className="container-fluid">
           <section className='my-5 border bg-light faq'>
-            <div className="text-center mb-4 border-bottom h5 py-3">Contact us</div>
+            <div className="text-center mb-4 border-bottom h5 py-3">Contact</div>
             <div className="row mx-0">
-              <div className="col-sm-12 text-center">
-                  <h4>If you have any questions about our products and service, please don't hesitate to contact us</h4>
+              <div className="col-sm-12 text-center p-3">
+                  <h4 className="py-3">If you have any questions about our products and service, please don't hesitate to contact us</h4>
                   <Link className="btn btn-danger btn-lg active" role="button" aria-pressed="true" to="/contact/">
                     Contact Us
                   </Link>
