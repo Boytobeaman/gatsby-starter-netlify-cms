@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from 'gatsby'
 import { navigateTo } from "gatsby-link";
 import Layout from '../../components/Layout'
+import { cdn_img_thumbnail } from '../../utils'
 
 function encode(data) {
   return Object.keys(data)
@@ -15,6 +16,7 @@ export default class Index extends React.Component {
     this.state = {
       isValidated: false,
       p_model: '',
+      p_img: cdn_img_thumbnail,
       from_url: '',
       sending: false
     };
@@ -28,6 +30,10 @@ export default class Index extends React.Component {
     let from_url = localStorage.getItem("from_url")
     if(from_url){
       obj.from_url = from_url;
+    }
+    let p_img = localStorage.getItem("p_img")
+    if(p_img){
+      obj.p_img = p_img;
     }
     this.setState(obj)
   }
@@ -131,6 +137,17 @@ export default class Index extends React.Component {
                   </form>
                 </div>
                 <div className="col-md-6">
+                  <div className="row">
+                  <h5>Inquiry detail:</h5>
+                    <div className="col-sm-4">
+                      <img className="img-fluid" src={this.state.p_img} />
+                      <h5>Model: {this.state.p_model}</h5>
+                    </div>
+                    <div className="col-sm-8">
+                      <p>7~15 Lead time</p>
+                      <p>Payment method:  T/T, L/C at sight and Paypal for sample</p>
+                    </div>
+                  </div>
                   <h5>Location:</h5>
                   <div className="alert alert-secondary" role="alert">
                     <p className="mb-0">Room 1405, No.28 Moyu Road</p>

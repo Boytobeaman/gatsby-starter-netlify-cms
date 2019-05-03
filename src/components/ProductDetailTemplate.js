@@ -19,13 +19,15 @@ import {
   aliResizeStyle_w_900,
   aliResizeStyle_w_1024,
   aliResizeStyle_w_1200,
-  contact_url
+  contact_url,
+  cdn_img_thumbnail
 } from '../utils';
 
-function toContactUs(e,model){
+function toContactUs(e,model,p_img){
   e.preventDefault();
   localStorage.setItem("from_url", window.location.href)
   localStorage.setItem("model", model)
+  localStorage.setItem("p_img", p_img)
   navigateTo(contact_url)
   return false
 }
@@ -64,7 +66,12 @@ const ProductDetailTemplate = ({
       return obj
     })
   }else{
-
+    images=[{
+      original: cdn_img_thumbnail,
+      thumbnail: cdn_img_thumbnail + aliResizeStyle_h_120,
+      originalAlt: 'no image',
+      originalTitle: 'no image',
+    }]
   }
 
   return (
@@ -102,7 +109,7 @@ const ProductDetailTemplate = ({
             </h1>
             <table className="table table-hover table-bordered single-product-attr">
               <caption>
-                  <button className="btn btn-danger btn-block product-inquiry" onClick={(e)=>toContactUs(e,model)}>Request a Free Quote</button>
+                  <button className="btn btn-danger btn-block product-inquiry" onClick={(e)=>toContactUs(e,model,images[0].original)}>Request a Free Quote</button>
               </caption>
               <tbody>
                   <tr>

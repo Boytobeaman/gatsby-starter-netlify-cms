@@ -24,10 +24,11 @@ class ProductDetailTemplateCat extends React.Component {
     super(props);
     this.toContactUs = this.toContactUs.bind(this);
   }
-  toContactUs(e,model){
+  toContactUs(e,model,p_img){
     e.preventDefault();
     localStorage.setItem("from_url", window.location.href)
     localStorage.setItem("model", model)
+    localStorage.setItem("p_img", p_img)
     navigateTo(contact_url)
     return false
   }
@@ -60,6 +61,9 @@ class ProductDetailTemplateCat extends React.Component {
         ${the_image}${aliResizeStyle_w_900} 900w,
         ${the_image}${aliResizeStyle_w_1024} 1024w,
         ${the_image}${aliResizeStyle_w_1200} 1200w`
+    }else{
+      cat_image_url = cdn_img_thumbnail
+      placeholderImg = cdn_img_thumbnail
     }
     return (
       <div className="product-wrap">
@@ -77,7 +81,7 @@ class ProductDetailTemplateCat extends React.Component {
           <div className="product-name">
             <div className="col-sm-12 py-1 clearfix">
               <h2 title={title} className="product-title text-capitalize text-truncate d-inline-block mb-0 pl-1">{title}</h2>
-              <span className="btn btn-danger pull-right float-right product-cat-inquiry" onClick={(e)=>this.toContactUs(e,model)}>Inquiry</span>
+              <span className="btn btn-danger pull-right float-right product-cat-inquiry" onClick={(e)=>this.toContactUs(e,model,cat_image_url)}>Inquiry</span>
               <span className="badge badge-info product-model mr-3">Model: {model}</span>
             </div>
           </div>
