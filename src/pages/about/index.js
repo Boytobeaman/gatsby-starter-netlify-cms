@@ -72,7 +72,7 @@ export default class Index extends React.Component {
                     <h1 className="h4">Who are we?</h1>
                     <p>JOINPLASTIC is a Chinese company, specialized in the development and production of material handling products for logistic applications.
                       The products we make are mainly industrial plastic boxes, going from stackable boxes over nestable-stackable boxes and foldable boxes.
-                      Shanghai Jiajiu Plastic Products Co., Ltd. is a manufacturer of plastic turnover box with well-equipped testing facilities and strong technical force.
+                      Shanghai JOIN Plastic Products Co., Ltd. is a manufacturer of plastic turnover box with well-equipped testing facilities and strong technical force.
                       Because of good quality, reasonable prices and stylish designs, our products are extensively used in logistics packaging and other industries.
                       Our products are widely recognized and trusted by users and can meet continuously changing of economic and social needs.
                       We welcome new and old customers from all walks of life to contact us for future business relationships and mutual success!

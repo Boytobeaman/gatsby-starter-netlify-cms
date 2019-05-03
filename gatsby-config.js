@@ -13,6 +13,7 @@ module.exports = {
         name: 'uploads',
       },
     },
+    'gatsby-plugin-sitemap',
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
