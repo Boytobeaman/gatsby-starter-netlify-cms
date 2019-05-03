@@ -58,8 +58,9 @@ body {
     background-image: url(#{$cdn-url}/static/joinplastic_map_address.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    min-height: 300px;
     @media only screen and (max-width: 767px) {
-      background-image: url(#{$cdn-url}/static/joinplastic_map_address.jpg?x-oss-process=image/resize,w_800);
+      background-image: url(#{$cdn-url}/static/joinplastic_map_address_phone.jpg);
     }
   }
   .map-overlay{
