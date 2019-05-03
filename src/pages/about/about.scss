@@ -37,9 +37,12 @@ body {
 }
 .faq{
   .question-wrap{
-    margin-bottom: 15px;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #e9ecef;
     .question{
       font-weight: bold;
+      font-size: 18px;
     }
     .answer{
       font-size: 16px;

@@ -37,6 +37,10 @@ export default class Index extends React.Component {
     })
     return (
       <Layout>
+        <Helmet>
+          <title>{`Plastic Crates Manufacturer & Supplier | About us`}</title>
+          <meta name="description" content={`We wholesale a wide range of products like plastic moving boxes, collapsible plastic crates, fruits crate, stacking crates, attached lid containers, heavy duty crates, pallets, dollies.we are a Plastic products manufacturer and supplier from China and we have customers all around the world`} />
+        </Helmet>
         <section className="section">
           <div className="container-fluid">
             <nav aria-label="breadcrumb">
@@ -206,13 +210,26 @@ export default class Index extends React.Component {
                   </div>
                   <div className="answer">
                     To benefit buyers, we can draw up a Alibaba trade assurance order.
+                    Go to <a href="https://shjiajiu.en.alibaba.com/" target="_blank">our Alibaba store</a>
                   </div>
                 </div>
               </div>
             </div>
           </section>
         </div>
-
+        <div className="container-fluid">
+          <section className='my-5 border bg-light faq'>
+            <div className="text-center mb-4 border-bottom h5 py-3">Contact us</div>
+            <div className="row mx-0">
+              <div className="col-sm-12 text-center">
+                  <h4>If you have any questions about our products and service, please don't hesitate to contact us</h4>
+                  <Link className="btn btn-danger btn-lg active" role="button" aria-pressed="true" to="/contact/">
+                    Contact Us
+                  </Link>
+              </div>
+            </div>
+          </section>
+        </div>
       </Layout>
     );
   }
