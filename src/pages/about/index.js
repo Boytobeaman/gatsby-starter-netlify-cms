@@ -131,6 +131,87 @@ export default class Index extends React.Component {
             </div>
           </section>
         </div>
+        <div className="container-fluid">
+          <section className='my-5 border bg-light faq'>
+            <div className="text-center mb-4 border-bottom h5 py-3">FAQ</div>
+            <div className="row mx-0">
+              <div className="col-sm-12">
+                <div className="question-wrap">
+                  <div className="question">
+                    Are you a factory, is custom service available?
+                  </div>
+                  <div className="answer">
+                    Yes, we are a factory based in Shanghai, China and authenticated by TUV.
+                  </div>
+                </div>
+                <div className="question-wrap">
+                  <div className="question">
+                    Can I order a sample to check quality?
+                  </div>
+                  <div className="answer">
+                    Yes, sample will be free but you take the delivery cost.
+                  </div>
+                </div>
+                <div className="question-wrap">
+                  <div className="question">
+                    What's your MOQ for bulk order?
+                  </div>
+                  <div className="answer">
+                    Normally we start from 300pcs.
+                  </div>
+                </div>
+                <div className="question-wrap">
+                  <div className="question">
+                    What's your regular colors and can I do custom color?
+                  </div>
+                  <div className="answer">
+                    Regular colors are blue and grey,MOQ for custom color: 500pcs.
+                  </div>
+                </div>
+                <div className="question-wrap">
+                  <div className="question">
+                    Do you support logo branding?
+                  </div>
+                  <div className="answer">
+                    Yes, we support OEM and ODM service.
+                  </div>
+                </div>
+                <div className="question-wrap">
+                  <div className="question">
+                    Which package methods are available?
+                  </div>
+                  <div className="answer">
+                    Export wooden pallet packing, canton packing or nude packing for space saving purpose.
+                  </div>
+                </div>
+                <div className="question-wrap">
+                  <div className="question">
+                    What's your term of payment?
+                  </div>
+                  <div className="answer">
+                    We support T/T, L/C at sight and Paypal for sample.
+                  </div>
+                </div>
+                <div className="question-wrap">
+                  <div className="question">
+                    How long does it take for production?
+                  </div>
+                  <div className="answer">
+                    7~15 working days after we receive your deposit.
+                  </div>
+                </div>
+                <div className="question-wrap">
+                  <div className="question">
+                    How can I protect my rights if we meet quality issue?
+                  </div>
+                  <div className="answer">
+                    To benefit buyers, we can draw up a Alibaba trade assurance order.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
 
       </Layout>
     );

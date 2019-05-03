@@ -35,3 +35,14 @@ body {
     background: linear-gradient(to left bottom,#a8bdd2,#fff);
   }
 }
+.faq{
+  .question-wrap{
+    margin-bottom: 15px;
+    .question{
+      font-weight: bold;
+    }
+    .answer{
+      font-size: 16px;
+    }
+  }
+}
