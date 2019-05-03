@@ -221,18 +221,18 @@ export default class Index extends React.Component {
           </section>
         </div>
         <div className="container-fluid">
-          <section className='my-5 border bg-light faq'>
+          <section className='my-5 border bg-light map'>
             <div className="text-center mb-0 border-bottom h5 py-3">Contact</div>
             <div className="row mx-0">
-              <div className="position-relative">
+              <div className="position-relative w-100">
                 <LazyLoadImage 
                   className="img-fluid w-100" 
                   src={map_img}
                   srcset={getSrcsetBySrc(map_img)}
                   placeholderSrc={cdn_loading_img}
                   alt="joinplastic map address" />
-                <div className="position-absolute">
-                  <div className="d-flex aligin-items-center">
+                <div className="position-absolute map-overlay">
+                  <div className="d-flex align-items-center">
                     <div className="col-sm-12 text-center p-3">
                       <h6 className="py-3">If you have any questions about our products and service, please don't hesitate to contact us</h6>
                       <Link className="btn btn-danger btn-lg active" role="button" aria-pressed="true" to="/contact/">

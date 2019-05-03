@@ -49,3 +49,14 @@ body {
     }
   }
 }
+.map{
+  span.lazy-load-image-background{
+    min-height: 250px;
+    width: 100%;
+  }
+  .map-overlay{
+    background-color: rgba(0,0,0,0.26);
+    color: #dee3e8;
+    top: 0;
+  }
+}
