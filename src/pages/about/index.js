@@ -3,8 +3,7 @@ import { Link } from 'gatsby'
 import Helmet from 'react-helmet'
 import Layout from '../../components/Layout'
 import Slider from '../../components/Slider'
-import { LazyLoadImage } from 'react-lazy-load-image-component';
-import { cdn_url, cdn_loading_img, getSrcsetBySrc } from '../../utils'
+import { cdn_url } from '../../utils'
 import './about.scss'
 
 export default class Index extends React.Component {
@@ -225,12 +224,7 @@ export default class Index extends React.Component {
             <div className="text-center mb-0 border-bottom h5 py-3">Contact</div>
             <div className="row mx-0">
               <div className="position-relative w-100">
-                <LazyLoadImage 
-                  className="img-fluid w-100" 
-                  src={map_img}
-                  srcset={getSrcsetBySrc(map_img)}
-                  placeholderSrc={cdn_loading_img}
-                  alt="joinplastic map address" />
+                <div className="bg-img"></div>
                 <div className="position-absolute map-overlay">
                   <div className="d-flex align-items-center justify-content-center h-100">
                     <div className="col-sm-8 text-center p-3 content">
