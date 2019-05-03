@@ -33,12 +33,13 @@ export default class FoldingcratePage extends React.Component {
                 <li className="breadcrumb-item active" aria-current="page">Folding Crates</li>
               </ol>
             </nav>
-            <div className="row mb-1">
+            <div className="row mb-1 no-gutters">
               <div className="col-sm-4">
-                <video controls className='w-100' poster={`${cdn_url}/products/a4597984739a4610b258ac90ef4b56dc.jpg?x-oss-process=image/resize,h_200`}>
+                <video controls className='w-100 h-100' poster={`${cdn_url}/products/a4597984739a4610b258ac90ef4b56dc.jpg?x-oss-process=image/resize,h_200`}>
                   <source src={`${cdn_url}/static/video/collapsible-crate.mp4`} type="video/mp4" />
                   Your browser does not support HTML5 video.
                 </video>
+                <div className="bg-white text-center">video show for the collapsible crate</div>
               </div>
               <div className="col-sm-4">
                 <LazyLoadImage 
