@@ -4,7 +4,7 @@ import Helmet from 'react-helmet'
 import Layout from '../../components/Layout'
 import Slider from '../../components/Slider'
 import { LazyLoadImage } from 'react-lazy-load-image-component';
-import { cdn_url, getSrcsetBySrc } from '../../utils'
+import { cdn_url, getSrcsetBySrc,cdn_loading_img } from '../../utils'
 import './about.scss'
 
 export default class Index extends React.Component {
@@ -229,7 +229,7 @@ export default class Index extends React.Component {
                   className="img-fluid w-100" 
                   src={map_img}
                   srcset={getSrcsetBySrc(map_img)}
-                  placeholderSrc={`${cdn_url}/static/loading.gif`}
+                  placeholderSrc={cdn_loading_img}
                   alt="joinplastic map address" />
               </div>
               <div className="col-sm-12 text-center p-3">

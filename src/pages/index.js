@@ -6,7 +6,7 @@ import Layout from '../components/Layout'
 import Slider from '../components/Slider'
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
-import { cdn_url } from '../utils'
+import { cdn_url, cdn_loading_img } from '../utils'
 export default class IndexPage extends React.Component {
   render() {
     let image_one =`${cdn_url}/static/main-slider-attached-lid-container.jpg`
@@ -78,7 +78,7 @@ export default class IndexPage extends React.Component {
                   <LazyLoadImage 
                     className="img-fluid w-100" 
                     src={`${cdn_url}/static/folding-crates.jpg`}
-                    placeholderSrc={`${cdn_url}/static/loading.gif`}
+                    placeholderSrc={cdn_loading_img}
                     alt="Plastic Folding Crates" />
                   <p className="home-page-cat-text text-center">
                     Plastic Folding Crates
@@ -90,7 +90,7 @@ export default class IndexPage extends React.Component {
                   <LazyLoadImage 
                     className="img-fluid w-100" 
                     src={`${cdn_url}/static/plastic-moving-crates.jpg`}
-                    placeholderSrc={`${cdn_url}/static/loading.gif`}
+                    placeholderSrc={cdn_loading_img}
                     alt="Plastic Moving Crates" />
                   <p className="home-page-cat-text text-center">
                     Plastic Moving Crates
@@ -102,7 +102,7 @@ export default class IndexPage extends React.Component {
                   <LazyLoadImage 
                     className="img-fluid w-100" 
                     src={`${cdn_url}/static/euro-stacking-crates.jpg`}
-                    placeholderSrc={`${cdn_url}/static/loading.gif`}
+                    placeholderSrc={cdn_loading_img}
                     alt="Euro Stacking Containers" />
                   <p className="home-page-cat-text text-center">
                     Euro Stacking Containers
@@ -114,7 +114,7 @@ export default class IndexPage extends React.Component {
                   <LazyLoadImage 
                     className="img-fluid w-100" 
                     src={`${cdn_url}/static/plastic-pallet-boxes.jpg`}
-                    placeholderSrc={`${cdn_url}/static/loading.gif`}
+                    placeholderSrc={cdn_loading_img}
                     alt="Plastic Pallet Boxes" />
                   <p className="home-page-cat-text text-center">
                     Plastic Pallet Boxes
