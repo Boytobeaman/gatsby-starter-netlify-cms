@@ -4,6 +4,8 @@ import PropTypes from 'prop-types'
 import { Link, graphql } from 'gatsby'
 import ProductDetailTemplateCat from '../../components/ProductDetailTemplateCat'
 import Layout from '../../components/Layout'
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import { cdn_url, cdn_loading_img } from '../../utils'
 import '../../cat-page-style.scss'
 export default class FoldingcratePage extends React.Component {
   constructor(props){
@@ -17,8 +19,8 @@ export default class FoldingcratePage extends React.Component {
       <Layout>
         <section className="section">
           <Helmet>
-            <title>{`Plastic Collapsible Crates Manufacturer & Supplier | collapsible box`}</title>
-            <meta name="description" content={`Wholesale Collapsible plastic crates/containers which are suitable for the storage and handling of goods. The folding crate can be folded and reused indefinitely`} />
+            <title>{`Collapsible Plastic Crate, folding plastic crates | collapsible crate`}</title>
+            <meta name="description" content={`Wholesale Collapsible plastic crate, folding plastic crates which are suitable for the storage and handling of goods. The folding crate can be folded and reused indefinitely`} />
           </Helmet>
           <div className="container-fluid">
             <nav aria-label="breadcrumb">
@@ -31,6 +33,28 @@ export default class FoldingcratePage extends React.Component {
                 <li className="breadcrumb-item active" aria-current="page">Folding Crates</li>
               </ol>
             </nav>
+            <div className="row">
+              <div className="col-sm-4">
+                <video controls className='w-100' poster={`${cdn_url}/products/a5787726b8364b3abedd07c363381386.jpg?x-oss-process=image/resize,w_400`}>
+                  <source src={`${cdn_url}/static/video/collapsible-crate.mp4`} type="video/mp4" />
+                  Your browser does not support HTML5 video.
+                </video>
+              </div>
+              <div className="col-sm-4">
+                <LazyLoadImage 
+                  className="img-fluid w-100" 
+                  src={`${cdn_url}/static/collapsible-storage-containers-fold.gif`}
+                  placeholderSrc={cdn_loading_img}
+                  alt="Collapsible Plastic Crate" />
+              </div>
+              <div className="col-sm-4">
+                <LazyLoadImage 
+                  className="img-fluid w-100" 
+                  src={`${cdn_url}/static/collapsible-storage-containers-fold-b.gif`}
+                  placeholderSrc={cdn_loading_img}
+                  alt="Collapsible Crate" />
+              </div>
+            </div>
             
             {posts
               .map(({ node: post }) => {
@@ -50,8 +74,24 @@ export default class FoldingcratePage extends React.Component {
                 )
               })}
 
-            <div className="cat-desc">
+            <div className="cat-desc-section">
               <h4 className="">Folding crate description</h4>
+              <div className="cat-desc-text">
+                Collapsible Crate is a smart, space-saving solution to simplify all of your activities, trips and day-to-day tasks,
+                It is a highly versatile, multi-purpose storage solution for consumers to store and transport goods.
+                The collapsible plastic crate can be popped open when you need them, fold flat when you don't,
+                the folding crate can save 75% space, usually we provide the folding crate with lid.
+              </div>
+              <div className="cat-desc-text">
+                Features & Benefites of the collapsible crate
+                <ul>
+                  <li>QUICKLY COLLAPSIBLE & LIGHTWEIGHT</li>
+                  <li>100% RECYCLABLE - no waste disposal at food retailer</li>
+                  <li>SUPER EASY TO WASH & REUSE</li>
+                  <li>BUILT AMAZINGLY STRONG TO LAST</li>
+                  <li>SUPPORTS ALL TYPES OF ITEMS</li>
+                </ul>
+              </div>
             </div>
           </div>
         </section>
