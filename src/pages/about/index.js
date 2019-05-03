@@ -232,8 +232,8 @@ export default class Index extends React.Component {
                   placeholderSrc={cdn_loading_img}
                   alt="joinplastic map address" />
                 <div className="position-absolute map-overlay">
-                  <div className="d-flex align-items-center">
-                    <div className="col-sm-12 text-center p-3">
+                  <div className="d-flex align-items-center justify-content-center h-100">
+                    <div className="col-sm-8 text-center p-3 content">
                       <h6 className="py-3">If you have any questions about our products and service, please don't hesitate to contact us</h6>
                       <Link className="btn btn-danger btn-lg active" role="button" aria-pressed="true" to="/contact/">
                         Contact Us
