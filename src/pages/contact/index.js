@@ -2,7 +2,6 @@ import React from "react";
 import { Link } from 'gatsby'
 import { navigateTo } from "gatsby-link";
 import Layout from '../../components/Layout'
-import { getUrlQuery } from '../../utils'
 
 function encode(data) {
   return Object.keys(data)

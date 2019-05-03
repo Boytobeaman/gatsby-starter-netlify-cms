@@ -233,7 +233,7 @@ export default class Index extends React.Component {
                   alt="joinplastic map address" />
               </div>
               <div className="col-sm-12 text-center p-3">
-                  <h4 className="py-3">If you have any questions about our products and service, please don't hesitate to contact us</h4>
+                  <h6 className="py-3">If you have any questions about our products and service, please don't hesitate to contact us</h6>
                   <Link className="btn btn-danger btn-lg active" role="button" aria-pressed="true" to="/contact/">
                     Contact Us
                   </Link>
