@@ -3,12 +3,14 @@ import { Link } from 'gatsby'
 import Helmet from 'react-helmet'
 import Layout from '../../components/Layout'
 import Slider from '../../components/Slider'
-import { cdn_url } from '../../utils'
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import { cdn_url, getSrcsetBySrc } from '../../utils'
 import './about.scss'
 
 export default class Index extends React.Component {
 
   render() {
+    let map_img = `${cdn_url}/static/joinplastic_map_address.jpg`
     let image_one = `${cdn_url}/static/about-us-cooperate-brand.jpg`
     let image_two = `${cdn_url}/static/about-us-with-customers.jpg`
     let image_three = `${cdn_url}/static/about-us-certifications.jpg`
@@ -222,6 +224,14 @@ export default class Index extends React.Component {
           <section className='my-5 border bg-light faq'>
             <div className="text-center mb-4 border-bottom h5 py-3">Contact</div>
             <div className="row mx-0">
+              <div>
+                <LazyLoadImage 
+                  className="img-fluid w-100" 
+                  src={map_img}
+                  srcset={getSrcsetBySrc(map_img)}
+                  placeholderSrc={`${cdn_url}/static/loading.gif`}
+                  alt="joinplastic map address" />
+              </div>
               <div className="col-sm-12 text-center p-3">
                   <h4 className="py-3">If you have any questions about our products and service, please don't hesitate to contact us</h4>
                   <Link className="btn btn-danger btn-lg active" role="button" aria-pressed="true" to="/contact/">

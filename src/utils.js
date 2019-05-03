@@ -1,3 +1,5 @@
+import { func } from "C:/Users/86185/AppData/Local/Microsoft/TypeScript/3.4.3/node_modules/@types/prop-types";
+
 export const mmtoinch = 0.03937;
 export const kgtolbs = 2.20462262;
 export const ltogal = 0.26417;
@@ -31,4 +33,7 @@ export const getUrlQuery = function (variable) {
       if (pair[0] == variable) { return pair[1]; }
   }
   return (false);
+}
+export const getSrcsetBySrc = function (src){
+  return `${src}?x-oss-process=image/resize,w_360 360w,${src}?x-oss-process=image/resize,w_650 650w,${src}?x-oss-process=image/resize,w_850 850w,${src}?x-oss-process=image/resize,w_1000 1000w,${src}?x-oss-process=image/resize,w_1200 1200w`
 }
