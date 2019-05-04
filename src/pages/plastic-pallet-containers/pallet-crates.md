@@ -1,0 +1,30 @@
+---
+templateKey: plasticpalletcontainer-post
+title: pallet crates
+description: desc
+model: mesh wall 1210-760
+external_long: '1200'
+external_width: '1000'
+external_height: '760'
+internal_long: '1100'
+internal_width: '910'
+internal_height: '600'
+volumn: '606'
+weight: '34'
+static_load: '4'
+dynamic_load: '1'
+date: 2019-05-04T06:05:35.938Z
+tags:
+  - pallet container
+  - plastic pallet box
+images:
+  - >-
+    http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/72f2d30afeb84e9cb6b81a184836795e.jpg
+  - >-
+    http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/6553b563718647e3bdaebc61f3bfb63b.jpg
+  - >-
+    http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/3549bcf851ed448e9b48260bc8cc7d5c.jpg
+  - >-
+    http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/848ee3b188a846bc848ad7804d196492.jpg
+---
+desc
