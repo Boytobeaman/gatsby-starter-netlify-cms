@@ -1,0 +1,33 @@
+---
+templateKey: plasticpalletcontainer-post
+title: plastic pallet crates for sale
+description: desc
+model: 1150-985
+external_long: '1150'
+external_width: '985'
+external_height: '1100'
+internal_long: '1106'
+internal_width: '940'
+internal_height: '930'
+volumn: '966'
+weight: '30'
+static_load: '1.5'
+dynamic_load: '0.35'
+date: 2019-05-04T06:15:31.542Z
+tags:
+  - foldable coaming box
+  - corrugated pallet box
+  - collapsible storage coaming box with lid
+images:
+  - >-
+    http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/f2836b3bc1b2480d8ed399abcfe207ef.jpg
+  - >-
+    http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/f6a8a583bc884fa2acc7543057d51c07.jpg
+  - >-
+    http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/1485feee01354bf9b2da9445c0e53452.jpg
+  - >-
+    http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/8febd2e790a1406480403968c6c67bef.jpg
+  - >-
+    http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/623a17071bad4a7591079a1527a905ce.jpg
+---
+desc
