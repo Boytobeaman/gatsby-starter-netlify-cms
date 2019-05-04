@@ -138,12 +138,12 @@ export default class Index extends React.Component {
                 </div>
                 <div className="col-md-6">
                   <div className="row py-2 border mx-0 my-1">
-                    <div className="col-sm-4">
+                    <div className="col-sm-4 text-center">
                       <img className="img-fluid" src={this.state.p_img} />
                     </div>
                     <div className="col-sm-8">
                       <h6>Product model: {this.state.p_model}</h6>
-                      <p>7~15 Lead time</p>
+                      <p>Lead time: 7~15 working days</p>
                       <p>Payment method:  T/T, L/C at sight and Paypal for sample</p>
                     </div>
                   </div>
