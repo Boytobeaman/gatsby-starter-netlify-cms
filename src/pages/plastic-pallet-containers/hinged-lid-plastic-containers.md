@@ -1,5 +1,5 @@
 ---
-templateKey: movingcrate-post
+templateKey: plasticpalletcontainer-post
 title: hinged lid plastic containers
 description: hinged lid plastic containers desc
 model: '395'
