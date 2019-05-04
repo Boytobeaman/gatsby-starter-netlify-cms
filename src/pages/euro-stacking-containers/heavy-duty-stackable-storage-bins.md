@@ -16,14 +16,14 @@ tags:
   - plastic panel bin
 images:
   - >-
-    http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/aa02fa4f173a4ef99e456ad550e82186.jpg
+    https://cdn.movingboxsale.com/products/aa02fa4f173a4ef99e456ad550e82186.jpg
   - >-
-    http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/ab42511ea65b456aa26e95cc6b91f1aa.jpg
+    https://cdn.movingboxsale.com/products/ab42511ea65b456aa26e95cc6b91f1aa.jpg
   - >-
-    http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/94a4deefc8244a448711d79913a2e1e3.jpg
+    https://cdn.movingboxsale.com/products/94a4deefc8244a448711d79913a2e1e3.jpg
   - >-
-    http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/2a4efb078a4b47cc94b752dc44e2ca64.jpg
+    https://cdn.movingboxsale.com/products/2a4efb078a4b47cc94b752dc44e2ca64.jpg
   - >-
-    http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/f0619171c42349f18940778ca7f6b475.jpg
+    https://cdn.movingboxsale.com/products/f0619171c42349f18940778ca7f6b475.jpg
 ---
 desc

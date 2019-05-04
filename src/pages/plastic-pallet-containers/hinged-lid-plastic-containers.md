@@ -20,14 +20,14 @@ tags:
   - nestable lidded container
 images:
   - >-
-    https://static.movingbox.cn/products/837bb4aa0e0542dda791de62d4cd90a9.jpg
+    https://cdn.movingboxsale.com/products/837bb4aa0e0542dda791de62d4cd90a9.jpg
   - >-
-    https://static.movingbox.cn/products/6582e0ae8ecf4881b3ac3d6e59b6a087.jpg
+    https://cdn.movingboxsale.com/products/6582e0ae8ecf4881b3ac3d6e59b6a087.jpg
   - >-
-    https://static.movingbox.cn/products/b895c3ca9f4442eb9b55694a1968ccca.jpg
+    https://cdn.movingboxsale.com/products/b895c3ca9f4442eb9b55694a1968ccca.jpg
   - >-
-    https://static.movingbox.cn/products/3b0ed21aab2241f68ebbe370fe39714d.jpg
+    https://cdn.movingboxsale.com/products/3b0ed21aab2241f68ebbe370fe39714d.jpg
   - >-
-    https://static.movingbox.cn/products/2de418385b364542b8f5d24064fc8e36.jpg
+    https://cdn.movingboxsale.com/products/2de418385b364542b8f5d24064fc8e36.jpg
 ---
 hinged lid plastic containers

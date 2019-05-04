@@ -18,12 +18,12 @@ tags:
   - folding crate
 images:
   - >-
-    https://static.movingbox.cn/products/76d63397ac1b4b9c9e9aedb39fafe24c.jpg
+    https://cdn.movingboxsale.com/products/76d63397ac1b4b9c9e9aedb39fafe24c.jpg
   - >-
-    https://static.movingbox.cn/products/230fc4617f9a46e0a04cb83f2ead054c.jpg
+    https://cdn.movingboxsale.com/products/230fc4617f9a46e0a04cb83f2ead054c.jpg
   - >-
-    https://static.movingbox.cn/products/083aab8ff2ac4a23a765703f0b6f20fc.jpg
+    https://cdn.movingboxsale.com/products/083aab8ff2ac4a23a765703f0b6f20fc.jpg
   - >-
-    https://static.movingbox.cn/products/8b978b5f7af64caa8f51183891efb377.jpg
+    https://cdn.movingboxsale.com/products/8b978b5f7af64caa8f51183891efb377.jpg
 ---
 desc

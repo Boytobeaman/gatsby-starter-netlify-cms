@@ -20,14 +20,14 @@ tags:
   - collapsible plastic pallet box
 images:
   - >-
-    http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/9c9a4ca2dc71460e9423ca11dbdb77c6.JPG
+    https://cdn.movingboxsale.com/products/9c9a4ca2dc71460e9423ca11dbdb77c6.JPG
   - >-
-    http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/8eb88ea82cc54fdfbfc26658ac7b3656.jpg
+    https://cdn.movingboxsale.com/products/8eb88ea82cc54fdfbfc26658ac7b3656.jpg
   - >-
-    http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/e8272290254d4baeaddb9a03f0c31f0e.jpg
+    https://cdn.movingboxsale.com/products/e8272290254d4baeaddb9a03f0c31f0e.jpg
   - >-
-    http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/24b8d23bced34321bc9c19b7b0568c80.jpg
+    https://cdn.movingboxsale.com/products/24b8d23bced34321bc9c19b7b0568c80.jpg
   - >-
-    http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/2f73b5e45624431bbc735b438dbd4d9f.jpg
+    https://cdn.movingboxsale.com/products/2f73b5e45624431bbc735b438dbd4d9f.jpg
 ---
 desc

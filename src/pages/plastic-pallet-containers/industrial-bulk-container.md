@@ -19,14 +19,14 @@ tags:
   - plastic pallet box
 images:
   - >-
-    http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/33950654cfb74cc6992c2a5d3ae59102.jpg
+    https://cdn.movingboxsale.com/products/33950654cfb74cc6992c2a5d3ae59102.jpg
   - >-
-    http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/3e9e8d921e174e98a1f689bf32e9e0b4.jpg
+    https://cdn.movingboxsale.com/products/3e9e8d921e174e98a1f689bf32e9e0b4.jpg
   - >-
-    http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/04e2f020b822458bbce341e6ef68272d.jpg
+    https://cdn.movingboxsale.com/products/04e2f020b822458bbce341e6ef68272d.jpg
   - >-
-    http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/159be7af79294ca8bfce363ff4b883a1.jpg
+    https://cdn.movingboxsale.com/products/159be7af79294ca8bfce363ff4b883a1.jpg
   - >-
-    http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/176bda54f55a4bbfa74291a4834bc65b.jpg
+    https://cdn.movingboxsale.com/products/176bda54f55a4bbfa74291a4834bc65b.jpg
 ---
 desc

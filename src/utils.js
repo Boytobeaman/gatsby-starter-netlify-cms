@@ -2,7 +2,7 @@ export const mmtoinch = 0.03937;
 export const kgtolbs = 2.20462262;
 export const ltogal = 0.26417;
 export const contact_url = '/contact/';
-export const cdn_url = 'https://static.movingbox.cn';
+export const cdn_url = 'https://cdn.movingboxsale.com';
 export const cdn_loading_img = `${cdn_url}/static/loading.gif`;
 export const cdn_img_thumbnail = `${cdn_url}/static/noimage_thumbnail.png`;
 export const aliResizeStyle_h_20 = '?x-oss-process=image/resize,h_20';

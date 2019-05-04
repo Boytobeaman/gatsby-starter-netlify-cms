@@ -17,12 +17,12 @@ tags:
   - stackable bin
 images:
   - >-
-    http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/b8587f4bd8054741ad9c4b8c7a018692.jpg
+    https://cdn.movingboxsale.com/products/b8587f4bd8054741ad9c4b8c7a018692.jpg
   - >-
-    http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/07657cdb1b6347ee902a0778bcb14fde.jpg
+    https://cdn.movingboxsale.com/products/07657cdb1b6347ee902a0778bcb14fde.jpg
   - >-
-    http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/2fa67cb803104db5b1f4684452a7707d.jpg
+    https://cdn.movingboxsale.com/products/2fa67cb803104db5b1f4684452a7707d.jpg
   - >-
-    http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/7eac41d2176047808323da5689585a99.jpg
+    https://cdn.movingboxsale.com/products/7eac41d2176047808323da5689585a99.jpg
 ---
 desc

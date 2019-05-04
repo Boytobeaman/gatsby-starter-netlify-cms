@@ -18,14 +18,14 @@ tags:
   - warehouse storage bin
 images:
   - >-
-    http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/7bef809ec3e748799fde0e7c19b8aad0.jpg
+    https://cdn.movingboxsale.com/products/7bef809ec3e748799fde0e7c19b8aad0.jpg
   - >-
-    http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/11ccf6c9717c43e8aa1b4da72bf06128.jpg
+    https://cdn.movingboxsale.com/products/11ccf6c9717c43e8aa1b4da72bf06128.jpg
   - >-
-    http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/1f6b99f75957486d82f6d1ec7790b0cc.jpg
+    https://cdn.movingboxsale.com/products/1f6b99f75957486d82f6d1ec7790b0cc.jpg
   - >-
-    http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/e7f86c6b9f5348689d01fc27579f7473.jpg
+    https://cdn.movingboxsale.com/products/e7f86c6b9f5348689d01fc27579f7473.jpg
   - >-
-    http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/6d622dbcbf4d461fa90075370a3b3166.jpg
+    https://cdn.movingboxsale.com/products/6d622dbcbf4d461fa90075370a3b3166.jpg
 ---
 desc

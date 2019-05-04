@@ -20,14 +20,14 @@ tags:
   - collapsible storage coaming box with lid
 images:
   - >-
-    http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/f2836b3bc1b2480d8ed399abcfe207ef.jpg
+    https://cdn.movingboxsale.com/products/f2836b3bc1b2480d8ed399abcfe207ef.jpg
   - >-
-    http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/f6a8a583bc884fa2acc7543057d51c07.jpg
+    https://cdn.movingboxsale.com/products/f6a8a583bc884fa2acc7543057d51c07.jpg
   - >-
-    http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/1485feee01354bf9b2da9445c0e53452.jpg
+    https://cdn.movingboxsale.com/products/1485feee01354bf9b2da9445c0e53452.jpg
   - >-
-    http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/8febd2e790a1406480403968c6c67bef.jpg
+    https://cdn.movingboxsale.com/products/8febd2e790a1406480403968c6c67bef.jpg
   - >-
-    http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/623a17071bad4a7591079a1527a905ce.jpg
+    https://cdn.movingboxsale.com/products/623a17071bad4a7591079a1527a905ce.jpg
 ---
 desc

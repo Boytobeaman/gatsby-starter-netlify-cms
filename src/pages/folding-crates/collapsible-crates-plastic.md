@@ -18,14 +18,14 @@ tags:
   - foldable storage bin
 images:
   - >-
-    https://static.movingbox.cn/products/87c5bb61216d423ba5f67d7ca9551c99.jpg
+    https://cdn.movingboxsale.com/products/87c5bb61216d423ba5f67d7ca9551c99.jpg
   - >-
-    https://static.movingbox.cn/products/229d71769c4544299a82b18cecf6992f.jpg
+    https://cdn.movingboxsale.com/products/229d71769c4544299a82b18cecf6992f.jpg
   - >-
-    https://static.movingbox.cn/products/9d7318598058455bb563094d5034230c.jpg
+    https://cdn.movingboxsale.com/products/9d7318598058455bb563094d5034230c.jpg
   - >-
-    https://static.movingbox.cn/products/17603c7370f741c3819910f41d941b64.jpg
+    https://cdn.movingboxsale.com/products/17603c7370f741c3819910f41d941b64.jpg
   - >-
-    https://static.movingbox.cn/products/de6c5955a63f4db9869b5ceced85f613.jpg
+    https://cdn.movingboxsale.com/products/de6c5955a63f4db9869b5ceced85f613.jpg
 ---
 desc

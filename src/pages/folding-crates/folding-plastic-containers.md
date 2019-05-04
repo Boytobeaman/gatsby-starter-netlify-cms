@@ -16,18 +16,18 @@ weight: '2.18'
 date: 2019-01-27T03:46:23.425Z
 images:
   - >-
-    https://static.movingbox.cn/products/a4597984739a4610b258ac90ef4b56dc.jpg
+    https://cdn.movingboxsale.com/products/a4597984739a4610b258ac90ef4b56dc.jpg
   - >-
-    https://static.movingbox.cn/products/26bad28944324488bfd99183f6633707.jpg
+    https://cdn.movingboxsale.com/products/26bad28944324488bfd99183f6633707.jpg
   - >-
-    https://static.movingbox.cn/products/75bcc968ddd44352a19567856e808aba.jpg
+    https://cdn.movingboxsale.com/products/75bcc968ddd44352a19567856e808aba.jpg
   - >-
-    https://static.movingbox.cn/products/a2981ed8563b4b9091b96eec61f28f82.jpg
+    https://cdn.movingboxsale.com/products/a2981ed8563b4b9091b96eec61f28f82.jpg
   - >-
-    https://static.movingbox.cn/products/1757cbd752ba4d8ba34500a6753e182a.jpg
+    https://cdn.movingboxsale.com/products/1757cbd752ba4d8ba34500a6753e182a.jpg
   - >-
-    https://static.movingbox.cn/products/57264fab8b7f4acb86beebb0580a73eb.jpg
+    https://cdn.movingboxsale.com/products/57264fab8b7f4acb86beebb0580a73eb.jpg
   - >-
-    https://static.movingbox.cn/products/8c9be77da56c4d228da0525239337b31.jpg
+    https://cdn.movingboxsale.com/products/8c9be77da56c4d228da0525239337b31.jpg
 ---
 desc

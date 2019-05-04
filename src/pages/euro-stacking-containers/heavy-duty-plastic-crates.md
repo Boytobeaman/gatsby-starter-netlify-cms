@@ -18,12 +18,12 @@ tags:
   - storage bin
 images:
   - >-
-    http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/3bf0c946a5fc49999f3db2640303f1db.jpg
+    https://cdn.movingboxsale.com/products/3bf0c946a5fc49999f3db2640303f1db.jpg
   - >-
-    http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/8e47bb3119324c97b87245428cb6ef34.JPG
+    https://cdn.movingboxsale.com/products/8e47bb3119324c97b87245428cb6ef34.JPG
   - >-
-    http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/f12ddfeecbbb4b7ca57596314bd71438.JPG
+    https://cdn.movingboxsale.com/products/f12ddfeecbbb4b7ca57596314bd71438.JPG
   - >-
-    http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/94ef7610edd64778bd10db40dfea5133.jpg
+    https://cdn.movingboxsale.com/products/94ef7610edd64778bd10db40dfea5133.jpg
 ---
 desc

@@ -17,14 +17,14 @@ tags:
   - straight wall container
 images:
   - >-
-    http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/f2f47149aa6d4cd9a1daba154eb02726.jpg
+    https://cdn.movingboxsale.com/products/f2f47149aa6d4cd9a1daba154eb02726.jpg
   - >-
-    http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/cb4db52a08ba484eaaa9566012f6b893.jpg
+    https://cdn.movingboxsale.com/products/cb4db52a08ba484eaaa9566012f6b893.jpg
   - >-
-    http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/32e78b506dba404bb687c3af37e8d330.jpg
+    https://cdn.movingboxsale.com/products/32e78b506dba404bb687c3af37e8d330.jpg
   - >-
-    http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/7dcb284b45b54120ae884aa94ebacf13.jpg
+    https://cdn.movingboxsale.com/products/7dcb284b45b54120ae884aa94ebacf13.jpg
   - >-
-    http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/a1d10ab2e47b41b2a3f5667be017a6f1.jpg
+    https://cdn.movingboxsale.com/products/a1d10ab2e47b41b2a3f5667be017a6f1.jpg
 ---
 desc

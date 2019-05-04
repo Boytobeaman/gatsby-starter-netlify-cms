@@ -17,14 +17,14 @@ tags:
   - stacking crate
 images:
   - >-
-    http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/dff016bd8a13408a97d0ea18151ddf04.jpg
+    https://cdn.movingboxsale.com/products/dff016bd8a13408a97d0ea18151ddf04.jpg
   - >-
-    http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/fb9fcb78440d4a61aa22be04f870450b.jpg
+    https://cdn.movingboxsale.com/products/fb9fcb78440d4a61aa22be04f870450b.jpg
   - >-
-    http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/5777fd642eaa4342a46eb63cf5dff1c6.jpg
+    https://cdn.movingboxsale.com/products/5777fd642eaa4342a46eb63cf5dff1c6.jpg
   - >-
-    http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/b94e55962ea040c986107089d571e4c2.jpg
+    https://cdn.movingboxsale.com/products/b94e55962ea040c986107089d571e4c2.jpg
   - >-
-    http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/3bc3cff2c8a04292b472ba99e1b4a358.jpg
+    https://cdn.movingboxsale.com/products/3bc3cff2c8a04292b472ba99e1b4a358.jpg
 ---
 desc

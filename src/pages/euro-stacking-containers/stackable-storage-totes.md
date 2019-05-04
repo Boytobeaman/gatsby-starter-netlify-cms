@@ -18,8 +18,8 @@ tags:
   - storage bin
 images:
   - >-
-    http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/e7695451505a4a75b5ae41921b21cd06.jpg
+    https://cdn.movingboxsale.com/products/e7695451505a4a75b5ae41921b21cd06.jpg
   - >-
-    http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/c31e25815598496598955023958c1978.jpg
+    https://cdn.movingboxsale.com/products/c31e25815598496598955023958c1978.jpg
 ---
 desc

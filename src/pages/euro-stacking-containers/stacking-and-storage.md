@@ -17,14 +17,14 @@ tags:
   - plastic stackable bin
 images:
   - >-
-    http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/61af55b73a6e43708d7d4e6f657365b4.JPG
+    https://cdn.movingboxsale.com/products/61af55b73a6e43708d7d4e6f657365b4.JPG
   - >-
-    http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/eff93d1aa88243d5ba8307d6cfe82595.jpg
+    https://cdn.movingboxsale.com/products/eff93d1aa88243d5ba8307d6cfe82595.jpg
   - >-
-    http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/a194fdf14abd4c34ad13ffff174da3e7.jpg
+    https://cdn.movingboxsale.com/products/a194fdf14abd4c34ad13ffff174da3e7.jpg
   - >-
-    http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/8afbff821caa46a5929cf07122c186da.jpg
+    https://cdn.movingboxsale.com/products/8afbff821caa46a5929cf07122c186da.jpg
   - >-
-    http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/4e7b691052044ce0bcfc0485d4994870.jpg
+    https://cdn.movingboxsale.com/products/4e7b691052044ce0bcfc0485d4994870.jpg
 ---
 desc

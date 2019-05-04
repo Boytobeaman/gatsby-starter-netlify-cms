@@ -18,14 +18,14 @@ tags:
   - nestable lidded container
 images:
   - >-
-    https://static.movingbox.cn/products/7c5b67ea2f4a4522a893e1a8883f238c.jpg
+    https://cdn.movingboxsale.com/products/7c5b67ea2f4a4522a893e1a8883f238c.jpg
   - >-
-    https://static.movingbox.cn/products/9c5ea813d51b4628bfd3eb557cacf353.jpg
+    https://cdn.movingboxsale.com/products/9c5ea813d51b4628bfd3eb557cacf353.jpg
   - >-
-    https://static.movingbox.cn/products/346571cfe2a5479b822d23caad4a372a.jpg
+    https://cdn.movingboxsale.com/products/346571cfe2a5479b822d23caad4a372a.jpg
   - >-
-    https://static.movingbox.cn/products/ea75864aec62467aa6a834eca7eb21f6.jpg
+    https://cdn.movingboxsale.com/products/ea75864aec62467aa6a834eca7eb21f6.jpg
   - >-
-    https://static.movingbox.cn/products/cf47625b64ca4f6ba0c447d150b80eec.jpg
+    https://cdn.movingboxsale.com/products/cf47625b64ca4f6ba0c447d150b80eec.jpg
 ---
 desc
