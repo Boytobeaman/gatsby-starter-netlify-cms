@@ -122,7 +122,7 @@ export default class Index extends React.Component {
                     <div className="field form-group mb-1">
                       <label className="label" htmlFor={"message"}>Message</label>
                       <div className="control">
-                        <textarea className="textarea form-control" placeholder="Please tell us product details and your requirements" name={"message"} onChange={this.handleChange} id={"message"} required={true} />
+                        <textarea className="textarea form-control message-detail" placeholder="Please tell us product details and your requirements" name={"message"} onChange={this.handleChange} id={"message"} required={true} />
                       </div>
                     </div>
                     <div className="field form-group mb-1 d-none">
@@ -132,7 +132,7 @@ export default class Index extends React.Component {
                       </div>
                     </div>
                     <div className="field form-group">
-                      <button className="button btn btn-danger is-link" type="submit">{this.state.sending?'Processing':'Send'}</button>
+                      <button className="button btn btn-danger btn-lg is-link" type="submit">{this.state.sending?'Processing':'Send'}</button>
                     </div>
                   </form>
                 </div>
@@ -162,7 +162,7 @@ export default class Index extends React.Component {
                   
                   <h5>Email: </h5>
                   <p>
-                    <a className="btn btn-danger" href="mailto:seller006@joinplastic.com?subject=Inquiry about your plastic crate">seller006@joinplastic.com</a>
+                    <a className="btn btn-secondary" href="mailto:seller006@joinplastic.com?subject=Inquiry about your plastic crate">seller006@joinplastic.com</a>
                   </p>
                 </div>
               </div>
