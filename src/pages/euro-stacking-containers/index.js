@@ -52,8 +52,21 @@ export default class EuroStackingContainerPage extends React.Component {
                 )
               })}
 
-            <div className="cat-desc">
+            <div className="cat-desc-section">
               <h4 className="">EURO STACKING CONTAINERS description</h4>
+              <div className="cat-desc-text">
+                Available in a variety of dimensions, Plastic EURO stacking containers and boxes generally have a greater volume capacity due to their straight sides. 
+                The reinforced corners of the Plastic Euro Stacking Containers make them an ideal choice for transporting heavy loads.
+                Our Euro (European standard size) stacking boxes can be tailored to suit your requirements with lids, hinges, inner dividers, personalised print and locking clasps.
+                Thanks to its food grade plastic construction, this high quality range of plastic containers is resistant to acids and oils.
+                Euro Containers are uniform in dimensions meaning they are ideal for automated manufacturing systems or for product handling.
+                We stock a great selection of Euro Containers, all our stacking heavy duty containers are strong and durable.
+              </div>
+              <div className="cat-desc-text">
+                Features & Benefites of the EURO stacking container
+                <ul>
+                </ul>
+              </div>
             </div>
           </div>
         </section>

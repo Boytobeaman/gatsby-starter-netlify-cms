@@ -87,6 +87,7 @@ export default class FoldingcratePage extends React.Component {
                 <ul>
                   <li>QUICKLY COLLAPSIBLE & LIGHTWEIGHT</li>
                   <li>100% RECYCLABLE - no waste disposal at food retailer</li>
+                  <li>Foldable and stackable to maximize truck and store space.</li>
                   <li>SUPER EASY TO WASH & REUSE</li>
                   <li>BUILT AMAZINGLY STRONG TO LAST</li>
                   <li>SUPPORTS ALL TYPES OF ITEMS</li>
