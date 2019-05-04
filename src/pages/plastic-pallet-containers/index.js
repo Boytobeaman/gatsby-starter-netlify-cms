@@ -74,7 +74,7 @@ export const PlasticPalletContainerPageQuery = graphql`
   query PlasticPalletContainerIndexQuery {
     allMarkdownRemark(
       sort: { order: DESC, fields: [frontmatter___date] },
-      filter: { frontmatter: { templateKey: { eq: "movingcrate-post" } }}
+      filter: { frontmatter: { templateKey: { eq: "plasticpalletcontainer-post" } }}
     ) {
       edges {
         node {
