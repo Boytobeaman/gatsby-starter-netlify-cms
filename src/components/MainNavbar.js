@@ -61,6 +61,11 @@ export default class MainNavbar extends React.Component{
               </Link>
             </NavItem>
             <NavItem>
+              <Link className="nav-link" to="/plastic-pallet-containers/">
+                Plastic Pallet Containers
+              </Link>
+            </NavItem>
+            <NavItem>
               <Link className="nav-link" to="/contact/">
                 Contact Us
               </Link>

@@ -50,7 +50,9 @@ const ProductDetailTemplate = ({
   folded_height,
   volumn,
   weight,
-  images
+  images,
+  static_load,
+  dynamic_load
 }) => {
   const PostContent = contentComponent || Content
   if(images && images.length>0){
@@ -185,6 +187,20 @@ const ProductDetailTemplate = ({
                         <hr className="w-100 mt-4 mb-0" />
                         <span className="gallon pull-left value">{(volumn * ltogal).toFixed(2) }</span>
                         <span className="pull-right">Us gallon</span>
+                      </td>
+                    </tr>
+                  )}
+                  {static_load && dynamic_load && (
+                    <tr>
+                      <td>
+                        <h6>Load capacity</h6>
+                      </td>
+                      <td className="internal-dimension">
+                        <span className="liters pull-left value">{static_load}</span>
+                        <span className="pull-right">Static (T)</span>
+                        <hr className="w-100 mt-4 mb-0" />
+                        <span className="gallon pull-left value">{dynamic_load}</span>
+                        <span className="pull-right">Dynamic (T)</span>
                       </td>
                     </tr>
                   )}
