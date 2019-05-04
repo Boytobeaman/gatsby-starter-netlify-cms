@@ -137,23 +137,23 @@ export default class Index extends React.Component {
                   </form>
                 </div>
                 <div className="col-md-6">
-                  <div className="row">
+                  <div className="row py-2 border mx-0 my-1">
                     <div className="col-sm-4">
                       <img className="img-fluid" src={this.state.p_img} />
                     </div>
                     <div className="col-sm-8">
-                      <p>Product model: {this.state.p_model}</p>
+                      <h6>Product model: {this.state.p_model}</h6>
                       <p>7~15 Lead time</p>
                       <p>Payment method:  T/T, L/C at sight and Paypal for sample</p>
                     </div>
                   </div>
-                  <h5>Location:</h5>
+                  <h5>Our location:</h5>
                   <div className="alert alert-secondary" role="alert">
                     <p className="mb-0">Room 1405, No.28 Moyu Road</p>
                     <p className="mb-0">Anting county,Jiading District, Shanghai, China</p>
                   </div>
                   
-                  <h5>Call: </h5>
+                  <h5>Call us: </h5>
                   <div className="alert alert-secondary" role="alert">
                     <p className="mb-0">(+86)021-59117621</p>
                     <p className="mb-0">(+86)18217103917</p>
