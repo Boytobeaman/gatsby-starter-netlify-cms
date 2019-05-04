@@ -7,7 +7,7 @@ import { HTMLContent } from '../components/Content'
 import ProductDetailTemplate from '../components/ProductDetailTemplate'
 
 
-const MovingcratePost = ({ data }) => {
+const PlasticPalletContainerPost = ({ data }) => {
   const { markdownRemark: post } = data
 
   return (
@@ -45,17 +45,17 @@ const MovingcratePost = ({ data }) => {
   )
 }
 
-MovingcratePost.propTypes = {
+PlasticPalletContainerPost.propTypes = {
   data: PropTypes.shape({
     markdownRemark: PropTypes.object,
   }),
   imagea: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
 }
 
-export default MovingcratePost
+export default PlasticPalletContainerPost
 
 export const pageQuery = graphql`
-  query MovingcratePostByID($id: String!) {
+  query PlasticPalletContainerPostByID($id: String!) {
     markdownRemark(id: { eq: $id }) {
       id
       html

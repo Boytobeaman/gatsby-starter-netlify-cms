@@ -11,6 +11,8 @@ internal_width: '280'
 internal_height: '270'
 volumn: '29.8'
 weight: '1.6'
+static_load: '1.6'
+dynamic_load: '1.6'
 date: 2019-01-26T13:21:06.164Z
 tags:
   - attached lid container
