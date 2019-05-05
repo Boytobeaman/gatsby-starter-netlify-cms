@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import logo from '../img/movingboxlogo.svg'
+import logo from '../img/movingboxlogo-red.svg'
 import {
   Collapse,
   Navbar,
@@ -28,8 +28,8 @@ export default class MainNavbar extends React.Component{
   render() {
     return (
       <Navbar color="dark" dark expand="md" id="mainNavbar">
-        <NavbarBrand>
-          <Link to="/" className="navbar-brand">
+        <NavbarBrand className="py-0">
+          <Link to="/" className="navbar-brand py-0">
                 <figure className="image mb-0">
                   <img src={logo} alt="moving crates logo" style={{ height: '40px' }} />
                 </figure>

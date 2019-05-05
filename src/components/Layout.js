@@ -3,7 +3,7 @@ import Helmet from 'react-helmet'
 
 import MainNavbar from '../components/MainNavbar'
 import Footer from './Footer'
-import favicon from '../img/movingboxlogo.svg'
+import favicon from '../img/movingboxlogo-red.svg'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './all.scss'
 
