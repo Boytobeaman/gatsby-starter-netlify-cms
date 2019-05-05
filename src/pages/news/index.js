@@ -10,10 +10,10 @@ export default class NewsIndexPage extends React.Component {
 
     return (
       <Layout>
-        <section className="section">
+        <section className="section pt-4">
           <div className="container">
             <div className="content">
-              <h1 className="has-text-weight-bold is-size-2">Latest Stories</h1>
+              <h1 className="h3">Latest Stories</h1>
             </div>
             {posts
               .map(({ node: post }) => (
