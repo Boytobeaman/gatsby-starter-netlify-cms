@@ -31,7 +31,7 @@ export default class MainNavbar extends React.Component{
         <NavbarBrand>
           <Link to="/" className="navbar-brand">
                 <figure className="image mb-0">
-                  <img src={logo} alt="Kaldi" style={{ width: '88px' }} />
+                  <img src={logo} alt="moving crates logo" style={{ height: '40px' }} />
                 </figure>
           </Link>
         </NavbarBrand>
