@@ -52,9 +52,9 @@ export default class MovingcratePage extends React.Component {
                 )
               })}
 
-            <div className="cat-desc">
+            <div className="cat-desc-section">
               <h4 className="">Plastic Moving Crates Description</h4>
-              <div>
+              <div className="cat-desc-text">
                 We manufacture and supplier moving crates for many companies
                 Our plastic moving boxes help save money while saving the environment! Our attached lid containers are clean, green, and durable.
                 many moving companies use this box as moving box,for example
@@ -73,7 +73,7 @@ export default class MovingcratePage extends React.Component {
                 </li>
                 <li>Aaltonen International Removals & Storage from Ireland </li>
                 <li>
-                  <a href="https://www.boxitstorage.com/" target="_blank" rel="nofollow">BOXIT Co.</a> 
+                  <a href="https://www.boxitstorage.com/" target="_blank" rel="nofollow">BOXIT Co. </a> 
                    from Kuwait 
                 </li>
               </ul>
