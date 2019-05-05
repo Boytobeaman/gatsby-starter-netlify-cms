@@ -228,7 +228,7 @@ export default class Index extends React.Component {
                 <div className="position-absolute map-overlay">
                   <div className="d-flex align-items-center justify-content-center h-100">
                     <div className="col-sm-8 text-center p-3 content">
-                      <h6 className="py-3">If you have any questions about our products and service, please don't hesitate to contact us</h6>
+                      <h6 className="py-3 h4">If you interested in our products and service, please don't hesitate to contact us</h6>
                       <Link className="btn btn-danger btn-lg active" role="button" aria-pressed="true" to="/contact/">
                         Contact Us
                       </Link>

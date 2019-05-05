@@ -20,7 +20,7 @@ export default class PlasticPalletContainerPage extends React.Component {
         <section className="section">
         <Helmet>
             <title>{`Plastic pallet boxes, plastic bulk containers Manufacturer & Supplier`}</title>
-            <meta name="description" content={`Wholesale Plastic pallet boxes,plastic bulk containers`} />
+            <meta name="description" content={`Wholesale Plastic pallet boxes,plastic bulk containers,We offer you hot sale and cheap plastic pallet bin, folding plastic pallet box, pallet crate at wholesale price.`} />
           </Helmet>
           <div className="container-fluid">
             <nav aria-label="breadcrumb">
@@ -51,9 +51,14 @@ export default class PlasticPalletContainerPage extends React.Component {
                   </div>
                 )
               })}
-
-            <div className="cat-desc">
-              <h4 className="">Plastic pallet boxes description</h4>
+            <div className="cat-desc-section">
+              <h4 className="">Plastic Pallet Boxes Description</h4>
+              <div className="cat-desc-text">
+                Joinplastic is an experienced plastic bulk containers supplier among those world famous plastic pallet box manufacturers.
+                We offer you hot sale and cheap plastic pallet bin, folding plastic pallet box, pallet crate, plastic pallet containers at wholesale price.
+                Our Plastic pallet containers are made from the most durable, dependable plastics, designed to withstand the shipping process for years to come.
+                We offer both heavy duty and light duty pallet boxes.
+              </div>
             </div>
           </div>
         </section>
