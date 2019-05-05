@@ -53,7 +53,30 @@ export default class MovingcratePage extends React.Component {
               })}
 
             <div className="cat-desc">
-              <h4 className="">Folding crate description</h4>
+              <h4 className="">Plastic Moving Crates Description</h4>
+              <div>
+                We manufacture and supplier moving crates for many companies
+                Our plastic moving boxes help save money while saving the environment! Our attached lid containers are clean, green, and durable.
+                many moving companies use this box as moving box,for example
+              </div>
+              <ul>
+                <li> 
+                  <a href="https://rentacrate.com/" target="_blank" rel="nofollow">Rentacrate</a>,
+                  PRO Moving Service,
+                  <a href="https://biggreentotes.com/" target="_blank" rel="nofollow">Big Green Totes</a>,
+                  <a href="https://bluecrates.com/" target="_blank" rel="nofollow">BLUE CRATE LLC</a>,
+                  First Responders Moving 
+                  from USA </li>
+                <li>Moveage Group,Boxes 2 You,
+                  <a href="https://www.chessmoving.com.au/" target="_blank" rel="nofollow">Chess Moving Perth</a> 
+                  from Australia
+                </li>
+                <li>Aaltonen International Removals & Storage from Ireland </li>
+                <li>
+                  <a href="https://www.boxitstorage.com/" target="_blank" rel="nofollow">BOXIT Co.</a> 
+                   from Kuwait 
+                </li>
+              </ul>
             </div>
           </div>
         </section>

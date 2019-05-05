@@ -48,29 +48,7 @@ export default class IndexPage extends React.Component {
                 <Slider items={items}/>
               </div>
           </section>
-          <section className="mt-3">
-            <div className="row mx-0 border bg-light">
-              <div className="col-sm-7 d-flex align-items-center justify-content-center">
-                <div className="">
-                  <h2>Plastic Crates Manufacturer & Supplier</h2>
-                  <ul>
-                    <li>Wholesale Pricing</li>
-                    <li>All Colors + Custom Logo</li>
-                    <li>Quality assurance</li>
-                  </ul>
-                  <div className="text-left">
-                    <h6>Get the best deal for plastic moving boxes, collapsible plastic crates, stackable plastic crates, pallet boxes from Chinese manufacture directly.</h6>
-                    <h6>We are a plastic boxes manufacturers specialised in plastics boxes crates for storage, logistics & transport.</h6>
-                  </div>
-                </div>
-              </div>
-              <div className="col-sm-5 pr-0">
-                <LazyLoadImage effect="blur" src={`${cdn_url}/static/plastic-crate-manufacture-factory.jpg`} className="img-fluid"
-                  alt="" />
-              </div>
-            </div>
-          </section>
-          <section className="my-5 border bg-light home-cat-pic">
+          <section className="my-3 border bg-light home-cat-pic">
             <div className="text-center mb-4 border-bottom h5 py-3">Products Categories</div>
             <div className="row">
               <div className="col-sm-3">
@@ -123,7 +101,29 @@ export default class IndexPage extends React.Component {
               </div>
             </div>
           </section>
-          <section className="mt-5 border bg-light">
+          <section className="mt-3">
+            <div className="row mx-0 border bg-light">
+              <div className="col-sm-7 d-flex align-items-center justify-content-center">
+                <div className="">
+                  <h2>Plastic Crates Manufacturer & Supplier</h2>
+                  <ul>
+                    <li>Wholesale Pricing</li>
+                    <li>All Colors + Custom Logo</li>
+                    <li>Quality assurance</li>
+                  </ul>
+                  <div className="text-left">
+                    <h6>Get the best deal for plastic moving boxes, collapsible plastic crates, stackable plastic crates, pallet boxes from Chinese manufacture directly.</h6>
+                    <h6>We are a plastic boxes manufacturers specialised in plastics boxes crates for storage, logistics & transport.</h6>
+                  </div>
+                </div>
+              </div>
+              <div className="col-sm-5 pr-0">
+                <LazyLoadImage effect="blur" src={`${cdn_url}/static/plastic-crate-manufacture-factory.jpg`} className="img-fluid"
+                  alt="" />
+              </div>
+            </div>
+          </section>
+          <section className="mt-3 border bg-light">
               <div className="text-center mb-4 border-bottom h5 py-3">We Provide Crates and Boxes For</div>
               <div className="row text-center">
                   <div className="col-sm-12 col-md-4">
