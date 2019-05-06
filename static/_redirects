@@ -3,7 +3,7 @@
 /mynews/*  /blog/:splat
 
 
-/home         /homepage              301
+/moving-crates/         /moving-bins/              301
 
 
 #old joinplastic.com product category redirects
