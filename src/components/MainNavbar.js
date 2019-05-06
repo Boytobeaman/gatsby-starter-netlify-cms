@@ -50,8 +50,8 @@ export default class MainNavbar extends React.Component{
               </Link>
             </NavItem>
             <NavItem>
-              <Link className="nav-link" to="/moving-crates/">
-                Moving Crates
+              <Link className="nav-link" to="/moving-bins/">
+                Moving Bins
               </Link>
             </NavItem>
             <NavItem>

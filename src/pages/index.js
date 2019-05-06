@@ -17,7 +17,7 @@ export default class IndexPage extends React.Component {
         src: `${image_one}`,
         altText: 'Attached Lid Container',
         caption: '',
-        link_to: '/moving-crates/'
+        link_to: '/moving-bins/'
       },
       {
         src: `${image_two}`,
