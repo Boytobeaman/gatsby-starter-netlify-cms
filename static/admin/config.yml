@@ -42,9 +42,9 @@ collections:
       - {label: "Tags", name: "tags", widget: "list", required: false}
       - {label: "Images", name: images, widget: list, required: false}
       - {label: "Body", name: "body", widget: "markdown"}
-  - name: "movingCrate"
-    label: "Moving Crate"
-    folder: "src/pages/moving-crates"
+  - name: "movingBin"
+    label: "Moving Bins"
+    folder: "src/pages/moving-bins"
     create: true
     slug: "{{slug}}"
     fields:

@@ -19,8 +19,8 @@ export default class MovingcratePage extends React.Component {
       <Layout>
         <section className="section">
         <Helmet>
-            <title>{`Plastic Moving Crates Manufacturer & Supplier | Moving box for sale`}</title>
-            <meta name="description" content={`Wholesale Plastic moving boxes,moving crates for sale, make your move as environmentally-friendly as possible`} />
+            <title>{`Plastic Moving Bins, cheap plastic bins for moving | Moving boxes for sale`}</title>
+            <meta name="description" content={`Wholesale Plastic moving bins, cheap moving crates for sale, make your move as environmentally-friendly as possible`} />
           </Helmet>
           <div className="container-fluid">
             <nav aria-label="breadcrumb">
@@ -30,7 +30,7 @@ export default class MovingcratePage extends React.Component {
                     Home
                   </Link>
                 </li>
-                <li className="breadcrumb-item active" aria-current="page">Moving Crates</li>
+                <li className="breadcrumb-item active" aria-current="page">Moving Bins</li>
               </ol>
             </nav>
             
