@@ -9,3 +9,7 @@
 #old joinplastic.com product category redirects
 /products/attached-lid-containers/attached-lid-containers.php /moving-bins/ 301
 /products/foldableBox/foldablePlasticCrates.php /folding-crates/ 301
+
+
+
+https://www.movingbox.cn/* https://www.movingboxsale.com/:splat 301!
