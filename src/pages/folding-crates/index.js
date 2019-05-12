@@ -33,29 +33,37 @@ export default class FoldingcratePage extends React.Component {
                 <li className="breadcrumb-item active" aria-current="page">Folding Crates</li>
               </ol>
             </nav>
-            <div className="row mb-1 no-gutters">
-              <div className="col-sm-4">
-                <LazyLoadImage 
-                  className="img-fluid w-100" 
-                  src={`${cdn_url}/static/collapsible-storage-containers-fold.gif`}
-                  placeholderSrc={cdn_loading_img}
-                  alt="Collapsible Plastic Crate" />
-              </div>
-              
-              <div className="col-sm-8">
-                <div className="d-flex align-items-center">
-                  <div className="p-2 cat-desc-top">
-                    <h2>Collapsible Plastic Crates</h2>
-                    <ul>
-                      <li>Collapsible & Stackable & Durable</li>
-                      <li>ventilated, multiple heights, returnable, efficient packing.</li>
-                      <li>100% New PP material.</li>
-                    </ul>
+            <div className="cat-desc-top-wrap">
+              <div className="row mb-1 no-gutters">
+                <div className="col-sm-4">
+                  <LazyLoadImage 
+                    className="img-fluid w-100" 
+                    src={`${cdn_url}/static/collapsible-storage-containers-fold.gif`}
+                    placeholderSrc={cdn_loading_img}
+                    alt="Collapsible Plastic Crate" />
+                </div>
+                <div className="col-sm-8">
+                  <div className="d-flex align-items-center">
+                    <div className="p-2 cat-desc-top">
+                      <h2>Collapsible Plastic Crates</h2>
+                      <ul>
+                        <li>Collapsible & Stackable & Durable</li>
+                        <li>ventilated, multiple heights, returnable, efficient packing.</li>
+                        <li>100% New PP material.</li>
+                      </ul>
+                      <p>
+                        Many companies want to find high volume use in a low cost crate,
+                        we provide a secure and reliable solution for them,
+                        These collapsible, reusable plastic crates are Efficient, Economical and Environmentally friendly,
+                        they can help reduce shipping and storage expenses.
+                      </p>
+                    </div>
+                    
                   </div>
-                  
                 </div>
               </div>
             </div>
+            
             
             {posts
               .map(({ node: post }) => {
