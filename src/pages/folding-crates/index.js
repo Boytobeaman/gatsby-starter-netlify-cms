@@ -45,13 +45,13 @@ export default class FoldingcratePage extends React.Component {
                 <div className="col-sm-8">
                   <div className="d-flex align-items-center">
                     <div className="p-2 cat-desc-top">
-                      <h2>Collapsible Plastic Crates</h2>
+                      <h2 className="cat-desc-top-title">Collapsible Plastic Crates</h2>
                       <ul>
                         <li>Collapsible & Stackable & Durable</li>
                         <li>ventilated, multiple heights, returnable, efficient packing.</li>
                         <li>100% New PP material.</li>
                       </ul>
-                      <p>
+                      <p className="d-none d-lg-block">
                         Many companies want to find high volume use in a low cost crate,
                         we provide a secure and reliable solution for them,
                         These collapsible, reusable plastic crates are Efficient, Economical and Environmentally friendly,

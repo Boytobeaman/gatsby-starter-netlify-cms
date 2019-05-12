@@ -92,6 +92,11 @@
 .cat-desc-top-wrap{
     background-color: #36a9e1;
     color: #fff;
+    .cat-desc-top-title{
+        @media only screen and (max-width: 767px) {
+            font-size: 1.5rem;
+        }
+    }
 }
 
 @media only screen and (max-width: 767px) {
