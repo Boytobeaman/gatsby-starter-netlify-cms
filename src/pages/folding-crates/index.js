@@ -44,7 +44,7 @@ export default class FoldingcratePage extends React.Component {
                 </div>
                 <div className="col-sm-8">
                   <div className="d-flex align-items-center">
-                    <div className="p-2 cat-desc-top">
+                    <div className="p-3 cat-desc-top">
                       <h2 className="cat-desc-top-title">Collapsible Plastic Crates</h2>
                       <ul>
                         <li>Collapsible & Stackable & Durable</li>
