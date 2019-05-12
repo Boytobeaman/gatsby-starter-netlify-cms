@@ -76,7 +76,7 @@ export default class Index extends React.Component {
               </ol>
             </nav>
             <div className="content p-3 bg-white">
-              <h1 className="h4">Contact us <span className="text-danger">(MOQ:300)</span></h1>
+              <h1 className="h4">Contact us & Inquiry <span className="text-danger">(MOQ:300)</span></h1>
               <div className="row">
                 <div className="col-md-6">
                   <form
@@ -86,6 +86,7 @@ export default class Index extends React.Component {
                     data-netlify="true"
                     data-netlify-honeypot="bot-field"
                     onSubmit={this.handleSubmit}
+                    className="contact-us"
                   >
                     {/* The `form-name` hidden field is required to support form submissions without JavaScript */}
                     <input type="hidden" name="form-name" value="contact" />
