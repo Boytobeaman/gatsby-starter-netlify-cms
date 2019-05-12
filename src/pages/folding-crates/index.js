@@ -35,24 +35,25 @@ export default class FoldingcratePage extends React.Component {
             </nav>
             <div className="row mb-1 no-gutters">
               <div className="col-sm-4">
-                <video controls className='w-100 h-100' poster={`${cdn_url}/products/a4597984739a4610b258ac90ef4b56dc.jpg?x-oss-process=image/resize,h_200`}>
-                  <source src={`${cdn_url}/static/video/collapsible-crate.mp4`} type="video/mp4" />
-                  Your browser does not support HTML5 video.
-                </video>
-              </div>
-              <div className="col-sm-4">
                 <LazyLoadImage 
                   className="img-fluid w-100" 
                   src={`${cdn_url}/static/collapsible-storage-containers-fold.gif`}
                   placeholderSrc={cdn_loading_img}
                   alt="Collapsible Plastic Crate" />
               </div>
-              <div className="col-sm-4">
-                <LazyLoadImage 
-                  className="img-fluid w-100" 
-                  src={`${cdn_url}/static/collapsible-storage-containers-fold-b.gif`}
-                  placeholderSrc={cdn_loading_img}
-                  alt="Collapsible Crate" />
+              
+              <div className="col-sm-8">
+                <div className="d-flex align-items-center">
+                  <div className="p-2 cat-desc-top">
+                    <h2>Collapsible Plastic Crates</h2>
+                    <ul>
+                      <li>Collapsible & Stackable & Durable</li>
+                      <li>ventilated, multiple heights, returnable, efficient packing.</li>
+                      <li>100% New PP material.</li>
+                    </ul>
+                  </div>
+                  
+                </div>
               </div>
             </div>
             
@@ -73,7 +74,28 @@ export default class FoldingcratePage extends React.Component {
                   </div>
                 )
               })}
-
+            <div className="row mb-1 no-gutters">
+              <div className="col-sm-4">
+                <video controls className='w-100 h-100' poster={`${cdn_url}/products/a4597984739a4610b258ac90ef4b56dc.jpg?x-oss-process=image/resize,h_200`}>
+                  <source src={`${cdn_url}/static/video/collapsible-crate.mp4`} type="video/mp4" />
+                  Your browser does not support HTML5 video.
+                </video>
+              </div>
+              <div className="col-sm-4">
+                <LazyLoadImage 
+                  className="img-fluid w-100" 
+                  src={`${cdn_url}/static/collapsible-storage-containers-fold.gif`}
+                  placeholderSrc={cdn_loading_img}
+                  alt="Collapsible Plastic Crate" />
+              </div>
+              <div className="col-sm-4">
+                <LazyLoadImage 
+                  className="img-fluid w-100" 
+                  src={`${cdn_url}/static/collapsible-storage-containers-fold-b.gif`}
+                  placeholderSrc={cdn_loading_img}
+                  alt="Collapsible Crate" />
+              </div>
+            </div>
             <div className="cat-desc-section">
               <h4 className="">Folding crate description</h4>
               <div className="cat-desc-text">
