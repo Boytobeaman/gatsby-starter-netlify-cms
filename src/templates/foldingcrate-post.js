@@ -5,6 +5,7 @@ import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import { HTMLContent } from '../components/Content'
 import ProductDetailTemplate from '../components/ProductDetailTemplate'
+import SEO from '../components/SEO/SEO'
 
 const FoldingcratePost = ({ data }) => {
   const { markdownRemark: post } = data
@@ -26,12 +27,13 @@ const FoldingcratePost = ({ data }) => {
         weight={post.frontmatter.weight}
         images={post.frontmatter.images}
         helmet={
-          <Helmet
+          <SEO 
             titleTemplate="%s | Folding Crate"
-          >
-            <title>{`${post.frontmatter.title}`}</title>
-            <meta name="description" content={`${post.frontmatter.description}`} />
-          </Helmet>
+            title={post.frontmatter.title}
+            description = {post.frontmatter.description}
+            image = {images[0]}
+            pathname = {`/folding-crates/${post.frontmatter.title.replace(/ +/g,"-")}`}
+          />
         }
         parentLevelLink="/folding-crates/"
         parentLevelLinkText="Folding Crates"
