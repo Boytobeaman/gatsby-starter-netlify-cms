@@ -25,7 +25,6 @@ export default class FoldingcratePage extends React.Component {
             titleTemplate="%s | collapsible crate"
             title='Collapsible Plastic Crate, folding plastic crates'
             description = 'Wholesale Collapsible plastic crate, folding plastic crates which are suitable for the storage and handling of goods. The folding crate can be folded and reused indefinitely'
-            image = {}
             pathname = {`${cat_link}`}
           />
           <div className="container-fluid">

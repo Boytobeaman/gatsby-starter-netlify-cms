@@ -24,7 +24,6 @@ export default class PlasticPalletContainerPage extends React.Component {
             titleTemplate="%s | Plastic pallet boxes"
             title='Plastic bulk containers Manufacturer & Supplier'
             description = 'Wholesale Plastic moving bins, cheap moving crates for sale, make your move as environmentally-friendly as possible'
-            image = {}
             pathname = {`${cat_link}`}
           />
           <div className="container-fluid">

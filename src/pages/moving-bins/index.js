@@ -24,7 +24,6 @@ export default class MovingcratePage extends React.Component {
             titleTemplate="%s | Moving boxes for sale"
             title='Plastic Moving Bins, cheap plastic bins for moving'
             description = 'Wholesale Plastic moving bins, cheap moving crates for sale, make your move as environmentally-friendly as possible'
-            image = {}
             pathname = {`${cat_link}`}
           />
           <div className="container-fluid">
