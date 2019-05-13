@@ -31,7 +31,7 @@ const FoldingcratePost = ({ data }) => {
             titleTemplate="%s | Folding Crate"
             title={post.frontmatter.title}
             description = {post.frontmatter.description}
-            image = {images[0]}
+            image = {post.frontmatter.images[0]}
             pathname = {`/folding-crates/${post.frontmatter.title.replace(/ +/g,"-")}`}
           />
         }
