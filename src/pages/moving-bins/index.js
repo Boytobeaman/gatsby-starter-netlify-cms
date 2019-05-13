@@ -4,6 +4,7 @@ import PropTypes from 'prop-types'
 import { Link, graphql } from 'gatsby'
 import ProductDetailTemplateCat from '../../components/ProductDetailTemplateCat'
 import Layout from '../../components/Layout'
+import SEO from '../../components/SEO/SEO'
 import '../../cat-page-style.scss'
 
 export default class MovingcratePage extends React.Component {
@@ -14,14 +15,18 @@ export default class MovingcratePage extends React.Component {
   render() {
     const { data } = this.props
     const { edges: posts } = data.allMarkdownRemark
+    let cat_link = '/moving-bins/'
 
     return (
       <Layout>
         <section className="section">
-        <Helmet>
-            <title>{`Plastic Moving Bins, cheap plastic bins for moving | Moving boxes for sale`}</title>
-            <meta name="description" content={`Wholesale Plastic moving bins, cheap moving crates for sale, make your move as environmentally-friendly as possible`} />
-          </Helmet>
+          <SEO 
+            titleTemplate="%s | Moving boxes for sale"
+            title='Plastic Moving Bins, cheap plastic bins for moving'
+            description = 'Wholesale Plastic moving bins, cheap moving crates for sale, make your move as environmentally-friendly as possible'
+            image = {}
+            pathname = {`${cat_link}`}
+          />
           <div className="container-fluid">
             <nav aria-label="breadcrumb">
               <ol className="breadcrumb bg-white my-2">

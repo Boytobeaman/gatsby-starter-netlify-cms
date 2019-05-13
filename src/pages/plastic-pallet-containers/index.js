@@ -4,6 +4,7 @@ import PropTypes from 'prop-types'
 import { Link, graphql } from 'gatsby'
 import ProductDetailTemplateCat from '../../components/ProductDetailTemplateCat'
 import Layout from '../../components/Layout'
+import SEO from '../../components/SEO/SEO'
 import '../../cat-page-style.scss'
 
 export default class PlasticPalletContainerPage extends React.Component {
@@ -14,14 +15,18 @@ export default class PlasticPalletContainerPage extends React.Component {
   render() {
     const { data } = this.props
     const { edges: posts } = data.allMarkdownRemark
+    let cat_link = '/plastic-pallet-containers/'
 
     return (
       <Layout>
         <section className="section">
-        <Helmet>
-            <title>{`Plastic pallet boxes, plastic bulk containers Manufacturer & Supplier`}</title>
-            <meta name="description" content={`Wholesale Plastic pallet boxes,plastic bulk containers,We offer you hot sale and cheap plastic pallet bin, folding plastic pallet box, pallet crate at wholesale price.`} />
-          </Helmet>
+          <SEO 
+            titleTemplate="%s | Plastic pallet boxes"
+            title='Plastic bulk containers Manufacturer & Supplier'
+            description = 'Wholesale Plastic moving bins, cheap moving crates for sale, make your move as environmentally-friendly as possible'
+            image = {}
+            pathname = {`${cat_link}`}
+          />
           <div className="container-fluid">
             <nav aria-label="breadcrumb">
               <ol className="breadcrumb bg-white my-2">

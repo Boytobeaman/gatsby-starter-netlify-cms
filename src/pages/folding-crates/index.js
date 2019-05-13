@@ -4,6 +4,7 @@ import PropTypes from 'prop-types'
 import { Link, graphql } from 'gatsby'
 import ProductDetailTemplateCat from '../../components/ProductDetailTemplateCat'
 import Layout from '../../components/Layout'
+import SEO from '../../components/SEO/SEO'
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 import { cdn_url, cdn_loading_img } from '../../utils'
@@ -15,14 +16,18 @@ export default class FoldingcratePage extends React.Component {
   render() {
     const { data } = this.props
     const { edges: posts } = data.allMarkdownRemark
+    let cat_link = '/folding-crates/'
 
     return (
       <Layout>
         <section className="section">
-          <Helmet>
-            <title>{`Collapsible Plastic Crate, folding plastic crates | collapsible crate`}</title>
-            <meta name="description" content={`Wholesale Collapsible plastic crate, folding plastic crates which are suitable for the storage and handling of goods. The folding crate can be folded and reused indefinitely`} />
-          </Helmet>
+          <SEO 
+            titleTemplate="%s | collapsible crate"
+            title='Collapsible Plastic Crate, folding plastic crates'
+            description = 'Wholesale Collapsible plastic crate, folding plastic crates which are suitable for the storage and handling of goods. The folding crate can be folded and reused indefinitely'
+            image = {}
+            pathname = {`${cat_link}`}
+          />
           <div className="container-fluid">
             <nav aria-label="breadcrumb">
               <ol className="breadcrumb bg-white my-2">

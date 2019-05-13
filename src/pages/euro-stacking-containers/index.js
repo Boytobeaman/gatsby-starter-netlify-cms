@@ -4,6 +4,7 @@ import PropTypes from 'prop-types'
 import { Link, graphql } from 'gatsby'
 import ProductDetailTemplateCat from '../../components/ProductDetailTemplateCat'
 import Layout from '../../components/Layout'
+import SEO from '../../components/SEO/SEO'
 import '../../cat-page-style.scss'
 
 export default class EuroStackingContainerPage extends React.Component {
@@ -14,14 +15,17 @@ export default class EuroStackingContainerPage extends React.Component {
   render() {
     const { data } = this.props
     const { edges: posts } = data.allMarkdownRemark
-
+    let cat_link = '/euro-stacking-containers/'
     return (
       <Layout>
         <section className="section">
-        <Helmet>
-            <title>{`Plastic Euro Stacking Containers Manufacturer & Supplier`}</title>
-            <meta name="description" content={`Wholesale Plastic Euro Stacking Containers, make your move as environmentally-friendly as possible`} />
-          </Helmet>
+          <SEO 
+            titleTemplate="%s | Euro Stacking Containers"
+            title='Plastic Euro Stacking Containers Manufacturer & Supplier'
+            description = 'Wholesale Plastic Euro Stacking Containers, make your move as environmentally-friendly as possible``Wholesale Plastic Euro Stacking Containers, make your move as environmentally-friendly as possible'
+            image = {}
+            pathname = {`${cat_link}`}
+          />
           <div className="container-fluid">
             <nav aria-label="breadcrumb">
               <ol className="breadcrumb bg-white my-2">
