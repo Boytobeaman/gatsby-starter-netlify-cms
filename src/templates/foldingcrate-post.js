@@ -32,7 +32,7 @@ const FoldingcratePost = ({ data }) => {
             title={post.frontmatter.title}
             description = {post.frontmatter.description}
             image = {post.frontmatter.images[0]}
-            pathname = {`/folding-crates/${post.frontmatter.title.replace(/ +/g,"-")}`}
+            pathname = {`/folding-crates/${post.frontmatter.title.replace(/ +/g,"-")}/`}
           />
         }
         parentLevelLink="/folding-crates/"
