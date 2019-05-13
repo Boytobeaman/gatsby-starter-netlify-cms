@@ -5,10 +5,12 @@ import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import { HTMLContent } from '../components/Content'
 import ProductDetailTemplate from '../components/ProductDetailTemplate'
+import SEO from '../components/SEO/SEO'
 
 
 const MovingcratePost = ({ data }) => {
   const { markdownRemark: post } = data
+  let cat_link = '/moving-crates/'
 
   return (
     <Layout>
@@ -27,15 +29,16 @@ const MovingcratePost = ({ data }) => {
         weight={post.frontmatter.weight}
         images={post.frontmatter.images}
         helmet={
-          <Helmet
+          <SEO 
             titleTemplate="%s | Moving Crate"
-          >
-            <title>{`${post.frontmatter.title}`}</title>
-            <meta name="description" content={`${post.frontmatter.description}`} />
-          </Helmet>
+            title={post.frontmatter.title}
+            description = {post.frontmatter.description}
+            image = {post.frontmatter.images[0]}
+            pathname = {`${cat_link}${post.frontmatter.title.replace(/ +/g,"-")}/`}
+          />
         }
-        parentLevelLink="/moving-crates/"
-        parentLevelLinkText="Moving Crates"
+        parentLevelLink = {cat_link}
+        parentLevelLinkText = "Moving Crates"
         tags={post.frontmatter.tags}
         title={post.frontmatter.title}
       />

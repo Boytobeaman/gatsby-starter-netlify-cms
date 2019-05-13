@@ -9,6 +9,7 @@ import SEO from '../components/SEO/SEO'
 
 const FoldingcratePost = ({ data }) => {
   const { markdownRemark: post } = data
+  let cat_link = '/folding-crates/'
   return (
     <Layout>
       <ProductDetailTemplate
@@ -32,11 +33,11 @@ const FoldingcratePost = ({ data }) => {
             title={post.frontmatter.title}
             description = {post.frontmatter.description}
             image = {post.frontmatter.images[0]}
-            pathname = {`/folding-crates/${post.frontmatter.title.replace(/ +/g,"-")}/`}
+            pathname = {`${cat_link}${post.frontmatter.title.replace(/ +/g,"-")}/`}
           />
         }
-        parentLevelLink="/folding-crates/"
-        parentLevelLinkText="Folding Crates"
+        parentLevelLink = {cat_link}
+        parentLevelLinkText = "Folding Crates"
         tags={post.frontmatter.tags}
         title={post.frontmatter.title}
       />
