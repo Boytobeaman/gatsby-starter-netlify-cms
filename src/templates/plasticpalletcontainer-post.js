@@ -5,10 +5,11 @@ import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import { HTMLContent } from '../components/Content'
 import ProductDetailTemplate from '../components/ProductDetailTemplate'
-
+import SEO from '../components/SEO/SEO'
 
 const PlasticPalletContainerPost = ({ data }) => {
   const { markdownRemark: post } = data
+  let cat_link = '/plastic-pallet-containers/'
 
   return (
     <Layout>
@@ -29,14 +30,15 @@ const PlasticPalletContainerPost = ({ data }) => {
         static_load={post.frontmatter.static_load}
         dynamic_load={post.frontmatter.dynamic_load}
         helmet={
-          <Helmet
+          <SEO 
             titleTemplate="%s | Plastic Pallet Containers"
-          >
-            <title>{`${post.frontmatter.title}`}</title>
-            <meta name="description" content={`${post.frontmatter.description}`} />
-          </Helmet>
+            title={post.frontmatter.title}
+            description = {post.frontmatter.description}
+            image = {post.frontmatter.images[0]}
+            pathname = {`${cat_link}${post.frontmatter.title.replace(/ +/g,"-")}/`}
+          />
         }
-        parentLevelLink="/plastic-pallet-containers/"
+        parentLevelLink = {cat_link}
         parentLevelLinkText="Plastic Pallet Containers"
         tags={post.frontmatter.tags}
         title={post.frontmatter.title}
