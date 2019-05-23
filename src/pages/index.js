@@ -64,7 +64,7 @@ export default class IndexPage extends React.Component {
                 </Link>
               </div>
               <div className="col-sm-3">
-                <Link className="nav-link text-danger font-weight-bold pb-0" to="/moving-crates/">
+                <Link className="nav-link text-danger font-weight-bold pb-0" to="/moving-bins/">
                   <LazyLoadImage 
                     className="img-fluid w-100" 
                     src={`${cdn_url}/static/plastic-moving-crates.jpg`}
