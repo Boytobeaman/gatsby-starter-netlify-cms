@@ -6,7 +6,7 @@ import Layout from '../components/Layout'
 import Slider from '../components/Slider'
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
-import { cdn_url, cdn_loading_img } from '../utils'
+import { cdn_url, cdn_loading_img, menu } from '../utils'
 export default class IndexPage extends React.Component {
   render() {
     let image_one =`${cdn_url}/static/main-slider-attached-lid-container.jpg`
@@ -17,7 +17,7 @@ export default class IndexPage extends React.Component {
         src: `${image_one}`,
         altText: 'Attached Lid Container',
         caption: '',
-        link_to: '/moving-bins/'
+        link_to: menu.movingBins.url
       },
       {
         src: `${image_two}`,
@@ -29,7 +29,7 @@ export default class IndexPage extends React.Component {
         src: `${image_three}`,
         altText: 'Folding Crates',
         caption: '',
-        link_to: '/folding-crates/'
+        link_to: menu.foldingCrates.url
       }
     ];
     items.forEach(item=>{
@@ -52,7 +52,7 @@ export default class IndexPage extends React.Component {
             <div className="text-center mb-4 border-bottom h5 py-3">Products Categories</div>
             <div className="row">
               <div className="col-sm-3">
-                <Link className="nav-link text-danger font-weight-bold pb-0" to="/folding-crates/">
+                <Link className="nav-link text-danger font-weight-bold pb-0" to={menu.foldingCrates.url}>
                   <LazyLoadImage 
                     className="img-fluid w-100" 
                     src={`${cdn_url}/static/folding-crates.jpg`}
@@ -64,7 +64,7 @@ export default class IndexPage extends React.Component {
                 </Link>
               </div>
               <div className="col-sm-3">
-                <Link className="nav-link text-danger font-weight-bold pb-0" to="/moving-bins/">
+                <Link className="nav-link text-danger font-weight-bold pb-0" to={menu.movingBins.url}>
                   <LazyLoadImage 
                     className="img-fluid w-100" 
                     src={`${cdn_url}/static/plastic-moving-crates.jpg`}
@@ -76,7 +76,7 @@ export default class IndexPage extends React.Component {
                 </Link>
               </div>
               <div className="col-sm-3">
-                <Link className="nav-link text-danger font-weight-bold pb-0" to="/euro-stacking-containers/">
+                <Link className="nav-link text-danger font-weight-bold pb-0" to={menu.euroStackingContainers.url}>
                   <LazyLoadImage 
                     className="img-fluid w-100" 
                     src={`${cdn_url}/static/euro-stacking-crates.jpg`}
@@ -88,7 +88,7 @@ export default class IndexPage extends React.Component {
                 </Link>
               </div>
               <div className="col-sm-3">
-                <Link className="nav-link text-danger font-weight-bold pb-0" to="/plastic-pallet-containers/">
+                <Link className="nav-link text-danger font-weight-bold pb-0" to={menu.plasticPalletBoxes.url}>
                   <LazyLoadImage 
                     className="img-fluid w-100" 
                     src={`${cdn_url}/static/plastic-pallet-boxes.jpg`}
