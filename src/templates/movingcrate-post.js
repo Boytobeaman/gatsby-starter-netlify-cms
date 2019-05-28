@@ -6,11 +6,12 @@ import Layout from '../components/Layout'
 import { HTMLContent } from '../components/Content'
 import ProductDetailTemplate from '../components/ProductDetailTemplate'
 import SEO from '../components/SEO/SEO'
+import { menu } from '../utils'
 
 
 const MovingcratePost = ({ data }) => {
   const { markdownRemark: post } = data
-  let cat_link = '/moving-crates/'
+  let cat_link = menu.movingBins.url
 
   return (
     <Layout>

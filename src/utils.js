@@ -25,6 +25,36 @@ export const aliResizeStyle_w_800 = '?x-oss-process=image/resize,w_800';
 export const aliResizeStyle_w_900 = '?x-oss-process=image/resize,w_900';
 export const aliResizeStyle_w_1024 = '?x-oss-process=image/resize,w_1024';
 export const aliResizeStyle_w_1200 = '?x-oss-process=image/resize,w_1200';
+export const menu = {
+  home:{
+    url:'/',
+    text: 'Home'
+  },
+  foldingCrates:{
+    url: '/folding-crates/',
+    text: 'Folding Crates'
+  },
+  movingBins:{
+    url: '/moving-bins/',
+    text: 'Moving Bins'
+  },
+  euroStackingContainers:{
+    url: '/euro-stacking-containers/',
+    text: 'Euro Stacking Containers'
+  },
+  plasticPalletBoxes:{
+    url: '/plastic-pallet-containers/',
+    text: 'Plastic Pallet Boxes'
+  },
+  contact:{
+    url: '/contact/',
+    text: 'Contact'
+  },
+  about:{
+    url: '/about/',
+    text: 'About'
+  }
+}
 export const getUrlQuery = function (variable) {
   var query = window.location.search.substring(1);
   var vars = query.split("&");

@@ -6,10 +6,11 @@ import Layout from '../components/Layout'
 import { HTMLContent } from '../components/Content'
 import ProductDetailTemplate from '../components/ProductDetailTemplate'
 import SEO from '../components/SEO/SEO'
+import { menu } from '../utils'
 
 const PlasticPalletContainerPost = ({ data }) => {
   const { markdownRemark: post } = data
-  let cat_link = '/plastic-pallet-containers/'
+  let cat_link = menu.plasticPalletBoxes.url
 
   return (
     <Layout>

@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import logo from '../img/movingboxlogo-red.svg'
+import { menu } from '../utils'
 import {
   Collapse,
   Navbar,
@@ -45,39 +46,34 @@ export default class MainNavbar extends React.Component{
             </NavItem>
 
             <NavItem>
-              <Link className="nav-link" to="/folding-crates/">
-                Folding Crates
+              <Link className="nav-link" to={menu.foldingCrates.url}>
+                {menu.foldingCrates.text}
               </Link>
             </NavItem>
             <NavItem>
-              <Link className="nav-link" to="/moving-bins/">
-                Moving Bins
+              <Link className="nav-link" to={menu.movingBins.url}>
+                {menu.movingBins.text}
               </Link>
             </NavItem>
             <NavItem>
-              <Link className="nav-link" to="/euro-stacking-containers/">
-                Euro Containers
+              <Link className="nav-link" to={menu.euroStackingContainers.url}>
+                {menu.euroStackingContainers.text}
               </Link>
             </NavItem>
             <NavItem>
-              <Link className="nav-link" to="/plastic-pallet-containers/">
-                Plastic Pallet Containers
+              <Link className="nav-link" to={menu.plasticPalletBoxes.url}>
+                {menu.plasticPalletBoxes.text}
               </Link>
             </NavItem>
             <NavItem>
-              <Link className="nav-link" to="/contact/">
+              <Link className="nav-link" to={menu.cantact.url}>
                 Contact Us
               </Link>
             </NavItem>
 
             <NavItem>
-              <Link className="nav-link" to="/about/">
+              <Link className="nav-link" to={menu.about.url}>
                 About Us
-              </Link>
-            </NavItem>
-            <NavItem>
-              <Link className="nav-link" to="/news/">
-                News
               </Link>
             </NavItem>
           </Nav>

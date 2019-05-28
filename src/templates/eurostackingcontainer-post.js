@@ -6,10 +6,11 @@ import Layout from '../components/Layout'
 import { HTMLContent } from '../components/Content'
 import ProductDetailTemplate from '../components/ProductDetailTemplate'
 import SEO from '../components/SEO/SEO'
+import { menu } from '../utils'
 
 const EuroStackingContainerPost = ({ data }) => {
   const { markdownRemark: post } = data
-  let cat_link = '/euro-stacking-containers/'
+  let cat_link = menu.euroStackingContainers.url
   return (
     <Layout>
       <ProductDetailTemplate
