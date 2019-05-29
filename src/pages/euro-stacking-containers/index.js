@@ -16,7 +16,7 @@ export default class EuroStackingContainerPage extends React.Component {
     const { data } = this.props
     const { edges: posts } = data.allMarkdownRemark
     let cat_link = '/euro-stacking-containers/'
-    let images = posts[0].frontmatter.images
+    let images = posts[0].node.frontmatter.images
     let the_image
     if (images && images.length > 0 ) {
       the_image = images[0].replace("http:","https:")
