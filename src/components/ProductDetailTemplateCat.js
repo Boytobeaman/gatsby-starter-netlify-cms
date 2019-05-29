@@ -16,7 +16,8 @@ import {
   mmtoinch,
   kgtolbs,
   ltogal,
-  contact_url
+  contact_url,
+  cdn_img_thumbnail
 } from '../utils';
 
 class ProductDetailTemplateCat extends React.Component {

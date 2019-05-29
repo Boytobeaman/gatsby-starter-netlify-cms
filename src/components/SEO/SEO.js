@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import { StaticQuery } from 'gatsby';
 import Twitter from './Twitter';
 import Facebook from './Facebook';
+import { graphql } from 'gatsby'
 
 const SEO = ({
   title = null,

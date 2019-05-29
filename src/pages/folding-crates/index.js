@@ -17,7 +17,6 @@ export default class FoldingcratePage extends React.Component {
     const { data } = this.props
     const { edges: posts } = data.allMarkdownRemark
     let cat_link = '/folding-crates/'
-    console.log(JSON.stringify(posts))
     let images = posts[0].node.frontmatter.images
     let the_image
     if (images && images.length > 0 ) {
