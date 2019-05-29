@@ -28,7 +28,7 @@ export default class MainNavbar extends React.Component{
   }
   render() {
     return (
-      <Navbar color="dark" dark expand="md" id="mainNavbar" role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
+      <Navbar color="dark" dark expand="md" id="mainNavbar" itemscope='' itemtype="http://schema.org/SiteNavigationElement">
         <NavbarBrand className="py-0">
           <Link to="/" className="navbar-brand py-0">
                 <figure className="image mb-0">
