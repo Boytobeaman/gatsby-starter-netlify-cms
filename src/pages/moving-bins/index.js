@@ -1,5 +1,4 @@
 import React from 'react'
-import Helmet from 'react-helmet'
 import PropTypes from 'prop-types'
 import { Link, graphql } from 'gatsby'
 import ProductDetailTemplateCat from '../../components/ProductDetailTemplateCat'
@@ -74,19 +73,19 @@ export default class MovingcratePage extends React.Component {
               </div>
               <ul>
                 <li> 
-                  <a href="https://rentacrate.com/" target="_blank" rel="nofollow">Rentacrate</a>,
+                  <a href="https://rentacrate.com/" target="_blank" rel="noopener noreferrer nofollow">Rentacrate</a>,
                   PRO Moving Service,
-                  <a href="https://biggreentotes.com/" target="_blank" rel="nofollow">Big Green Totes</a>,
-                  <a href="https://bluecrates.com/" target="_blank" rel="nofollow">BLUE CRATE LLC</a>,
+                  <a href="https://biggreentotes.com/" target="_blank" rel="noopener noreferrer nofollow">Big Green Totes</a>,
+                  <a href="https://bluecrates.com/" target="_blank" rel="noopener noreferrer nofollow">BLUE CRATE LLC</a>,
                   First Responders Moving 
                   from USA </li>
                 <li>Moveage Group,Boxes 2 You,
-                  <a href="https://www.chessmoving.com.au/" target="_blank" rel="nofollow">Chess Moving Perth</a> 
+                  <a href="https://www.chessmoving.com.au/" target="_blank" rel="noopener noreferrer nofollow">Chess Moving Perth</a> 
                   from Australia
                 </li>
                 <li>Aaltonen International Removals & Storage from Ireland </li>
                 <li>
-                  <a href="https://www.boxitstorage.com/" target="_blank" rel="nofollow">BOXIT Co. </a> 
+                  <a href="https://www.boxitstorage.com/" target="_blank" rel="noopener noreferrer nofollow">BOXIT Co. </a> 
                    from Kuwait 
                 </li>
               </ul>

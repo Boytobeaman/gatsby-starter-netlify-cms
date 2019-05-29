@@ -1,9 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { MovingcratePostTemplate } from '../../templates/movingcrate-post'
+import { MovingcratePost } from '../../templates/movingcrate-post'
 
 const MovingcratePostPreview = ({ entry, widgetFor }) => (
-  <MovingcratePostTemplate
+  <MovingcratePost
     content={widgetFor('body')}
     description={entry.getIn(['data', 'description'])}
     tags={entry.getIn(['data', 'tags'])}

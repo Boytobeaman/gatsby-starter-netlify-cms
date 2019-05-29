@@ -1,9 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { FoldingcratePost } from '../../templates/foldingcrate-post'
+import { PlasticPalletContainerPost } from '../../templates/plasticpalletcontainer-post'
 
-const FoldingcratePostPreview = ({ entry, widgetFor }) => (
-  <FoldingcratePost
+const PlasticPalletContainerPostPreview = ({ entry, widgetFor }) => (
+  <PlasticPalletContainerPost
     content={widgetFor('body')}
     description={entry.getIn(['data', 'description'])}
     tags={entry.getIn(['data', 'tags'])}
@@ -17,17 +17,18 @@ const FoldingcratePostPreview = ({ entry, widgetFor }) => (
     internal_long={entry.getIn(['data', 'internal_long'])}
     internal_width={entry.getIn(['data', 'internal_width'])}
     internal_height={entry.getIn(['data', 'internal_height'])}
-    folded_height={entry.getIn(['data', 'folded_height'])}
     volumn={entry.getIn(['data', 'volumn'])}
     weight={entry.getIn(['data', 'weight'])}
+    static_load={entry.getIn(['data', 'static_load'])}
+    dynamic_load={entry.getIn(['data', 'dynamic_load'])}
   />
 )
 
-FoldingcratePostPreview.propTypes = {
+PlasticPalletContainerPostPreview.propTypes = {
   entry: PropTypes.shape({
     getIn: PropTypes.func,
   }),
   widgetFor: PropTypes.func,
 }
 
-export default FoldingcratePostPreview
+export default PlasticPalletContainerPostPreview

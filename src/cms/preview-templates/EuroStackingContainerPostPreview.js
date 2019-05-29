@@ -1,9 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { EuroStackingContainerPostTemplate } from '../../templates/eurostackingcontainer-post'
+import { EuroStackingContainerPost } from '../../templates/eurostackingcontainer-post'
 
 const EuroStackingContainerPostPreview = ({ entry, widgetFor }) => (
-  <EuroStackingContainerPostTemplate
+  <EuroStackingContainerPost
     content={widgetFor('body')}
     description={entry.getIn(['data', 'description'])}
     tags={entry.getIn(['data', 'tags'])}
