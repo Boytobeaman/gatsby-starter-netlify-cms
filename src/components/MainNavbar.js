@@ -28,7 +28,7 @@ export default class MainNavbar extends React.Component{
   }
   render() {
     return (
-      <Navbar color="dark" dark expand="md" id="mainNavbar" itemtype="http://schema.org/SiteNavigationElement">
+      <Navbar color="dark" dark expand="md" id="mainNavbar" role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
         <NavbarBrand className="py-0">
           <Link to="/" className="navbar-brand py-0">
                 <figure className="image mb-0">
@@ -40,39 +40,39 @@ export default class MainNavbar extends React.Component{
         <Collapse isOpen={!this.state.collapsed} navbar>
           <Nav className="mr-auto" navbar>
             <NavItem>
-              <Link className="nav-link" to="/">
+              <Link className="nav-link" to="/" title="Home">
                 Home
               </Link>
             </NavItem>
 
             <NavItem>
-              <Link className="nav-link" to={menu.foldingCrates.url}>
+              <Link className="nav-link" to={menu.foldingCrates.url} title={menu.foldingCrates.text}>
                 {menu.foldingCrates.text}
               </Link>
             </NavItem>
             <NavItem>
-              <Link className="nav-link" to={menu.movingBins.url}>
+              <Link className="nav-link" to={menu.movingBins.url} title={menu.movingBins.text}>
                 {menu.movingBins.text}
               </Link>
             </NavItem>
             <NavItem>
-              <Link className="nav-link" to={menu.euroStackingContainers.url}>
+              <Link className="nav-link" to={menu.euroStackingContainers.url} title={menu.euroStackingContainers.text}>
                 {menu.euroStackingContainers.text}
               </Link>
             </NavItem>
             <NavItem>
-              <Link className="nav-link" to={menu.plasticPalletBoxes.url}>
+              <Link className="nav-link" to={menu.plasticPalletBoxes.url} title={menu.plasticPalletBoxes.text}>
                 {menu.plasticPalletBoxes.text}
               </Link>
             </NavItem>
             <NavItem>
-              <Link className="nav-link" to={menu.contact.url}>
+              <Link className="nav-link" to={menu.contact.url} title={menu.contact.text}>
                 Contact Us
               </Link>
             </NavItem>
 
             <NavItem>
-              <Link className="nav-link" to={menu.about.url}>
+              <Link className="nav-link" to={menu.about.url} title={menu.about.text}>
                 About Us
               </Link>
             </NavItem>
