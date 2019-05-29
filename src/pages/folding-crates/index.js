@@ -17,7 +17,11 @@ export default class FoldingcratePage extends React.Component {
     const { data } = this.props
     const { edges: posts } = data.allMarkdownRemark
     let cat_link = '/folding-crates/'
-
+    let images = posts[0].frontmatter.images
+    let the_image
+    if (images && images.length > 0 ) {
+      the_image = images[0].replace("http:","https:")
+    }
     return (
       <Layout>
         <section className="section">
@@ -26,6 +30,7 @@ export default class FoldingcratePage extends React.Component {
             title='Collapsible Plastic Crate, folding plastic crates'
             description = 'Wholesale Collapsible plastic crate, folding plastic crates which are suitable for the storage and handling of goods. The folding crate can be folded and reused indefinitely'
             pathname = {`${cat_link}`}
+            the_image = {the_image}
             position = '2'
             ratingValue = '4.9'
             reviewCount = '88'

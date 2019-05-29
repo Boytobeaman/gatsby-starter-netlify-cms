@@ -45,6 +45,7 @@ const SEO = ({
           defaultImage,
           twitterUsername,
           facebookAppID,
+          productBrand,
         },
       },
     }) => {

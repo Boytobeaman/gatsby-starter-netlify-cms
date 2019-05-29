@@ -16,6 +16,11 @@ export default class EuroStackingContainerPage extends React.Component {
     const { data } = this.props
     const { edges: posts } = data.allMarkdownRemark
     let cat_link = '/euro-stacking-containers/'
+    let images = posts[0].frontmatter.images
+    let the_image
+    if (images && images.length > 0 ) {
+      the_image = images[0].replace("http:","https:")
+    }
     return (
       <Layout>
         <section className="section">
@@ -24,6 +29,7 @@ export default class EuroStackingContainerPage extends React.Component {
             title='Plastic Euro Stacking Containers Manufacturer & Supplier'
             description = 'Wholesale Plastic Euro Stacking Containers, make your move as environmentally-friendly as possible, Wholesale Plastic Euro Stacking Containers, make your move as environmentally-friendly as possible'
             pathname = {`${cat_link}`}
+            the_image = {the_image}
             position = '2'
             ratingValue = '4.7'
             reviewCount = '68'
