@@ -86,7 +86,7 @@ const SEO = ({
             <meta name="description" content={seo.description} />
             <meta name="image" content={seo.image} />
           </Helmet>
-          <script type="application/ld+json">{JSON.stringify(breadcrumb)}</script>
+          <script type="application/ld+json">{JSON.stringify(breadcrumb).replace(/\//g,'\\/')}</script>
           <Facebook
             pageUrl={seo.url}
             type={article ? 'article' : null}
