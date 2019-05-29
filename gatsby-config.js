@@ -9,6 +9,7 @@ module.exports = {
     owner: '',
     twitterUsername: '@PalletBoxSale',
     facebookAppID: '',
+    productBrand: 'Joinplastic'
   },
   plugins: [
     'gatsby-plugin-react-helmet',

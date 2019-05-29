@@ -25,6 +25,9 @@ export default class EuroStackingContainerPage extends React.Component {
             description = 'Wholesale Plastic Euro Stacking Containers, make your move as environmentally-friendly as possible, Wholesale Plastic Euro Stacking Containers, make your move as environmentally-friendly as possible'
             pathname = {`${cat_link}`}
             position = '2'
+            ratingValue = '4.7'
+            reviewCount = '68'
+            price = '9.79'
           />
           <div className="container-fluid">
             <nav aria-label="breadcrumb">

@@ -13,6 +13,10 @@ const SEO = ({
   pathname = null,
   position = null,
   article = false,
+  ratingValue = null,
+  reviewCount = null,
+  price = null,
+  productBrand = null
 }) => (
   <StaticQuery
     query={graphql`
@@ -26,6 +30,7 @@ const SEO = ({
             defaultImage: image
             twitterUsername
             facebookAppID
+            productBrand
           }
         }
       }
@@ -61,6 +66,7 @@ const SEO = ({
           position: 1,
         },
       ];
+      let ratingRichData;
       if (position && position == '2'){
         itemListElement.push({
           "@type": "ListItem",
@@ -69,8 +75,40 @@ const SEO = ({
             name: seo.title,
           },
           position: 2,
-        })
+        });
+
+        ratingRichData =
+        {
+          "@context": "http://schema.org/",
+          "@type": "Product",
+          "name": seo.title,
+          "image": seo.image,
+          "description": seo.description,
+          "brand": {
+            "@type": "Thing",
+            "name": productBrand
+          },
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": ratingValue,
+            "reviewCount": reviewCount
+          },
+          "offers": {
+            "@type": "Offer",
+            "priceCurrency": "USD",
+            "price": price,
+            "priceValidUntil": "2027-11-05",
+            "itemCondition": "http://schema.org/UsedCondition",
+            "availability": "http://schema.org/InStock",
+            "seller": {
+              "@type": "Organization",
+              "name": productBrand
+            }
+          }
+        }
+
       }
+
       
       const breadcrumb = {
         "@context": "http://schema.org",
@@ -88,6 +126,11 @@ const SEO = ({
             <script type="application/ld+json">
               {JSON.stringify(breadcrumb).replace(/\//g,'\\/')}
             </script>
+            {ratingRichData &&(
+              <script type="application/ld+json">
+                {JSON.stringify(ratingRichData).replace(/\//g,'\\/')}
+              </script>
+            )}
           </Helmet>
           <Facebook
             pageUrl={seo.url}

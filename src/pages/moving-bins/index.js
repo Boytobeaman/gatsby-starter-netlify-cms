@@ -26,6 +26,9 @@ export default class MovingcratePage extends React.Component {
             description = 'Wholesale Plastic moving bins, cheap moving crates for sale, make your move as environmentally-friendly as possible'
             pathname = {`${cat_link}`}
             position = '2'
+            ratingValue = '4.5'
+            reviewCount = '78'
+            price = '9.29'
           />
           <div className="container-fluid">
             <nav aria-label="breadcrumb">
