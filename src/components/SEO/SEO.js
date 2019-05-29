@@ -11,6 +11,7 @@ const SEO = ({
   description = null,
   image = null,
   pathname = null,
+  position = null,
   article = false,
 }) => (
   <StaticQuery

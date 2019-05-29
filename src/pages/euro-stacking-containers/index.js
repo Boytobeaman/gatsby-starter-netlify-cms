@@ -22,7 +22,7 @@ export default class EuroStackingContainerPage extends React.Component {
           <SEO 
             titleTemplate="%s | Euro Stacking Containers"
             title='Plastic Euro Stacking Containers Manufacturer & Supplier'
-            description = 'Wholesale Plastic Euro Stacking Containers, make your move as environmentally-friendly as possible``Wholesale Plastic Euro Stacking Containers, make your move as environmentally-friendly as possible'
+            description = 'Wholesale Plastic Euro Stacking Containers, make your move as environmentally-friendly as possible, Wholesale Plastic Euro Stacking Containers, make your move as environmentally-friendly as possible'
             pathname = {`${cat_link}`}
             position = '2'
           />

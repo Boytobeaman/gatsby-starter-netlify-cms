@@ -23,7 +23,7 @@ export default class PlasticPalletContainerPage extends React.Component {
           <SEO 
             titleTemplate="%s | Plastic pallet boxes"
             title='Plastic bulk containers Manufacturer & Supplier'
-            description = 'Wholesale Plastic moving bins, cheap moving crates for sale, make your move as environmentally-friendly as possible'
+            description = 'Wholesale Plastic pallet containers, bulk container for sale, heavy duty pallet boxes, for fruit and vegetable'
             pathname = {`${cat_link}`}
             position = '2'
           />
