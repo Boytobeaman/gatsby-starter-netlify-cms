@@ -28,7 +28,7 @@ export default class EuroStackingContainerPage extends React.Component {
             title='Plastic Euro Stacking Containers Manufacturer & Supplier'
             description = 'Wholesale Plastic Euro Stacking Containers, make your move as environmentally-friendly as possible, Wholesale Plastic Euro Stacking Containers, make your move as environmentally-friendly as possible'
             pathname = {`${cat_link}`}
-            the_image = {the_image}
+            image = {the_image}
             position = '2'
             ratingValue = '4.7'
             reviewCount = '68'

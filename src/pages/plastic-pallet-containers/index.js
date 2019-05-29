@@ -28,7 +28,7 @@ export default class PlasticPalletContainerPage extends React.Component {
             title='Plastic bulk containers Manufacturer & Supplier'
             description = 'Wholesale Plastic pallet containers, bulk container for sale, heavy duty pallet boxes, for fruit and vegetable'
             pathname = {`${cat_link}`}
-            the_image = {the_image}
+            image = {the_image}
             position = '2'
             ratingValue = '4.8'
             reviewCount = '69'
