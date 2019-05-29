@@ -25,6 +25,7 @@ export default class PlasticPalletContainerPage extends React.Component {
             title='Plastic bulk containers Manufacturer & Supplier'
             description = 'Wholesale Plastic moving bins, cheap moving crates for sale, make your move as environmentally-friendly as possible'
             pathname = {`${cat_link}`}
+            position = '2'
           />
           <div className="container-fluid">
             <nav aria-label="breadcrumb">

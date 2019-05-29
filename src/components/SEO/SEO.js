@@ -50,12 +50,42 @@ const SEO = ({
         url: `${siteUrl}${pathname || '/'}`,
       };
 
+      const itemListElement = [
+        {
+          '@type': 'ListItem',
+          item: {
+            '@id': siteUrl,
+            name: 'Homepage',
+          },
+          position: 1,
+        },
+      ];
+      if (position && position == '2'){
+        itemListElement.push({
+          '@type': 'ListItem',
+          item: {
+            '@id': seo.url,
+            name: seo.title,
+          },
+          position: 2,
+        })
+      }
+      
+      const breadcrumb = {
+        '@context': 'http://schema.org',
+        '@type': 'BreadcrumbList',
+        description: 'Breadcrumbs list',
+        name: 'Breadcrumbs',
+        itemListElement,
+      }
+
       return (
         <>
           <Helmet title={seo.title} titleTemplate={titleTemplate}>
             <meta name="description" content={seo.description} />
             <meta name="image" content={seo.image} />
           </Helmet>
+          <script type="application/ld+json">{JSON.stringify(breadcrumb)}</script>
           <Facebook
             pageUrl={seo.url}
             type={article ? 'article' : null}

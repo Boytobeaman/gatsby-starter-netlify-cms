@@ -7,6 +7,8 @@ import Slider from '../components/Slider'
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 import { cdn_url, cdn_loading_img, menu } from '../utils'
+import SEO from '../components/SEO/SEO'
+
 export default class IndexPage extends React.Component {
   render() {
     let image_one =`${cdn_url}/static/main-slider-attached-lid-container.jpg`
@@ -38,10 +40,15 @@ export default class IndexPage extends React.Component {
     })
     return (
       <Layout>
+        <SEO 
+            titleTemplate="%s | Moving boxes"
+            title='Plastic Crates Manufacturer & Supplier'
+            description = 'JOINPLASTIC is a Plastic Crate manufacturers and suppliers from China,we wholesale a wide range of products which include plastic moving boxes, collapsible plastic crates, fruits crate, stacking crates, attached lid containers, heavy duty crates, pallets, dollies'
+          />
         <div className="container-fluid">
           <Helmet>
-            <title>{`Plastic Crates Manufacturer & Supplier | Moving box`}</title>
-            <meta name="description" content={`JOINPLASTIC is a Plastic Crate manufacturers and suppliers from China,we wholesale a wide range of products which include plastic moving boxes, collapsible plastic crates, fruits crate, stacking crates, attached lid containers, heavy duty crates, pallets, dollies`} />
+            <title>{` | Moving box`}</title>
+            <meta name="description" content={``} />
           </Helmet>
           <section className="section my-3">
               <div className="">
