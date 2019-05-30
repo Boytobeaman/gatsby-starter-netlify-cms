@@ -160,10 +160,10 @@ const ProductDetailTemplate = ({
                       <span>(L * W * H)</span>
                     </td>
                     <td className="internal-dimension">
-                      <span className="mm pull-left value" itemprop="Dimensions (mm)">{internal_long} X {internal_width} X {internal_height}</span>
+                      <span className="mm pull-left value" itemprop="Dimensions(mm)">{internal_long} X {internal_width} X {internal_height}</span>
                       <span className="pull-right">mm</span>
                       <hr className="w-100 mt-4 mb-0" />
-                      <span className="inch pull-left value" itemprop="Dimensions (inch)">{(internal_long * mmtoinch).toFixed(2)} X {(internal_width * mmtoinch).toFixed(2)} X {(internal_height * mmtoinch).toFixed(2)}</span>
+                      <span className="inch pull-left value" itemprop="Dimensions(inch)">{(internal_long * mmtoinch).toFixed(2)} X {(internal_width * mmtoinch).toFixed(2)} X {(internal_height * mmtoinch).toFixed(2)}</span>
                       <span className="pull-right">in</span>
                     </td>
                   </tr>
