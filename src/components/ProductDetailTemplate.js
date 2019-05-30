@@ -95,18 +95,20 @@ const ProductDetailTemplate = ({
             <li className="breadcrumb-item active" aria-current="page">{title}</li>
           </ol>
         </nav>
-      <div className="row">
-        <div className="col-sm-6">
+      <div className="row" itemscope itemtype="http://schema.org/Product">
+        <div className="col-sm-6" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
           <ImageGallery 
             items={images} 
             lazyLoad={true} 
             showFullscreenButton={false}
             showBullets={true}
           />
+          <meta itemprop="availability" itemtype="http://schema.org/ItemAvailability" content="http://schema.org/InStock"/>
+          <meta itemprop="image" content={images[0].original} />
         </div>
         <div className="col-sm-6">
           <div className="bg-white p-3">
-            <h1 className="title text-capitalize single-product-title h4">
+            <h1 className="title text-capitalize single-product-title h4" itemprop="name">
                 {title}
             </h1>
             <table className="table table-hover table-bordered single-product-attr">
@@ -119,7 +121,7 @@ const ProductDetailTemplate = ({
                       <h6>Product Model</h6>
                     </td>
                     <td className="product-model">
-                      <span className="mm pull-left value">{model}</span>
+                      <span className="mm pull-left value" itemprop="productID">{model}</span>
                     </td>
                   </tr>
                   <tr>
@@ -141,6 +143,9 @@ const ProductDetailTemplate = ({
                       <span>(L * W * H)</span>
                     </td>
                     <td className="internal-dimension">
+                      <meta itemprop="long" content={`${internal_long} mm`} />
+                      <meta itemprop="width" content={`${internal_width} mm`} />
+                      <meta itemprop="height" content={`${internal_height} mm`} />
                       <span className="mm pull-left value">{internal_long} X {internal_width} X {internal_height}</span>
                       <span className="pull-right">mm</span>
                       <hr className="w-100 mt-4 mb-0" />
@@ -154,6 +159,7 @@ const ProductDetailTemplate = ({
                         <h6>Folded Height</h6>
                       </td>
                       <td className="internal-dimension">
+                        <meta itemprop="folded height" content={`${folded_height} mm`} />
                         <span className="mm pull-left value">{folded_height}</span>
                         <span className="pull-right">mm</span>
                         <hr className="w-100 mt-4 mb-0" />
@@ -168,6 +174,7 @@ const ProductDetailTemplate = ({
                         <h6>Weight</h6>
                       </td>
                       <td className="internal-dimension">
+                        <meta itemprop="weight" content={`${weight} kg`} />
                         <span className="kg pull-left value">{weight}</span>
                         <span className="pull-right">kg</span>
                         <hr className="w-100 mt-4 mb-0" />
@@ -182,6 +189,7 @@ const ProductDetailTemplate = ({
                         <h6>Volumn</h6>
                       </td>
                       <td className="internal-dimension">
+                        <meta itemprop="volumn" content={`${volumn} L`} />
                         <span className="liters pull-left value">{volumn}</span>
                         <span className="pull-right">Liters</span>
                         <hr className="w-100 mt-4 mb-0" />
@@ -196,6 +204,8 @@ const ProductDetailTemplate = ({
                         <h6>Load capacity</h6>
                       </td>
                       <td className="internal-dimension">
+                        <meta itemprop="static load" content={`${static_load} T`} />
+                        <meta itemprop="dynamic load" content={`${dynamic_load} T`} />
                         <span className="liters pull-left value">{static_load}</span>
                         <span className="pull-right">Static (T)</span>
                         <hr className="w-100 mt-4 mb-0" />
@@ -206,25 +216,26 @@ const ProductDetailTemplate = ({
                   )}
               </tbody>
             </table>
-            <p>{description}</p>
+            {tags && tags.length ? (
+              <div style={{ marginTop: `4rem` }}>
+                <h4>Tags</h4>
+                <ul className="taglist">
+                  {tags.map(tag => (
+                    <li key={tag + `tag`}>
+                      <Link to={`/tags/${kebabCase(tag)}/`}>{tag}</Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ) : null}
+            <meta itemprop="description" content={description} />
           </div>
         </div>
       </div>
 
       <div className="col-sm-12">
         <PostContent content={content} />
-        {tags && tags.length ? (
-          <div style={{ marginTop: `4rem` }}>
-            <h4>Tags</h4>
-            <ul className="taglist">
-              {tags.map(tag => (
-                <li key={tag + `tag`}>
-                  <Link to={`/tags/${kebabCase(tag)}/`}>{tag}</Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-        ) : null}
+        <p>{description}</p>
       </div>
       
         
