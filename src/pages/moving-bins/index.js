@@ -32,7 +32,9 @@ export default class MovingcratePage extends React.Component {
             position = '2'
             ratingValue = '4.5'
             reviewCount = '78'
-            price = '9.29'
+            price = '8.29'
+            lowPrice = '5.69'
+            highPrice = '21.69'
           />
           <div className="container-fluid">
             <nav aria-label="breadcrumb">

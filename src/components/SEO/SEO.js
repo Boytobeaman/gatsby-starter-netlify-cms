@@ -17,6 +17,8 @@ const SEO = ({
   ratingValue = null,
   reviewCount = null,
   price = null,
+  lowPrice = null,
+  highPrice = null,
   productBrand = null
 }) => (
   <StaticQuery
@@ -98,7 +100,8 @@ const SEO = ({
           "offers": {
             "@type": "Offer",
             "priceCurrency": "USD",
-            "price": price,
+            "lowPrice": lowPrice,
+            "highPrice": highPrice,
             "priceValidUntil": "2027-11-05",
             "itemCondition": "http://schema.org/UsedCondition",
             "availability": "http://schema.org/InStock",

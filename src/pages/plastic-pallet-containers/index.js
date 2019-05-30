@@ -32,7 +32,9 @@ export default class PlasticPalletContainerPage extends React.Component {
             position = '2'
             ratingValue = '4.8'
             reviewCount = '69'
-            price = '9.69'
+            price = '90.69'
+            lowPrice = '83.69'
+            highPrice = '142.69'
           />
           <div className="container-fluid">
             <nav aria-label="breadcrumb">

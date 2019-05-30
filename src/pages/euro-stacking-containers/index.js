@@ -33,6 +33,8 @@ export default class EuroStackingContainerPage extends React.Component {
             ratingValue = '4.7'
             reviewCount = '68'
             price = '9.79'
+            lowPrice = '3.69'
+            highPrice = '22.69'
           />
           <div className="container-fluid">
             <nav aria-label="breadcrumb">

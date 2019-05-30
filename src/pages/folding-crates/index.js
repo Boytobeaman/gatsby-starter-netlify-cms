@@ -34,6 +34,8 @@ export default class FoldingcratePage extends React.Component {
             ratingValue = '4.9'
             reviewCount = '88'
             price = '9.73'
+            lowPrice = '5.69'
+            highPrice = '18.69'
           />
           <div className="container-fluid">
             <nav aria-label="breadcrumb">
