@@ -6,6 +6,7 @@ import { Link } from 'gatsby'
 import Content from '../components/Content'
 import ImageGallery from 'react-image-gallery';
 import "react-image-gallery/styles/css/image-gallery.css";
+import "./ProductDetailTemplate.scss";
 import { menu } from '../utils'
 
 import { 
@@ -78,7 +79,7 @@ const ProductDetailTemplate = ({
   }
 
   return (
-    <section className="section">
+    <section className="section product-detail-single">
       {helmet || ''}
       <div className="container-fluid">
         <nav aria-label="breadcrumb">
@@ -96,9 +97,9 @@ const ProductDetailTemplate = ({
             <li className="breadcrumb-item active" aria-current="page">{title}</li>
           </ol>
         </nav>
-        <div className="row" itemscope="" itemType="http://schema.org/Product">
-          {images.map(item=>(
-            <link itemProp="image" href={item.original} />
+        <div className="row" itemScope="" itemType="http://schema.org/Product">
+          {images.map((item,index)=>(
+            <link itemProp="image" key={index} href={item.original} />
           ))}
           <div className="col-sm-6">
             <ImageGallery 
@@ -107,7 +108,7 @@ const ProductDetailTemplate = ({
               showFullscreenButton={false}
               showBullets={true}
             />
-            <div className="col-sm-6" itemProp="offers" itemscope="" itemType="http://schema.org/AggregateOffer">
+            <div className="col-sm-6" itemProp="offers" itemScope="" itemType="http://schema.org/AggregateOffer">
               <meta itemProp="availability" itemType="http://schema.org/ItemAvailability" content="http://schema.org/InStock"/>
               {static_load?(
                 <React.Fragment>
