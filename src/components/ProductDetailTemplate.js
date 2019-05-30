@@ -99,26 +99,29 @@ const ProductDetailTemplate = ({
         {images.map(item=>(
           <link itemprop="image" href={item.original} />
         ))}
-        <div className="col-sm-6" itemprop="offers" itemscope="" itemtype="http://schema.org/Offer">
+        <div className="col-sm-6">
           <ImageGallery 
             items={images} 
             lazyLoad={true} 
             showFullscreenButton={false}
             showBullets={true}
           />
-          <meta itemprop="availability" itemtype="http://schema.org/ItemAvailability" content="http://schema.org/InStock"/>
-          {static_load?(
-            <React.Fragment>
-              <meta itemprop="lowPrice" content="89.69" /> 
-              <meta itemprop="highPrice" content="120.79" /> 
-            </React.Fragment>
-          ):(
-            <React.Fragment>
-              <meta itemprop="lowPrice" content="5.69" /> 
-              <meta itemprop="highPrice" content="17.89" /> 
-            </React.Fragment>
-          )}
-          <meta itemprop="priceCurrency" content="USD" />  
+          <div className="col-sm-6" itemprop="offers" itemscope="" itemtype="http://schema.org/AggregateOffer">
+            <meta itemprop="availability" itemtype="http://schema.org/ItemAvailability" content="http://schema.org/InStock"/>
+            {static_load?(
+              <React.Fragment>
+                <meta itemprop="lowPrice" content="89.69" /> 
+                <meta itemprop="highPrice" content="120.79" /> 
+              </React.Fragment>
+            ):(
+              <React.Fragment>
+                <meta itemprop="lowPrice" content="5.69" /> 
+                <meta itemprop="highPrice" content="17.89" /> 
+              </React.Fragment>
+            )}
+            <meta itemprop="priceCurrency" content="USD" />  
+            <meta itemprop="priceValidUntil" content="2027-11-05" />  
+          </div>
         </div>
         <div className="col-sm-6">
           <div className="bg-white p-3">
