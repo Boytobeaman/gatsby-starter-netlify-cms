@@ -97,7 +97,7 @@ const ProductDetailTemplate = ({
             <li className="breadcrumb-item active" aria-current="page">{title}</li>
           </ol>
         </nav>
-        <div className="row" itemScope="" itemType="http://schema.org/Product">
+        <div className="row" itemScope itemType="http://schema.org/Product">
           {images.map((item,index)=>(
             <link itemProp="image" key={index} href={item.original} />
           ))}
