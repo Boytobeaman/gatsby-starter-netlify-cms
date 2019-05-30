@@ -1,8 +1,10 @@
 ---
 templateKey: foldingcrate-post
 title: collapsible plastic totes
-description: |
-  collapsible plastic totes
+description: >-
+  The plastic totes collapse into a compact and stackable unit to save space.
+  When assembled the containers can be stacked on top of each,The collapsible
+  plastic totes are perfect for all of your storage needs.
 model: '6428 new '
 external_long: '600'
 external_width: '400'
