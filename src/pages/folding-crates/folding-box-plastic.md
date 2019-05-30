@@ -1,7 +1,10 @@
 ---
 templateKey: foldingcrate-post
 title: folding box plastic
-description: folding box plastic
+description: >-
+  Folding Box Plastic strive from its portability when folded. Smooth interior
+  surface allows Folding Box Plastic to carry sensitive  goods. Has a robust
+  exterior and can be folded and be reconstructed in a minute.
 model: '6545435'
 external_long: '650'
 external_width: '450'
@@ -18,15 +21,10 @@ tags:
   - foldable bin
   - steering wheel storage bin
 images:
-  - >-
-    https://cdn.movingboxsale.com/products/142bcb7c1ed14a6abb65a28758354db3.JPG
-  - >-
-    https://cdn.movingboxsale.com/products/c04daca87e8d4d26b8d72dad93e474ea.JPG
-  - >-
-    https://cdn.movingboxsale.com/products/d59cccd528f74e29aefff348930884b3.JPG
-  - >-
-    https://cdn.movingboxsale.com/products/a6ce0ebf7cd34b168369d336d22afc58.JPG
-  - >-
-    https://cdn.movingboxsale.com/products/d26028441c72468bbf54ff56fb44d991.JPG
+  - 'https://cdn.movingboxsale.com/products/142bcb7c1ed14a6abb65a28758354db3.JPG'
+  - 'https://cdn.movingboxsale.com/products/c04daca87e8d4d26b8d72dad93e474ea.JPG'
+  - 'https://cdn.movingboxsale.com/products/d59cccd528f74e29aefff348930884b3.JPG'
+  - 'https://cdn.movingboxsale.com/products/a6ce0ebf7cd34b168369d336d22afc58.JPG'
+  - 'https://cdn.movingboxsale.com/products/d26028441c72468bbf54ff56fb44d991.JPG'
 ---
 desc
