@@ -48,13 +48,13 @@ class ProductDetailTemplateCat extends React.Component {
       images
     } = this.props.data;
     let cat_image_url=''
-    let srcset=''
+    let srcSet=''
     let placeholderImg=''
     if (images && images.length > 0 ) {
       let the_image = images[0].replace("http:","https:")
       cat_image_url = the_image + aliResizeStyle_h_200
       placeholderImg = the_image + aliResizeStyle_h_20
-      srcset=`
+      srcSet=`
         ${the_image}${aliResizeStyle_h_300} 300w, 
         ${the_image}${aliResizeStyle_w_400} 400w, 
         ${the_image}${aliResizeStyle_w_600} 600w,
@@ -73,7 +73,7 @@ class ProductDetailTemplateCat extends React.Component {
             src={cat_image_url} 
             placeholderSrc={placeholderImg}
             effect="blur"
-            srcset={srcset} 
+            srcSet={srcSet} 
             sizes="(max-width: 300px) 100vw, 300px"
             className="" 
             alt={title} />
