@@ -24,4 +24,4 @@ images:
   - 'https://cdn.movingboxsale.com/products/644efa5d65264cba86c8af6b38354e8a.JPG'
   - 'https://cdn.movingboxsale.com/products/34c70f8d111143f091482fcfe51f0142.JPG'
 ---
-The plastic totes collapse into a compact and stackable unit to save space. When assembled the containers can be stacked on top of each,The collapsible plastic totes are perfect for all of your storage needs.
+The plastic totes collapse into a compact and stackable unit to save space. When assembled the containers can be stacked on top of each,The collapsible plastic totes are perfect for all of your storage needs
