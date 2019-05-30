@@ -104,7 +104,10 @@ const ProductDetailTemplate = ({
             showBullets={true}
           />
           <meta itemprop="availability" itemtype="http://schema.org/ItemAvailability" content="http://schema.org/InStock"/>
-          <meta itemprop="image" content={images[0].original} />
+          <meta itemprop="priceCurrency" content="USD" />
+          {images.map(item=>(
+            <link itemprop="image" href={item.original} />
+          ))}
         </div>
         <div className="col-sm-6">
           <div className="bg-white p-3">
