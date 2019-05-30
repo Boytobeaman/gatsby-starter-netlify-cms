@@ -95,8 +95,8 @@ const ProductDetailTemplate = ({
             <li className="breadcrumb-item active" aria-current="page">{title}</li>
           </ol>
         </nav>
-      <div className="row" itemscope itemtype="http://schema.org/Product">
-        <div className="col-sm-6" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+      <div className="row" itemscope="" itemtype="http://schema.org/Product">
+        <div className="col-sm-6" itemprop="offers" itemscope="" itemtype="http://schema.org/Offer">
           <ImageGallery 
             items={images} 
             lazyLoad={true} 
