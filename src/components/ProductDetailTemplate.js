@@ -108,7 +108,7 @@ const ProductDetailTemplate = ({
               showFullscreenButton={false}
               showBullets={true}
             />
-            <div className="col-sm-6" itemProp="offers" itemScope="" itemType="http://schema.org/AggregateOffer">
+            <div className="col-sm-6" itemProp="offers" itemScope itemType="http://schema.org/AggregateOffer">
               <meta itemProp="availability" itemType="http://schema.org/ItemAvailability" content="http://schema.org/InStock"/>
               {static_load?(
                 <React.Fragment>
