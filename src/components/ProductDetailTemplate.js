@@ -96,6 +96,9 @@ const ProductDetailTemplate = ({
           </ol>
         </nav>
       <div className="row" itemscope="" itemtype="http://schema.org/Product">
+        {images.map(item=>(
+          <link itemprop="image" href={item.original} />
+        ))}
         <div className="col-sm-6" itemprop="offers" itemscope="" itemtype="http://schema.org/Offer">
           <ImageGallery 
             items={images} 
@@ -104,10 +107,18 @@ const ProductDetailTemplate = ({
             showBullets={true}
           />
           <meta itemprop="availability" itemtype="http://schema.org/ItemAvailability" content="http://schema.org/InStock"/>
-          <meta itemprop="priceCurrency" content="USD" />
-          {images.map(item=>(
-            <link itemprop="image" href={item.original} />
-          ))}
+          {static_load?(
+            <React.Fragment>
+              <meta itemprop="lowPrice" content="89.69" /> 
+              <meta itemprop="highPrice" content="120.79" /> 
+            </React.Fragment>
+          ):(
+            <React.Fragment>
+              <meta itemprop="lowPrice" content="5.69" /> 
+              <meta itemprop="highPrice" content="17.89" /> 
+            </React.Fragment>
+          )}
+          <meta itemprop="priceCurrency" content="USD" />  
         </div>
         <div className="col-sm-6">
           <div className="bg-white p-3">
@@ -146,13 +157,10 @@ const ProductDetailTemplate = ({
                       <span>(L * W * H)</span>
                     </td>
                     <td className="internal-dimension">
-                      <meta itemprop="long" content={`${internal_long} mm`} />
-                      <meta itemprop="width" content={`${internal_width} mm`} />
-                      <meta itemprop="height" content={`${internal_height} mm`} />
-                      <span className="mm pull-left value">{internal_long} X {internal_width} X {internal_height}</span>
+                      <span className="mm pull-left value" itemprop="Dimensions (mm)">{internal_long} X {internal_width} X {internal_height}</span>
                       <span className="pull-right">mm</span>
                       <hr className="w-100 mt-4 mb-0" />
-                      <span className="inch pull-left value">{(internal_long * mmtoinch).toFixed(2)} X {(internal_width * mmtoinch).toFixed(2)} X {(internal_height * mmtoinch).toFixed(2)}</span>
+                      <span className="inch pull-left value" itemprop="Dimensions (inch)">{(internal_long * mmtoinch).toFixed(2)} X {(internal_width * mmtoinch).toFixed(2)} X {(internal_height * mmtoinch).toFixed(2)}</span>
                       <span className="pull-right">in</span>
                     </td>
                   </tr>
