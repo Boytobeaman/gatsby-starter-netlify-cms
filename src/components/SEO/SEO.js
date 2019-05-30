@@ -98,7 +98,7 @@ const SEO = ({
             "reviewCount": reviewCount
           },
           "offers": {
-            "@type": "Offer",
+            "@type": "AggregateOffer",
             "priceCurrency": "USD",
             "lowPrice": lowPrice,
             "highPrice": highPrice,
