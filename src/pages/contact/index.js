@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from 'gatsby'
 import { navigateTo } from "gatsby-link";
 import Layout from '../../components/Layout'
-import { cdn_img_thumbnail } from '../../utils'
+import { cdn_img_thumbnail,contact_email } from '../../utils'
 
 function encode(data) {
   return Object.keys(data)
@@ -47,6 +47,7 @@ export default class Index extends React.Component {
     e.preventDefault();
     const form = e.target;
     this.setState({ sending: true });
+    var _this = this
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
@@ -56,7 +57,11 @@ export default class Index extends React.Component {
       })
     })
     .then(() => {
-      this.setState({ showThanks: true });
+      _this.setState({ 
+        sending: false,
+        showThanks: true
+       });
+       document.documentElement.scrollTop += 300
       // navigateTo(form.getAttribute("action"));
     })
     .catch(error => alert(error));
@@ -138,13 +143,14 @@ export default class Index extends React.Component {
                       <button className="button btn btn-danger btn-lg is-link" type="submit">{this.state.sending?'Processing':'Send'}</button>
                     </div>
                   </form>
-                  {this.showThanks &&(
-                    <div className="p-3 bg-white">
+                  {this.state.showThanks &&(
+                    <div className="mt-1 p-3 bg-light rounded shadow-lg">
                       <div className="content">
                           <h4>Thank you!</h4>
+                          <p className="mb-1">Email had been sent to <span className="font-weight-bold">{contact_email || 'seller006@joinplastic.com'}</span></p>
                           <p>We will check the email and come back to you as soon as possible!</p>
-                          <button type="button" onClick={()=>window.history.go(-1)} class="btn btn-danger mr-3">Back</button>
-                          <button type="button" onClick={()=>navigateTo('/')} class="btn btn-danger">Back To Homepage</button>
+                          <button type="button" onClick={()=>window.history.go(-1)} class="btn btn-danger mr-3">Back to product</button>
+                          <button type="button" onClick={()=>navigateTo('/')} class="btn btn-outline-danger">Back To Homepage</button>
                       </div>
                     </div>
                   )}
@@ -175,7 +181,7 @@ export default class Index extends React.Component {
                   
                   <h5>Email: </h5>
                   <p>
-                    <a className="btn btn-secondary" href="mailto:seller006@joinplastic.com?subject=Inquiry about your plastic crate">seller006@joinplastic.com</a>
+                    <a className="btn btn-secondary" href={`mailto:${contact_email}?subject=Inquiry about your plastic crate`}>{contact_email}</a>
                   </p>
                 </div>
               </div>
