@@ -1,8 +1,11 @@
 ---
 templateKey: foldingcrate-post
 title: fold up crates
-description: |
-  fold up crates
+description: >-
+  Fold Up Crates are very resistant to rough conditions. Stackable when used and
+  still leave a space between the packed products and the bottom of the stacked
+  crate. Further folds up into a small crate depending on your needs. Suitable
+  for any storage use.
 model: S806
 external_long: '650'
 external_width: '435'
@@ -17,13 +20,9 @@ date: 2019-01-27T03:38:36.312Z
 tags:
   - folding crate
 images:
-  - >-
-    https://cdn.movingboxsale.com/products/67beaa775db24136b8de2a110eaa934c.jpg
-  - >-
-    https://cdn.movingboxsale.com/products/4d2758022cd646b8bc53da7ac4d30f2b.jpg
-  - >-
-    https://cdn.movingboxsale.com/products/36fb5dea71f14814af2b80e2a51d285f.jpg
-  - >-
-    https://cdn.movingboxsale.com/products/9e0469061ba14df79a81a02884e1aab7.jpg
+  - 'https://cdn.movingboxsale.com/products/67beaa775db24136b8de2a110eaa934c.jpg'
+  - 'https://cdn.movingboxsale.com/products/4d2758022cd646b8bc53da7ac4d30f2b.jpg'
+  - 'https://cdn.movingboxsale.com/products/36fb5dea71f14814af2b80e2a51d285f.jpg'
+  - 'https://cdn.movingboxsale.com/products/9e0469061ba14df79a81a02884e1aab7.jpg'
 ---
 desc
