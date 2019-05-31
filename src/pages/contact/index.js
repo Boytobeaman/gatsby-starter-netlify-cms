@@ -37,6 +37,7 @@ export default class Index extends React.Component {
       obj.p_img = p_img;
     }
     this.setState(obj)
+    document.getElementById("name").focus();
   }
 
   handleChange = e => {
