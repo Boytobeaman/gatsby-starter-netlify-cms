@@ -18,7 +18,8 @@ export default class Index extends React.Component {
       p_model: '',
       p_img: cdn_img_thumbnail,
       from_url: '',
-      sending: false
+      sending: false,
+      showThanks: false
     };
   }
   componentDidMount() {
@@ -55,8 +56,9 @@ export default class Index extends React.Component {
       })
     })
     .then(() => {
-      navigateTo(form.getAttribute("action")
-    )})
+      this.setState({ showThanks: true });
+      // navigateTo(form.getAttribute("action"));
+    })
     .catch(error => alert(error));
   };
 
@@ -136,6 +138,16 @@ export default class Index extends React.Component {
                       <button className="button btn btn-danger btn-lg is-link" type="submit">{this.state.sending?'Processing':'Send'}</button>
                     </div>
                   </form>
+                  {this.showThanks &&(
+                    <div className="p-3 bg-white">
+                      <div className="content">
+                          <h4>Thank you!</h4>
+                          <p>We will check the email and come back to you as soon as possible!</p>
+                          <button type="button" onClick={()=>window.history.go(-1)} class="btn btn-danger mr-3">Back</button>
+                          <button type="button" onClick={()=>navigateTo('/')} class="btn btn-danger">Back To Homepage</button>
+                      </div>
+                    </div>
+                  )}
                 </div>
                 <div className="col-md-6">
                   <div className="row py-2 border mx-0 my-1">
