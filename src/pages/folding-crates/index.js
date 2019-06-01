@@ -67,8 +67,6 @@ export default class FoldingcratePage extends React.Component {
                         <li>100% New PP material.</li>
                       </ul>
                       <p className="d-none d-lg-block">
-                        Many companies want to find high volume use in a low cost crate,
-                        we provide a secure and reliable solution for them,
                         These collapsible, reusable plastic crates are Efficient, Economical and Environmentally friendly,
                         they can help reduce shipping and storage expenses.
                       </p>
