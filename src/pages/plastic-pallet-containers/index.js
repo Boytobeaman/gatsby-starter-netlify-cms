@@ -4,6 +4,9 @@ import { Link, graphql } from 'gatsby'
 import ProductDetailTemplateCat from '../../components/ProductDetailTemplateCat'
 import Layout from '../../components/Layout'
 import SEO from '../../components/SEO/SEO'
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
+import { cdn_url, cdn_loading_img } from '../../utils'
 import '../../cat-page-style.scss'
 
 export default class PlasticPalletContainerPage extends React.Component {
@@ -47,6 +50,13 @@ export default class PlasticPalletContainerPage extends React.Component {
                 <li className="breadcrumb-item active" aria-current="page">Plastic Pallet Boxes</li>
               </ol>
             </nav>
+            <div className="cat-desc-top-wrap">
+              <LazyLoadImage 
+                className="img-fluid w-100" 
+                src={`${cdn_url}/static/plastic-pallet-container-banner.jpg`}
+                placeholderSrc={cdn_loading_img}
+                alt="Plastic Pallet Container" />
+            </div>
             
             {posts
               .map(({ node: post }) => {
