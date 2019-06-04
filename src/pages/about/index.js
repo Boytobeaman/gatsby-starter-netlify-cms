@@ -70,12 +70,17 @@ export default class Index extends React.Component {
                 <div>
                   <div className="p-3 bg-white">
                     <h1 className="h4">Who are we?</h1>
-                    <p>JOINPLASTIC is a Chinese company, specialized in the development and production of material handling products for logistic applications.
-                      The products we make are mainly industrial plastic boxes, going from stackable boxes over nestable-stackable boxes and foldable boxes.
-                      Shanghai JOIN Plastic Products Co., Ltd. is a manufacturer of plastic turnover box with well-equipped testing facilities and strong technical force.
-                      Because of good quality, reasonable prices and stylish designs, our products are extensively used in logistics packaging and other industries.
-                      Our products are widely recognized and trusted by users and can meet continuously changing of economic and social needs.
-                      We welcome new and old customers from all walks of life to contact us for future business relationships and mutual success!
+                    <p>JOINPLASTIC Company is a Chinese Company, specializing in developing and producing logistic handling materials. 
+                      Our main products are industrial plastic boxes, which can be classified into three parts; 
+                      Stackable Boxes, Nestable-Stackable Boxes and Collapsible boxes. 
+                      We also manufacture plastic turnover boxes that has a strong technical force. 
+                      Our good quality products, reasonable prices and modern product designs your logistic packing and personal storage easier. 
+                      These products are extensively used by logistic firms and moving firm among the long list of other firms. 
+                      Our products modern design allows these products to continuously meet the ever changing economic and social needs.
+                      Our products are widely recognized and trusted by all users all-around the globe.
+                    </p>
+                    <p>
+                      Looking for best business for your money? Look no further, we strive for mutual benefit and look to build a long lasting business relationship.
                     </p>
                   </div>
                 </div>

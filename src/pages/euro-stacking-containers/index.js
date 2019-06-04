@@ -65,6 +65,21 @@ export default class EuroStackingContainerPage extends React.Component {
                   </div>
                 )
               })}
+            
+            <div className="cat-desc-section mb-2">
+              <h4 className="">Euro Stacking Containers</h4>
+              <div className="cat-desc-text">
+                Suitable for storing auto-parts, stackable when both in use and empty, eco-friendly, reinforced design, reduces shipping and storage expenses.
+              </div>
+              <div className="cat-desc-text">
+                Features & Benefites of the stacking boxes
+                <ul>
+                  <li>Stackable, Reinforced design and Reusable.				</li>
+                  <li>Multiple Size and Colors, Lidded Containers, Effecient Packing.</li>
+                  <li>100% New PP Material.</li>
+                </ul>
+              </div>
+            </div>
 
             <div className="cat-desc-section">
               <h4 className="">EURO STACKING CONTAINERS description</h4>

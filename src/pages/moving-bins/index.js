@@ -66,6 +66,20 @@ export default class MovingcratePage extends React.Component {
                 )
               })}
 
+            <div className="cat-desc-section mb-2">
+              <h4 className="">Moving bins</h4>
+              <div className="cat-desc-text">
+                These moving boxes, can be stacked without fear of falling because of the lid edge stabilizer. Saves you space, eco-friendly and suitable for any conditions.
+              </div>
+              <div className="cat-desc-text">
+                Features & Benefites of the moving crates
+                <ul>
+                  <li>Stackable, Nestable and Lidded Containers.</li>
+                  <li>Anti-theft hole, Multiple Colors and Sizes, Anti-slip reinforced design</li>
+                  <li>100% New PP Material.</li>
+                </ul>
+              </div>
+            </div>
             <div className="cat-desc-section">
               <h4 className="">Plastic Moving Crates Description</h4>
               <div className="cat-desc-text">

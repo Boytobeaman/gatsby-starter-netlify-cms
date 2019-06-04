@@ -84,6 +84,22 @@ export default class PlasticPalletContainerPage extends React.Component {
                   </div>
                 )
               })}
+
+            <div className="cat-desc-section mb-2">
+              <h4 className="">Plastic Pallet Boxes</h4>
+              <div className="cat-desc-text">
+              Eco-friendly, Collapsible saving you space, Effecient loading via built-in plastic pallet.
+              </div>
+              <div className="cat-desc-text">
+                Features & Benefites of the bulk storage containers
+                <ul>
+                  <li>Collapsible, Reinforced design, Ventilated.</li>
+                  <li>Bulk packing, Multiple Sizes and Colors, LIdded pallet boxes, Plastic pallet.</li>
+                  <li>100% New PP Material.</li>
+                </ul>
+              </div>
+            </div>
+
             <div className="cat-desc-section">
               <h4 className="">Plastic Pallet Boxes Description</h4>
               <div className="cat-desc-text">
