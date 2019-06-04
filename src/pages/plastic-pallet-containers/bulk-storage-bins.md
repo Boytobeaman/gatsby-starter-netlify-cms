@@ -1,7 +1,10 @@
 ---
 templateKey: plasticpalletcontainer-post
 title: bulk storage bins
-description: desc
+description: >-
+  Bulk Storage Bins is a collapsible plastic container. When assembled it has a
+  weight of 53kg and volume of 878L. Mostly used by logistics companies and very
+  useful for your bulk storage.
 model: foldable 1140-985
 external_long: '1140'
 external_width: '980'
@@ -18,9 +21,7 @@ tags:
   - foldable pallet container
   - plastic pallet box
 images:
-  - >-
-    https://cdn.movingboxsale.com/products/2cb801cee87a490bb93a0bf258caf4bd.jpg
-  - >-
-    https://cdn.movingboxsale.com/products/c1be5a4f8af34f838bcdf402044d0912.jpg
+  - 'https://cdn.movingboxsale.com/products/2cb801cee87a490bb93a0bf258caf4bd.jpg'
+  - 'https://cdn.movingboxsale.com/products/c1be5a4f8af34f838bcdf402044d0912.jpg'
 ---
 desc

@@ -1,7 +1,11 @@
 ---
 templateKey: eurostackingcontainer-post
 title: stackable totes storage
-description: desc
+description: >-
+  Stackable Totes Storage are palstic stackable boxes which comes in a wide rage
+  of sizes and colors. Nice lifting bar design, and still have a space specially
+  made for stacking boxes. Comes with a label card holder and anti-slip design
+  all at your disposal should you wish to make use of them. 
 model: EUB
 external_long: '400'
 external_width: '300'
@@ -16,15 +20,10 @@ tags:
   - stacking crate
   - stackable bin
 images:
-  - >-
-    https://cdn.movingboxsale.com/products/3270a65e611942ea940fd82f307e3170.jpg
-  - >-
-    https://cdn.movingboxsale.com/products/1d1eddef0bf34e0b81f217ece9048ea0.jpg
-  - >-
-    https://cdn.movingboxsale.com/products/37474a97260345be8b3a6b9fd0362513.jpg
-  - >-
-    https://cdn.movingboxsale.com/products/2a5e5922554c4b52bbe3c55bf2f83092.jpg
-  - >-
-    https://cdn.movingboxsale.com/products/e1b14d2db2784d88a5e608954ea83583.jpg
+  - 'https://cdn.movingboxsale.com/products/3270a65e611942ea940fd82f307e3170.jpg'
+  - 'https://cdn.movingboxsale.com/products/1d1eddef0bf34e0b81f217ece9048ea0.jpg'
+  - 'https://cdn.movingboxsale.com/products/37474a97260345be8b3a6b9fd0362513.jpg'
+  - 'https://cdn.movingboxsale.com/products/2a5e5922554c4b52bbe3c55bf2f83092.jpg'
+  - 'https://cdn.movingboxsale.com/products/e1b14d2db2784d88a5e608954ea83583.jpg'
 ---
 desc

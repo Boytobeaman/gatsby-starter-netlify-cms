@@ -1,7 +1,10 @@
 ---
 templateKey: plasticpalletcontainer-post
 title: pallet crates
-description: desc
+description: >-
+  Pallet Crate is a plastic ventilated bulk container that has a built-in
+  plastic pallet. This bulk storage crate is widely used by logistic companies.
+  Has a weight of 34kg and volume 606L.
 model: mesh wall 1210-760
 external_long: '1200'
 external_width: '1000'
@@ -18,13 +21,9 @@ tags:
   - pallet container
   - plastic pallet box
 images:
-  - >-
-    https://cdn.movingboxsale.com/products/72f2d30afeb84e9cb6b81a184836795e.jpg
-  - >-
-    https://cdn.movingboxsale.com/products/6553b563718647e3bdaebc61f3bfb63b.jpg
-  - >-
-    https://cdn.movingboxsale.com/products/3549bcf851ed448e9b48260bc8cc7d5c.jpg
-  - >-
-    https://cdn.movingboxsale.com/products/848ee3b188a846bc848ad7804d196492.jpg
+  - 'https://cdn.movingboxsale.com/products/72f2d30afeb84e9cb6b81a184836795e.jpg'
+  - 'https://cdn.movingboxsale.com/products/6553b563718647e3bdaebc61f3bfb63b.jpg'
+  - 'https://cdn.movingboxsale.com/products/3549bcf851ed448e9b48260bc8cc7d5c.jpg'
+  - 'https://cdn.movingboxsale.com/products/848ee3b188a846bc848ad7804d196492.jpg'
 ---
 desc

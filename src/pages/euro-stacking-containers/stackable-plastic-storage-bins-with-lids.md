@@ -1,7 +1,11 @@
 ---
 templateKey: eurostackingcontainer-post
 title: stackable plastic storage bins with lids
-description: desc
+description: >-
+  Stackable Plastic Storage Bins with Lids is one of the few heavy industry bins
+  that has a lid. Lid has stabilizing edges to protect the stacked boxes from
+  falling. Also offers you an anti-theft hole where you can lock your storage
+  box.
 model: QS-438
 external_long: '438'
 external_width: '385'
@@ -17,15 +21,10 @@ tags:
   - stackable bin
   - warehouse storage bin
 images:
-  - >-
-    https://cdn.movingboxsale.com/products/09c1dd607b9847569684d8ed83d27a30.jpg
-  - >-
-    https://cdn.movingboxsale.com/products/387b3039f4d94500a582e93d7badccbd.jpg
-  - >-
-    https://cdn.movingboxsale.com/products/b88e4753ce7a4ed1b8bbd1e5fb3b96a1.jpg
-  - >-
-    https://cdn.movingboxsale.com/products/0b7b90a2630a440d8d109e0d8f2a0607.jpg
-  - >-
-    https://cdn.movingboxsale.com/products/d263f4264b374f319f7642479c959d07.jpg
+  - 'https://cdn.movingboxsale.com/products/09c1dd607b9847569684d8ed83d27a30.jpg'
+  - 'https://cdn.movingboxsale.com/products/387b3039f4d94500a582e93d7badccbd.jpg'
+  - 'https://cdn.movingboxsale.com/products/b88e4753ce7a4ed1b8bbd1e5fb3b96a1.jpg'
+  - 'https://cdn.movingboxsale.com/products/0b7b90a2630a440d8d109e0d8f2a0607.jpg'
+  - 'https://cdn.movingboxsale.com/products/d263f4264b374f319f7642479c959d07.jpg'
 ---
 desc
