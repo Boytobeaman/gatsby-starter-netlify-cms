@@ -1,7 +1,11 @@
 ---
 templateKey: eurostackingcontainer-post
 title: heavy duty storage bins
-description: desc
+description: >-
+  Heavy Duty Storage Bins are stackable plastic storage bins, with a side
+  lifting bar. Reinforced design suitable for rough conditions. Idea for storing
+  auto-parts. Has anti-slip design making sure your storage is safe all the time
+  regardless of the conditions.
 model: EU4622
 external_long: '600'
 external_width: '400'
@@ -17,13 +21,9 @@ tags:
   - stackable bin
   - storage bin
 images:
-  - >-
-    https://cdn.movingboxsale.com/products/f4f5403dcb24478a9f17b0ae932a54ab.jpg
-  - >-
-    https://cdn.movingboxsale.com/products/3a2fcd2ace734ef3aa7bdde68edab517.jpg
-  - >-
-    https://cdn.movingboxsale.com/products/5ba6911ade654f4fb25335ef9e6f0baf.jpg
-  - >-
-    https://cdn.movingboxsale.com/products/6eb25c71d8834867b33e3886e5bf76d3.jpg
+  - 'https://cdn.movingboxsale.com/products/f4f5403dcb24478a9f17b0ae932a54ab.jpg'
+  - 'https://cdn.movingboxsale.com/products/3a2fcd2ace734ef3aa7bdde68edab517.jpg'
+  - 'https://cdn.movingboxsale.com/products/5ba6911ade654f4fb25335ef9e6f0baf.jpg'
+  - 'https://cdn.movingboxsale.com/products/6eb25c71d8834867b33e3886e5bf76d3.jpg'
 ---
 desc
