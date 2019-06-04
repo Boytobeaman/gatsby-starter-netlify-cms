@@ -125,7 +125,7 @@ const SEO = ({
 
       return (
         <>
-          <Helmet title={seo.title} titleTemplate={titleTemplate}>
+          <Helmet title={seo.title} titleTemplate={seo.titleTemplate}>
             <meta name="description" content={seo.description} />
             <meta name="image" content={seo.image} />
             <script type="application/ld+json">
