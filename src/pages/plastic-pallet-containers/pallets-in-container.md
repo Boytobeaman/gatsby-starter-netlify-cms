@@ -1,7 +1,12 @@
 ---
 templateKey: plasticpalletcontainer-post
 title: pallets in container
-description: desc
+description: >-
+  Pallets in Container is a foldable plastic storage container that comes with a
+  pallet and a lid. The body can be folded into a flat unit, saving you space.
+  The container pallets gives you an advantage to use it straight away since it
+  does not not need an extra pallet when loading it. When assembled it has a
+  weight of 30kg and a volume of 973L.
 model: 1200-1000
 external_long: '1200'
 external_width: '1000'
@@ -19,15 +24,10 @@ tags:
   - corrugated pallet box
   - collapsible plastic pallet box
 images:
-  - >-
-    https://cdn.movingboxsale.com/products/4090049e35194b4f83c52dac4eadc54e.jpg
-  - >-
-    https://cdn.movingboxsale.com/products/213bb48230a44d1aae4bfb71fd5c5d99.jpg
-  - >-
-    https://cdn.movingboxsale.com/products/9a09c7475ab84d90aed362b19cd7a327.jpg
-  - >-
-    https://cdn.movingboxsale.com/products/d6b55f4a381341978e4147af55c8d7a2.jpg
-  - >-
-    https://cdn.movingboxsale.com/products/c21109fab79b40edb23ff5e1519398b2.jpg
+  - 'https://cdn.movingboxsale.com/products/4090049e35194b4f83c52dac4eadc54e.jpg'
+  - 'https://cdn.movingboxsale.com/products/213bb48230a44d1aae4bfb71fd5c5d99.jpg'
+  - 'https://cdn.movingboxsale.com/products/9a09c7475ab84d90aed362b19cd7a327.jpg'
+  - 'https://cdn.movingboxsale.com/products/d6b55f4a381341978e4147af55c8d7a2.jpg'
+  - 'https://cdn.movingboxsale.com/products/c21109fab79b40edb23ff5e1519398b2.jpg'
 ---
 desc
