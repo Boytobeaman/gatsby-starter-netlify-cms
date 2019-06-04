@@ -27,7 +27,7 @@ export default class PlasticPalletContainerPage extends React.Component {
       <Layout>
         <section className="section">
           <SEO 
-            titleTemplate="%s | Plastic pallet boxes"
+            thisTitleTemplate="%s | Plastic pallet boxes"
             title='Plastic bulk containers Manufacturer & Supplier'
             description = 'Wholesale Plastic pallet containers, bulk container for sale, heavy duty pallet boxes, for fruit and vegetable'
             pathname = {`${cat_link}`}

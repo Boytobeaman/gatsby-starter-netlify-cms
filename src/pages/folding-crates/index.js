@@ -25,7 +25,7 @@ export default class FoldingcratePage extends React.Component {
       <Layout>
         <section className="section">
           <SEO 
-            titleTemplate="%s | collapsible crate"
+            thisTitleTemplate = "%s | collapsible crate"
             title='Collapsible Plastic Crate, folding plastic crates'
             description = 'Wholesale Collapsible plastic crate, folding plastic crates which are suitable for the storage and handling of goods. The folding crate can be folded and reused indefinitely'
             pathname = {`${cat_link}`}
