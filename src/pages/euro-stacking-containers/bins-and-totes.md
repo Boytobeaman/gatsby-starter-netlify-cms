@@ -1,7 +1,11 @@
 ---
 templateKey: eurostackingcontainer-post
 title: bins and totes
-description: desc
+description: >-
+  Bins and Totes are lidded plastic storage boxes, with a simple lifting bar,
+  reinforced design suitable for any conditions. The lid has an anti-theft hole
+  that will allow you to lock your box. Label card holder is also available
+  should you wish to brand your storage.
 model: ST-F
 external_long: '450'
 external_width: '450'
@@ -16,15 +20,10 @@ tags:
   - stacking crate
   - stackable bin
 images:
-  - >-
-    https://cdn.movingboxsale.com/products/98b08721e9ce4628b1c4d9fd162e1b1b.jpg
-  - >-
-    https://cdn.movingboxsale.com/products/1f933de1ed2541b7a35f467c1faac419.jpg
-  - >-
-    https://cdn.movingboxsale.com/products/035968a6d52f4fc194878ad9de024bdf.jpg
-  - >-
-    https://cdn.movingboxsale.com/products/835f0627725a450b889469bd7c93a8a4.jpg
-  - >-
-    https://cdn.movingboxsale.com/products/14a0b75161aa4fc180da2fcc5787c3e5.jpg
+  - 'https://cdn.movingboxsale.com/products/98b08721e9ce4628b1c4d9fd162e1b1b.jpg'
+  - 'https://cdn.movingboxsale.com/products/1f933de1ed2541b7a35f467c1faac419.jpg'
+  - 'https://cdn.movingboxsale.com/products/035968a6d52f4fc194878ad9de024bdf.jpg'
+  - 'https://cdn.movingboxsale.com/products/835f0627725a450b889469bd7c93a8a4.jpg'
+  - 'https://cdn.movingboxsale.com/products/14a0b75161aa4fc180da2fcc5787c3e5.jpg'
 ---
 desc
