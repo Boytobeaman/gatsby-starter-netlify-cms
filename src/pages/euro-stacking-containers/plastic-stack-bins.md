@@ -1,7 +1,12 @@
 ---
 templateKey: eurostackingcontainer-post
 title: plastic stack bins
-description: desc
+description: >-
+  Plastic Stack Bins are also know as straight wall containers with lids. This
+  special storage box will allows you to stack other boxes on top and the lids
+  have stablizing edges to prevent stacked boxes from falling. The lid has
+  stabilizing edges that will prevent the stacked boxes from falling. Further
+  has an anti-theft hole should you wish to lock your storage box.
 model: ST-B
 external_long: '400'
 external_width: '300'
@@ -16,15 +21,10 @@ tags:
   - stacking crate
   - straight wall container
 images:
-  - >-
-    https://cdn.movingboxsale.com/products/7f90aa3d51bd49c1928690949577600d.jpg
-  - >-
-    https://cdn.movingboxsale.com/products/6da101c94e534f86b0e6b89f023c3e3f.jpg
-  - >-
-    https://cdn.movingboxsale.com/products/108f521eee9b49489c114c7a01422778.jpg
-  - >-
-    https://cdn.movingboxsale.com/products/d89b2bf9416741b9a416907434b7330e.jpg
-  - >-
-    https://cdn.movingboxsale.com/products/8945b98d4d5d430ba5ee9afbc1c2ad1c.jpg
+  - 'https://cdn.movingboxsale.com/products/7f90aa3d51bd49c1928690949577600d.jpg'
+  - 'https://cdn.movingboxsale.com/products/6da101c94e534f86b0e6b89f023c3e3f.jpg'
+  - 'https://cdn.movingboxsale.com/products/108f521eee9b49489c114c7a01422778.jpg'
+  - 'https://cdn.movingboxsale.com/products/d89b2bf9416741b9a416907434b7330e.jpg'
+  - 'https://cdn.movingboxsale.com/products/8945b98d4d5d430ba5ee9afbc1c2ad1c.jpg'
 ---
 desc
