@@ -74,7 +74,7 @@ export default class Index extends React.Component {
                       Our main products are industrial plastic boxes, which can be classified into three parts; 
                       Stackable Boxes, Nestable-Stackable Boxes and Collapsible boxes. 
                       We also manufacture plastic turnover boxes that has a strong technical force. 
-                      Our good quality products, reasonable prices and modern product designs your logistic packing and personal storage easier. 
+                      Our good quality products, reasonable prices and modern product designs make your logistic packing and personal storage easier. 
                       These products are extensively used by logistic firms and moving firm among the long list of other firms. 
                       Our products modern design allows these products to continuously meet the ever changing economic and social needs.
                       Our products are widely recognized and trusted by all users all-around the globe.
