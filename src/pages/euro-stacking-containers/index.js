@@ -48,6 +48,23 @@ export default class EuroStackingContainerPage extends React.Component {
               </ol>
             </nav>
             
+            <div className="cat-desc-top-wrap">
+              <div className="d-none d-sm-block">
+                <LazyLoadImage 
+                  className="img-fluid w-100" 
+                  src={`${cdn_url}/static/euro-stacking-container-banner.jpg`}
+                  placeholderSrc={cdn_loading_img}
+                  alt="euro stacking container" />
+              </div>
+              <div className="d-block d-sm-none">
+                <LazyLoadImage 
+                  className="img-fluid w-100" 
+                  src={`${cdn_url}/static/euro-stacking-container-banner-phone.jpg`}
+                  placeholderSrc={cdn_loading_img}
+                  alt="euro stacking container" />
+              </div>
+            </div>
+
             {posts
               .map(({ node: post }) => {
                 return (

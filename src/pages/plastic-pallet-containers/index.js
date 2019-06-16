@@ -85,7 +85,7 @@ export default class PlasticPalletContainerPage extends React.Component {
                 )
               })}
 
-            <div className="cat-desc-section mb-2">
+            <div className="cat-desc-section">
               <h4 className="">Plastic Pallet Boxes</h4>
               <div className="cat-desc-text">
               Eco-friendly, Collapsible saving you space, Effecient loading via built-in plastic pallet.
