@@ -4,6 +4,8 @@ import { Link, graphql } from 'gatsby'
 import ProductDetailTemplateCat from '../../components/ProductDetailTemplateCat'
 import Layout from '../../components/Layout'
 import SEO from '../../components/SEO/SEO'
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 import '../../cat-page-style.scss'
 
 export default class MovingcratePage extends React.Component {
