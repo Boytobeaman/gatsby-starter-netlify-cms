@@ -6,6 +6,7 @@ import Layout from '../../components/Layout'
 import SEO from '../../components/SEO/SEO'
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
+import { cdn_url, cdn_loading_img } from '../../utils'
 import '../../cat-page-style.scss'
 
 export default class MovingcratePage extends React.Component {
