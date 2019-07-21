@@ -29,7 +29,11 @@ export default class PlasticPalletContainerPage extends React.Component {
           <SEO 
             thisTitleTemplate="%s | Plastic pallet boxes"
             title='Plastic bulk containers Manufacturer & Supplier'
-            description = 'Wholesale Plastic pallet containers, bulk container for sale, heavy duty pallet boxes, for fruit and vegetable'
+            description = {`
+              Wholesale Plastic pallet containers, bulk container for sale, 
+              heavy duty pallet boxes for fruit and vegetable,
+              bulk containers are available in light-duty, medium-duty and designs to meet a wide range of application requirements.
+              `}
             pathname = {`${cat_link}`}
             image = {the_image}
             position = '2'
