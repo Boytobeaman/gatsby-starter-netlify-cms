@@ -103,7 +103,22 @@ export default class PlasticPalletContainerPage extends React.Component {
                 </ul>
               </div>
             </div>
-
+            <div className="row">
+              <div className="col-md-6">
+                <LazyLoadImage 
+                  className="img-fluid w-100" 
+                  src={`${cdn_url}/static/coaming-box.jpg`}
+                  placeholderSrc={cdn_loading_img}
+                  alt="Plastic coaming boxes" />
+              </div>
+              <div className="col-md-6">
+                <LazyLoadImage 
+                  className="img-fluid w-100" 
+                  src={`${cdn_url}/static/pallet-boxes-export-to-oman.jpg`}
+                  placeholderSrc={cdn_loading_img}
+                  alt="Plastic Pallet Boxes" />
+              </div>
+            </div>
             <div className="cat-desc-section">
               <h4 className="">Plastic Pallet Boxes Description</h4>
               <div className="cat-desc-text">
