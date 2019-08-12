@@ -2,7 +2,12 @@ import React from "react";
 import { Link } from 'gatsby'
 import { navigateTo } from "gatsby-link";
 import Layout from '../../components/Layout'
-import { cdn_img_thumbnail,contact_email } from '../../utils'
+import { 
+  cdn_img_thumbnail,
+  contact_email,
+  inquiry_base_url,
+  inquiry_inquiry_url
+} from '../../utils'
 
 function encode(data) {
   return Object.keys(data)
@@ -15,18 +20,19 @@ export default class Index extends React.Component {
     super(props);
     this.state = {
       isValidated: false,
-      p_model: '',
+      product_model: '',
       p_img: cdn_img_thumbnail,
       from_url: '',
       sending: false,
-      showThanks: false
+      showThanks: false,
+      to_email: contact_email
     };
   }
   componentDidMount() {
     let obj={}
     let model = localStorage.getItem('model')
     if(model){
-      obj.p_model = model;
+      obj.product_model = model;
     }
     let from_url = localStorage.getItem("from_url")
     if(from_url){
@@ -49,9 +55,9 @@ export default class Index extends React.Component {
     const form = e.target;
     this.setState({ sending: true });
     var _this = this
-    fetch("/", {
+    fetch(`${inquiry_base_url}${inquiry_inquiry_url}`, {
       method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      headers: { "Content-Type": "application/json" },
       body: encode({
         "form-name": form.getAttribute("name"),
         ...this.state
@@ -117,15 +123,15 @@ export default class Index extends React.Component {
                         </div>
                     </div>
                     <div className="field form-group mb-1">
-                      <label className="label" htmlFor={"p_model"}>Product model</label>
+                      <label className="label" htmlFor={"product_model"}>Product model</label>
                         <div className="control">
-                          <input className="input form-control" value={this.state.p_model} placeholder="The product you want to buy" type={"text"} name={"p_model"} onChange={this.handleChange} id={"p_model"} required={true} />
+                          <input className="input form-control" value={this.state.product_model} placeholder="The product you want to buy" type={"text"} name={"product_model"} onChange={this.handleChange} id={"product_model"} required={true} />
                         </div>
                     </div>
                     <div className="field form-group mb-1">
-                      <label className="label" htmlFor={"p_quantity"}>Product quantity</label>
+                      <label className="label" htmlFor={"number"}>Product quantity</label>
                         <div className="control">
-                          <input className="input form-control" placeholder="MOQ:300" type={"text"} name={"p_quantity"} onChange={this.handleChange} id={"p_quantity"} required={true} />
+                          <input className="input form-control" placeholder="MOQ:300" type={"text"} name={"number"} onChange={this.handleChange} id={"number"} required={true} />
                         </div>
                     </div>
                     <div className="field form-group mb-1">
@@ -162,7 +168,7 @@ export default class Index extends React.Component {
                       <img className="img-fluid" src={this.state.p_img} />
                     </div>
                     <div className="col-sm-8">
-                      <h6>Product model: {this.state.p_model}</h6>
+                      <h6>Product model: {this.state.product_model}</h6>
                       <p>Lead time: 7~15 working days</p>
                       <p>Payment method:  T/T, L/C at sight and Paypal for sample</p>
                     </div>
