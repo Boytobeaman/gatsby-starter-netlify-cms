@@ -75,9 +75,8 @@ export default class Index extends React.Component {
 
     fetch(`${inquiry_handle_base_url}${inquiry_handle_inquiry_url}`, {
       method: "POST",
-      mode: 'no-cors',
       headers: { "Content-Type": "application/json" },
-      body: encode({
+      body: JSON.stringify({
         "form-name": form.getAttribute("name"),
         ...this.state
       })
