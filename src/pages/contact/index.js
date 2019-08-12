@@ -5,8 +5,8 @@ import Layout from '../../components/Layout'
 import { 
   cdn_img_thumbnail,
   contact_email,
-  inquiry_base_url,
-  inquiry_inquiry_url
+  inquiry_handle_base_url,
+  inquiry_handle_inquiry_url
 } from '../../utils'
 
 function encode(data) {
@@ -55,9 +55,9 @@ export default class Index extends React.Component {
     const form = e.target;
     this.setState({ sending: true });
     var _this = this
-    fetch(`${inquiry_base_url}${inquiry_inquiry_url}`, {
+    fetch('/', {
       method: "POST",
-      headers: { "Content-Type": "application/json" },
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: encode({
         "form-name": form.getAttribute("name"),
         ...this.state
@@ -72,6 +72,19 @@ export default class Index extends React.Component {
       // navigateTo(form.getAttribute("action"));
     })
     .catch(error => alert(error));
+
+    fetch(`${inquiry_handle_base_url}${inquiry_handle_inquiry_url}`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: encode({
+        "form-name": form.getAttribute("name"),
+        ...this.state
+      })
+    })
+    .then(() => {
+      console.log(`save in database`)
+    })
+    .catch(error => console.log(error));
   };
 
   render() {
