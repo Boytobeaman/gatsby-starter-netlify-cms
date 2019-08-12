@@ -57,7 +57,6 @@ export default class Index extends React.Component {
     var _this = this
     fetch('/', {
       method: "POST",
-      mode: 'no-cors',
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: encode({
         "form-name": form.getAttribute("name"),
@@ -76,6 +75,7 @@ export default class Index extends React.Component {
 
     fetch(`${inquiry_handle_base_url}${inquiry_handle_inquiry_url}`, {
       method: "POST",
+      mode: 'no-cors',
       headers: { "Content-Type": "application/json" },
       body: encode({
         "form-name": form.getAttribute("name"),
