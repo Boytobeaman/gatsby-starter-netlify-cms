@@ -6,7 +6,9 @@ import {
   cdn_img_thumbnail,
   contact_email,
   inquiry_handle_base_url,
-  inquiry_handle_inquiry_url
+  inquiry_handle_app_name,
+  inquiry_handle_inquiry_url,
+  inquiry_handle_email_url
 } from '../../utils'
 
 function encode(data) {
@@ -21,6 +23,7 @@ export default class Index extends React.Component {
     this.state = {
       isValidated: false,
       product_model: '',
+      product_quantity: '',
       p_img: cdn_img_thumbnail,
       from_url: '',
       sending: false,
@@ -55,10 +58,10 @@ export default class Index extends React.Component {
     const form = e.target;
     this.setState({ sending: true });
     var _this = this
-    fetch('/', {
+    fetch(`${inquiry_handle_base_url}${inquiry_handle_app_name}${inquiry_handle_email_url}`, {
       method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
         "form-name": form.getAttribute("name"),
         ...this.state
       })
@@ -70,10 +73,11 @@ export default class Index extends React.Component {
        });
        document.documentElement.scrollTop += 300
       // navigateTo(form.getAttribute("action"));
+      console.log(`send email successfully to ${contact_email}`)
     })
     .catch(error => alert(error));
 
-    fetch(`${inquiry_handle_base_url}${inquiry_handle_inquiry_url}`, {
+    fetch(`${inquiry_handle_base_url}${inquiry_handle_app_name}${inquiry_handle_inquiry_url}`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
@@ -82,7 +86,7 @@ export default class Index extends React.Component {
       })
     })
     .then(() => {
-      console.log(`save in database`)
+      console.log(`saved in handle inquiry database`)
     })
     .catch(error => console.log(error));
   };
@@ -142,9 +146,9 @@ export default class Index extends React.Component {
                         </div>
                     </div>
                     <div className="field form-group mb-1">
-                      <label className="label" htmlFor={"number"}>Product quantity</label>
+                      <label className="label" htmlFor={"product_quantity"}>Product quantity</label>
                         <div className="control">
-                          <input className="input form-control" placeholder="MOQ:300" type={"text"} name={"number"} onChange={this.handleChange} id={"number"} required={true} />
+                          <input className="input form-control" placeholder="MOQ:300" type={"text"} name={"product_quantity"} onChange={this.handleChange} id={"product_quantity"} required={true} />
                         </div>
                     </div>
                     <div className="field form-group mb-1">
@@ -169,8 +173,8 @@ export default class Index extends React.Component {
                           <h4>Thank you!</h4>
                           <p className="mb-1">Email had been sent to <span className="font-weight-bold">{contact_email || 'seller006@joinplastic.com'}</span></p>
                           <p>We will check the email and come back to you as soon as possible!</p>
-                          <button type="button" onClick={()=>window.history.go(-1)} class="btn btn-danger mr-3">Back to product</button>
-                          <button type="button" onClick={()=>navigateTo('/')} class="btn btn-outline-danger">Back To Homepage</button>
+                          <button type="button" onClick={()=>window.history.go(-1)} className="btn btn-danger mr-3">Back to product</button>
+                          <button type="button" onClick={()=>navigateTo('/')} className="btn btn-outline-danger">Back To Homepage</button>
                       </div>
                     </div>
                   )}
