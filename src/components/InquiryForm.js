@@ -34,7 +34,7 @@ export default class InquiryForm extends React.Component {
     if(model){
       obj.product_model = model;
     }
-    let from_url = localStorage.getItem("from_url")
+    let from_url = localStorage.getItem("from_url") || window.location.href
     if(from_url){
       obj.from_url = from_url;
     }
