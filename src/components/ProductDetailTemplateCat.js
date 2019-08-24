@@ -1,7 +1,8 @@
 
 import React from 'react'
-import { navigateTo } from "gatsby-link";
+import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
+import InquiryForm from '../components/InquiryForm';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 import {
   aliResizeStyle_h_20,
@@ -24,13 +25,27 @@ class ProductDetailTemplateCat extends React.Component {
   constructor(props){
     super(props);
     this.toContactUs = this.toContactUs.bind(this);
+    this.toggle = this.toggle.bind(this);
+    this.state = {
+      modal: false
+    };
+
   }
+  toggle() {
+    this.setState(prevState => ({
+      modal: !prevState.modal
+    }));
+  }
+  
   toContactUs(e,model,p_img){
     e.preventDefault();
     localStorage.setItem("from_url", window.location.href)
     localStorage.setItem("model", model)
     localStorage.setItem("p_img", p_img)
-    navigateTo(contact_url)
+    this.setState({
+      modal: true
+    });
+    // navigateTo(contact_url)
     return false
   }
   render() {
@@ -143,6 +158,15 @@ class ProductDetailTemplateCat extends React.Component {
             </div>
           </div>
         </div>
+        <Modal isOpen={this.state.modal} toggle={this.toggle} className={this.props.className}>
+          <ModalHeader toggle={this.toggle}>Contact us & Inquiry <span className="text-danger"></span></ModalHeader>
+          <ModalBody>
+            <InquiryForm />
+          </ModalBody>
+          <ModalFooter>
+            <Button color="secondary" className="btn-sm" onClick={this.toggle}>Close</Button>
+          </ModalFooter>
+        </Modal>
       </div>
     );
   }

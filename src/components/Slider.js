@@ -67,7 +67,7 @@ class Slider extends Component {
                 placeholderSrc={item.placeholderImg}
                 effect="blur"
                 alt={item.altText} 
-                srcset={item.srcset} 
+                srcSet={item.srcset} 
                 sizes="100vw" />
             </Link>
           ):(
@@ -77,7 +77,7 @@ class Slider extends Component {
               placeholderSrc={item.placeholderImg}
               effect="blur"
               alt={item.altText} 
-              srcset={item.srcset} 
+              srcSet={item.srcset} 
               sizes="100vw" />
           )}
           <CarouselCaption captionText={item.caption} captionHeader={item.caption} />

@@ -29,12 +29,10 @@ export default class MainNavbar extends React.Component{
   render() {
     return (
       <Navbar color="dark" dark expand="md" id="mainNavbar" itemScope='' itemType="http://schema.org/SiteNavigationElement">
-        <NavbarBrand className="py-0">
-          <Link to="/" className="navbar-brand py-0">
-                <figure className="image mb-0">
-                  <img src={logo} alt="moving crates logo" style={{ height: '40px' }} />
-                </figure>
-          </Link>
+        <NavbarBrand className="py-0" href="/">
+          <figure className="image mb-0">
+            <img src={logo} alt="moving crates logo" style={{ height: '40px' }} />
+          </figure>
         </NavbarBrand>
         <NavbarToggler onClick={this.toggleNavbar} />
         <Collapse isOpen={!this.state.collapsed} navbar>

@@ -10,6 +10,7 @@ import {
   inquiry_handle_inquiry_url,
   inquiry_handle_email_url
 } from '../../utils'
+import InquiryForm from "../../components/InquiryForm";
 
 function encode(data) {
   return Object.keys(data)
@@ -107,88 +108,26 @@ export default class Index extends React.Component {
               </ol>
             </nav>
             <div className="content p-3 bg-white">
-              <h1 className="h4">Contact us & Inquiry <span className="text-danger">(MOQ:300)</span></h1>
+              <h2 className="h4">Contact us & Inquiry <span className="text-danger"></span></h2>
               <div className="row">
                 <div className="col-md-6">
-                  <form
-                    name="contact"
-                    method="post"
-                    action="/contact/thanks/?no-cache=1"
-                    data-netlify="true"
-                    data-netlify-honeypot="bot-field"
-                    onSubmit={this.handleSubmit}
-                    className="contact-us"
-                  >
-                    {/* The `form-name` hidden field is required to support form submissions without JavaScript */}
-                    <input type="hidden" name="form-name" value="contact" />
-                    <div hidden>
-                      <label>
-                        Don’t fill this out:{" "}
-                        <input name="bot-field" onChange={this.handleChange} />
-                      </label>
-                    </div>
-                    <div className="field form-group mb-1">
-                      <label className="label" htmlFor={"name"} >Your name</label>
-                      <div className="control">
-                        <input className="input form-control" type={"text"} name={"name"} onChange={this.handleChange} id={"name"} required={true} />
-                      </div>
-                    </div>
-                    <div className="field form-group mb-1">
-                      <label className="label" htmlFor={"email"}>Email</label>
-                        <div className="control">
-                          <input className="input form-control" type={"email"} name={"email"} onChange={this.handleChange} id={"email"} required={true} />
-                        </div>
-                    </div>
-                    <div className="field form-group mb-1">
-                      <label className="label" htmlFor={"product_model"}>Product model</label>
-                        <div className="control">
-                          <input className="input form-control" value={this.state.product_model} placeholder="The product you want to buy" type={"text"} name={"product_model"} onChange={this.handleChange} id={"product_model"} required={true} />
-                        </div>
-                    </div>
-                    <div className="field form-group mb-1">
-                      <label className="label" htmlFor={"product_quantity"}>Product quantity</label>
-                        <div className="control">
-                          <input className="input form-control" placeholder="MOQ:300" type={"text"} name={"product_quantity"} onChange={this.handleChange} id={"product_quantity"} required={true} />
-                        </div>
-                    </div>
-                    <div className="field form-group mb-1">
-                      <label className="label" htmlFor={"message"}>Message</label>
-                      <div className="control">
-                        <textarea className="textarea form-control message-detail" placeholder="Please tell us product details and your requirements" name={"message"} onChange={this.handleChange} id={"message"} required={true} />
-                      </div>
-                    </div>
-                    <div className="field form-group mb-1 d-none">
-                      <label className="label" htmlFor={"from_url"}>From url</label>
-                      <div className="control">
-                        <input className="input form-control" value={this.state.from_url}  type={"text"} name={"from_url"} onChange={this.handleChange} id={"from_url"} required={false} />
-                      </div>
-                    </div>
-                    <div className="field form-group">
-                      <button className="button btn btn-danger btn-lg is-link" type="submit">{this.state.sending?'Processing':'Send'}</button>
-                    </div>
-                  </form>
-                  {this.state.showThanks &&(
-                    <div className="mt-1 p-3 bg-light rounded shadow-lg">
-                      <div className="content">
-                          <h4>Thank you!</h4>
-                          <p className="mb-1">Email had been sent to <span className="font-weight-bold">{contact_email || 'seller006@joinplastic.com'}</span></p>
-                          <p>We will check the email and come back to you as soon as possible!</p>
-                          <button type="button" onClick={()=>window.history.go(-1)} className="btn btn-danger mr-3">Back to product</button>
-                          <button type="button" onClick={()=>navigateTo('/')} className="btn btn-outline-danger">Back To Homepage</button>
-                      </div>
-                    </div>
-                  )}
+                  <InquiryForm />
                 </div>
                 <div className="col-md-6">
-                  <div className="row py-2 border mx-0 my-1">
-                    <div className="col-sm-4 text-center">
-                      <img className="img-fluid" src={this.state.p_img} />
-                    </div>
-                    <div className="col-sm-8">
-                      <h6>Product model: {this.state.product_model}</h6>
-                      <p>Lead time: 7~15 working days</p>
-                      <p>Payment method:  T/T, L/C at sight and Paypal for sample</p>
-                    </div>
+                  <h5>Our services:</h5>
+                  <div className="mb-1">
+                    <ul className="list-group">
+                      <li className="list-group-item">
+                        Add customer logo on the crate.
+                      </li>
+                      <li className="list-group-item">
+                        We could customize color for the crate, regular color is blue, grey.
+                      </li>
+                      <li className="list-group-item">
+                        MOQ for bulk order: Normally 300 pcs, but could be negotiated in circumstance
+                      </li>
+                    </ul>
+                  
                   </div>
                   <h5>Our location:</h5>
                   <div className="alert alert-secondary" role="alert">
