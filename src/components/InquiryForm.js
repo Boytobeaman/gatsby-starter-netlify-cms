@@ -13,6 +13,18 @@ function encode(data) {
     .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
     .join("&");
 }
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  };
+  gtag('event', 'conversion', {
+      'send_to': 'AW-926114914/ofxSCLLdwqkBEOLIzbkD',
+      'event_callback': callback
+  });
+  return false;
+}
 
 export default class InquiryForm extends React.Component {
   constructor(props) {
@@ -86,6 +98,8 @@ export default class InquiryForm extends React.Component {
       console.log(`saved in handle inquiry database`)
     })
     .catch(error => console.log(error));
+
+    gtag_report_conversion(window.location.href)
   };
 
   render() {
@@ -162,7 +176,7 @@ export default class InquiryForm extends React.Component {
                 <div className="field form-group mb-0">
                   <button className="button btn btn-danger is-link" type="submit">{this.state.sending?'Processing':'Send'}</button>
                 </div>
-                <p className="small mt-1">Email will send to {contact_email}, if you get no email send successful response, you can alternatively <a className="" href={`mailto:${contact_email}?subject=Inquiry about your plastic crate`}>Send email</a> using your email client.</p>
+                <p className="small mt-1">Email will be send to {contact_email}, if you do not get email sent successful response, please alternatively <a className="" href={`mailto:${contact_email}?subject=Inquiry about your plastic crate`}>Send email</a> using your email client.</p>
               </form>
               {this.state.showThanks &&(
                 <div className="mt-1 bg-light rounded shadow-lg">
