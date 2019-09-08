@@ -2,6 +2,10 @@
   text-decoration: none;
   color:#333;
 }
+.cat-desc-element-wrap{
+    margin: 15px 0;
+    background-color: #f6f6f6;
+}
 .product-wrap{
     box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
     overflow: hidden;
@@ -37,7 +41,7 @@
         overflow: hidden;
         position: relative;
         @media only screen and (max-width: 767px) {
-            min-height: 300px;
+            min-height: 100px;
         }
       }
   }
@@ -103,8 +107,8 @@
   /* For mobile phones: */
   .product-wrap{
       .product-img-wrap{
-          float: inherit;
-          width: 100%;
+          float: left;
+          width: 40%;
           height: inherit;
           img{
               width: 100%;

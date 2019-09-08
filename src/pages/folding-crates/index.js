@@ -69,7 +69,7 @@ export default class FoldingcratePage extends React.Component {
               .map(({ node: post }) => {
                 return (
                   <div
-                    className="clearfix mb-3"
+                    className="cat-desc-element-wrap"
                     key={post.id}
                   >
                     <div className="col-xs-12">
