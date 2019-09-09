@@ -28,7 +28,7 @@ export default class MainNavbar extends React.Component{
   }
   render() {
     return (
-      <Navbar color="dark" dark fixed expand="md" id="mainNavbar" itemScope='' itemType="http://schema.org/SiteNavigationElement">
+      <Navbar color="dark" dark className="fixed-top" expand="md" id="mainNavbar" itemScope='' itemType="http://schema.org/SiteNavigationElement">
         <NavbarBrand className="py-0" href="/">
           <figure className="image mb-0">
             <img src={logo} alt="moving crates logo" style={{ height: '40px' }} />
