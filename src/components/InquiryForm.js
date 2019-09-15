@@ -5,7 +5,8 @@ import {
   inquiry_handle_base_url,
   inquiry_handle_app_name,
   inquiry_handle_inquiry_url,
-  inquiry_handle_email_url
+  inquiry_handle_email_url,
+  inquiry_api_success_code
 } from '../utils'
 import axios from 'axios';
 import { func } from "prop-types";
@@ -73,33 +74,49 @@ export default class InquiryForm extends React.Component {
       url: `${inquiry_handle_base_url}${inquiry_handle_app_name}${inquiry_handle_email_url}`,
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
+      data: JSON.stringify({
         "form-name": form.getAttribute("name"),
-        ...this.state
+        ..._this.state
       })
     })
-    .then(() => {
-      _this.setState({ 
-        sending: false,
-        showThanks: true
-       });
-       document.documentElement.scrollTop += 300
-      // navigateTo(form.getAttribute("action"));
-      console.log(`send email successfully to ${contact_email}`)
+    .then((res) => {
+      if(res.data && res.data.code === inquiry_api_success_code){
+        _this.setState({ 
+          showThanks: true
+         });
+         document.documentElement.scrollTop += 300
+        // navigateTo(form.getAttribute("action"));
+        console.log(`send email successfully to ${contact_email}`)
+      }else{
+        alert(res.data.msg)
+      }
+     
     })
-    .catch(error => alert(error));
+    .catch(error => {
+      alert(error)
+    })
+    .finally(()=>{
+      _this.setState({ 
+        sending: false
+       });
+    });
 
     axios({
       url: `${inquiry_handle_base_url}${inquiry_handle_app_name}${inquiry_handle_inquiry_url}`,
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
+      data: JSON.stringify({
         "form-name": form.getAttribute("name"),
-        ...this.state
+        ..._this.state
       })
     })
-    .then(() => {
-      console.log(`saved in handle inquiry database`)
+    .then((res) => {
+      if(res.data && res.data.code === inquiry_api_success_code){
+        console.log(`saved in handle inquiry database`)
+      }else{
+        console.error(res.data.msg)
+      }
+      
     })
     .catch(error => console.log(error));
 
@@ -128,7 +145,7 @@ export default class InquiryForm extends React.Component {
                 // action="/contact/thanks/?no-cache=1"
                 data-netlify="true"
                 data-netlify-honeypot="bot-field"
-                // onSubmit={this.handleSubmit}
+                onSubmit={this.handleSubmit}
                 className="contact-us"
               >
                 {/* The `form-name` hidden field is required to support form submissions without JavaScript */}
@@ -178,7 +195,7 @@ export default class InquiryForm extends React.Component {
                   </div>
                 </div>
                 <div className="field form-group mb-0">
-                  <button className="button btn btn-danger is-link" onClick={this.handleSubmit}>{this.state.sending?'Processing':'Send'}</button>
+                  <button className="button btn btn-danger is-link" type="submit">{this.state.sending?'Processing':'Send'}</button>
                 </div>
                 <p className="small mt-1">Email will be send to {contact_email}, if you do not get email sent successful response, please alternatively <a className="" href={`mailto:${contact_email}?subject=Inquiry about your plastic crate`}>Send email</a> using your email client.</p>
               </form>
