@@ -19,7 +19,7 @@ function encode(data) {
 function gtag_report_conversion(url) {
   var callback = function () {
     if (typeof(url) != 'undefined') {
-      window.location = url;
+      // window.location = url;
     }
   };
   gtag('event', 'conversion', {
