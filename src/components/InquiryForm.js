@@ -67,7 +67,6 @@ export default class InquiryForm extends React.Component {
 
   handleSubmit = e => {
     e.preventDefault();
-    const form = e.target;
     this.setState({ sending: true });
     var _this = this
     axios({
@@ -75,7 +74,6 @@ export default class InquiryForm extends React.Component {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       data: JSON.stringify({
-        "form-name": form.getAttribute("name"),
         ..._this.state
       })
     })
@@ -106,7 +104,6 @@ export default class InquiryForm extends React.Component {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       data: JSON.stringify({
-        "form-name": form.getAttribute("name"),
         ..._this.state
       })
     })
@@ -145,7 +142,7 @@ export default class InquiryForm extends React.Component {
                 // action="/contact/thanks/?no-cache=1"
                 data-netlify="true"
                 data-netlify-honeypot="bot-field"
-                onSubmit={this.handleSubmit}
+                // onSubmit={this.handleSubmit}
                 className="contact-us"
               >
                 {/* The `form-name` hidden field is required to support form submissions without JavaScript */}
@@ -195,7 +192,7 @@ export default class InquiryForm extends React.Component {
                   </div>
                 </div>
                 <div className="field form-group mb-0">
-                  <button className="button btn btn-danger is-link" type="submit">{this.state.sending?'Processing':'Send'}</button>
+                  <button className="button btn btn-danger is-link" onClick={this.handleSubmit}>{this.state.sending?'Processing':'Send'}</button>
                 </div>
                 <p className="small mt-1">Email will be send to {contact_email}, if you do not get email sent successful response, please alternatively <a className="" href={`mailto:${contact_email}?subject=Inquiry about your plastic crate`}>Send email</a> using your email client.</p>
               </form>
