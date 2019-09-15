@@ -1,3 +1,6 @@
+import 'core-js/es6/map';
+import 'core-js/es6/set';
+
 import React from "react";
 import { Link } from 'gatsby'
 import Helmet from 'react-helmet'
