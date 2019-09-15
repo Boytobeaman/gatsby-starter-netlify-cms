@@ -300,7 +300,7 @@ class ProductDetailTemplate extends React.Component{
             </div>
           </div>
         </div>
-        <Modal isOpen={this.state.modal} toggle={this.toggle} className={this.props.className}>
+        <Modal isOpen={this.state.modal} toggle={this.toggle} className={this.props.className} backdrop="static">
           <ModalHeader toggle={this.toggle}>Contact us & Inquiry <span className="text-danger"></span></ModalHeader>
           <ModalBody>
             <InquiryForm />

@@ -15,7 +15,7 @@ const TemplateWrapper = ({ children }) => (
       <link rel="icon" type="image/svg+xml" href={favicon}></link>
     </Helmet>
     <MainNavbar />
-    <div>{children}</div>
+    <div className="main-body">{children}</div>
     <Footer />
   </div>
 )

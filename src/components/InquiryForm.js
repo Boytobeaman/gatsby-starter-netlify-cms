@@ -7,6 +7,8 @@ import {
   inquiry_handle_inquiry_url,
   inquiry_handle_email_url
 } from '../utils'
+import axios from 'axios';
+import { func } from "prop-types";
 
 function encode(data) {
   return Object.keys(data)
@@ -67,7 +69,8 @@ export default class InquiryForm extends React.Component {
     const form = e.target;
     this.setState({ sending: true });
     var _this = this
-    fetch(`${inquiry_handle_base_url}${inquiry_handle_app_name}${inquiry_handle_email_url}`, {
+    axios({
+      url: `${inquiry_handle_base_url}${inquiry_handle_app_name}${inquiry_handle_email_url}`,
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
@@ -86,7 +89,8 @@ export default class InquiryForm extends React.Component {
     })
     .catch(error => alert(error));
 
-    fetch(`${inquiry_handle_base_url}${inquiry_handle_app_name}${inquiry_handle_inquiry_url}`, {
+    axios({
+      url: `${inquiry_handle_base_url}${inquiry_handle_app_name}${inquiry_handle_inquiry_url}`,
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
