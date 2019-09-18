@@ -50,7 +50,9 @@ body>div>div>div{
     }
   }
 }
-
+.modal-body .inquiry-pic-wrap {
+  display: none;
+}
 textarea.form-control.message-detail{
   height: 120px;
 }

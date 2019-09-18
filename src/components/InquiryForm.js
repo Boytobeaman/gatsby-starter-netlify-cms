@@ -124,7 +124,7 @@ export default class InquiryForm extends React.Component {
     return (
       <div className="">
         <div className="content bg-white">
-          <div className="row border mx-0 my-2">
+          <div className="row border mx-0 my-2 d-none d-sm-block inquiry-pic-wrap">
             <div className="col-4 px-0 text-center">
               <img className="img-fluid" src={this.state.p_img} />
             </div>
