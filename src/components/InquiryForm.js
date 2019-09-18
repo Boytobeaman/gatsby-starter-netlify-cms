@@ -124,14 +124,16 @@ export default class InquiryForm extends React.Component {
     return (
       <div className="">
         <div className="content bg-white">
-          <div className="row border mx-0 my-2 d-none d-sm-block inquiry-pic-wrap">
-            <div className="col-4 px-0 text-center">
-              <img className="img-fluid" src={this.state.p_img} />
-            </div>
-            <div className="col-8">
-              <h6>Product model: {this.state.product_model}</h6>
-              <p className="mb-0">Lead time: 7~15 working days.</p>
-              <p>Payment method:  T/T, L/C at sight and Paypal for sample.</p>
+          <div className="d-none d-sm-block inquiry-pic-wrap">
+            <div className="row border mx-0 my-2">
+              <div className="col-4 px-0 text-center">
+                <img className="img-fluid" src={this.state.p_img} />
+              </div>
+              <div className="col-8">
+                <h6>Product model: {this.state.product_model}</h6>
+                <p className="mb-0">Lead time: 7~15 working days.</p>
+                <p>Payment method:  T/T, L/C at sight and Paypal for sample.</p>
+              </div>
             </div>
           </div>
           <div className="row">
