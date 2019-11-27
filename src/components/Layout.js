@@ -12,7 +12,7 @@ import './all.scss'
 
 
 const TemplateWrapper = ({ children }) => (
-  <div className="position-relative" style={{paddingBottom: '180px'}}>
+  <div className="layout-wrap position-relative">
     <Helmet>
       <title>Home | Moving Crates Supplier</title>
       <link rel="icon" type="image/svg+xml" href={favicon}></link>

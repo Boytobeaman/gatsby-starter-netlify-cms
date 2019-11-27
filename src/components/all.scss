@@ -6,9 +6,13 @@ html{
 body{
   background-color: $body-bg;
 }
-.main-body{
-  padding-top: 60px;
+.layout-wrap{
+  padding-bottom: 180px;
+  .main-body{
+    padding-top: 60px;
+  }
 }
+
 body,
 body>div,
 body>div>div,
@@ -119,7 +123,7 @@ form.contact-us{
   .center-y-child{
     position: absolute;
     top: 50%;
-    transform: translate(10px, -50%);
+    transform: translate(0, -50%);
   }
 }
 @media only screen and (max-width: 768px) {
@@ -127,5 +131,16 @@ form.contact-us{
   .image-gallery-slides{
     min-height: 200px;
     padding: 0 50px;
+  }
+  .layout-wrap{
+    padding-bottom: 200px;
+  }
+  .center-y-parent{
+    .center-y-child.invalid-xs{
+      position: initial;
+      top: unset;
+      -webkit-transform: translate(0, 0);
+      transform: translate(0, 0);
+    }
   }
 }

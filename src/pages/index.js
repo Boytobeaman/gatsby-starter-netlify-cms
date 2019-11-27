@@ -122,7 +122,7 @@ export default class IndexPage extends React.Component {
               </div>
               <div className="col-sm-7">
                 <div className="center-y-parent h-100">
-                  <div className="center-y-child p-3">
+                  <div className="center-y-child invalid-xs p-3">
                     <h2 className="h1 mb-4 font-weight-bold">Products Customization Service</h2>
                     <h4>Custom service according to your specific demand</h4>
                     <p>
@@ -144,7 +144,7 @@ export default class IndexPage extends React.Component {
             <div className="row mx-0 border bg-light">
               <div className="col-sm-7">
                 <div className="center-y-parent h-100">
-                  <div className="center-y-child p-3">
+                  <div className="center-y-child invalid-xs p-3">
                     <h2>Plastic Crates Manufacturer & Supplier</h2>
                     <ul>
                       <li>Wholesale Pricing</li>
@@ -153,7 +153,6 @@ export default class IndexPage extends React.Component {
                     </ul>
                     <div className="text-left">
                       <h6>Get the best deal for plastic moving boxes, collapsible plastic crates, stackable plastic crates, pallet boxes from Chinese manufacture directly.</h6>
-                      <h6>We are a plastic boxes manufacturers specialised in plastics boxes crates for storage, logistics & transport.</h6>
                     </div>
                   </div>
                 </div>
