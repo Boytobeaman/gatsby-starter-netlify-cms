@@ -70,6 +70,58 @@ form.contact-us{
   border: 1px solid #dbdfdf;
   border-radius: 5px;
 }
+.footer{
+  .footer-social{
+    text-align: center;
+    .footer-social-link{
+      display: inline-block;
+      padding: 5px;
+      .icon {
+        width: 32px;
+        height: 32px;
+        background-size: 32px 32px;
+        &.icon-fb {
+          background-image: url(#{$cdn-url}/static/icons/facebook.svg);
+        }
+        &.icon-tw {
+          background-image: url(#{$cdn-url}/static/icons/twitter.svg);
+        }
+        &.icon-in {
+          background-image: url(#{$cdn-url}/static/icons/instagram.svg);
+        }
+        &.icon-yt {
+          background-image: url(#{$cdn-url}/static/icons/youtube.svg);
+        }
+        &.icon-li {
+          background-image: url(#{$cdn-url}/static/icons/linkedin.svg);
+        }
+        &.icon-em {
+          background-image: url(#{$cdn-url}/static/icons/email.svg);
+        }
+      }
+    }
+  }
+  .friendly-link{
+    text-align: center;
+    padding: 5px;
+    .footer-friendly-link{
+      display: inline-block;
+      color: #ced4da;
+      text-decoration: none;
+      text-transform: capitalize;
+      font-size: 13px;
+      padding: 0 5px;
+    }
+  }
+}
+.center-y-parent{
+  position: relative;
+  .center-y-child{
+    position: absolute;
+    top: 50%;
+    transform: translate(10px, -50%);
+  }
+}
 @media only screen and (max-width: 768px) {
   /* For mobile phones and tablets: */
   .image-gallery-slides{

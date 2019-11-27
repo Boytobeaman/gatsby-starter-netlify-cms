@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: 'Plastic moving boxes wholesale,moving crates for sale',
-    titleTemplate: '%s | Moving boxes wholesale',
+    title: 'Plastic moving bins wholesale,moving crates for sale',
+    titleTemplate: '%s | Moving bins wholesale',
     description:
       'Wholesale plastic boxes, pallet boxes, dollies, plastic crates and containers directly from factory, quick LEAD time, high quality',
     siteUrl: `https://www.movingboxsale.com`,

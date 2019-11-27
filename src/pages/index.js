@@ -45,12 +45,12 @@ export default class IndexPage extends React.Component {
       <Layout>
         <SEO 
             titleTemplate="%s | Moving boxes"
-            title='Plastic Crates Manufacturer & Supplier'
+            title='Moving Bins For Sale, Plastic Moving Boxes Manufacturer & Supplier'
             description = 'JOINPLASTIC is a Plastic Crate manufacturers and suppliers from China,we wholesale a wide range of products which include plastic moving boxes, collapsible plastic crates, fruits crate, stacking crates, attached lid containers, heavy duty crates, pallets, dollies'
           />
         <div className="container-fluid">
           <Helmet>
-            <title>{` | Moving box`}</title>
+            <title>{`Moving Bins For Sale, Plastic Moving Boxes Manufacturer & Supplier`}</title>
             <meta name="description" content={``} />
           </Helmet>
           <section className="section my-3">
@@ -111,19 +111,50 @@ export default class IndexPage extends React.Component {
               </div>
             </div>
           </section>
+          <section className="my-3 border bg-light">
+            <div className="row">
+              <div className="col-sm-5">
+                <LazyLoadImage 
+                    className="img-fluid w-100" 
+                    src={`${cdn_url}/static/plastic-moving-boxes-customization.png`}
+                    placeholderSrc={cdn_loading_img}
+                    alt="Plastic moving boxes customization" />
+              </div>
+              <div className="col-sm-7">
+                <div className="center-y-parent h-100">
+                  <div className="center-y-child p-3">
+                    <h2 className="h1 mb-4 font-weight-bold">Products Customization Service</h2>
+                    <h4>Custom service according to your specific demand</h4>
+                    <p>
+                    Browsed our selection and still can’t find the right crates? 
+                    No problem. Check out our specialty items, or contact us about creating a custom mold to your exact specifications
+                    </p>
+                    <p>
+                      OEM service are designed to provide you with customized services by predicting your desires and needs.
+                    </p>
+                    <Link className="btn btn-danger btn-lg active" role="button" aria-pressed="true" to="/contact/">
+                        Contact Us
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
           <section className="mt-3">
             <div className="row mx-0 border bg-light">
-              <div className="col-sm-7 d-flex align-items-center justify-content-center">
-                <div className="">
-                  <h2>Plastic Crates Manufacturer & Supplier</h2>
-                  <ul>
-                    <li>Wholesale Pricing</li>
-                    <li>All Colors + Custom Logo</li>
-                    <li>Quality assurance</li>
-                  </ul>
-                  <div className="text-left">
-                    <h6>Get the best deal for plastic moving boxes, collapsible plastic crates, stackable plastic crates, pallet boxes from Chinese manufacture directly.</h6>
-                    <h6>We are a plastic boxes manufacturers specialised in plastics boxes crates for storage, logistics & transport.</h6>
+              <div className="col-sm-7">
+                <div className="center-y-parent h-100">
+                  <div className="center-y-child p-3">
+                    <h2>Plastic Crates Manufacturer & Supplier</h2>
+                    <ul>
+                      <li>Wholesale Pricing</li>
+                      <li>All Colors + Custom Logo</li>
+                      <li>Quality assurance</li>
+                    </ul>
+                    <div className="text-left">
+                      <h6>Get the best deal for plastic moving boxes, collapsible plastic crates, stackable plastic crates, pallet boxes from Chinese manufacture directly.</h6>
+                      <h6>We are a plastic boxes manufacturers specialised in plastics boxes crates for storage, logistics & transport.</h6>
+                    </div>
                   </div>
                 </div>
               </div>
