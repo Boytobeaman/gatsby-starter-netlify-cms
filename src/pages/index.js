@@ -123,8 +123,8 @@ export default class IndexPage extends React.Component {
               <div className="col-sm-7">
                 <div className="center-y-parent h-100">
                   <div className="center-y-child invalid-xs p-3">
-                    <h2 className="h1 mb-4 font-weight-bold">Products Customization Service</h2>
-                    <h4>Custom service according to your specific demand</h4>
+                    <h2 className="mb-4 font-weight-bold">Products Customization Service</h2>
+                    <h5>Custom service according to your specific demand</h5>
                     <p>
                     Browsed our selection and still can’t find the right crates? 
                     No problem. Check out our specialty items, or contact us about creating a custom mold to your exact specifications
@@ -137,6 +137,33 @@ export default class IndexPage extends React.Component {
                     </Link>
                   </div>
                 </div>
+              </div>
+            </div>
+          </section>
+          <section className="my-3 border bg-light">
+            <div className="row">
+              <div className="col-sm-6">
+                <div className="center-y-parent h-100">
+                  <div className="center-y-child invalid-xs p-3">
+                    <h2 className="mb-4 font-weight-bold">Manufacturering Equipment</h2>
+                    <h5>Well-equipped with 22 sets 30ton-1600ton injection molding machine</h5>
+                    <p>
+                      MOQ as 300pcs, flash leadtime as 7-10 days
+                    </p>
+                    <LazyLoadImage 
+                      className="img-fluid w-100" 
+                      src={`${cdn_url}/static/crates-manufacturer-equipment-b.jpg`}
+                      placeholderSrc={cdn_loading_img}
+                      alt="Plastic crates manufacturer equipment" />
+                  </div>
+                </div>
+              </div>
+              <div className="col-sm-6">
+                <LazyLoadImage 
+                  className="img-fluid w-100" 
+                  src={`${cdn_url}/static/crates-manufacturer-equipment-a.jpg`}
+                  placeholderSrc={cdn_loading_img}
+                  alt="Plastic crates manufacturer equipment" />
               </div>
             </div>
           </section>
