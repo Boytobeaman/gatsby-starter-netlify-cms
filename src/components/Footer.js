@@ -41,7 +41,7 @@ export default class Footer extends React.Component{
             euro storage boxes
           </a>
         </div>
-        <div className="text-center py-3 px-1">
+        <div className="copy-right text-center py-3 px-1">
           <span className="text-white">© 2019 Shanghai Join Plastic, Inc. All Rights Reserved.</span>
         </div>
       </footer>

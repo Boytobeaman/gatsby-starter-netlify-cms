@@ -47,7 +47,7 @@ body>div>div>div{
   }
 }
 .product-cate-page,.product-detail-single{
-  padding-bottom: 2rem;
+  padding-bottom: 3rem;
 }
 .single-product-attr{
   .value {
@@ -149,6 +149,11 @@ form.contact-us{
       text-transform: capitalize;
       font-size: 13px;
       padding: 0 5px;
+    }
+  }
+  .copy-right{
+    @media screen and (max-width: 768px) {
+      font-size: 0.8rem;
     }
   }
 }
