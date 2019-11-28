@@ -6,6 +6,9 @@ html{
 body{
   background-color: $body-bg;
 }
+.bg-color-a{
+  background-color: $bg-color-a;
+}
 .layout-wrap{
   padding-bottom: 180px;
   .main-body{
@@ -30,6 +33,22 @@ body>div>div>div{
 .pull-left{
   float: left;
 }
+.home-page{
+  >section{
+    &.product-customization,&.manufacturering-equipment,&.factory-img{
+      .main-pic{
+        min-height: 400px;
+        @media screen and (max-width: 768px) {
+          min-height: unset;
+        }
+      }
+
+    }
+  }
+}
+.product-cate-page,.product-detail-single{
+  padding-bottom: 2rem;
+}
 .single-product-attr{
   .value {
     color: #d9534f;
@@ -48,10 +67,25 @@ body>div>div>div{
 #mainNavbar{
   .nav-item{
     .nav-link[aria-current=page]{
-      color: #dc3545;
-      border-bottom: 3px solid #dc3545;
+      color: $nav-link-color;
+      border-bottom: 3px solid $nav-link-color;
       font-weight: bold;
     }
+  }
+}
+.breadcrumb{
+  .breadcrumb-item{
+    a{
+      color: $nav-link-color;
+      font-weight: bold;
+    }
+  }
+}
+.taglist{
+  list-style-type: none;
+  padding-left: 0;
+  a{
+    color: $nav-link-color;
   }
 }
 .modal-body .inquiry-pic-wrap {

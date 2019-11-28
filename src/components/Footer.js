@@ -9,7 +9,7 @@ export default class Footer extends React.Component{
 
   render() {
     return (
-      <footer className="footer w-100 position-absolute bg-secondary" style={{ bottom: '0' }}>
+      <footer className="footer w-100 position-absolute bg-secondary py-3" style={{ bottom: '0' }}>
         <div className="footer-social pt-2">
           <a title="facebook" href={facebook_url} target="_blank" rel="nofollow noopener" className="footer-social-link">
             <figure className="icon icon-fb"></figure>

@@ -28,7 +28,7 @@ export default class EuroStackingContainerPage extends React.Component {
     }
     return (
       <Layout>
-        <section className="section">
+        <section className="section product-cate-page">
           <SEO 
             thisTitleTemplate="%s | Euro Stacking Containers"
             title='Plastic Euro Stacking Containers Manufacturer & Supplier'

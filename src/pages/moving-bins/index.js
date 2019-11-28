@@ -28,7 +28,7 @@ export default class MovingcratePage extends React.Component {
     }
     return (
       <Layout>
-        <section className="section">
+        <section className="section product-cate-page">
           <SEO 
             thisTitleTemplate="%s | Moving boxes for sale"
             title='Plastic Moving Bins, cheap plastic bins for moving'
