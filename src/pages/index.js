@@ -61,8 +61,8 @@ export default class IndexPage extends React.Component {
           <section className="bg-dark home-cat-pic pt-4 pb-5">
             <h2 className="text-center p-4 text-white">Products Categories</h2>
             <h5 className="text-center p-3 text-white">Welcome to movingboxsale.com, leading Chinese supplier of plastic boxes </h5>
-            <p className="text-center pt-3 mb-0 text-white">Simply choose the plastic products you would like to purchase, and send us inquiry by click the right top side <button className="btn btn-danger btn-sm" role="button">inquiry</button> button of every product</p>
-            <p className="text-center text-white">We will get back to you within 2 working days</p>
+            <p className="text-center pt-3 mb-0 text-white d-none d-sm-block">Simply choose the plastic products you would like to purchase, and send us inquiry by click the right top side <button className="btn btn-danger btn-sm" role="button">inquiry</button> button of every product</p>
+            <p className="text-center text-white  d-none d-sm-block">We will get back to you within 2 working days</p>
             <div className="row mx-0">
               <div className="col-sm-3">
                 <Link className="nav-link text-white font-weight-bold pb-0" to={menu.foldingCrates.url}>

@@ -94,8 +94,21 @@
     font-size: 14px;
 }
 .cat-desc-top-wrap{
-    background-color: #36a9e1;
+    background: -webkit-gradient(linear,right top,left bottom,from(#34485c),to(#fff));
+    background: linear-gradient(to left bottom,#34485c,#fff);
+    // min-height: 200px;
     color: #fff;
+    .cat-desc-top-img-wrap{
+        padding-bottom: calc(100% * 42 / 192 );
+        @media screen and (max-width: 768px) {
+            padding-bottom: calc(100% * 420 / 1062 );
+          }
+        overflow: hidden;
+        height: 0;
+        .lazy-load-image-background{
+            width: 100%;
+        }
+    }
     .cat-desc-top-title{
         @media only screen and (max-width: 767px) {
             font-size: 1.5rem;

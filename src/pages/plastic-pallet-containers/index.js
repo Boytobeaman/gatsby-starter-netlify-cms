@@ -58,18 +58,20 @@ export default class PlasticPalletContainerPage extends React.Component {
               </ol>
             </nav>
             <div className="cat-desc-top-wrap">
-              <div className="d-none d-sm-block">
+              <div className="d-none d-sm-block cat-desc-top-img-wrap">
                 <LazyLoadImage 
                   className="img-fluid w-100" 
                   src={`${cdn_url}/static/plastic-pallet-container-banner.jpg`}
-                  placeholderSrc={cdn_loading_img}
+                  // placeholderSrc={cdn_loading_img}
+                  effect="blur"
                   alt="Plastic Pallet Container" />
               </div>
-              <div className="d-block d-sm-none">
+              <div className="d-block d-sm-none cat-desc-top-img-wrap">
                 <LazyLoadImage 
                   className="img-fluid w-100" 
                   src={`${cdn_url}/static/plastic-pallet-container-banner-phone.jpg`}
-                  placeholderSrc={cdn_loading_img}
+                  // placeholderSrc={cdn_loading_img}
+                  effect="blur"
                   alt="Plastic Pallet Container" />
               </div>
             </div>

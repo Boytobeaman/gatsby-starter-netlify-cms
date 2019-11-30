@@ -55,18 +55,20 @@ export default class MovingcratePage extends React.Component {
             </nav>
             
             <div className="cat-desc-top-wrap">
-              <div className="d-none d-sm-block">
+              <div className="d-none d-sm-block cat-desc-top-img-wrap">
                 <LazyLoadImage 
                   className="img-fluid w-100" 
                   src={`${cdn_url}/static/moving-bins-banner.jpg`}
-                  placeholderSrc={cdn_loading_img}
+                  // placeholderSrc={cdn_loading_img}
+                  effect="blur"
                   alt="plastic moving bins" />
               </div>
-              <div className="d-block d-sm-none">
+              <div className="d-block d-sm-none cat-desc-top-img-wrap">
                 <LazyLoadImage 
                   className="img-fluid w-100" 
                   src={`${cdn_url}/static/moving-bins-banner-phone.jpg`}
-                  placeholderSrc={cdn_loading_img}
+                  // placeholderSrc={cdn_loading_img}
+                  effect="blur"
                   alt="plastic moving bins" />
               </div>
             </div>

@@ -52,18 +52,20 @@ export default class FoldingcratePage extends React.Component {
               </ol>
             </nav>
             <div className="cat-desc-top-wrap">
-              <div className="d-none d-sm-block">
+              <div className="d-none d-sm-block cat-desc-top-img-wrap">
                 <LazyLoadImage 
                   className="img-fluid w-100" 
                   src={`${cdn_url}/static/folding-crates-banner.jpg`}
-                  placeholderSrc={cdn_loading_img}
+                  effect="blur"
+                  // placeholderSrc={cdn_loading_img}
                   alt="folding crates" />
               </div>
-              <div className="d-block d-sm-none">
+              <div className="d-block d-sm-none cat-desc-top-img-wrap">
                 <LazyLoadImage 
                   className="img-fluid w-100" 
                   src={`${cdn_url}/static/folding-crates-banner-phone.jpg`}
-                  placeholderSrc={cdn_loading_img}
+                  effect="blur"
+                  // placeholderSrc={cdn_loading_img}
                   alt="folding crates" />
               </div>
             </div>
