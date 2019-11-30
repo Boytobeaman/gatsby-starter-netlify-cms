@@ -100,7 +100,7 @@
     color: #fff;
     .cat-desc-top-img-wrap{
         padding-bottom: calc(100% * 42 / 192 );
-        @media screen and (max-width: 768px) {
+        @media screen and (max-width: 767px) {
             padding-bottom: calc(100% * 420 / 1062 );
           }
         overflow: hidden;
