@@ -13,6 +13,7 @@ body{
   padding-bottom: 180px;
   .main-body{
     padding-top: 60px;
+    overflow: hidden;
   }
 }
 
@@ -66,14 +67,18 @@ body>div>div>div{
 }
 #mainNavbar{
   .nav-item{
-    .nav-link[aria-current=page]{
-      color: $nav-link-color;
-      border-bottom: 3px solid $nav-link-color;
+    .nav-link{
       font-weight: bold;
+      color: rgba(255,255,255,.7);
+      &[aria-current=page]{
+        color: $nav-link-color;
+        border-bottom: 3px solid $nav-link-color;
+      }
     }
   }
 }
 .breadcrumb{
+  border: 1px solid $main-border-color;
   .breadcrumb-item{
     a{
       color: $nav-link-color;
