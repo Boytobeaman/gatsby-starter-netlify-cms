@@ -26,6 +26,41 @@ export default class MainNavbar extends React.Component{
       collapsed: !this.state.collapsed
     });
   }
+  componentWillMount(){
+    let url = window.location.href
+    for (let elem in menu) {
+      let this_url = menu[elem].url
+      if(url.indexOf(this_url) > -1){
+        menu[elem].activeStatus = "active"
+      }else{
+        menu[elem].activeStatus = ""
+      }
+    }
+  }
+  renderNavbar(){
+
+    return Object.keys(menu).map(function(key) {
+      let this_menu = menu[key];
+      let this_url = menu[key].url;
+      if(this_url === "/"){
+        return (
+          <NavItem key={key}>
+            <Link className="nav-link" to="/" title="Home">
+              Home
+            </Link>
+          </NavItem>
+        )
+      }else{
+        return (
+          <NavItem key={key}>
+            <Link className={`nav-link ${this_menu.activeStatus}`} to={this_menu.url} title={this_menu.text}>
+                {this_menu.text}
+              </Link>
+          </NavItem>
+        )
+      }
+    });
+  }
   render() {
     return (
       <Navbar color="dark" dark className="fixed-top border-bottom" expand="md" id="mainNavbar" itemScope='' itemType="http://schema.org/SiteNavigationElement">
@@ -37,43 +72,7 @@ export default class MainNavbar extends React.Component{
         <NavbarToggler onClick={this.toggleNavbar} />
         <Collapse isOpen={!this.state.collapsed} navbar>
           <Nav className="mr-auto" navbar>
-            <NavItem>
-              <Link className="nav-link" to="/" title="Home">
-                Home
-              </Link>
-            </NavItem>
-
-            <NavItem>
-              <Link className="nav-link" to={menu.foldingCrates.url} title={menu.foldingCrates.text}>
-                {menu.foldingCrates.text}
-              </Link>
-            </NavItem>
-            <NavItem>
-              <Link className="nav-link" to={menu.movingBins.url} title={menu.movingBins.text}>
-                {menu.movingBins.text}
-              </Link>
-            </NavItem>
-            <NavItem>
-              <Link className="nav-link" to={menu.euroStackingContainers.url} title={menu.euroStackingContainers.text}>
-                {menu.euroStackingContainers.text}
-              </Link>
-            </NavItem>
-            <NavItem>
-              <Link className="nav-link" to={menu.plasticPalletBoxes.url} title={menu.plasticPalletBoxes.text}>
-                {menu.plasticPalletBoxes.text}
-              </Link>
-            </NavItem>
-            <NavItem>
-              <Link className="nav-link" to={menu.contact.url} title={menu.contact.text}>
-                Contact Us
-              </Link>
-            </NavItem>
-
-            <NavItem>
-              <Link className="nav-link" to={menu.about.url} title={menu.about.text}>
-                About Us
-              </Link>
-            </NavItem>
+            {this.renderNavbar()}
           </Nav>
         </Collapse>
       </Navbar>

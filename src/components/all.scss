@@ -74,6 +74,10 @@ body>div>div>div{
         color: $nav-link-color;
         border-bottom: 3px solid $nav-link-color;
       }
+      &.active{
+        color: $nav-link-color;
+        border-bottom: 3px solid $nav-link-color;
+      }
     }
   }
 }

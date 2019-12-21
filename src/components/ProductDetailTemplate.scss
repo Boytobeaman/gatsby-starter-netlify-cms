@@ -14,6 +14,16 @@
         @media screen and (max-width: 768px) {
           margin-right: 0;
         }
+        .image-gallery {
+          background-color: #fff;
+          height: 100%;
+          border: 1px solid $main-border-color;
+          padding-top: 20px;
+        }
+        .product-spec-table-wrap{
+          border: 1px solid $main-border-color;
+          height: 100%;
+        }
       }
     }
     .amazon-content-wrap{
@@ -27,16 +37,6 @@
       border: 2px solid #ffa724;
       @media screen and (max-width: 768px) {
         width: 100%;
-      }
-      .image-gallery {
-        background-color: #fff;
-        height: 100%;
-        border: 1px solid $main-border-color;
-        padding-top: 20px;
-      }
-      .product-spec-table-wrap{
-        border: 1px solid $main-border-color;
-        height: 100%;
       }
     }
   }
