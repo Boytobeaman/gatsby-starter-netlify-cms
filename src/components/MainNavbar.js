@@ -27,15 +27,16 @@ export default class MainNavbar extends React.Component{
     });
   }
   componentWillMount(){
-    let url = window.location.href
-    for (let elem in menu) {
-      let this_url = menu[elem].url
-      if(url.indexOf(this_url) > -1){
-        menu[elem].activeStatus = "active"
-      }else{
-        menu[elem].activeStatus = ""
+    let parentLevelLink = this.props.parentLevelLink;
+    let this_parent_url = parentLevelLink
+      for (let elem in menu) {
+        let this_url = menu[elem].url
+        if(this_url === this_parent_url){
+          menu[elem].activeStatus = "active"
+        }else{
+          menu[elem].activeStatus = ""
+        }
       }
-    }
   }
   renderNavbar(){
 
