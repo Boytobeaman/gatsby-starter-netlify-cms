@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import logo from '../img/movingboxlogo-red.svg'
+import logo from '../img/header-icon-grey.png'
 import { menu } from '../utils'
 import {
   Collapse,

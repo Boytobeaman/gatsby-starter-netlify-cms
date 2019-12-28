@@ -6,7 +6,7 @@ import Helmet from 'react-helmet'
 
 import MainNavbar from '../components/MainNavbar'
 import Footer from './Footer'
-import favicon from '../img/movingboxlogo-red.svg'
+import favicon from '../img/icon-32.png'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './all.scss'
 
@@ -19,7 +19,7 @@ const TemplateWrapper = ({ children }) => {
   return <div className="layout-wrap position-relative">
     <Helmet>
       <title>Home | Moving Crates Supplier</title>
-      <link rel="icon" type="image/svg+xml" href={favicon}></link>
+      <link rel="shortcut icon"  href={favicon}></link>
     </Helmet>
     <MainNavbar parentLevelLink={parentLevelLink} />
     <div className="main-body">{children}</div>
