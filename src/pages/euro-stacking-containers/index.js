@@ -11,6 +11,8 @@ import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 import { cdn_url, cdn_loading_img } from '../../utils'
 import '../../cat-page-style.scss'
+import EuroCrate from '../../components/productDesc/EuroCrate'
+import AllProductCommonDesc from '../../components/productDesc/AllProductCommonDesc'
 
 export default class EuroStackingContainerPage extends React.Component {
   constructor(props){
@@ -90,37 +92,9 @@ export default class EuroStackingContainerPage extends React.Component {
                   </div>
                 )
               })}
-            
-            <div className="cat-desc-section mb-2">
-              <h4 className="">Euro Stacking Containers</h4>
-              <div className="cat-desc-text">
-                Suitable for storing auto-parts, stackable when both in use and empty, eco-friendly, reinforced design, reduces shipping and storage expenses.
-              </div>
-              <div className="cat-desc-text">
-                Features & Benefites of the stacking boxes
-                <ul>
-                  <li>Stackable, Reinforced design and Reusable.				</li>
-                  <li>Multiple Size and Colors, Lidded Containers, Effecient Packing.</li>
-                  <li>100% New PP Material.</li>
-                </ul>
-              </div>
-            </div>
-
             <div className="cat-desc-section">
-              <h4 className="">EURO STACKING CONTAINERS description</h4>
-              <div className="cat-desc-text">
-                Available in a variety of dimensions, Plastic EURO stacking containers and boxes generally have a greater volume capacity due to their straight sides. 
-                The reinforced corners of the Plastic Euro Stacking Containers make them an ideal choice for transporting heavy loads.
-                Our Euro (European standard size) stacking boxes can be tailored to suit your requirements with lids, hinges, inner dividers, personalised print and locking clasps.
-                Thanks to its food grade plastic construction, this high quality range of plastic containers is resistant to acids and oils.
-                Euro Containers are uniform in dimensions meaning they are ideal for automated manufacturing systems or for product handling.
-                We stock a great selection of Euro Containers, all our stacking heavy duty containers are strong and durable.
-              </div>
-              <div className="cat-desc-text">
-                Features & Benefites of the EURO stacking container
-                <ul>
-                </ul>
-              </div>
+              <EuroCrate />
+              <AllProductCommonDesc />
             </div>
           </div>
         </section>

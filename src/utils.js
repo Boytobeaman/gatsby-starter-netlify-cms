@@ -57,11 +57,11 @@ export const menu = {
   },
   contact:{
     url: '/contact/',
-    text: 'Contact'
+    text: 'Contact Us'
   },
   about:{
     url: '/about/',
-    text: 'About'
+    text: 'About Us'
   }
 }
 export const getUrlQuery = function (variable) {

@@ -9,6 +9,14 @@ import InquiryForm from '../components/InquiryForm';
 import "react-image-gallery/styles/css/image-gallery.css";
 import "./ProductDetailTemplate.scss";
 import { menu } from '../utils'
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
+import { cdn_url,cdn_loading_img } from '../utils'
+import Movingbin from './productDesc/Movingbin'
+import PlasticPalletBoxes from './productDesc/plasticPalletBoxes'
+import EuroCrate from './productDesc/EuroCrate'
+import FoldingCrate from './productDesc/FoldingCrate'
+import AllProductCommonDesc from './productDesc/AllProductCommonDesc'
 
 import { 
   mmtoinch, 
@@ -49,10 +57,23 @@ class ProductDetailTemplate extends React.Component{
     return false
   }
 
-  toggle() {
+  toggle(e) {
+    e.preventDefault();
     this.setState(prevState => ({
       modal: !prevState.modal
     }));
+  }
+
+  listenScrollEvent = e => {
+    if (window.scrollY > 450) {
+      this.setState({inquiryBtnClass: 'scrolled'})
+    } else {
+      this.setState({inquiryBtnClass: ''})
+    }
+  }
+
+  componentDidMount() {
+    window.addEventListener('scroll', this.listenScrollEvent)
   }
 
   render() {
@@ -156,8 +177,8 @@ class ProductDetailTemplate extends React.Component{
                         {title}
                     </h1>
                     <table className="table table-hover table-bordered single-product-attr">
-                      <caption>
-                          <button className="btn btn-lg btn-danger btn-block product-inquiry" onClick={(e)=>this.toContactUs(e,model,images[0].original)}>Request a Free Quote</button>
+                      <caption className="inquiry-btn-wrap">
+                          <button className={`btn btn-lg btn-danger btn-block product-inquiry ${this.state.inquiryBtnClass}`} onClick={(e)=>this.toContactUs(e,model,images[0].original)}>Request a Free Quote</button>
                       </caption>
                       <tbody>
                           <tr>
@@ -276,28 +297,32 @@ class ProductDetailTemplate extends React.Component{
               <div className="row mt-2">
                 <div className="col-sm-12">
                   <div className="bg-white p-3">
-                    <p>{description}</p>
-                    <PostContent content={content} />
                     {
                       parentLevelLink === menu.foldingCrates.url &&(
-                        `folding crate common description`
+                        <FoldingCrate />
                       )
                     }
                     {
                       parentLevelLink === menu.movingBins.url &&(
-                        `movingBins common description`
+                        <Movingbin />
                       )
                     }
                     {
                       parentLevelLink === menu.euroStackingContainers.url &&(
-                        `euroStackingContainers common description`
+                        <EuroCrate />
                       )
                     }
                     {
                       parentLevelLink === menu.plasticPalletBoxes.url &&(
-                        `plasticPalletBoxes common description`
+                        <PlasticPalletBoxes />
                       )
                     }
+                    
+                    <div className="single-product-description">
+                      <p className="description">{description}</p>
+                      <PostContent className="post-content" content={content} />
+                    </div>
+                    <AllProductCommonDesc />
                   </div>
                 </div>
               </div>

@@ -23,6 +23,26 @@
         .product-spec-table-wrap{
           border: 1px solid $main-border-color;
           height: 100%;
+          .product-inquiry.scrolled{
+            position: fixed;
+            top: 30%;
+            right: 20px;
+            width: initial;
+            z-index: 100;
+          }
+        }
+        .product-detail-description{
+          .lazy-load-image-background{
+            width: 100%;
+          }
+        }
+        .single-product-description{
+          color: #8d959d;
+        }
+        .all-product-common-desc{
+          .section-title{
+            color: #5bc5d6;
+          }
         }
       }
     }

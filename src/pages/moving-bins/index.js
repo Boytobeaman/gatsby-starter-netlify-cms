@@ -11,6 +11,8 @@ import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 import { cdn_url, cdn_loading_img } from '../../utils'
 import '../../cat-page-style.scss'
+import Movingbin from '../../components/productDesc/Movingbin'
+import AllProductCommonDesc from '../../components/productDesc/AllProductCommonDesc'
 
 export default class MovingcratePage extends React.Component {
   constructor(props){
@@ -90,7 +92,10 @@ export default class MovingcratePage extends React.Component {
                   </div>
                 )
               })}
-
+            <div className="cat-desc-section">
+              <Movingbin />
+              <AllProductCommonDesc />
+            </div>
             <div className="cat-desc-section mb-2">
               <h4 className="">Moving bins</h4>
               <div className="cat-desc-text">
@@ -104,32 +109,6 @@ export default class MovingcratePage extends React.Component {
                   <li>100% New PP Material.</li>
                 </ul>
               </div>
-            </div>
-            <div className="cat-desc-section">
-              <h4 className="">Plastic Moving Crates Description</h4>
-              <div className="cat-desc-text">
-                We manufacture and supplier moving crates for many companies
-                Our plastic moving boxes help save money while saving the environment! Our attached lid containers are clean, green, and durable.
-                many moving companies use this box as moving box,for example
-              </div>
-              <ul>
-                <li> 
-                  <a href="https://rentacrate.com/" target="_blank" rel="noopener noreferrer nofollow">Rentacrate</a>,
-                  PRO Moving Service,
-                  <a href="https://biggreentotes.com/" target="_blank" rel="noopener noreferrer nofollow">Big Green Totes</a>,
-                  <a href="https://bluecrates.com/" target="_blank" rel="noopener noreferrer nofollow">BLUE CRATE LLC</a>,
-                  First Responders Moving 
-                  from USA </li>
-                <li>Moveage Group,Boxes 2 You,
-                  <a href="https://www.chessmoving.com.au/" target="_blank" rel="noopener noreferrer nofollow">Chess Moving Perth</a> 
-                  from Australia
-                </li>
-                <li>Aaltonen International Removals & Storage from Ireland </li>
-                <li>
-                  <a href="https://www.boxitstorage.com/" target="_blank" rel="noopener noreferrer nofollow">BOXIT Co. </a> 
-                   from Kuwait 
-                </li>
-              </ul>
             </div>
           </div>
         </section>

@@ -12,6 +12,9 @@ import 'react-lazy-load-image-component/src/effects/blur.css';
 import { cdn_url, cdn_loading_img } from '../../utils'
 import '../../cat-page-style.scss'
 
+import PlasticPalletBoxes from '../../components/productDesc/PlasticPalletBoxes'
+import AllProductCommonDesc from '../../components/productDesc/AllProductCommonDesc'
+
 export default class PlasticPalletContainerPage extends React.Component {
   constructor(props){
     super(props);
@@ -94,45 +97,12 @@ export default class PlasticPalletContainerPage extends React.Component {
                 )
               })}
 
+            
             <div className="cat-desc-section">
-              <h4 className="">Plastic Pallet Boxes</h4>
-              <div className="cat-desc-text">
-              Eco-friendly, Collapsible saving you space, Effecient loading via built-in plastic pallet.
-              </div>
-              <div className="cat-desc-text">
-                Features & Benefites of the bulk storage containers
-                <ul>
-                  <li>Collapsible, Reinforced design, Ventilated.</li>
-                  <li>Bulk packing, Multiple Sizes and Colors, LIdded pallet boxes, Plastic pallet.</li>
-                  <li>100% New PP Material.</li>
-                </ul>
-              </div>
+              <PlasticPalletBoxes />
+              <AllProductCommonDesc />
             </div>
-            <div className="row">
-              <div className="col-md-6">
-                <LazyLoadImage 
-                  className="img-fluid w-100" 
-                  src={`${cdn_url}/static/coaming-box.jpg`}
-                  placeholderSrc={cdn_loading_img}
-                  alt="Plastic coaming boxes" />
-              </div>
-              <div className="col-md-6">
-                <LazyLoadImage 
-                  className="img-fluid w-100" 
-                  src={`${cdn_url}/static/pallet-boxes-export-to-oman.jpg`}
-                  placeholderSrc={cdn_loading_img}
-                  alt="Plastic Pallet Boxes" />
-              </div>
-            </div>
-            <div className="cat-desc-section">
-              <h4 className="">Plastic Pallet Boxes Description</h4>
-              <div className="cat-desc-text">
-                Joinplastic is an experienced plastic bulk containers supplier among those world famous plastic pallet box manufacturers.
-                We offer you hot sale and cheap plastic pallet bin, folding plastic pallet box, pallet crate, plastic pallet containers at wholesale price.
-                Our Plastic pallet containers are made from the most durable, dependable plastics, designed to withstand the shipping process for years to come.
-                We offer both heavy duty and light duty pallet boxes.
-              </div>
-            </div>
+            
           </div>
         </section>
       </Layout>

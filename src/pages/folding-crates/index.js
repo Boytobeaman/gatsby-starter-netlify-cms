@@ -11,6 +11,9 @@ import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 import { cdn_url, cdn_loading_img } from '../../utils'
 import '../../cat-page-style.scss'
+import FoldingCrate from '../../components/productDesc/FoldingCrate'
+import AllProductCommonDesc from '../../components/productDesc/AllProductCommonDesc'
+
 export default class FoldingcratePage extends React.Component {
   constructor(props){
     super(props);
@@ -87,59 +90,19 @@ export default class FoldingcratePage extends React.Component {
                   </div>
                 )
               })}
-            <div className="row mb-1 no-gutters">
-              <div className="col-sm-4">
-                <video controls className='w-100 h-100' poster={`${cdn_url}/products/a4597984739a4610b258ac90ef4b56dc.jpg?x-oss-process=image/resize,h_200`}>
-                  <source src={`${cdn_url}/static/video/collapsible-crate.mp4`} type="video/mp4" />
-                  Your browser does not support HTML5 video.
-                </video>
-              </div>
-              <div className="col-sm-4">
-                <LazyLoadImage 
-                  className="img-fluid w-100" 
-                  src={`${cdn_url}/static/collapsible-storage-containers-fold.gif`}
-                  placeholderSrc={cdn_loading_img}
-                  alt="Collapsible Plastic Crate" />
-              </div>
-              <div className="col-sm-4">
-                <LazyLoadImage 
-                  className="img-fluid w-100" 
-                  src={`${cdn_url}/static/collapsible-storage-containers-fold-b.gif`}
-                  placeholderSrc={cdn_loading_img}
-                  alt="Collapsible Crate" />
-              </div>
+            
+            <div className="cat-desc-section">
+              <FoldingCrate />
+              <AllProductCommonDesc />
             </div>
             <div className="cat-desc-section">
-              <h1 className="cat-desc-top-title h2">Collapsible Plastic Crates</h1>
-              <ul>
-                <li>Collapsible & Stackable & Durable</li>
-                <li>ventilated, multiple heights, returnable, efficient packing.</li>
-                <li>100% New PP material.</li>
-              </ul>
-              <p className="d-none d-lg-block mb-0">
-                These collapsible, reusable plastic crates are Efficient, Economical and Environmentally friendly,
-                they can help reduce shipping and storage expenses.
-              </p>
-            </div>
-            <div className="cat-desc-section">
-              <h4 className="">Folding crate description</h4>
               <div className="cat-desc-text">
                 Collapsible Crate is a smart, space-saving solution to simplify all of your activities, trips and day-to-day tasks,
                 It is a highly versatile, multi-purpose storage solution for consumers to store and transport goods.
                 The collapsible plastic crate can be popped open when you need them, fold flat when you don't,
                 the folding crate can save 75% space, usually we provide the folding crate with lid.
               </div>
-              <div className="cat-desc-text">
-                Features & Benefites of the collapsible crate
-                <ul>
-                  <li>QUICKLY COLLAPSIBLE & LIGHTWEIGHT</li>
-                  <li>100% RECYCLABLE - no waste disposal at food retailer</li>
-                  <li>Foldable and stackable to maximize truck and store space.</li>
-                  <li>SUPER EASY TO WASH & REUSE</li>
-                  <li>BUILT AMAZINGLY STRONG TO LAST</li>
-                  <li>SUPPORTS ALL TYPES OF ITEMS</li>
-                </ul>
-              </div>
+             
             </div>
           </div>
         </section>
