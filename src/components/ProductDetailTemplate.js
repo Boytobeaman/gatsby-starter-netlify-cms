@@ -13,7 +13,7 @@ import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 import { cdn_url,cdn_loading_img } from '../utils'
 import Movingbin from './productDesc/Movingbin'
-import PlasticPalletBoxes from './productDesc/plasticPalletBoxes'
+import PlasticPalletBoxes from './productDesc/PlasticPalletBoxes'
 import EuroCrate from './productDesc/EuroCrate'
 import FoldingCrate from './productDesc/FoldingCrate'
 import AllProductCommonDesc from './productDesc/AllProductCommonDesc'
