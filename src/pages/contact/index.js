@@ -11,8 +11,11 @@ import {
   inquiry_handle_base_url,
   inquiry_handle_app_name,
   inquiry_handle_inquiry_url,
-  inquiry_handle_email_url
+  inquiry_handle_email_url,
+  company_name,
+  remote_ip_url
 } from '../../utils'
+import axios from 'axios';
 import InquiryForm from "../../components/InquiryForm";
 
 function encode(data) {
@@ -32,7 +35,9 @@ export default class Index extends React.Component {
       from_url: '',
       sending: false,
       showThanks: false,
-      to_email: contact_email
+      to_email: contact_email,
+      company_name,
+      remote_ip: ''
     };
   }
   componentDidMount() {
@@ -51,6 +56,15 @@ export default class Index extends React.Component {
     }
     this.setState(obj)
     document.getElementById("name").focus();
+
+    axios.get(remote_ip_url)
+      .then(res => {
+        if(res && res.data && res.data.ipAddress){
+          this.setState({
+            remote_ip: res.data.ipAddress
+          })
+        }
+      })
   }
 
   handleChange = e => {
