@@ -13,7 +13,9 @@ import {
   inquiry_handle_inquiry_url,
   inquiry_handle_email_url,
   company_name,
-  remote_ip_url
+  remote_ip_url,
+  contact_phone_one,
+  contact_phone_two,
 } from '../../utils'
 import axios from 'axios';
 import InquiryForm from "../../components/InquiryForm";
@@ -154,8 +156,8 @@ export default class Index extends React.Component {
                   
                   <h5>Call us: </h5>
                   <div className="alert alert-secondary" role="alert">
-                    <p className="mb-0">(+86)021-59117621</p>
-                    <p className="mb-0">(+86)18217103917</p>
+                    <p className="mb-0">{contact_phone_one}</p>
+                    <p className="mb-0">{contact_phone_two}</p>
                   </div>
                   
                   
