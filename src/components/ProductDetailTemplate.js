@@ -329,8 +329,8 @@ class ProductDetailTemplate extends React.Component{
             </div>
           </div>
           <div className="amazon-content-wrap">
-            <p className="text-center font-weight-bold">Amazon ADs</p>
-              {
+            {/* <p className="text-center font-weight-bold">Amazon ADs</p> */}
+              {/* {
                 parentLevelLink === menu.foldingCrates.url &&(
                   <span className="collapsible-crates">
                     <a href="https://www.amazon.com/gp/product/B015PIRFD6/ref=as_li_ss_il?ie=UTF8&linkCode=li2&tag=cnboxstorecom-20&linkId=e3a96d5a6821f6f92a4166f0cceb2e25&language=en_US" target="_blank"><img border="0" src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B015PIRFD6&Format=_SL160_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=cnboxstorecom-20&language=en_US" /></a><img src="https://ir-na.amazon-adsystem.com/e/ir?t=cnboxstorecom-20&language=en_US&l=li2&o=1&a=B015PIRFD6" width="1" height="1" border="0" alt="" />
@@ -366,7 +366,7 @@ class ProductDetailTemplate extends React.Component{
                     <a href="https://www.amazon.com/dp/B07D5ZLCJ1/ref=as_li_ss_il?pd_rd_i=B07D5ZLCJ1&pd_rd_w=s00IU&pf_rd_p=45a72588-80f7-4414-9851-786f6c16d42b&pd_rd_wg=0XH6y&pf_rd_r=24EGMKQNPNDCV6BWEZKA&pd_rd_r=8e45c0e4-0fc6-4ddd-9594-8a035af35610&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUEyVklOTDc0R0tVM1hYJmVuY3J5cHRlZElkPUEwMzcwNjY3NUlKTjFPSTVYWkozJmVuY3J5cHRlZEFkSWQ9QTAyNjMyNDYyTVo4UjlZVU9LMU8md2lkZ2V0TmFtZT1zcF9kZXRhaWwmYWN0aW9uPWNsaWNrUmVkaXJlY3QmZG9Ob3RMb2dDbGljaz10cnVl&th=1&linkCode=li3&tag=cnboxstorecom-20&linkId=f8baea138d3bedf0d0d714f974d56804&language=en_US" target="_blank"><img border="0" src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B07D5ZLCJ1&Format=_SL250_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=cnboxstorecom-20&language=en_US" /></a><img src="https://ir-na.amazon-adsystem.com/e/ir?t=cnboxstorecom-20&language=en_US&l=li3&o=1&a=B07D5ZLCJ1" width="1" height="1" border="0" alt="" />
                   </span>
                 )
-              }
+              } */}
           </div>
         </div>
         <Modal isOpen={this.state.modal} toggle={this.toggle} className={this.props.className} backdrop="static">
