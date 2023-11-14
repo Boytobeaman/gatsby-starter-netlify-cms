@@ -38,15 +38,15 @@ export default class Footer extends React.Component{
           <a href="https://www.chinaboxsale.com/product-category/parts-bins/" target="_blank" className="footer-friendly-link">
             plastic parts bins
           </a>
-          <a href="https://www.plastic-crate.com/" target="_blank" className="footer-friendly-link">
-            plastic crates
+          <a href="https://www.poolteststrip.com/product-category/pool-salt-test-strips/" target="_blank" className="footer-friendly-link">
+            pool salt test strips
           </a>
           <a href="https://www.ausplastic.com/product-category/euro-storage-boxes/" target="_blank" className="footer-friendly-link">
             euro storage boxes
           </a>
         </div>
         <div className="copy-right text-center py-3 px-1">
-          <span className="text-white">© 2019 Shanghai Join Plastic, Inc. All Rights Reserved.</span>
+          <span className="text-white">© 2023 Shanghai Join Plastic, Inc. All Rights Reserved.</span>
         </div>
       </footer>
     )
