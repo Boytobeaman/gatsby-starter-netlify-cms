@@ -35,9 +35,6 @@ export default class Footer extends React.Component{
           <a href="https://www.chinaboxsale.com/product-category/bulk-plastic-containers/" target="_blank" className="footer-friendly-link">
            Bulk Plastic Containers
           </a>
-          <a href="https://www.chinaboxsale.com/product-category/parts-bins/" target="_blank" className="footer-friendly-link">
-            plastic parts bins
-          </a>
           <a href="https://www.poolteststrip.com/product-category/pool-salt-test-strips/" target="_blank" className="footer-friendly-link">
             pool salt test strips
           </a>
@@ -46,7 +43,8 @@ export default class Footer extends React.Component{
           </a>
         </div>
         <div className="copy-right text-center py-3 px-1">
-          <span className="text-white">© 2023 Shanghai Join Plastic, Inc. All Rights Reserved.</span>
+          <p>Moving made easy with our crates - the reliable choice for hassle-free transitions!</p>
+          <span className="text-white">© 2025 Shanghai Join Plastic, Inc. All Rights Reserved.</span>
         </div>
       </footer>
     )
