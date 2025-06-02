@@ -83,6 +83,7 @@ body>div>div>div{
 }
 .breadcrumb{
   border: 1px solid $main-border-color;
+  padding: 10px 15px;
   .breadcrumb-item{
     a{
       color: $nav-link-color;
